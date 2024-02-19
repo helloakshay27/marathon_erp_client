@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="erp_login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-LlR6ZbzFvY3t7CncJyQbbM6yFYGvKGUVWlG7EaknVoL7LNWcCx2dXpP6YkqQ32oW5Z9WP9AxafryHZsbv8Zyqg=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="login_module">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <div
+              class="col-lg-5 col-md-5 login_bg vh-100 d-flex align-items-center"
+            >
+              <div class="login-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vestibulum suspendisse gravida dictumst eget. Tincidunt a
+                  placerat orci, lobortis quam. Eget sit rhoncus sed lobortis
+                  aenean et pretium. Etiam nulla elementum aenean nec. Viverra a
+                  porttitor posuere ornare velit vestibulum enim. Suscipit ac
+                  elit a vel ut. Id fames amet ipsum eu.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-7 col-md-7 vh-100 d-flex align-items-center">
+                <div class="login-sec "  id="loginForm">
+                  <img
+                    class="login-content"
+                    src="/assets/icons/marathon-logo_500px 1.svg"
+                    alt="Logo"
+                    class="mb-4"
+                  />
+
+                  <!-- Welcome message -->
+                  <h3 class="mt-5 login-content">Welcome,</h3>
+
+                  <p class="mt-2 login-content">Login to continue</p>
+
+                  <!-- Login Form -->
+                  <form class="mt-3 login-content">
+                    <!-- Email field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="email">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="Enter email"
+                      />
+                      <span
+                        ><img
+                          class="lock-icon"
+                          src="/assets/icons/mail.svg"
+                          alt=""
+                        />
+                      </span>
+                    </div>
+
+                    <!-- Password field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="password">Password</label>
+
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="Enter password"
+                      />
+                      <span
+                        ><img
+                          class="lock-icon"
+                          src="/assets/icons/lock.svg"
+                          alt=""
+                        />
+                      </span>
+
+                      <span
+                        class="password-toggle"
+                        onclick="togglePasswordVisibility()"
+                      >
+                        <i class="fas fa-eye"></i>
+                      </span>
+                    </div>
+
+                    <!-- Remember me checkbox -->
+                    <div class="form-check check-forgot mt-2 mb-4">
+                      <div class="check-box">
+                        <input
+                          type="checkbox"
+                          class="form-check-input"
+                          id="remember"
+                        />
+                        <label class="form-check-label" for="remember"
+                          >Remember me</label
+                        >
+                      </div>
+
+                      <a href="#" class="forget-btn">Forgot password?</a>
+                    </div>
+
+                    <!-- Forgot password link -->
+
+                    <!-- Login button -->
+                    <button
+                      type="submit"
+                      class="btn submit-login btn-danger mt-2"
+                    >
+                      <a href=""></a>Login
+                    </button>
+                  </form>
+                </div>
+
+                <div id="forgetPasswordContainer">
+                  <form
+                    class="mt-3 forget-password-content"
+                    id="forgetPasswordForm"
+                  >
+                    <!-- Email field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="forgetEmail">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="forgetEmail"
+                        placeholder="Enter your email"
+                      />
+                      <span
+                        ><img
+                          class="lock-icon"
+                          src="/assets/icons/mail.svg"
+                          alt=""
+                      /></span>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button
+                      type="submit"
+                      class="btn submit-forget-password btn-primary mt-2"
+                    >
+                      Submit
+                    </button>
+                  </form>
+
+                  <form
+                    class="mt-3 otp-content"
+                    id="otpForm"
+                    style="display: none"
+                  >
+                    <!-- OTP field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="otp">Enter OTP</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="otp"
+                        placeholder="Enter the OTP you received"
+                      />
+                      <span
+                        ><img
+                          class="otp-icon"
+                          src="/assets/icons/otp.svg"
+                          alt=""
+                      /></span>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button
+                      type="submit"
+                      class="btn submit-otp btn-success mt-2"
+                    >
+                      Submit OTP
+                    </button>
+                  </form>
+
+                  <form
+                    class="mt-3 create-new-password-content"
+                    id="createPasswordForm"
+                    style="display: none"
+                  >
+                    <!-- New password field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="newPassword">New Password</label>
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="newPassword"
+                        placeholder="Enter your new password"
+                      />
+                      <span
+                        ><img
+                          class="lock-icon"
+                          src="/assets/icons/lock.svg"
+                          alt=""
+                      /></span>
+                    </div>
+
+                    <!-- Confirm password field -->
+                    <div class="form-group position-relative">
+                      <label class="mb-1" for="confirmPassword"
+                        >Confirm Password</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="confirmPassword"
+                        placeholder="Confirm your new password"
+                      />
+                      <span
+                        ><img
+                          class="lock-icon"
+                          src="/assets/icons/lock.svg"
+                          alt=""
+                      /></span>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button
+                      type="submit"
+                      class="btn submit-create-password btn-primary mt-2"
+                    >
+                      Create Password
+                    </button>
+                  </form>
+                </div>
+              </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="erp_login.js"></script>
+</html>
