@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+
+a{
+    text-decoration: none !important;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+ p,span,div{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  
+  }
+:root {
+  --body-bg-color: #ffffff;
+  --red: #8b0203;
+  --lightred: #9e2c2d;
+  black: #000000;
+  --light-green: #8ed7c6;
+  --grey: #3a3a33;
+  --light-grey: #8692a6;
+  --text-color: #084236;
+}
+@font-face {
+    font-family: "vi-regular";
+    src: url(/assets/fonts/Vi-Regular.otf);
+
+  }
+  
+  @font-face {
+    font-family: "vi-bold";
+    src: url(/assets/fonts/Vi-Bold.otf);
+  }
+  @font-face {
+    font-family: "vi-SemiBold";
+    src: url(/assets/fonts/Vi-SemiBold.otf);
+  }
+
+
+
+
+.ant-drawer-body {
+    padding: 24px;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0px 3px 8px 0px #0000003D;
+
+}
+
+.event-order-page{
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.ant-radio-inner {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ant-radio-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.ant-radio-inner:after {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: table;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red); /* Use your desired color */
+    border-radius: 50%;
+    content: "";
+    opacity: 0;
+}
+
+/* Hide the default radio button */
+
+
+
+.ant-radio-input:checked + .ant-radio-inner:after {
+    opacity: 1;
+}
+
+
+.styles_auctionConfigContainer__huK3U {
+    margin-bottom: 40px;
+}
+
+.ant-row {
+    position: relative;
+    height: auto;
+    margin-right: 0;
+    margin-left: 0;
+    zoom: 1;
+    display: block;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ant-form-item {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 0 24px;
+    padding: 0;
+    color: #334155;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum","tnum";
+    font-feature-settings: "tnum","tnum";
+    vertical-align: top;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.ant-row:before, .ant-row:after {
+    display: table;
+    content: "";
+}
+
+.ant-col {
+    position: relative;
+    min-height: 1px;
+}
+
+.ant-form-item-label {
+    display: inline-block;
+    overflow: hidden;
+    line-height: 39.9999px;
+    white-space: nowrap;
+    text-align: right;
+    vertical-align: middle;
+}
+
+.ant-form-item label {
+    position: relative;
+}
+
+.ant-form-item-label>label {
+    color: #000000d9;
+}
+
+.ant-form-item-required:before {
+    display: inline-block;
+    margin-right: 4px;
+    color: #ef4444;
+    font-size: 14px;
+    font-family: SimSun,sans-serif;
+    line-height: 1;
+    content: "*";
+}
+
+.ant-form-item-label>label:after {
+    content: ":";
+    position: relative;
+    top: -0.5px;
+    margin: 0 8px 0 2px;
+}
+
+.ant-form-item-control {
+    position: relative;
+    line-height: 40px;
+    zoom: 1;
+}
+
+.ant-form-item-children {
+    position: relative;
+}
+
+.pro-radio-tabs {
+    display: grid;
+    grid-gap: 8px 6px;
+}
+.pro-radio-tabs__tab__selected {
+    border-color: #1375e4;
+    background: rgba(19,117,228,.05);
+}
+
+.pro-radio-tabs__tab {
+    outline: none;
+    padding: 12px 24px 12px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.pro-radio-tabs__check-icon {
+    line-height: normal;
+    margin-right: 6px;
+}
+
+.ant-form-item label {
+    position: relative;
+}
+
+.ant-radio-wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 8px 0 0;
+    padding: 0;
+    color: #334155;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum","tnum";
+    font-feature-settings: "tnum","tnum";
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.ant-radio {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #334155;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum","tnum";
+    font-feature-settings: "tnum","tnum";
+    position: relative;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    vertical-align: sub;
+    outline: none;
+    cursor: pointer;
+}
+
+.ant-radio-input {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.ant-radio-checked .ant-radio-inner {
+    border-color: var(--red);
+}
+
+.ant-radio-inner {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    border-color: #e2e8f0;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 100px;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+}
+
+.ant-radio-checked .ant-radio-inner:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+}
+.ant-radio-checked::after {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--red);
+    border-radius: 50%;
+    visibility: hidden;
+    animation: 0.36s ease-in-out 0s 1 normal both running antRadioEffect;
+    content: "";
+}
+
+.ant-radio-inner:after {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    display: table;
+    width: 8px;
+    height: 8px;
+    background-color: var(--red);
+    border-top: 0;
+    border-left: 0;
+    border-radius: 8px;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+    -webkit-transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    transition: all .3s cubic-bezier(.78,.14,.15,.86);
+    content: " ";
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* .ant-radio-checked:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #1375e4;
+    border-radius: 50%;
+    visibility: hidden;
+    -webkit-animation: antRadioEffect .36s ease-in-out;
+    animation: antRadioEffect .36s ease-in-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    content: "";
+} */
+
+.styles_mainTabMenuOptions__41myZ {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.pro-body {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.pro-radio-tabs__tab {
+    outline: none;
+    padding: 12px 24px 12px 12px;
+    border: 1px solid #e8e8e8;
+    border-radius: 5px;
+    transition: all .3s;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pro-radio-tabs__check-icon {
+    line-height: normal;
+    margin-right: 6px;
+}
+
+.ant-radio-wrapper {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 8px 0 0;
+    padding: 0;
+    color: #334155;
+    font-size: 14px;
+    font-variant: tabular-nums;
+    line-height: 1.5;
+    list-style: none;
+    -webkit-font-feature-settings: "tnum","tnum";
+    font-feature-settings: "tnum","tnum";
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.ant-form-item label {
+    position: relative;
+}

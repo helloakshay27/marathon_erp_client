@@ -235,7 +235,9 @@ span.password-toggle i {
 
 div#forgetPasswordContainer {
   width: 50%;
-  margin: 0rem auto 30% auto;}
+  margin: 0rem auto 30% auto;
+
+}
 
 input#email,input#forgetEmail,input#newPassword,input#confirmPassword {
         background-repeat: no-repeat;
@@ -287,6 +289,11 @@ input#password {
 .forget-password-content h2 {
   font-weight: 400;
 }
+
+.back-btn a{
+  color: var(--grey);
+
+}
 .forget-password-content .back-btn a{
 color: var(--grey);
 }
@@ -305,9 +312,67 @@ color: var(--grey);
   background-color: var(--red) !important;
 }
 
+.mark-indicator{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: flex-start;
+}
+.pass-len,.pass-upp,.pass-num,.pass-char{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+.mark-indicator p {
+  color: var(--light-grey );
+  margin: 0;
+  font-size: 14px;
+}
 
+#createPasswordForm {
+  margin-top: 35vh;
+}
+.otp-content p{
+font-size: 0.9rem;
+}
+.otp-content p span{
+  color: var(--red);
+}
+.another-way{
+  margin-top: 30%;
+}
 
+form#otpForm {
+  margin-top: 40vh;
+}
+.another-way {
+  color: var(--light-grey);
+  font-size: 0.8px;
+  text-align: center;
+  margin-top: 30%;
+}
 
+.another-way a{
+      color: var(--red) !important;
+}
+
+@media screen and (max-width: 1200px) {
+  div#forgetPasswordContainer {
+    width: 60%;
+    margin: 0rem auto 30% auto;
+}
+
+form#otpForm,#createPasswordForm {
+  margin-top: 25vh;
+}
+
+.login-content p {
+
+  width: 70%;
+}
+
+  
+}
 
 
 
