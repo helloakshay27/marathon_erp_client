@@ -10,12 +10,19 @@
         // Toggle password visibility
         if (passwordInput.attr("type") === "password") {
             passwordInput.attr("type", "text");
-            $(this).html('<i class="fas fa-eye-slash"></i>');
+            $(this).html('<i class="fas fa-eye"></i>');
+
         } else {
             passwordInput.attr("type", "password");
-            $(this).html('<i class="fas fa-eye"></i>');
+            $(this).html('<i class="fas fa-eye-slash"></i>');
+
         }
     });
+
+
+
+
+    
 
 
 

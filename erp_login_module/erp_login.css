@@ -19,6 +19,27 @@ a{
     text-decoration: none !important;
 }
 
+h1,h2,h3,h4,h5,h6{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;}
+
+ p,span,div{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+:root {
+  --body-bg-color: #ffffff;
+  --red: #8b0203;
+  --lightred: #9e2c2d;
+  black: #000000;
+  --light-green: #8ed7c6;
+  --grey: #3a3a33;
+  --light-grey: #8692a6;
+  --text-color: #084236;
+}
 @font-face {
     font-family: "vi-regular";
     src: url(/assets/fonts/Vi-Regular.otf);
@@ -214,8 +235,7 @@ span.password-toggle i {
 
 div#forgetPasswordContainer {
   width: 50%;
-  margin: auto;
-}
+  margin: 0rem auto 30% auto;}
 
 input#email,input#forgetEmail,input#newPassword,input#confirmPassword {
         background-repeat: no-repeat;
@@ -237,3 +257,59 @@ input#password {
     top: 71%;
     transform: translateY(-50%);
 }
+
+.paganation-sec {
+  margin-bottom: 4rem;
+  align-items: baseline; 
+   justify-content: space-between;
+}
+
+.paganation {
+  flex-direction: column;
+  align-items: end;
+}
+
+.back-btn {
+  gap: 4px;
+}
+
+.submit-forget-password{
+  background-color: var(--red) !important;
+}
+
+
+.forget-password-content p {
+
+  color: var(--light-grey) !important;
+  
+}
+
+.forget-password-content h2 {
+  font-weight: 400;
+}
+.forget-password-content .back-btn a{
+color: var(--grey);
+}
+
+.paganation span{
+  color: var(--red);
+
+}
+
+.paganation p{
+  
+}
+
+
+.submit-otp,.submit-create-password{
+  background-color: var(--red) !important;
+}
+
+
+
+
+
+
+
+
+
