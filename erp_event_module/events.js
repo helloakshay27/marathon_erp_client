@@ -22,4 +22,19 @@ $(document).ready(function(){
         $(this).addClass('pro-radio-tabs__tab__selected');
         $(this).find('.ant-radio').addClass('ant-radio-checked');
     });
+
+
+
+
+    $('#RFQ-tab').click(function(){
+
+
+        $('.rfq-tab-hide').hide();
+    });
+
+    $('#Auction-tab').click(function(){
+
+
+        $('.rfq-tab-hide').show();
+    });
 });

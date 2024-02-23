@@ -1,0 +1,366 @@
+/* Event css start */
+:root {
+  --body-bg-color: #ffffff;
+  --red: #8b0203;
+  --lightred: #9e2c2d;
+  --black: #000000;
+  --light-green: #8ed7c6;
+  --grey: #3a3a33;
+  --light-grey: #8692a6;
+  --text-color: #084236;
+  --skyblue: #f1f7ff;
+  --filterBorder: #e2e8f0;
+  --eventD_border: #eeeeee;
+  --eventD_placeholder: #94a3b8;
+  --input-border: #9e9e9e;
+  --form-placeholder: #3a3a3a;
+}
+.main-div-k {
+  margin-right: 70px;
+}
+.event-parent {
+  margin-bottom: 30px;
+}
+.event-img1 {
+  height: 10px;
+  width: 10px;
+  margin: 0 10px 4px 0;
+}
+.event-img2 {
+  height: 12px;
+  width: 12px;
+  margin: 0 6px 4px 0;
+}
+.event-btn1 {
+  background-color: var(--red);
+  color: var(--body-bg-color);
+  padding: 4px 40px;
+  border-radius: 6.19px;
+  font-size: 14px;
+  font-weight: 500;
+  height: 31px;
+}
+.event-btn1-child {
+  background-color: var(--body-bg-color) !important;
+  color: var(--red) !important;
+  border: 1px solid var(--red);
+  padding: 4px 32px;
+}
+.event-btn2 {
+  padding: 0 10px;
+  background-color: var(--red);
+  border-radius: 6.19px;
+  height: 31px;
+}
+.event-btn2 img {
+  height: 16px;
+  width: 16px;
+}
+.event-btn3 {
+  background-color: var(--red);
+  color: var(--body-bg-color);
+  padding: 5px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6.19px;
+  padding: 0.4rem 1.2rem 0.4rem 1.2rem;
+}
+.custom-control-input:focus ~ .custom-control-label::before,
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:active ~ .custom-control-label::before,
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.custom-control-input-green:not(:disabled):active
+  ~ .custom-control-label::before {
+  border-color: var(--red) !important;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before,
+.custom-control-input:active ~ .custom-control-label::before,
+.custom-control-input:focus:not(:checked) ~ .custom-control-label::before,
+.custom-control-input-green:not(:disabled):active
+  ~ .custom-control-label::before {
+  background-color: var(--red) !important;
+}
+/* Event css end */
+
+/* Event details start */
+.eventList-parent {
+  overflow-y: auto;
+  /* height: 300px; */
+  height: 65vh;
+  padding-right: 5px;
+}
+.eventList-parent::-webkit-scrollbar {
+  width: 5px;
+  margin-left: 5px;
+}
+.eventList-parent::-webkit-scrollbar-thumb {
+  background-color: var(--red);
+  border-radius: 5px;
+}
+.eventList-main {
+  margin-top: 17px;
+}
+.eventList-child1 {
+  padding: 5px 27px;
+  background-color: var(--red);
+  display: flex;
+  color: var(--body-bg-color);
+  height: 29px;
+  font-size: 12px;
+  border-radius: 12px 12px 0px 0px;
+}
+.eventList-time {
+  letter-spacing: 1px;
+}
+.event-order-page .eventList-child2 {
+  background-color: var(--skyblue);
+  padding: 9px 17px;
+  border-radius: 12px 0px 12px 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 10px;
+}
+.event-order-page .eventList-p1 {
+  font-size: 12px;
+  font-weight: 500;
+}
+.event-order-page .eventList-p2 {
+  font-size: 14px;
+  font-weight: 600;
+}
+.event-order-page.eventList-p3 {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--body-bg-color);
+}
+.event-order-page .go-shadow-k {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 10px;
+}
+/* Event details end */
+
+/* Filter modal css start */
+.event-order-page .modal-title {
+  font-weight: 700;
+  font-size: 21px;
+}
+.event-order-page .modal.right .modal-dialog {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  margin: 0;
+  width: 350px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+}
+.event-order-page .modal.fade.right .modal-dialog {
+  transform: translate3d(100%, 0, 0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.event-order-page .modal.fade.right.show .modal-dialog {
+  transform: translate3d(0, 0, 0);
+}
+
+.event-order-page .btn-close {
+  --bs-btn-close-color: #000;
+  --bs-btn-close-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-left' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0'/%3e%3c/svg%3e");
+  --bs-btn-close-opacity: 1.5;
+  /* --bs-btn-close-hover-opacity: 0.75; */
+  --bs-btn-close-focus-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+  --bs-btn-close-focus-opacity: 1;
+  --bs-btn-close-disabled-opacity: 0.25;
+  --bs-btn-close-white-filter: invert(1) grayscale(100%) brightness(200%);
+  box-sizing: content-box;
+  width: 1em;
+  height: 1em;
+  padding: 0.25em 0.25em;
+  color: var(--bs-btn-close-color);
+  background: transparent var(--bs-btn-close-bg) center/1em auto no-repeat;
+  border: 0;
+  border-radius: 0.375rem;
+  opacity: var(--bs-btn-close-opacity);
+}
+.event-order-page .modal-backdrop {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.event-order-page .resetCSS {
+  color: var(--red);
+  font-weight: 500;
+  font-size: 13px;
+}
+.event-order-page .modal-p {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 0 8px 10px;
+}
+.event-order-page .modal-search {
+  width: 50%;
+  border: 1.5px solid var(--filterBorder);
+  border-radius: 5px;
+  margin: 0 10px;
+  padding: 0.4rem 0.8rem;
+}
+.event-order-page input.modal-search::placeholder {
+  /* color: #94a3b8 !important; */
+  color: var(--eventD_placeholder);
+  font-weight: 400;
+}
+
+.event-order-page .modal-search-btn {
+  background-color: var(--red);
+  color: var(--body-bg-color);
+  font-size: 17px;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+
+.event-order-page .modal-search-2 {
+  width: 95%;
+}
+.event-order-page .modal-switch {
+  height: 20px !important;
+  width: 40px !important;
+  border: 1px solid var(--black);
+}
+
+/* Filter modal css end */
+
+/* Event css end  */
+
+/* Event Details start */
+.event-order-page .eventD-main {
+  border: 1.5px solid #EEEEEEEE;
+}
+.event-order-page input.eventD-main::placeholder {
+  color: var(--eventD_placeholder);
+}
+.eventD-top {
+  border-bottom: 1px solid var(--red);
+}
+.event-order-page .eventD-forms {
+  width: 175px;
+  padding: 0.4rem 0.8rem 0.4rem 0.5rem;
+  border: 1px solid var(--red) !important;
+  border-radius: 4px;
+}
+.event-order-page select:required:invalid {
+  color: var(--form-placeholder);
+  font-size: 14px;
+}
+.event-order-page select,
+option {
+  color: var(--red);
+}
+.event-order-page .eventD-date {
+  border: 1px solid var(--red) !important;
+  width: 200px;
+  padding: 0.4rem 0.8rem 0.4rem 0.5rem;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+.event-order-page .input-with-icon {
+  position: relative;
+}
+.event-order-page .icon {
+  position: absolute;
+  right: 10px;
+  top: 50.5%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 16px;
+}
+.event-order-page input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+.event-order-page .eventD-formsP {
+  color: var(--input-border);
+  font-weight: 400;
+  font-size: 14px;
+  margin: 5px 0 0 2px;
+}
+/* Event Details end */
+
+/* evet_BuyEvents start */
+.event-order-page .buyEvent-forms {
+  border: 1px solid var(--input-border);
+}
+.event-order-page .buyEvent-th {
+  width: 11%;
+  color: var(--body-bg-color) !important;
+  background-color: var(--red) !important;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 500;
+  border-right: 2px solid var(--body-bg-color);
+  border-bottom: 0 !important;
+}
+.event-order-page .buyEvent-td {
+  font-size: 11px;
+  font-weight: 400;
+  border-top: 0;
+  border-right: 2px solid #e5e5e5;
+  text-align: center;
+}
+.buyEvent-mainBtn {
+  border: 1px solid var(--red);
+  margin: 10px 5px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 11px;
+}
+.buyEvent-mainBtn img {
+  height: 12px;
+  width: 12px;
+  margin-bottom: 3px;
+}
+.buyEvent-p {
+  color: var(--red);
+}
+
+.event-inputs {
+  gap: 6%;
+  align-items: center;
+}
+
+.styles_bottomNudge__FUsAV {
+  display: flex;
+  justify-content: end;
+  gap: 12px;
+  align-items: center;
+}
+
+.styles_bottomNudge__FUsAV .save-btn  {
+  padding: 0.4rem 1rem;
+  background: var(--red);
+  box-shadow: 0px 2.1875243186950684px 0px 0px #0000000b;
+  border-radius: 4px;
+  color: var(--body-bg-color);
+}
+
+.styles_bottomNudge__FUsAV .cancel-btn  {
+  border: 0.4px solid #8B0203;
+  padding: 0.4rem 1rem;
+  background: var(--body-bg-color);
+  box-shadow: 0px 2.1875243186950684px 0px 0px #0000000b;
+  border-radius: 4px;
+  color: var(--black);
+}
+
+.ant-form-item .delivery{
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.ant-form-item .delivery .label-date{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  gap: 6px;
+}
+/* evet_BuyEvents end */
+
+/* Events-Details-Participants start */
+
+/* Events-Details-Participants end */
