@@ -269,7 +269,7 @@ option {
   width: 15px;
   height: 16px;
 }
-.event-order-page input[type="date"]::-webkit-calendar-picker-indicator {
+.event-order-page .eventD-date input[type="date"]::-webkit-calendar-picker-indicator {
   display: none;
 }
 .event-order-page .eventD-formsP {
@@ -347,18 +347,10 @@ option {
   color: var(--black);
 }
 
-.ant-form-item .delivery{
-  display: flex;
-  align-items: baseline;
-  gap: 12px;
-}
 
-.ant-form-item .delivery .label-date{
-  display: flex;
-  flex-direction: column;
-  align-items: baseline;
-  gap: 6px;
-}
+
+
+
 /* Events-Details-Participants start */
 .eventList-time-btn {
   background-color: var(--body-bg-color);
@@ -511,6 +503,11 @@ padding: 2px 5px;
 
 .priceTrends-list-child {
 padding: 10px 131px 10px 10px;
+}
+
+input.delivery-date {
+  border: 1px solid #E2E8F0;
+  padding: 4px 10px;
 }
 /* Events-Details-Price trends end */
 

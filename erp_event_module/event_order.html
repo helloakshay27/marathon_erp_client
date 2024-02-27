@@ -199,7 +199,7 @@
         </nav>
 
         <div class="event-order-page">
-          <div class="w-100 buy_event ">
+          <div class="w-100 buy_event">
             <div class="d-flex mt-3 eventD-top pb-3 pt-2">
               <p class="mb-0 align-items-center modal-p d-flex">Event Title:</p>
               <input
@@ -208,9 +208,9 @@
                 type="text"
               />
             </div>
-            <div class="mt-3 mb-4 ">
+            <div class="mt-3 mb-4">
               <div>
-                <form class="event-inputs d-flex px-2 ">
+                <form class="event-inputs d-flex px-2">
                   <div>
                     <div class="d-flex mb-2">
                       <img
@@ -277,15 +277,15 @@
                     </div>
                   </div>
                   <div>
-                  <button class="event-btn3" style="margin-top: 33px">
-                    Publish Event
-                  </button>
-                </div>
+                    <button class="event-btn3" style="margin-top: 33px">
+                      Publish Event
+                    </button>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
-          <div class="ant-drawer-body ">
+          <div class="ant-drawer-body">
             <div class="styles_auctionConfigContainer__huK3U">
               <div class="ant-row ant-form-item">
                 <div class="ant-col ant-form-item-label">
@@ -304,9 +304,10 @@
                           class="pro-radio-tabs__tab pro-radio-tabs__tab__selected"
                           tabindex="0"
                           role="radio"
-                          aria-checked="true" id="Auction-tab"
+                          aria-checked="true"
+                          id="Auction-tab"
                         >
-                          <div class="pro-radio-tabs__check-icon" >
+                          <div class="pro-radio-tabs__check-icon">
                             <label
                               class="ant-radio-wrapper ant-radio-wrapper-checked"
                               ><span class="ant-radio ant-radio-checked"
@@ -330,7 +331,8 @@
                           class="pro-radio-tabs__tab"
                           tabindex="0"
                           role="radio"
-                          aria-checked="false" id="RFQ-tab"
+                          aria-checked="false"
+                          id="RFQ-tab"
                         >
                           <div class="pro-radio-tabs__check-icon">
                             <label class="ant-radio-wrapper"
@@ -350,7 +352,6 @@
                             </p>
                           </div>
                         </div>
-                    
                       </div></span
                     >
                   </div>
@@ -507,7 +508,7 @@
                   </div>
                 </div>
               </div>
-              <section class="ant-layout ">
+              <section class="ant-layout">
                 <main class="ant-layout-content">
                   <div>
                     <div class="ant-row ant-form-item">
@@ -583,96 +584,146 @@
                     <div
                       class="ant-row ant-form-item"
                       style="margin-bottom: 0px"
-                    >
-                      <div class="ant-col ant-form-item-control-wrapper">
-                        <div class="ant-form-item-control">
-                          <span class="ant-form-item-children rfq-tab-hide"
-                            ><label class="ant-checkbox-wrapper"
-                              ><span class="ant-checkbox"
-                                ><input
-                                  type="checkbox"
-                                  class="ant-checkbox-input"
-                                  value="" /><span
-                                  class="ant-checkbox-inner"
-                                ></span></span
-                            ></label>
-                            <p
-                              class="pro-text pro-body pro-text--normal"
-                              style="display: inline; margin-left: 8px"
-                            >
-                              Dynamic Event Extension
-                            </p></span
+                    ></div>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
+                        <div class="label-date">
+                          <label for="Datepicker" 
+                            >Dynamic Event Extension</label
                           >
+                          <label for="Datepicker " class="my-2"
+                            >Extend closing time in last 1 min in case of rank /
+                            price changes in top selected bids.</label
+                          >
+                          <span class="ant-radio d-flex gap-3">
+                            <input
+                              type="radio "
+                              tabindex="-1"
+                              class="ant-radio-input"
+                              value=""
+                              checked=""
+                            />
+                            <div class="pricerank d-flex gap-5 my-3">
+                              <div class="price d-flex gap-3">
+                                <span class="ant-radio-inner"> </span>
+                                <span>Price</span>
+                              </div>
+                              <div class="rank d-flex gap-3">
+                                <span class="ant-radio-inner"> </span>
+                                <span>Rank</span>
+                              </div>
+                            </div>
+                          </span>
+                          <div
+                            class="dynamic-time d-flex w-100 align-items-center gap-5"
+                          >
+                            <div class="trigger-time">
+                              <label for=""
+                                ><span class="star-symbol">*</span>Trigger time
+                                extension on last</label
+                              >
+                              <div class="time-range">
+                                <input type="text" />
+                                Min(s)
+                              </div>
+                            </div>
+                            <div class="extend-time">
+                              <label for=""
+                                ><span class="star-symbol">*</span>Extend time
+                                by</label
+                              >
+                              <div class="time-range">
+                                <input type="text" />
+                                Min(s)
+                              </div>
+                            </div>
+                            <div class="time-extention">
+                              <label for=""
+                                ><span class="star-symbol">*</span> Time
+                                extension on change in:</label
+                              >
+
+                              <div class="time-range">
+                                <select name="" id="">
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                </select>
+                                Min(s)
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="ant-row ant-form-item"
-                      style="margin-bottom: 0px"
-                    >
-                      <div class="ant-col ant-form-item-control-wrapper">
-                        <div class="ant-form-item-control">
-                          <span class="ant-form-item-children rfq-tab-hide "
-                            ><label
-                              class="ant-checkbox-wrapper"
-                              style="margin-bottom: 4px"
-                              ><span class="ant-checkbox"
-                                ><input
-                                  type="checkbox"
-                                  class="ant-checkbox-input"
-                                  value="" /><span
-                                  class="ant-checkbox-inner"
-                                ></span></span
-                            ></label>
-                            <p
-                              class="pro-text pro-body pro-text--normal"
-                              style="display: inline; margin-left: 8px"
-                            >
-                              Set minimum revisions to show Rank
-                            </p></span
+                    </form>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
+                        <div class="label-date">
+                          <label for="Datepicker"
+                            >Set minimum revisions to show Rank</label
                           >
+                          <input
+                            class="rank"
+                            placeholder="Enter Number of revisions required"
+                            type="text"
+                            name="delivery-date"
+                            id="Datepicker"
+                          />
                         </div>
                       </div>
-                    </div>
-                    <div
-                      class="ant-row ant-form-item"
-                      style="margin-bottom: 0px"
-                    >
-                    <div class="delivery">
-                        <span class="ant-radio"><input type="radio" tabindex="-1" class="ant-radio-input" value="" checked=""><span class="ant-radio-inner"></span></span>
+                    </form>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
                         <div class="label-date">
                           <label for="Datepicker">Delivery date</label>
-                          <input class="delivery-date" type="date" name="delivery-date" id="">
+                          <input
+                            class="delivery-date"
+                            placeholder="Select a date"
+                            type="date"
+                            name="delivery-date"
+                            id="Datepicker"
+                          />
                         </div>
-                    </div>
-                      <!-- <div class="ant-col ant-form-item-control-wrapper">
-                        <div class="ant-form-item-control">
-                          <span class="ant-form-item-children"
-                            ><label class="ant-radio-wrapper"
-                              ><span class="ant-radio"
-                                ><input
-                                  type=""radio
-                                  class="ant-radio-input"
-                                  value="" /><span
-                                  class="ant-radio-inner"
-                                ></span></span
-                            ></label>
-                            <p
-                              class="pro-text pro-body pro-text--normal"
-                              style="display: inline; margin-left: 8px"
-                            >
-                              Delivery Date
-                            </p></span
-                          >
-                        </div>
-                      </div> -->
-              
-                    </div>
+                      </div>
+                    </form>
                   </div>
                 </main>
               </section>
-              <div class="styles_bottomNudge__FUsAV ">
-                <button type="button" class="ant-btn cancel-btn" >
+              <div class="styles_bottomNudge__FUsAV">
+                <button type="button" class="ant-btn cancel-btn">
                   <span>Cancel</span></button
                 ><button type="button" class="ant-btn save-btn ant-btn-primary">
                   <span>Save</span>

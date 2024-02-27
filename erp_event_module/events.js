@@ -37,4 +37,14 @@ $(document).ready(function(){
 
         $('.rfq-tab-hide').show();
     });
+
+
+    $('.delivery .ant-radio').click(function() {
+        
+        $(this).addClass('ant-radio-checked');
+    });
+    
+
+
+
 });
