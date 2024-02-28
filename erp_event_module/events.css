@@ -74,17 +74,12 @@ div {
 }
 
 .event-order-page {
+  overflow: auto;
+
   width: 100%;
-  height: 100%;
+  height: 87vh;
   padding: 1rem 3rem;
 }
-
-
-
-
-
-
-
 
 .styles_auctionConfigContainer__huK3U {
   margin-bottom: 40px;
@@ -331,9 +326,6 @@ video {
   cursor: pointer;
 }
 
-
-
-
 *,
 *:before,
 *:after {
@@ -388,8 +380,6 @@ video {
   content: " ";
 }
 
-
-
 @keyframes antRadioEffect {
   0% {
     visibility: visible;
@@ -399,7 +389,6 @@ video {
     transform: scale(1);
   }
 }
-
 
 .ant-radio-input {
   position: absolute;
@@ -430,8 +419,6 @@ video {
 .ant-radio-checked .ant-radio-inner {
   border-color: var(--red);
 }
-
-
 
 .ant-radio-checked .ant-radio-inner:after {
   -webkit-transform: scale(1);
@@ -474,9 +461,7 @@ video {
   content: " ";
 }
 
-
 /* // DELIVERY CSS */
-
 
 .delivery .ant-radio-inner {
   position: relative;
@@ -510,8 +495,6 @@ video {
   content: " ";
 }
 
-
-
 @keyframes antRadioEffect {
   0% {
     visibility: visible;
@@ -521,7 +504,6 @@ video {
     transform: scale(1);
   }
 }
-
 
 .delivery .ant-radio-input {
   position: absolute;
@@ -546,14 +528,12 @@ video {
 
 /* Hide the default radio button */
 
- .delivery .ant-radio-input:checked + .ant-radio-inner:after {
+.delivery .ant-radio-input:checked + .ant-radio-inner:after {
   opacity: 1;
 }
 .delivery .ant-radio-checked .ant-radio-inner {
   border-color: var(--red);
 }
-
-
 
 .delivery .ant-radio-checked .ant-radio-inner:after {
   -webkit-transform: scale(1);
@@ -597,7 +577,7 @@ video {
 }
 
 .time-range input {
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   padding: 5px 10px;
   margin-top: 0.5rem;
   margin-right: 0.5rem;
@@ -608,37 +588,22 @@ video {
 }
 .time-range select {
   width: 100%;
-  border: 1px solid #E2E8F0;
+  border: 1px solid #e2e8f0;
   padding: 5px 10px;
   margin-top: 0.5rem;
   margin-right: 0.5rem;
 }
-.star-symbol{
+.star-symbol {
   color: var(--lightred);
   margin-right: 0.5rem;
   font-size: 1.4rem;
   vertical-align: middle;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 input.rank {
-    padding: 5px 10px;
-    border: 1px solid #E2E8F0;
-    width: 51%;
+  padding: 5px 10px;
+  border: 1px solid #e2e8f0;
+  width: 51%;
 }
 /* .ant-radio-checked:after {
     position: absolute;
@@ -709,21 +674,76 @@ input.rank {
   position: relative;
 }
 
-
 /* /// events Overview */
 
 .Erp-overview {
+  width: 100%;
   height: 90vh;
   overflow-y: auto;
 }
 
-.participate-sec{
+.Erp-overview a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  font-weight: 900;
+}
+.Erp-overview a span {
+  border: 1px solid #e2e8f0;
+  padding: 5px 8px;
+}
+
+.Erp-overview a span i {
+  font-size: 12px;
+}
+
+.total-activity span {
+  font-weight: 800;
+}
+
+.participate-sec {
   align-items: start;
   flex-direction: column;
   gap: 2rem;
 }
 
-.totals-activity , .rejected-bids{
+.totals-activity,
+.rejected-bids {
   align-items: center;
   gap: 10rem;
+}
+
+.deafut-sec {
+  align-items: center;
+}
+
+.saving-sec {
+  flex-direction: column;
+
+  gap: 7px;
+}
+
+.saving-ref {
+  gap: 12px;
+  display: flex;
+  padding: 0.5rem 2rem 0.5rem 1rem;
+  /* padding-right: 2rem; */
+  width: max-content;
+  border: 2px solid #e2e8f0;
+  flex-direction: column;
+}
+.default {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.saving-ref span {
+  font-weight: 700;
+}
+.saving-text {
+  color: #8c8c8c;
+}
+.deafut-sec {
+  justify-content: space-between;
 }

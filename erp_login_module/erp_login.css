@@ -22,7 +22,8 @@ a{
 h1,h2,h3,h4,h5,h6{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  font-style: normal;}
+  font-style: normal;
+}
 
  p,span,div{
     font-family: "Poppins", sans-serif;
@@ -34,7 +35,7 @@ h1,h2,h3,h4,h5,h6{
   --body-bg-color: #ffffff;
   --red: #8b0203;
   --lightred: #9e2c2d;
-  black: #000000;
+  --black: #000000;
   --light-green: #8ed7c6;
   --grey: #3a3a33;
   --light-grey: #8692a6;
@@ -59,6 +60,7 @@ h1,h2,h3,h4,h5,h6{
 .login_module {
   height: 100%;
   width: 100%;
+  overflow: hidden;
   }
 
 .login_bg{

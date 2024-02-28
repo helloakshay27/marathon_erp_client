@@ -416,7 +416,7 @@ margin: 2px 6px 4px 0;
 .event-participant-search-in {
   width: 20%;
   border: 1px solid var(--light-grey);
-  background: url(../erp_pages/img/search-dark.svg);
+  background: url(../erp_event_module/img/search-dark.svg);
   background-repeat: no-repeat;
   background-position-x: 96%;
   background-size: 7%;
