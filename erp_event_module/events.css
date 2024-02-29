@@ -676,11 +676,11 @@ input.rank {
 
 /* /// events Overview */
 
-.Erp-overview {
+/* .Erp-overview {
   width: 100%;
   height: 90vh;
   overflow-y: auto;
-}
+} */
 
 .Erp-overview a {
   display: flex;
@@ -778,3 +778,6 @@ input.rank {
   display: flex;
   justify-content: space-between;
 }
+
+
+
