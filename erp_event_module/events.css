@@ -747,3 +747,34 @@ input.rank {
 .deafut-sec {
   justify-content: space-between;
 }
+
+.card{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border-top:unset !important ;
+  border-left:unset !important ;
+  border-right:unset !important ;
+
+
+  border-bottom: 1px solid rgba(0,0,0,.125) !important;
+  border-radius: 0.25rem;
+}
+
+.btn-check:focus+.btn, .btn:focus {
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+.card.card-body {
+  padding: 2rem 2rem 2rem 3rem;
+}
+
+.saving-summary-btn{
+  display: flex;
+  justify-content: space-between;
+}

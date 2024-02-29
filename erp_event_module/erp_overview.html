@@ -203,15 +203,18 @@
                 role="button"
                 aria-expanded="false"
                 aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Participation
-                Summary</a
+                onclick="toggleIcon('participation-summary')"
               >
+                <span id="participation-summary-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Participation Summary
+              </a>
 
               <div
                 class="collapse multi-collapse participation-summary"
                 id="participation-summary"
               >
-                <div class="card card-body p-3">
+                <div class="card card-body">
                   <div class="participate-sec d-flex">
                     <div class="totals-activity d-flex">
                       <div class="total-activity">
@@ -257,15 +260,22 @@
             </div>
 
             <div class="col-12 my-3">
-              <a
-                class="btn"
-                data-bs-toggle="collapse"
-                href="#savings-summary"
-                role="button"
-                aria-expanded="false"
-                aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Savings Summary</a
-              >
+              <div class="saving-summary-btn">
+                <a
+                  class="btn"
+                  data-bs-toggle="collapse"
+                  href="#savings-summary"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="savings-summary"
+                  onclick="toggleIcon('savings-summary')"
+                >
+                  <span id="savings-summary-icon" class="icon"
+                    ><i class="fa-solid fa-plus"></i></span
+                  >Savings Summary
+                </a>
+                <span>View</span>
+              </div>
 
               <div
                 class="collapse multi-collapse savings-summary"
@@ -287,10 +297,10 @@
                             fill="#262626"
                           />
                         </svg>
-                       <span>Default</span> 
+                        <span>Default</span>
                       </div>
 
-                     <span>-</span> 
+                      <span>-</span>
                     </div>
 
                     <div class="saving-sec d-flex">
@@ -311,85 +321,83 @@
                 href="#bidding-summary"
                 role="button"
                 aria-expanded="false"
-                aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Bidding Summary</a
+                aria-controls="bidding-summary"
+                onclick="toggleIcon('bidding-summary')"
               >
+                <span id="bidding-summary-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Bidding Summary
+              </a>
 
               <div
                 class="collapse multi-collapse bidding-summary"
                 id="bidding-summary"
               >
-                <div class="card card-body p-3">
-                  <div class="container table-responsive py-5">
-                    <h4>Aggregate Lot Wise</h4>
-                    <table class="table table-bordered table-hover">
+                <div class="card card-body">
+                  <div class="container table-responsive pb-5">
+                    <h5>Aggregate Lot Wise</h5>
+                    <table class="table table-bordered table-hover mt-4">
                       <thead class="thead-dark">
                         <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
+                          <th scope="col">Rank</th>
+                          <th scope="col">Vendor Name</th>
+                          <th scope="col">Initial Quote</th>
+                          <th scope="col">Final Quote</th>
+                          <th scope="col">Rev Count</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">1</th>
                           <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
+                          <td>₹ 61,50,643.6</td>
+                          <td>₹ 61,50,643.6</td>
+                          <td>2</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
+                          <td>₹ 68,50,692.71</td>
+                          <td>₹ 61,50,643.6</td>
+                          <td>4</td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
+                          <td>₹ 61,50,643.6</td>
+                          <td>₹ 61,50,643.6</td>
+                          <td>5</td>
                         </tr>
                       </tbody>
                     </table>
-                    <h4>Line Item Wise</h4>
+                    <h5>Line Item Wise</h5>
                     <table class="table table-bordered table-hover">
                       <thead class="thead-dark">
                         <tr>
-                          <th scope="col">#</th>
-                          <th scope="col">First</th>
-                          <th scope="col">Last</th>
-                          <th scope="col">Handle</th>
+                          <th scope="col"></th>
+                          <th scope="col">Best  Market Price</th>
+                          <th scope="col">Rank 2 Market Price</th>
+                          <th scope="col">Rank 3 Market Price</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <th class="colspan-4">1</th>
+                          <th colspan="4">
+                            SITC of Electrical w...(As per Tec... - 1 Lumpsum)
+                          </th>
                         </tr>
 
                         <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
+                          <th scope="row">Vendor Name</th>
+                          <td>ELECTRIC PRIVATE LIM...</td>
+                          <td>AXIS ELECTRICAL COMPONENT...</td>
                           <td>@twitter</td>
                         </tr>
                         <tr>
-                          <th scope="row">4</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
+                          <th scope="row">Price Quoted</th>
+                          <td>₹ 52,12,409.83/Lumpsum</td>
+                          <td>Ampere Electrical Services</td>
+                          <td>₹ 1,40,58,103/Lumpsum</td>
                         </tr>
                       </tbody>
                     </table>
@@ -404,16 +412,20 @@
                 href="#product-sheet"
                 role="button"
                 aria-expanded="false"
-                aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Product Sheet</a
+                aria-controls="product-sheet"
+                onclick="toggleIcon('product-sheet')"
               >
+                <span id="product-sheet-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Product Sheet
+              </a>
 
               <div
                 class="collapse multi-collapse product-sheet"
                 id="product-sheet"
               >
-                <div class="card card-body p-3">
-                  <div class="container table-responsive py-5">
+                <div class="card card-body">
+                  <div class="container table-responsive">
                     <table class="table table-bordered table-hover">
                       <thead class="thead-dark">
                         <tr>
@@ -451,16 +463,19 @@
                 href="#terms-and-conditions"
                 role="button"
                 aria-expanded="false"
-                aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Terms and
-                Conditions</a
+                aria-controls="terms-and-conditions"
+                onclick="toggleIcon('terms-and-conditions')"
               >
+                <span id="terms-and-conditions-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Terms and Conditions
+              </a>
 
               <div
                 class="collapse multi-collapse terms-and-conditions"
                 id="terms-and-conditions"
               >
-                <div class="card card-body p-3">
+                <div class="card card-body">
                   <p>1. As per Mentioned in BOQ</p>
                 </div>
               </div>
@@ -472,10 +487,13 @@
                 href="#order-configurations"
                 role="button"
                 aria-expanded="false"
-                aria-controls="participation-summary"
-                ><span><i class="fa-solid fa-plus"></i></span>Order
-                Configurations</a
+                aria-controls="order-configurations"
+                onclick="toggleIcon('order-configurations')"
               >
+                <span id="order-configurations-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Order Configurations
+              </a>
 
               <div
                 class="collapse multi-collapse order-configurations"
@@ -529,8 +547,12 @@
                 role="button"
                 aria-expanded="false"
                 aria-controls="order-details"
-                ><span><i class="fa-solid fa-plus"></i></span>Order Details</a
+                onclick="toggleIcon('order-details')"
               >
+                <span id="order-details-icon" class="icon"
+                  ><i class="fa-solid fa-plus"></i></span
+                >Order Details
+              </a>
 
               <div
                 class="collapse multi-collapse order-details"
@@ -553,6 +575,7 @@
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"
   ></script>
+  <script src="/erp_event_module/events.js"></script>
 
   <script>
     const btnToggler = window.document.querySelector(".navbar-toggler");
