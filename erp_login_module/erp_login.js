@@ -41,7 +41,7 @@
         event.preventDefault();
 
         // Redirect to a particular HTML page
-        window.location.href = "/erp_home_module/erp_home.html";
+        window.location.hr";
     });
 
     $("#forgetPasswordForm").submit(function(event) {
