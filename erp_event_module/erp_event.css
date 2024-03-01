@@ -376,14 +376,14 @@ margin: 2px 6px 4px 0;
   font-size: 13px;
   font-weight: 700;
 }
-.event-participant-cardBtn {
+/* .event-participant-cardBtn {
   background-color: var(--body-bg-color);
   font-size: 12px;
   font-weight: 500;
   border-radius: 4px;
   margin: 0 0 0 10px;
   padding: 5px 14px 5px 14px;
-}
+} */
 .event-participant-btn {
   margin: 0 10px 0 0;
   padding: 5px 0px !important;
@@ -512,12 +512,13 @@ font-size: 15px;
 .priceTrends-list-child {
 padding: 10px 131px 10px 10px;
 }
-.pageChange {
+/* .pageChange {
   position: fixed !important;
   bottom: 0;
-  width: 87%;
+  width: 100%;
+  right: 46px;
   background-color: var(--body-bg-color);
-}
+} */
 /* .pagechange-child {
    width: 130px;
 } */
@@ -712,12 +713,10 @@ padding: 10px 131px 10px 10px;
   height: 13px;
 }
 /* Event view by product table start */
-.viewBy-mainTable {
-  width: 75%;
-  margin-top: 40px;
-}
+ 
 .viewBy-tHead {
-  height: 30vh;
+  /* height: 30vh; */
+  height: 30%!important;
   width: 20%;
   border: 1px solid var(--filterBorder);
 }
@@ -763,16 +762,6 @@ padding: 10px 131px 10px 10px;
   height: 25px;
   width: 20px;
 }
-.viewBy-tHead-btn {
-  width: 150px;
-  border: 1px solid var(--black);
-  border-radius: 7px;
-  width: 204px;
-  margin-top: 9vh;
-  padding: 5px 0;
-  font-size: 13px;
-  font-weight: 500;
-}
 .viewBy-tBody1-p {
   font-size: 13px;
   font-weight: 700;
@@ -810,6 +799,9 @@ padding: 10px 131px 10px 10px;
   color: var(--black)!important;
   font-weight: 500;
 }
+.accordion-button::after {
+  display: none!important;
+}
 .viewBy-collapT1-span {
   color: var(--light-grey)!important;
   padding-right: 10px;
@@ -825,11 +817,39 @@ padding: 10px 131px 10px 10px;
 .main-scroll-div {
   box-shadow: 0px 3px 8px 0px #0000003d;
   border-radius: 7px;
-  padding: 0.5rem 1rem 1.5rem 1rem;
-  height: 50vh;
+  padding: 0rem 1rem 1.5rem 1rem;
+  height: 54%;
   overflow-y:auto;
 }
 
 .Erp-overview table tr th,.Erp-overview table tr td{
   text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .main-scroll-div {
+    box-shadow: 0px 3px 8px 0px #0000003d;
+    border-radius: 7px;
+    padding: 0rem 1rem 1.5rem 1rem;
+    /* height: 60%; */
+    height: max-content;
+    overflow-y:auto;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .main-scroll-div {
+    box-shadow: 0px 3px 8px 0px #0000003d;
+    border-radius: 7px;
+    padding: 0rem 1rem 1.5rem 1rem;
+    height: 70%;
+    overflow-y:auto;
+  }
+}
+@media screen and (min-width: 1900px) {
+  .main-scroll-div {
+    box-shadow: 0px 3px 8px 0px #0000003d;
+    border-radius: 7px;
+    padding: 0rem 1rem 1.5rem 1rem;
+    height: 80%;
+    overflow-y:auto;
+  }
 }

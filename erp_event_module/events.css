@@ -75,10 +75,9 @@ div {
 
 .event-order-page {
   overflow: auto;
-
   width: 100%;
   height: 87vh;
-  padding: 1rem 3rem;
+  padding: 1rem 3rem 1rem 2rem;
 }
 
 .styles_auctionConfigContainer__huK3U {
@@ -769,7 +768,9 @@ input.rank {
   outline: 0;
   box-shadow: unset !important;
 }
-
+.accordion-button:focus {
+  box-shadow: unset !important;
+}
 .card.card-body {
   padding: 2rem 2rem 2rem 3rem;
 }

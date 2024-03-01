@@ -349,7 +349,7 @@ select:required:invalid {
   font-weight: 500;
   border-radius: 4px;
   margin: 0 0 0 10px;
-  padding: 3px 10px 3px 10px;
+  padding: 2px 10px 2px 10px;
 }
 .event-participant-btn {
   margin: 0 10px 0 0;
@@ -482,8 +482,10 @@ option {
 .pageChange {
   position: fixed !important;
   bottom: 0;
-  width: 87%;
+  width: 100%;
   background-color: var(--body-bg-color);
+  left: 0px;
+  padding-right: 45px;
 }
 /* .pagechange-child {
    width: 130px;
@@ -677,13 +679,8 @@ option {
 }
 /* Event view by product table start */
 .viewBy-mainTable {
-  width: 75%;
-  margin-top: 40px;
-}
-.viewBy-tHead {
-  height: 30vh;
-  width: 20%;
-  border: 1px solid var(--filterBorder);
+  width: 100%;
+  margin-top: 24px;
 }
 .viewBy-tHead-heading {
   height: 40px;
@@ -696,7 +693,7 @@ option {
   height: 33px;
   width: 36px;
   border: 1px dashed var(--black);
-  background-color: var(--light-grey);
+  background-color: var(--input-border);
   border-radius: 8px;
   text-align: center;
   font-size: 15px;
@@ -731,11 +728,26 @@ option {
   width: 150px;
   border: 1px solid var(--black);
   border-radius: 7px;
-  width: 204px;
-  margin-top: 9vh;
-  padding: 5px 0;
+  width: 223px;
+  margin-top: 25%;
+  padding: 1.5px 0;
   font-size: 13px;
   font-weight: 500;
+}
+.viewBy-tHead-btn2 {
+  margin-top: 8%;
+}
+.viewBy-bid-main {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0 10px 10px;
+}
+.viewBy-bid-main-p {
+  font-size: 12px;
+  font-weight: 500;
+  margin: 0;
+  display: flex;
+  align-items: center;
 }
 .viewBy-tBody1-p {
   font-size: 13px;
