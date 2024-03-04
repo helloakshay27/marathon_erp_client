@@ -33,8 +33,8 @@ textarea:focus fieldset input,
 select,
 .dropdown-toggle {
   outline: none !important;
-  border: none;
-  /* border: 1px solid #DDDDDD; */
+  border: none; 
+  border: 1px solid #DDDDDD;
 }
 
 a {
@@ -285,6 +285,8 @@ section .locked img {
 
 .site-content,
 .website-content {
+  height: 90vh;
+  
 
   flex: 1;
 }
@@ -2361,12 +2363,7 @@ input[type="checkbox"].violet-check {
   margin-bottom: 20px;
 }
 
-.form-control {
-  border: none;
-  border-radius: 0;
-  text-align: center;
-  color: #8c8c8c;
-}
+
 
 .createproject-btn {
   height: 35px;
@@ -3681,3 +3678,13 @@ span#required {
 .main-content{
   display: flex;
 }
+
+.form-control{
+  -webkit-appearance: auto;
+  appearance: auto;
+}
+
+.search-input .form-control{
+  appearance: none;
+
+} 
