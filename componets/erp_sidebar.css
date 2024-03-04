@@ -792,3 +792,9 @@ a {
   height: 100%;
   margin: auto;
 }
+/* querry for erp home */
+@media screen and (max-width: 1199px) {
+  .ant-layout {
+    background-color: red!important;
+  }
+}

@@ -263,7 +263,7 @@ input#password {
 }
 
 .paganation-sec {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
   align-items: baseline; 
    justify-content: space-between;
 }
@@ -280,7 +280,9 @@ input#password {
 .submit-forget-password{
   background-color: var(--red) !important;
 }
-
+.forget-password-content {
+  margin-top: 100px;
+}
 
 .forget-password-content p {
 
@@ -312,6 +314,7 @@ color: var(--grey);
 
 .submit-otp,.submit-create-password{
   background-color: var(--red) !important;
+  margin-top: 48px!important;
 }
 
 .mark-indicator{
@@ -363,7 +366,10 @@ form#otpForm {
     width: 60%;
     margin: 0rem auto 30% auto;
 }
-
+.submit-otp,.submit-create-password{
+  background-color: var(--red) !important;
+  margin-top: 20px;
+}
 form#otpForm,#createPasswordForm {
   margin-top: 25vh;
 }
@@ -372,9 +378,15 @@ form#otpForm,#createPasswordForm {
 
   width: 70%;
 }
-
+.paganation-sec {
+  margin-bottom: 0rem;
+  align-items: baseline; 
+   justify-content: space-between;
+   
+}
   
 }
+ 
 
 
 
