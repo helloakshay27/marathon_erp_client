@@ -485,7 +485,8 @@ input[type="checkbox"] {
 
 .tbl-container {
   overflow: auto;
-  height: 200px;
+  height: fit-content;
+  max-height: 200px;
   margin: 10px 0;
 }
 
@@ -3845,7 +3846,8 @@ label {
     width: 19.666667%;
 
 }
-
+.tbl-container {
+}
 .tbl-container tr{
   text-align: center;
 }
@@ -3853,3 +3855,58 @@ label {
 label span{
   color: red;
 }
+
+.mor {
+  BORDER: 1PX SOLID;
+  BORDER-RADIUS: 18PX;
+  MARGIN: 2REM;
+}
+
+/* MOR_approval css start */
+.mor-td {
+  border: 1px solid lightgray;
+  text-align: center;
+}
+.mor-table {
+  width: 100%;
+  height: 300px;
+  font-size: 14px!important;
+  overflow-y: scroll!important;
+   
+}
+.mor-btn {
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #0000;
+  background-color: lightgreen;
+}
+ .mor-table-main {
+  box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 3px;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+ }
+ .mor-th {
+  text-align: center;
+  border: 1px solid lightgray;
+  padding: 5px;
+ }
+
+ .mor-table-main {
+  box-shadow: rgba(0, 0, 0, 0.125) 0px 0px 1px, rgba(0, 0, 0, 0.2) 0px 1px 3px;
+  margin-bottom: 1rem;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.mor-table-main_apporval {
+  margin-bottom: 1rem;
+  padding: 20px 10px 10px 10px;
+  border-radius:10px;
+ }
+
+/* MOR_approval css end */
