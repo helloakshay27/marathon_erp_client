@@ -77,83 +77,172 @@
     <div class="main-content">
         <aside>
             <div class="sidebar sidebar_inner" id="mySidebar">
-                <p class="closebtn">
-                    <span class="material-symbols-outlined cancel" onclick="closeNav()">
-                        cancel
-                    </span>
-                </p>
-                <ul class="p-0">
-                    <!--  button for closing sidebar-->
-                    <div class="form-inline">
-                        <div class="input-group" data-widget="sidebar-search">
-                            <input class="form-control form-control-sidebar" type="search" placeholder="Search"
-                                aria-label="Search" />
-                            <div class="input-group-append">
-                                <button class="btn btn-sidebar">
-                                    <i class="fas fa-search fa-fw"></i>
-                                </button>
-                            </div>
-                        </div>
+              <p class="closebtn">
+                <span
+                  class="material-symbols-outlined cancel"
+                  onclick="closeNav()"
+                >
+                  cancel
+                </span>
+              </p>
+              <ul class="p-0">
+                <!--  button for closing sidebar-->
+                <div class="form-inline">
+                  <div class="input-group" data-widget="sidebar-search">
+                    <input
+                      class="form-control form-control-sidebar"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                      </button>
                     </div>
-
-                    <li class="nav-header">MOR</li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Snagging-ProjectStatus-Unit.html">
-                            <span class="text">Project Status</span>
+                  </div>
+                </div>
+  
+                <li class="nav-header">MOR</li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Snagging-ProjectStatus-Unit.html"
+                  >
+                    <span class="text">Material Order Request </span>
+                  </a>
+                </li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./snagging-Unit-Snag-List.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Material Issue Slip
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-observation.html"
+                  >
+                    <img alt="" src="../images/Snag.svg" /><span class="text"
+                      >Material Return Slip</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-observation.html"
+                  >
+                    <img alt="" src="../images/Snag.svg" /><span class="text"
+                      >Material Order Approval</span
+                    >
+                  </a>
+                </li>
+  
+                <li class="nav-header">MTO</li>
+  
+                <li class="nav-item">
+                  <div class="btn-group2">
+                    <a
+                      class="text nav-link dropdown-toggle asset-after"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      <img alt="" src="../images/OSR.svg" /><span class="text"
+                        >Material Transfer Request
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu" data-popper-placement="top-start">
+                      <li>
+                        <a href="./Snagging-Schedules-UnitOffer.html"
+                          >MTO Pending Approval
                         </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
-                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Unit Snag List
-                            </span>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
-                            <img alt="" src="../images/Snag.svg" /><span class="text">Observation</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-header">MTO</li>
-
-                    <li class="nav-item">
-                        <div class="btn-group2">
-                            <a class="text nav-link dropdown-toggle asset-after active" data-bs-toggle="dropdown"
-                                aria-expanded="true">
-                                <img alt="" src="../images/OSR.svg" /><span class="text">Material Transfer Request
-                                </span>
-                            </a>
-                            <ul class="dropdown-menu" data-popper-placement="top-start">
-                                <li>
-                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
-                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Attendance</span>
-                        </a>
-                    </li>
-
-                    <li class="nav-header">Procurement</li>
-
-                    <li class="nav-item"></li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
-                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Dashboard
-                            </span>
-                        </a>
-                    </li>
-                </ul>
+                      </li>
+                      <li>
+                        <a href="./Snagging-Schedules-DailyTask.html"
+                          >Daily Task</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >MTO Pending Approval</span
+                    >
+                  </a>
+                </li>
+  
+                <li class="nav-header">Procurement</li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/erp_home_module/erp_home.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Dashboard</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Events
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >PO
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Advance Note
+                    </span>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </aside>
+          </aside>
         <!-- sidebar ends above -->
 
         <!-- webpage conteaint start -->
