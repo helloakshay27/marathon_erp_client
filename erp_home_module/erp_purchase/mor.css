@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
 :root {
   --body-bg-color: #ffffff;
   --red: #8b0203;
@@ -13,6 +15,28 @@ body {
   font-size: 14px !important;
   overflow-x: hidden;
   color: black !important;
+}
+
+.website-content a{
+  color: var(--red);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+}
+h1,h2,h3,h4{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+h5{
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
 }
 
 .pointer {
@@ -289,9 +313,22 @@ section .locked img {
   width: max-content;
   z-index: 20;
   height: 90vh;
-  background: #2c001e;
+  /* background: #2c001e; */
+  background: var(--body-bg-color);
+
   padding-bottom: 100px;
   overflow-y: scroll;
+}
+.sidebar svg {
+  border-radius: 5px;
+  padding: 8px 8px;
+  width: 38px;
+  height: auto;
+  border: 1px solid var(--black);
+}
+
+.sidebar span.menu-link-text{
+  color: var(--black);
 }
 
 .site-content,
@@ -303,6 +340,7 @@ section .locked img {
 }
 
 .module-data-section {
+  padding: 1.5rem;
   margin-bottom: 20px;
 }
 
@@ -311,7 +349,7 @@ section .locked img {
   padding: 10px;
   text-decoration: none;
   /* color: #9FA5AD; */
-  color: white;
+  color: var(--black);
 }
 
 .sidebar ul li a .icon {
@@ -371,10 +409,9 @@ section .locked img {
 
 .sidebar .active,
 .sidebar ul li a:hover {
-  background-image: linear-gradient(to bottom right, #77216f, #39102e);
-  background-image: linear-gradient(to bottom right, #a58ea3, #39102e);
+background: var(--red);
   border-bottom: 1px solid #e95420;
-  color: #e95420 !important;
+  color: var(--body-bg-color);
 }
 
 a.purple-btn1:hover {
@@ -382,11 +419,11 @@ a.purple-btn1:hover {
 }
 
 .purple-btn1 {
-  padding: 5px 10px;
-  border: 2px solid #5e2750;
+  padding: 5px 1.5rem;
+  border: 2px solid var(--red);
   border-radius: 5px;
   color: white;
-  background-color: #5e2750;
+  background-color: var(--red);
   margin: 8px 8px 8px 0px;
 }
 .purple-btn1-addroom {
@@ -465,7 +502,7 @@ input[type="checkbox"] {
   border-bottom: 1px solid #f6eff4 !important;
 }
 
-.tbl-container td,
+
 .tbl-container th {
   padding: 5px 10px;
   min-height: 40px;
@@ -478,12 +515,28 @@ input[type="checkbox"] {
   min-height: 50px;
 }
 
-.tbl-container thead td,
-.tbl-container thead th {
+.tbl-container  td {
   border: 1px solid white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  padding: 10px 1rem;
+  font-style: normal;
+  font-size: 13px;
+}
+.tbl-container thead th {
+  background-color: var(--red);
+  border: 1px solid white;
+  color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 13px;
+
 }
 
 .tbl-container {
+  box-shadow: 0px 2.8828866481781006px 7.687697887420654px 0px #0000003D;
+
   overflow: auto;
   height: fit-content;
   max-height: 200px;
@@ -3670,16 +3723,39 @@ span#required {
 }
 
 .material-boxes .content-box {
-  background: lightgray;
-  border: 1px solid;
-  padding: 2px 5px;
+  border: 0.73px solid #8B0203B8;
+  padding: 7px 5px;
   border-radius: 7px;
+}
+.content-box .content-box-title{
+  font-family: Poppins;
+font-size: 17px;
+font-weight: 500;
+line-height: 25px;
+letter-spacing: 0em;
+text-align: center;
+margin: 0;
+
+
+}
+
+.content-box .content-box-sub{
+  margin: 0;
+
+  font-family: Poppins;
+font-size: 27px;
+font-weight: 500;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+
+
 }
 
 .sidebar_inner .nav-header {
   font-size: 1.5rem;
   padding: 0.5rem 0.75rem;
-  color: white;
+  color: var(--red);
 }
 
 .sidebar_inner .btn-sidebar i {
@@ -3846,6 +3922,14 @@ label {
     width: 19.666667%;
 
 }
+
+.separteinto5 .col-md-2{
+  flex: 0 0 auto;
+  width: 19.666667%;
+
+}
+
+
 .tbl-container {
 }
 .tbl-container tr{
@@ -4035,5 +4119,8 @@ padding-top: 10px;
   background-color: rgb(178, 176, 252);
   border: 1px solid lightgray;
 }
+
+
+
   /* PO for transfer order modal end */
 /* PO for transfer order end */
