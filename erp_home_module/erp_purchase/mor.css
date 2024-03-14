@@ -72,10 +72,6 @@ h5 {
   height: auto;
 }
 
-.closebtn {
-  display: flex;
-  margin: 7px auto 0 5px;
-}
 
 .left-1 ul{
   border-right: 1px solid var(--red);
@@ -437,9 +433,19 @@ section .locked img {
 }
 
 .closebtn {
-  display: none;
-  margin: 7px auto 0 5px;
+  /* display: none; */
+  display: flex;
+
+  margin: 0px 8px 0px auto !important;
 }
+
+.closebtn svg {
+  /* display: none; */
+border: none;
+width: 30px;
+padding: 4px 8px ;
+}
+
 
 .avatar,
 .avatar2 {
@@ -590,7 +596,8 @@ input[type="checkbox"] {
 }
 
 .tbl-container  td {
-  border: 1px solid white;
+  border: 1px solid #dfdfdf;
+  
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   padding: 10px 1rem;
@@ -3886,12 +3893,21 @@ border:  1px solid #ced4da;
 
 }
 
-.card {
-  border-radius: 14px;
+/* .card {
+  border-radius: 16px;
   padding: 0;
   box-shadow: 0 0 1px rgba(0,0,0,.125), 0 1px 3px rgba(0,0,0,.2);
   margin-bottom: 1rem;
+} */
+
+.card {
+  border-radius: 16px;
+  padding: 0;
+  box-shadow: 0 3px 8px #0000004d;
+  margin-bottom: 1rem;
 }
+
+
 
 .card-header {
   background-color: transparent;
