@@ -622,6 +622,7 @@ input[type="checkbox"] {
   height: fit-content;
   max-height: 200px;
   margin: 10px 0;
+padding: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -4168,10 +4169,7 @@ padding-top: 10px;
 .po-details-main-inputCheck {
   margin-top: 12px;
 }
-.po-fontBold {
-  font-size: 12px;
-  font-weight: 500;
-}
+
 .PO-details-main2 {
   margin-top: 20%;
   }

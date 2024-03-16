@@ -294,35 +294,7 @@
 
         <!-- webpage conteaint start -->
         <div class="website-content overflow-auto">
-          <section>
-            <ul class="justify-content-start">
-              <li>
-                <a class="px-4 mx-2" href="./Project-Setup.html ">Land</a>
-              </li>
-              <li>
-                <a class="px-4 mx-2" href="./Maintenance-AssetList.html"
-                  >Legal</a
-                >
-              </li>
-              <li>
-                <a class="px-4 mx-2" href="./Finance_CAM.html">Liaison </a>
-              </li>
-              <li><a class="px-4 mx-2" href="./CRM.html">Project</a></li>
-              <li><a class="px-4 mx-2" href="./CRM.html">Engg. </a></li>
-
-              <li>
-                <a class="px-4 mx-2 " href="./CRM.html">Purchase</a>
-              </li>
-
-              <li><a class="px-4 mx-2" href="./CRM.html">Sales</a></li>
-
-              <li><a class="px-4 mx-2" href="./CRM.html">Rental </a></li>
-
-              <li><a class="px-4 mx-2 active" href="./CRM.html">Store</a></li>
-              <li><a class="px-4 mx-2" href="./CRM.html">FM</a></li>
-              <li><a class="px-4 mx-2" href="./CRM.html">Security</a></li>
-            </ul>
-          </section>
+         
 
           <div class="module-data-section p-3">
             <a href="">Home > Store > Store Operations  > Sale Invoice > Sale Invoice List</a>
@@ -364,73 +336,92 @@
               </div>
             </div>
 
-            <div class="row my-4 align-items-center">
-              <div class="col-md-8 d-flex gap-4 align-items-center">
-                <div class="col-md-5">
-                  <div class="form-group d-flex align-items-center gap-4">
-                    <label>Project</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
-                    </select>
-                  </div>
+          
+            <div class="row my-4 separteinto5 align-items-end">
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Company</label>
+                  <select class="form-control select2" style="width: 100%">
+                    <option selected="selected">Alabama</option>
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
                 </div>
-                <div class="col-md-5 align-items-center">
-                  <div
-                    class="form-group form-group gap-4 d-flex align-items-center"
-                  >
-                    <label>Sub-Project</label>
-                    <select class="form-control">
-                      <option>option 1</option>
-                      <option>option 2</option>
-                      <option>option 3</option>
-                      <option>option 4</option>
-                      <option>option 5</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-md-2">
-                  <button
-                    class="purple-btn1"
-                    data-bs-toggle="modal"
-                    data-bs-target="#add-task"
-                  >
-                    Filter
-                  </button>
-                </div>
-              </div>
+                <!-- /.form-group -->
 
-              <div class="col-md-4">
-                <div class="offset-md-8 col-md-4">
-                  <button class="purple-btn1">
-                    <a
-                      style="color: white"
-                      href="./erp-material-order-request-create.html"
-                    >
-                      <span class="material-symbols-outlined align-text-top">
-                        add </span
-                      >Create Invoice
-                    </a>
-                  </button>
-                </div>
+                <!-- /.form-group -->
               </div>
+              <div class="col-md-2">
+                <div class="form-group">
+                  <label>Project <span>*</span></label>
+                  <select class="form-control select2" style="width: 100%">
+                    <option selected="selected">Alabama</option>
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
+                </div>
+                <!-- /.form-group -->
+
+                <!-- /.form-group -->
+              </div>
+              <!-- /.col -->
+              <div class="col-md-2">
+                <!-- /.form-group -->
+
+                <div class="form-group">
+                  <label>Sub-Project <span>*</span></label>
+                  <select class="form-control select2" style="width: 100%">
+                    <option selected="selected">Alabama</option>
+                    <option>Alaska</option>
+                    <option>California</option>
+                    <option>Delaware</option>
+                    <option>Tennessee</option>
+                    <option>Texas</option>
+                    <option>Washington</option>
+                  </select>
+                </div>
+                <!-- /.form-group -->
+              </div>
+              <div class="col-md-2">
+                <button class="purple-btn1 m-0">
+                <svg class="me-3" width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.830098 0.557129C0.564033 0.557129 0.31961 0.703714 0.194307 0.938426C0.0690032 1.17314 0.0832034 1.45779 0.231244 1.67887L5.72558 9.88378V17.6142C5.72558 17.8742 5.86556 18.114 6.0919 18.2418C6.31825 18.3696 6.59589 18.3656 6.81849 18.2314L9.04044 16.8915C9.25674 16.761 9.38898 16.5269 9.38898 16.2743V9.88465L14.8825 1.67879C15.0305 1.45771 15.0447 1.17308 14.9193 0.938386C14.794 0.703697 14.5496 0.557129 14.2836 0.557129H0.830098ZM7.04516 9.26374L2.18011 1.99857H12.9338L8.06935 9.26473C7.98993 9.38336 7.94753 9.52291 7.94753 9.66567V15.8673L7.16702 16.338V9.66475C7.16702 9.52196 7.12461 9.38239 7.04516 9.26374Z" fill="#8B0203"></path>
+                  </svg>
+                  
+                  Filter
+                </button>
+              </div>
+              <div class="col-md-2">
+                <button class="purple-btn2 m-0">
+                  <a style="color: white" href="./erp-material-order-request-create.html">
+                    <span class="material-symbols-outlined align-text-top me-2">
+                      add </span>Create Invoice
+                  </a>
+                </button>
+              </div>
+          
             </div>
 
             <div class="tbl-container me-2 mt-3">
               <table class="w-100">
                 <thead>
                   <tr>
-                    <td>Sr.No.</td>
-                    <td>Sale Invoice</td>
-                    <td>Date</td>
-                    <td>From Store</td>
-                    <td>Vendor</td>
-                    <td>Sale Value</td>
-                    <td>Status</td>
-                    <td>Action</td>
+                    <th>Sr.No.</th>
+                    <th>Sale Invoice</th>
+                    <th>Date</th>
+                    <th>From Store</th>
+                    <th>Vendor</th>
+                    <th>Sale Value</th>
+                    <th>Status</th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -523,7 +514,7 @@
               </select>
             </div>
             <!-- details / data section -->
-            <div class="row mx-2 my-4">
+            <di v class="row mx-2 my-4">
               <div class="col-lg-3 col-md-6 col-sm-12">
                 <div class="user-assoc-container">
                   <p class="text-violate fw-bold ms-2">SELECT TOWER</p>
@@ -626,7 +617,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </di>
           </div>
           <div class="modal-footer">
             <button class="purple-btn1 px-4 mx-auto">SET SCHEDULE</button>

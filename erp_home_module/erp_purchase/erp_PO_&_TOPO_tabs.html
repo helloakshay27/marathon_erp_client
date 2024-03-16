@@ -13,7 +13,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="../erp_purchase/mor.css" />
+    <link rel="stylesheet" href="mor.css" />
     <link rel="icon" type="image/x-icon"
         href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
 
@@ -181,169 +181,298 @@
             <!-- webpage conteaint start -->
             <div class="website-content overflow-auto">
 
+
                 <div class="module-data-section p-3">
-                    <a href="">Home > Store > Store Operations > GRN List</a>
-                    <h5 class="mt-3">Goods Received Note List</h5>
-                    <div class="material-boxes mt-3">
-                        <div class="container-fluid">
-                            <div class="row justify-content-between">
-                                <div class="col-md-2 text-center" style="opacity: 1">
-                                    <div class="content-box">
-                                        <h4 class="content-box-title">Total GRN</h4>
-                                        <p class="content-box-sub">50</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2" style="opacity: 1">
-                                    <div class="content-box text-center">
-                                        <h4 class="content-box-title">GRN for PO</h4>
-                                        <p class="content-box-sub">-</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2" style="opacity: 1">
-                                    <div class="content-box text-center">
-                                        <h4 class="content-box-title">GRN for MTO</h4>
-                                        <p class="content-box-sub">-</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2" style="opacity: 1">
-                                    <div class="content-box text-center">
-                                        <h4 class="content-box-title">GRN for Client Material</h4>
-                                        <p class="content-box-sub">-</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-2" style="opacity: 1">
-                                    <div class="content-box text-center">
-                                        <h4 class="content-box-title">Approval Pending</h4>
-                                        <p class="content-box-sub">4</p>
+                    <a href="">Home > Purchase > Procurement > Po Lost</a>
+                    <h5 class="mt-3">Purchase Order List</h5>
+                    <!-- Tab start -->
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                aria-selected="true">PO</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                                aria-selected="false">Topo</button>
+                        </li>
+                    </ul>
+                    <!--  -->
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="material-boxes mt-3">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-2 text-center" style="opacity: 1">
+                                            <div class="content-box">
+                                                <h4 class="content-box-title">Total</h4>
+                                                <p class="content-box-sub">30</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Pending</h4>
+                                                <p class="content-box-sub">1</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Created</h4>
+                                                <p class="content-box-sub">27</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Terminated</h4>
+                                                <p class="content-box-sub">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Amount Value</h4>
+                                                <p class="content-box-sub"> ₹2160</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="row my-4 align-items-center">
+                                <div class="col-md-8 d-flex gap-4 align-items-center">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Project <span>*</span></label>
+                                            <select class="form-control select2" style="width: 100%">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 align-items-center">
+                                        <div class="form-group">
+                                            <label>Sub-Project <span>*</span></label>
+                                            <select class="form-control select2" style="width: 100%">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <button class="purple-btn1" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            Filter
+                                        </button>
+                                    </div>
+                                </div>
 
-                    <div class="row my-4 separteinto5 align-items-end">
-                        <div class="col-md-2">
-                          <div class="form-group">
-                            <label>Company</label>
-                            <select class="form-control select2" style="width: 100%" fdprocessedid="wpwl6o">
-                              <option selected="selected">Alabama</option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                          <!-- /.form-group -->
-          
-                          <!-- /.form-group -->
-                        </div>
-                        <div class="col-md-2">
-                          <div class="form-group">
-                            <label>Project <span>*</span></label>
-                            <select class="form-control select2" style="width: 100%" fdprocessedid="tf6vyt">
-                              <option selected="selected">Alabama</option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                          <!-- /.form-group -->
-          
-                          <!-- /.form-group -->
-                        </div>
-                        <!-- /.col -->
-                        <div class="col-md-2">
-                          <!-- /.form-group -->
-          
-                          <div class="form-group">
-                            <label>Sub-Project <span>*</span></label>
-                            <select class="form-control select2" style="width: 100%" fdprocessedid="jboh88">
-                              <option selected="selected">Alabama</option>
-                              <option>Alaska</option>
-                              <option>California</option>
-                              <option>Delaware</option>
-                              <option>Tennessee</option>
-                              <option>Texas</option>
-                              <option>Washington</option>
-                            </select>
-                          </div>
-                          <!-- /.form-group -->
-                        </div>
-
-                        <div class="col-md-2">
-                            <!-- /.form-group -->
-            
-                            <div class="form-group">
-                              <label>Asset / Material<span></span></label>
-                              <select class="form-control select2" style="width: 100%" fdprocessedid="jboh88">
-                                <option selected="selected">Alabama</option>
-                                <option>Alaska</option>
-                                <option>California</option>
-                                <option>Delaware</option>
-                                <option>Tennessee</option>
-                                <option>Texas</option>
-                                <option>Washington</option>
-                              </select>
+                                <div class="col-md-4 mt-4">
+                                    <div class="offset-md-8 col-md-4">
+                                        <button class="purple-btn1">
+                                            <a href="./erp-material-order-request-create.html">
+                                                <span class="material-symbols-outlined align-text-top">
+                                                    add </span>Create
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <!-- /.form-group -->
-                          </div>
-                        <div class="col-md-2">
-                          <button class="purple-btn1 m-0" fdprocessedid="mfv10y">
-                          <svg class="me-3" width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.830098 0.557129C0.564033 0.557129 0.31961 0.703714 0.194307 0.938426C0.0690032 1.17314 0.0832034 1.45779 0.231244 1.67887L5.72558 9.88378V17.6142C5.72558 17.8742 5.86556 18.114 6.0919 18.2418C6.31825 18.3696 6.59589 18.3656 6.81849 18.2314L9.04044 16.8915C9.25674 16.761 9.38898 16.5269 9.38898 16.2743V9.88465L14.8825 1.67879C15.0305 1.45771 15.0447 1.17308 14.9193 0.938386C14.794 0.703697 14.5496 0.557129 14.2836 0.557129H0.830098ZM7.04516 9.26374L2.18011 1.99857H12.9338L8.06935 9.26473C7.98993 9.38336 7.94753 9.52291 7.94753 9.66567V15.8673L7.16702 16.338V9.66475C7.16702 9.52196 7.12461 9.38239 7.04516 9.26374Z" fill="#8B0203"></path>
-                            </svg>
-                            
-                            Filter
-                          </button>
-                        </div>
-                      </div>
-                      <div>
-                        <div class="col-md-2">
-                            <button class="purple-btn2 m-0" fdprocessedid="l4dph">
-                              <a style="color: white" href="./erp-material-order-request-create.html">
-                                <span class="material-symbols-outlined align-text-top me-2">
-                                  add </span>Create
-                              </a>
-                            </button>
-                          </div>
-                      </div>
+                            <div class="tbl-container me-2 mt-3">
+                                <table class="w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.</th>
+                                            <th>MTO No.</th>
+                                            <th>MOR No.</th>
+                                            <th>PO No.</th>
+                                            <th>Project</th>
+                                            <th>Project</th>
+                                            <th>Sub-Project</th>
+                                            <th>Store</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>MOR/MAR/MAX/101/02/2024</td>
+                                            <td>01-02-2024</td>
+                                            <td>01-02-2024</td>
+                                            <td>Consumption</td>
+                                            <td>Neo Valley</td>
+                                            <td>
+                                                <span class="status-warning"> Neo Valley- Building </span>
+                                            </td>
+                                            <td>STR 1</td>
+                                            <td>Draft</td>
+                                            <td>edit btn</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
-                    <div class="tbl-container me-2 mt-3">
-                        <table class="w-100">
-                            <thead>
-                                <tr>
-                                    <th>Sr.No.</th>
-                                    <th>GRN ID</th>
-                                    <th>PO\TO\CO No.</th>
-                                    <th>Supplier \ Vendor</th>
-                                    <th>To Store</th>
-                                    <th>Material / Asset Type</th>
-                                    <th>Delivery Challan</th>
-                                    <th>Date</th>
-                                    <th>Status</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>1</td>
-                                    <td>GRN 1</td>
-                                    <td>PO 1</td>
-                                    <td>Shreeram ceramics
-                                    </td>
-                                    <td>STR 1</td>
-                                    <td>Tiles</td>
-                                    <td>2421</td>
-                                    <td>06-03-2024</td>
-                                    <td>Received for Creatioh</td>
-                                </tr>
-                            </tbody>
-                        </table>
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">Topo</div>
+
+
                     </div>
+
+                    <div class="tab-content" id="pills-profile-tab">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="material-boxes mt-3">
+                                <div class="container-fluid">
+                                    <div class="row justify-content-between">
+                                        <div class="col-md-2 text-center" style="opacity: 1">
+                                            <div class="content-box">
+                                                <h4 class="content-box-title">Total</h4>
+                                                <p class="content-box-sub">30</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Pending</h4>
+                                                <p class="content-box-sub">1</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Created</h4>
+                                                <p class="content-box-sub">27</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Terminated</h4>
+                                                <p class="content-box-sub">2</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2" style="opacity: 1">
+                                            <div class="content-box text-center">
+                                                <h4 class="content-box-title">Amount Value</h4>
+                                                <p class="content-box-sub"> ₹2160</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row my-4 align-items-center">
+                                <div class="col-md-8 d-flex gap-4 align-items-center">
+                                    <div class="col-md-5">
+                                        <div class="form-group">
+                                            <label>Project <span>*</span></label>
+                                            <select class="form-control select2" style="width: 100%">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 align-items-center">
+                                        <div class="form-group">
+                                            <label>Sub-Project <span>*</span></label>
+                                            <select class="form-control select2" style="width: 100%">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 mt-4">
+                                        <button class="purple-btn1" data-bs-toggle="modal" data-bs-target="#add-task">
+                                            Filter
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4 mt-4">
+                                    <div class="offset-md-8 col-md-4">
+                                        <button class="purple-btn1">
+                                            <a href="./erp-material-order-request-create.html">
+                                                <span class="material-symbols-outlined align-text-top">
+                                                    add </span>Create
+                                            </a>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tbl-container me-2 mt-3">
+                                <table class="w-100">
+                                    <thead>
+                                        <tr>
+                                            <th>Sr.No.</th>
+                                            <th>MTO No.</th>
+                                            <th>MOR No.</th>
+                                            <th>PO No.</th>
+                                            <th>Project</th>
+                                            <th>Project</th>
+                                            <th>Sub-Project</th>
+                                            <th>Store</th>
+                                            <th>Status</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>MOR/MAR/MAX/101/02/2024</td>
+                                            <td>01-02-2024</td>
+                                            <td>01-02-2024</td>
+                                            <td>Consumption</td>
+                                            <td>Neo Valley</td>
+                                            <td>
+                                                <span class="status-warning"> Neo Valley- Building </span>
+                                            </td>
+                                            <td>STR 1</td>
+                                            <td>Draft</td>
+                                            <td>edit btn</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0"></div>
+
+
+                    </div>
+                    
+                    <!-- Tab end -->
+
+
+
+
+
                 </div>
 
                 <footer class="footer">

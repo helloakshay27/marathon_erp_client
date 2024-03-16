@@ -652,7 +652,7 @@
                     <div class="row my-4 align-items-center">
                         <div class="col-md-12 px-2">
                             <div class="head-material text-center">
-                                <h4>PO for New Material (Domastic)</h4>
+                                <h4>PO for New Material (Import)</h4>
                             </div>
 
                             <div class="mor-tabs mt-4">
@@ -863,9 +863,23 @@
 
                                                             <div class="col-md-4 mt-0">
                                                                 <div class="form-group">
-                                                                    <label class="po-fontBold">Branch</label>
+                                                                    <label class="po-fontBold">Form Applicable</label>
                                                                     <input class="form-control" type="text"
-                                                                        placeholder="Kurla, Mumbai" />
+                                                                        placeholder="Form" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mt-0">
+                                                                <div class="form-group">
+                                                                    <label class="po-fontBold">PO Currency</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="$ USD" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-4 mt-0">
+                                                                <div class="form-group">
+                                                                    <label class="po-fontBold">Conversion Rate</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="82.77 INR" />
                                                                 </div>
                                                             </div>
 
@@ -983,8 +997,8 @@
                                                                 <th>Material Attributes</th>
                                                                 <th>PO Qty
                                                                 </th>
-                                                                <th>Material Rate</th>
-                                                                <th>Material Cost</th>
+                                                                <th colspan="2">Material Rate</th>
+                                                                <th colspan="2">Material Cost</th>
                                                                 <th>Tax Addition</th>
                                                                 <th>Total Changes
                                                                 </th>
@@ -1008,12 +1022,14 @@
                                                                     data-bs-toggle="modal" data-bs-target="#cozyModal">
                                                                     Attributes</td>
                                                                 <td>40</td>
-                                                                <td>15</td>
-                                                                <td>600</td>
+                                                                <td>USD 0.24</td>
+                                                                <td>INR 20</td>
+                                                                <td>USD 9.67</td>
+                                                                <td>INR 800</td>
                                                                 <td>108</td>
                                                                 <td>708</td>
                                                                 <td>0</td>
-                                                                <td>-</td>
+                                                                <td></td>
                                                                 <td>708</td>
                                                                 <td>0</td>
                                                                 <td class="text-decoration-underline"
@@ -1032,27 +1048,35 @@
                                                         <table class="w-100">
                                                             <thead>
                                                                 <tr>
-                                                                    <th>Tax / Charge Type</th>
-                                                                    <th>Amount</th>
+                                                                    <th rowspan="2">Tax / Charge Type</th>
+                                                                    <th colspan="2">Amount</th>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th>INR</th>
+                                                                    <th>USD</th>
                                                                 </tr>
 
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
                                                                     <td>Total Base Cost</td>
-                                                                    <td>600</td>
+                                                                    <td>800</td>
+                                                                    <td>9.67</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>SGST</td>
-                                                                    <td>54</td>
+                                                                    <td>Custom Duty</td>
+                                                                    <td>400</td>
+                                                                    <td>4.83</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <td>CGST</td>
-                                                                    <td>54</td>
+                                                                    <td>C & F Charges</td>
+                                                                    <td>30.4</td>
+                                                                    <td>0.37</td>
                                                                 </tr>
                                                                 <tr>
-                                                                    <th>Total All Incl. Cost</th>
-                                                                    <th>708</th>
+                                                                    <td class="fw-bold">Total All Incl. Cost</td>
+                                                                    <td class="fw-bold">1230.4</td>
+                                                                    <td class="fw-bold">14.87</td>
                                                                 </tr>
 
                                                             </tbody>
@@ -1060,7 +1084,7 @@
                                                     </div>
 
 
-                                                    <div class=" ">
+                                                    <div class="d-flex justify-content-between ">
                                                         <h3 class=" ">Other Cost</h3>
 
                                                         <div class="card-tools">
@@ -1172,20 +1196,11 @@
                                                             </thead>
                                                             <tbody>
                                                                 <tr>
-                                                                    <!-- <td colspan="6">No Records Found.
-                                                                    </td> -->
-                                                                    <td>CGST</td>
-                                                                    <td colspan="2">INR 0.00</td>
-                                                                    <td><input type="checkbox"></td>
-                                                                    <td colspan="2"><textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea></td>
-                                                                </tr>
-                                                                <tr>
-                                                                    <td>SGST</td>
-                                                                    <td colspan="2">INR 0.00</td>   
-                                                                    <td><input type="checkbox"></td>
-                                                                    <td colspan="2"><textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea></td>
+                                                                    <td colspan="6">No Records Found.
+                                                                    </td>
                                                                 </tr>
                                                             </tbody>
+                                                            
                                                         </table>
                                                     </div>
 
@@ -1196,12 +1211,25 @@
                                                                     <th colspan="6">Charges (Exclusive)</th>
                                                                 </tr>
                                                             </thead>
+                                                             
                                                             <tbody>
                                                                 <tr>
-                                                                    <td>OTHER CHARGES</td>
-                                                                    <td colspan="2">INR 0.00</td>   
+                                                                    <!-- <td colspan="6">No Records Found.
+                                                                    </td> -->
+                                                                    <td>CGST</td>
+                                                                    <td colspan="2">INR 0.00</td>
                                                                     <td><input type="checkbox"></td>
-                                                                    <td colspan="2"><textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea></td>
+                                                                    <td colspan="2"><textarea class="form-control"
+                                                                            id="exampleFormControlTextarea1"
+                                                                            rows="2"></textarea></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>SGST</td>
+                                                                    <td colspan="2">INR 0.00</td>
+                                                                    <td><input type="checkbox"></td>
+                                                                    <td colspan="2"><textarea class="form-control"
+                                                                            id="exampleFormControlTextarea1"
+                                                                            rows="2"></textarea></td>
                                                                 </tr>
                                                             </tbody>
                                                         </table>
@@ -1234,13 +1262,13 @@
                                                         </div>
 
                                                         <div class="row">
-                                                            <div class="col-md-6 mt-0">
+                                                            <!-- <div class="col-md-6 mt-0">
                                                                 <div class="form-group">
                                                                     <label class="po-fontBold">Retention (%)</label>
                                                                     <input class="form-control" type="text"
                                                                         placeholder="0" />
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="col-md-6 mt-0">
                                                                 <div class="form-group">
                                                                     <label class="po-fontBold">Supplier Advance
@@ -1249,13 +1277,13 @@
                                                                         placeholder="INR 0.00" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6 mt-0">
+                                                            <!-- <div class="col-md-6 mt-0">
                                                                 <div class="form-group">
                                                                     <label class="po-fontBold">Retention Amount</label>
                                                                     <input class="form-control" type="text"
                                                                         placeholder="INR 0.00" />
                                                                 </div>
-                                                            </div>
+                                                            </div> -->
                                                             <div class="col-md-6 mt-0">
                                                                 <div class="form-group">
                                                                     <label class="po-fontBold">Service Certificate
@@ -1408,7 +1436,7 @@
                                                             <button class="btn btn-secondary dropdown-toggle"
                                                                 type="button" data-bs-toggle="dropdown"
                                                                 aria-expanded="false">
-                                                                MTO for PO
+                                                                 PO Draft
                                                             </button>
                                                             <ul class="dropdown-menu">
                                                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -1424,8 +1452,8 @@
                                                         <button class="endBtn-sales2">Draft</button>
                                                     </div>
                                                 </div>
-                                                <div class="tab-pane fade" id="nav-amendment-tab"
-                                                    role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                                                <div class="tab-pane fade" id="nav-amendment-tab" role="tabpanel"
+                                                    aria-labelledby="nav-home-tab" tabindex="0">
                                                     Amendment Details
                                                 </div>
                                             </div>
