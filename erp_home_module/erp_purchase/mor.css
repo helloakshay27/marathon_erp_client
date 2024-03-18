@@ -23,18 +23,22 @@ body {
 
 .website-content a{
   color: var(--red);
-  font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-
-
 }
+
+.nav-link{
+  color: var(--red);
+}
+
+
 h1,h2,h3,h4{
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 
 }
+
 h5{
 
   font-family: "Poppins", sans-serif;
@@ -512,6 +516,15 @@ a.purple-btn1:hover {
   background-color: var(--red);
   margin: 8px 8px 8px 0px;
 }
+
+.purple-btn2 a {
+
+  color: var(--body-bg-color) ;
+
+}
+
+
+
 
 
 
