@@ -4060,6 +4060,40 @@ label {
   width: 19.666667%;
 
 }
+.separteinto7 .col-md-2 {
+  flex: 0 0 auto;
+  width: 14%;
+}
+
+.pro-radio-tabs {
+  display: grid;
+  grid-gap: 8px 6px;
+}
+.pro-radio-tabs__tab__selected {
+  border: 1px solid #8b0203 !important;
+  background: rgba(19, 117, 228, 0.05);
+}
+
+.pro-radio-tabs__tab {
+  outline: none;
+  padding: 12px 24px 12px 12px;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  transition: all 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.pro-radio-tabs__check-icon {
+  line-height: normal;
+  margin-right: 6px;
+}
+
+
 
 
 .tbl-container {

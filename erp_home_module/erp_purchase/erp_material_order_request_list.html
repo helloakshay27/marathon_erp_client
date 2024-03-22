@@ -547,7 +547,7 @@
 
             <div class="left-2 mt-3" id="mySidebar">
               <button class="closebtn purple-btn2 px-2 ml-auto">
-                <svg 
+                <svg
                   width="20"
                   height="21"
                   viewBox="0 0 20 21"
@@ -1101,9 +1101,10 @@
           <div class="module-data-section p-4">
             <a href="">Home > Purchase > MOR > Material Order Request list</a>
             <h5 class="mt-4">Material Order Request List</h5>
+
             <div class="material-boxes mt-3">
               <div class="container-fluid">
-                <div class="row justify-content-between">
+                <div class="row separteinto7 justify-content-between">
                   <div class="col-md-2 text-center" style="opacity: 1">
                     <div class="content-box">
                       <h4 class="content-box-title">Total</h4>
@@ -1112,31 +1113,76 @@
                   </div>
                   <div class="col-md-2" style="opacity: 1">
                     <div class="content-box text-center">
-                      <h4 class="content-box-title">Total</h4>
+                      <h4 class="content-box-title">Draft</h4>
                       <p class="content-box-sub">150</p>
                     </div>
                   </div>
                   <div class="col-md-2" style="opacity: 1">
                     <div class="content-box text-center">
-                      <h4 class="content-box-title">Total</h4>
+                      <h4 class="content-box-title">Pending for Approval</h4>
+                      <p class="content-box-sub">150</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-2" style="opacity: 1">
+                    <div class="content-box text-center">
+                      <h4 class="content-box-title">Self Overdue</h4>
                       <p class="content-box-sub">150</p>
                     </div>
                   </div>
                   <div class="col-md-2" style="opacity: 1">
                     <div class="content-box text-center">
-                      <h4 class="content-box-title">Total</h4>
+                      <h4 class="content-box-title">Approved</h4>
                       <p class="content-box-sub">150</p>
                     </div>
                   </div>
                   <div class="col-md-2" style="opacity: 1">
                     <div class="content-box text-center">
-                      <h4 class="content-box-title">Total</h4>
+                      <h4 class="content-box-title">Rejected</h4>
+                      <p class="content-box-sub">150</p>
+                    </div>
+                  </div>
+                  <div class="col-md-2" style="opacity: 1">
+                    <div class="content-box text-center">
+                      <h4 class="content-box-title">Sent for MTO</h4>
                       <p class="content-box-sub">150</p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
+            <div class="row mt-3">
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio1" />
+                    <label class="form-check-label">Unfulfilled PO / MTO</label>
+                  </div>
+             
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio1" />
+                    <label class="form-check-label">Unfulfilled Issue</label>
+                  </div>
+             
+                </div>
+              </div>
+              <div class="col-sm-2">
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="radio1" />
+                    <label class="form-check-label">All</label>
+                  </div>
+             
+                </div>
+              </div>
+            </div>
+           
 
             <div class="row my-4 separteinto5 align-items-end">
               <div class="col-md-2">
@@ -1192,14 +1238,23 @@
                 <!-- /.form-group -->
               </div>
               <div class="col-md-2 mt-4">
-                <button
-                  class="purple-btn1 m-0"
-                  
-                >
-                <svg class="me-3" width="15" height="19" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0.830098 0.557129C0.564033 0.557129 0.31961 0.703714 0.194307 0.938426C0.0690032 1.17314 0.0832034 1.45779 0.231244 1.67887L5.72558 9.88378V17.6142C5.72558 17.8742 5.86556 18.114 6.0919 18.2418C6.31825 18.3696 6.59589 18.3656 6.81849 18.2314L9.04044 16.8915C9.25674 16.761 9.38898 16.5269 9.38898 16.2743V9.88465L14.8825 1.67879C15.0305 1.45771 15.0447 1.17308 14.9193 0.938386C14.794 0.703697 14.5496 0.557129 14.2836 0.557129H0.830098ZM7.04516 9.26374L2.18011 1.99857H12.9338L8.06935 9.26473C7.98993 9.38336 7.94753 9.52291 7.94753 9.66567V15.8673L7.16702 16.338V9.66475C7.16702 9.52196 7.12461 9.38239 7.04516 9.26374Z" fill="#8B0203"/>
+                <button class="purple-btn1 m-0">
+                  <svg
+                    class="me-3"
+                    width="15"
+                    height="19"
+                    viewBox="0 0 15 19"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0.830098 0.557129C0.564033 0.557129 0.31961 0.703714 0.194307 0.938426C0.0690032 1.17314 0.0832034 1.45779 0.231244 1.67887L5.72558 9.88378V17.6142C5.72558 17.8742 5.86556 18.114 6.0919 18.2418C6.31825 18.3696 6.59589 18.3656 6.81849 18.2314L9.04044 16.8915C9.25674 16.761 9.38898 16.5269 9.38898 16.2743V9.88465L14.8825 1.67879C15.0305 1.45771 15.0447 1.17308 14.9193 0.938386C14.794 0.703697 14.5496 0.557129 14.2836 0.557129H0.830098ZM7.04516 9.26374L2.18011 1.99857H12.9338L8.06935 9.26473C7.98993 9.38336 7.94753 9.52291 7.94753 9.66567V15.8673L7.16702 16.338V9.66475C7.16702 9.52196 7.12461 9.38239 7.04516 9.26374Z"
+                      fill="#8B0203"
+                    />
                   </svg>
-                  
+
                   Filter
                 </button>
               </div>
@@ -1222,49 +1277,61 @@
                 <thead>
                   <tr>
                     <th>Sr.No.</th>
+                    <th>Company</th>
+                    <th>Project</th>
+                    <th>Sub-Project</th>
                     <th>MOR No.</th>
                     <th>MOR Date</th>
                     <th>Created On</th>
+                    <th>Approval Date</th>
+                    <th>Activity</th>
                     <th>Consumption Category</th>
-                    <th>Project</th>
-                    <th>Sub-Project</th>
-                    <th>Store</th>
+                    <th>Material Type</th>
+
                     <th>Status</th>
-                    <th>Action</th>
+                    <th>Due Date</th>
+
+                    <th>Overdue</th>
+                    <th>Due At</th>
+
+                    <th>PO Short Closed</th>
+
+
+
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>MOR/MAR/MAX/101/02/2024</td>
-                    <td>01-02-2024</td>
-                    <td>01-02-2024</td>
-                    <td>Consumption</td>
+                    <td></td>
                     <td>Neo Valley</td>
-                    <td>
-                      <span class="status-warning"> Neo Valley- Building </span>
+                    <td></td>
+                    <td>MOR/MAR/MAX/101/02/2024
                     </td>
-                    <td>STR 1</td>
-                    <td>Draft</td>
+                    <td>01-02-2024
+                    </td>
                     <td>
-                      <button class="purple-btn1" id="edit_action">
-                        <svg
-                          width="16"
-                          height="15"
-                          viewBox="0 0 16 15"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M1.05365 15.0054C1.1224 15.0054 1.19116 15.0054 1.29429 14.971L4.18191 14.3178C4.38817 14.2834 4.56005 14.1803 4.69756 14.0428L13.2573 5.48306L14.5292 4.21112C14.8386 3.90174 15.0105 3.48922 15.0105 3.0767C15.0105 2.66418 14.8386 2.25166 14.5292 1.94227L14.048 1.461L13.0511 0.464083C12.4323 -0.154694 11.401 -0.154694 10.7822 0.464083L0.95052 10.2958C0.813014 10.4333 0.709884 10.6052 0.675508 10.8114L0.0223539 13.699C-0.115152 14.3522 0.400496 15.0054 1.05365 15.0054ZM11.2635 0.945355C11.6072 0.601589 12.226 0.601589 12.5698 0.945355L13.5323 1.9079L14.0136 2.38917C14.3917 2.76731 14.3917 3.35171 14.0136 3.69548L13.2229 4.48614L10.4384 1.70164L11.2635 0.945355ZM0.709884 13.8709L1.36304 10.9833C1.36304 10.9145 1.39741 10.8458 1.46617 10.8114L10.0259 2.25166L12.8104 5.03616L4.21629 13.5615C4.18191 13.5959 4.11316 13.6303 4.04441 13.6647C4.04441 13.6647 1.15678 14.2834 1.15678 14.3178C0.881767 14.3522 0.641131 14.1116 0.709884 13.8709Z"
-                            fill="#8B0203"
-                          />
-                          <path
-                            d="M5.83009 9.53988C5.93322 9.53988 6.00198 9.50551 6.07073 9.43675L8.51146 6.99602C8.64897 6.85852 8.64897 6.65226 8.51146 6.51475C8.37396 6.37724 8.1677 6.37724 8.03019 6.51475L5.58946 8.95548C5.45195 9.09299 5.45195 9.29925 5.58946 9.43675C5.65821 9.50551 5.72696 9.53988 5.83009 9.53988Z"
-                            fill="#8B0203"
-                          />
-                        </svg>
-                      </button>
+                       01-02-2024
+                    </td>
+                    <td></td>
+                    <td>Tiling</td>
+                    <td>Consumption</td>
+                    <td>Tiles</td>
+
+                    <td>Draft</td>
+                    <td>18-03-2024
+                    </td>
+
+                    <td>3
+                    </td>
+                    <td>Sandeep
+
+                    </td>
+
+
+
+                    <td>
+                 
                     </td>
                   </tr>
                 </tbody>
