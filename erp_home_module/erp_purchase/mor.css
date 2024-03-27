@@ -103,6 +103,15 @@ h5 {
   justify-content: center;
 }
 
+.left-1 .search-main {
+  width: 100%;
+
+  border: 1px solid var(--red);
+  padding: 16px 7px;
+}
+
+.left-1 svg.search-og {border: none;width: 18px;padding: 0px;}
+
 .collapse-logo {
   padding-left: 23px;
   transition: transform 0.3s ease-in-out;
@@ -3921,15 +3930,37 @@ border:  1px solid #ced4da;
   margin-bottom: 1rem;
 }
 
-
+.collapsed svg {
+  transform: rotate(-60deg);
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
 
 .card-header {
   background-color: transparent;
   border-bottom: unset;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.25rem;
   position: relative;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
+}
+
+.card-body-container{
+  margin-top: 1rem;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+
+.show-this-in-collapsed-view{
+  display: none;
+}
+
+.mor .card-body-container .col-md-2{
+ 
+  flex: 0 0 auto;
+  width: 19.666667%;
+
 }
 
 .card-body {
@@ -4148,7 +4179,7 @@ label span{
   margin-bottom: 1rem;
   padding: 10px;
   border-radius: 10px;
-  margin-top: 10px;
+  margin-top:10px;
 }
 
 .mor-table-main_apporval {

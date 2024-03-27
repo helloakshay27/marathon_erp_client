@@ -432,6 +432,21 @@
                             </div>
                             <!-- /.card-header -->
                             <div class="card-body">
+
+                              <ol class="steps">
+                                <li class="step is-complete" data-step="1">
+                                  Create Account
+                                </li>
+                                <li class="step is-complete" data-step="2">
+                                  Login
+                                </li>
+                                <li class="step is-active" data-step="3">
+                                  Payment
+                                </li>
+                                <li class="step" data-step="4">
+                                  Confirm
+                                </li>
+                              </ol>
                               <div class="row">
                                 <div class="col-md-3">
                                   <div class="form-group">
@@ -720,21 +735,92 @@
                                 data-card-widget="collapse"
                               >
                               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#8B0203"/>
-                                <path d="M9 16H22" stroke="white" stroke-width="2" stroke-linecap="round"/>
-                                </svg>
+<circle cx="16" cy="16" r="16" fill="#8B0203"/>
+<path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"/>
+</svg>
+
                                 
                               </button>
                               </div>
                             </div>
                            
                             <!-- /.card-header -->
+
+                            <div class="card-body-container show-this-in-collapsed-view" >
+                              <div class="row">
+
+                     
+                                <div class="col-md-2">
+                                  <div class="form-group">
+                                    <label>Select Activity <span>*</span></label>
+                                    <select
+                                      class="form-control select2"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                  <div class="form-group">
+                                    <label
+                                      >Material Description
+                                      <span>*</span></label
+                                    >
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Default input"
+                                    />
+                                  </div>
+
+                                
+
+                                    <div class="form-group  ">
+                                      <label>Use from Stock <span></span></label>
+
+                                      <div class="radio-butoons d-flex align-items-center gap-4">
+
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio1" />
+                                        <label class="form-check-label">Yes</label>
+                                      </div>
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="radio1" />
+                                        <label class="form-check-label">No</label>
+                                      </div>
+                                    </div>
+                                    </div>
+
+                                  <div class="form-group">
+                                    <label>MOR Till Date</label>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Default input"
+                                    />
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                        
+                    
+                              </div>
+                            </div>
+
                             <div class="card-body">
                               <div class="row">
 
                                 <div class="col-md-12 mb-3">
                                   <div class="col-md-2">
-                                    <div class="form-group  d-flex align-items-center gap-4">
+                                    <div class="form-group   d-flex align-items-center gap-4 show-this-in-collapsed-view">
                                       <div class="form-check">
                                         <input class="form-check-input" type="radio" name="radio1" />
                                         <label class="form-check-label">WBS</label>
@@ -1065,6 +1151,9 @@
 
                               <!-- /.col -->
                             </div>
+
+
+
                             <!-- /.row -->
 
                             <!-- /.row -->
@@ -1384,5 +1473,36 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script></script>
+  <script>    
+  
+  $(document).ready(function(){
+    // Collapse card when button is clicked
+    
+    $('[data-card-widget="collapse"]').click(function() {
+        var $card = $(this).closest('.card');
+        var $sectionToShow = $card.find('.show-this-in-collapsed-view');
+        var $cardBody = $card.find('.card-body');
+
+        // Toggle collapse icon
+        $(this).toggleClass('collapsed');
+        
+        // Toggle card body with animation
+        $cardBody.slideToggle('slow', function() {
+            // Check if card body is visible
+            if ($cardBody.is(':visible')) {
+                // Card body is visible, show section
+                $sectionToShow.hide('slow');
+            } else {
+                // Card body is hidden, hide section
+                $sectionToShow.show('slow');
+            }
+        });
+        
+        // Toggle card collapse state
+        $card.toggleClass('collapsed-card');
+    });
+});
+
+  
+  </script>
 </html>
