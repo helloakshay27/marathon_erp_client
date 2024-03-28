@@ -3944,6 +3944,43 @@ border:  1px solid #ced4da;
   border-top-right-radius: 0.25rem;
 }
 
+.card-header2 {
+  
+  background-color: transparent;
+  border-bottom: unset;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-header2 .form-control{
+  color: var(--red);
+  
+  
+
+  padding: 0.3rem 1.5rem;
+  border: none;
+
+}
+
+.tbl-search{
+  border: 1px solid var(--red);
+  border-radius: 10px;
+
+  color: var(--red);
+
+
+}
+
+.btn-default {
+  background-color: #f8f9fa;
+  border-color: var(--red);
+  color: #444;
+  border-radius: 0 6px 6px 0px;
+}
+
+
+
 .card-body-container{
   margin-top: 1rem;
   -ms-flex: 1 1 auto;
@@ -3992,6 +4029,24 @@ border:  1px solid #ced4da;
   margin: 0;
   top: 0;
 }
+
+.card-title2 {
+  background: #ffffff;
+ 
+  border: 0.8984338641166687px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5.390603065490723px;
+   
+  box-shadow: 0px 3.593735456466675px 3.593735456466675px rgba(0, 0, 0, 0.25);  
+  left: 2rem;
+  position: absolute;
+  /* float: left; */
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin: 0;
+  top: 0;
+  transform: translateY(-49%);}
+
+
 
 .card-header>.card-tools {
   float: right;

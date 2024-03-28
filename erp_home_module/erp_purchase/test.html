@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sidebar Tabs</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<style>
+    .sidebar {
+  width: 200px;
+  background-color: #f0f0f0;
+  float: left;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.tabs {
+    display: flex;
+    gap:  12px;
+  margin-left: 220px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+</style>
+<body>
+
+<div class="sidebar">
+  <ul>
+    <li data-tab="tab1">Tab 1</li>
+    <li data-tab="tab2"><a href="./erp_material_order_request_list.html">Tab 2</a></li>
+    <li data-tab="tab3">Tab 3</li>
+  </ul>
+</div>
+
+<div class="tabs">
+  <div id="tab1" class="tab-content">
+    <p>Content of Tab 1</p>
+    <button class="cancel-btn">Cancel</button>
+  </div>
+  <div id="tab2" class="tab-content">
+    <p>Content of Tab 2</p>
+    <button class="cancel-btn">Cancel</button>
+  </div>
+  <div id="tab3" class="tab-content">
+    <p>Content of Tab 3</p>
+    <button class="cancel-btn">Cancel</button>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function () {
+    $(".sidebar ul li").click(function () {
+        var tabId = $(this).data("tab");
+        $("#" + tabId).toggleClass("active");
+    });
+
+    $(".cancel-btn").click(function () {
+        var tabContent = $(this).parent(".tab-content");
+        tabContent.removeClass("active");
+    });
+
+    // Handle click event on Tab 2 link
+    $(".sidebar ul li[data-tab='tab2'] a").click(function(event) {
+        event.preventDefault(); // Prevent default behavior of link click
+        var href = $(this).attr("href");
+        $.get(href, function(data) {
+            $("#tab2").html(data); // Load content from the href into Tab 2
+        });
+    });
+});
+</script>
+</body>
+</html>
