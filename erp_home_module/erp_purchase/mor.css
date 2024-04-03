@@ -2955,9 +2955,7 @@ overflow-x: auto;
     display: block;
   }
 
-  .sidebar {
-    width: 14em;
-  }
+
 
   .site-content,
   .website-content {
@@ -4366,7 +4364,19 @@ padding-top: 10px;
   background-color: rgb(178, 176, 252);
   border: 1px solid lightgray;
 }
+/* For WebKit (Chrome, Safari, etc.) */
+/* For WebKit (Chrome, Safari, etc.) */
+ .tbl-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
 
+/* For Firefox */
+
+/* Optional: Ensure content still scrolls */
+/* You may need to adjust this depending on your layout */
+
+
+/* For Firefox */
 
 
   /* PO for transfer order modal end */
