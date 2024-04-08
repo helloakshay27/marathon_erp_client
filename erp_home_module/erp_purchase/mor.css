@@ -737,9 +737,9 @@ fieldset {
 }
 
 /* single page navigation */
-.nav-tabs .active {
-  color: #e95420 !important;
-  background-color: white !important;
+#myTab  .active {
+  color: var(--body-bg-color) !important;
+  background-color: var(--red) !important;
   border-color: #dee2e6 #dee2e6 #e95420 #dee2e6 !important;
 }
 
@@ -3896,8 +3896,8 @@ border:  1px solid #ced4da;
 
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
-  color: var(--red);
-  background-color: var(--body-bg-color);
+  color: var(--body-bg-color) !important;
+  background-color: var(--red);
   border: 2px solid var(--red) !important;
 
 }
@@ -4381,3 +4381,107 @@ padding-top: 10px;
 
   /* PO for transfer order modal end */
 /* PO for transfer order end */
+
+/* levels of steps Ui */
+
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #f6f7fb;
+}
+
+
+.progress-steps .top {
+  margin-bottom: 30px;
+  position: relative;
+}
+.progress-steps .top .progress {
+  width: 97%;
+  height: 3px;
+  background-color: #e0e0e0;
+  position: absolute;
+  top: 15%;
+  left: 10px;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.layer1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+.progress-steps .top .progress span {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: var(--red);
+  transition: 0.5s;
+}
+.progress-steps .top .steps {
+  display: flex;
+  justify-content: space-between;
+}
+.progress-steps .top .steps .step {
+  background-color: var(--body-bg-color);
+  border: 3px solid var(--red);
+  border-radius: 50%;
+  padding: 5px 5px;
+  cursor: pointer;
+}
+.progress-steps .top .steps .step.active {
+  
+  border-color: var(--red);
+  transition: border 1s;
+}
+
+.progress-steps .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0px 20px;
+}
+
+.progress-steps .buttons .btn {
+  outline: 0px;
+  border: 0px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--red);
+  font-weight: bold;
+  color: white;
+  transition: color 0.5s;
+}
+
+.progress-steps .buttons .btn.disabled {
+  background-color: #e0e0e0;
+  color: #bdbdbd;
+  cursor: no-drop;
+}
+
+/* .tab-content {
+  display: none;
+} */
+
+.tab-content.active {
+  display: block;
+}
+
+.tab-button {
+  cursor: pointer;
+}
+
+.tab-button.active {
+  background-color: var(--red); 
+  color: var(--body-bg-color);/* Adjust styling for active tab button */
+}
+
+

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment Box with Name List and Suggestions</title>
+<!-- Include jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<style>
+  /* Style for the comment box */
+  .comment-box {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+  }
+
+  /* Style for the list */
+  .name-list {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 16px;
+    margin-top: 5px;
+  }
+
+  /* Style for list items */
+  .name-list li {
+    margin-bottom: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Hover effect for list items */
+  .name-list li:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* Style for suggestions container */
+  .suggestions {
+    position: relative;
+    margin-top: -5px; /* Adjust according to your design */
+    z-index: 999; /* Ensure suggestions are on top */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-height: 200px; /* Limit height if needed */
+    overflow-y: auto;
+  }
+</style>
+</head>
+<body>
+<!-- Comment box with class "comment-box" -->
+<textarea class="comment-box" placeholder="Enter names separated by newlines">@</textarea>
+
+<!-- Suggestions container -->
+<div class="suggestions dropdown-menu"></div>
+
+<script>
+$(document).ready(function () {
+  var names = [
+    "John",
+    "Mary",
+    "David",
+    "Emily",
+    "Michael",
+    "Jessica",
+    "Daniel",
+    "Sarah",
+    "Christopher",
+    "Laura",
+  ];
+
+  $(".comment-box").autocomplete({
+    source: function (request, response) {
+      var term = request.term;
+      if (term.startsWith("@")) {
+        term = term.substring(1); // Remove "@" from the beginning
+        var suggestions = $.grep(names, function (name) {
+          return name.toLowerCase().indexOf(term.toLowerCase()) !== -1;
+        });
+        response(suggestions);
+      }
+    },
+    autoFocus: true,
+    select: function (event, ui) {
+      var text = $(this).val();
+      var beforeAt = text.substring(0, text.lastIndexOf("@") + 1);
+      var name = ui.item.value;
+      $(this).val(beforeAt + name + "\n");
+      $(this)[0].selectionStart = $(this)[0].selectionEnd =
+        $(this).val().length;
+      $(".suggestions").html(""); // Clear suggestions after selection
+      return false;
+    },
+  });
+
+  $(".comment-box").on("input", function () {
+    var text = $(this).val();
+    var cursorPosition = $(this)[0].selectionStart;
+
+    var wordsBeforeCursor = text.substr(0, cursorPosition).split(/\s+|\n/);
+    var lastWord = wordsBeforeCursor.pop();
+
+    if (lastWord.startsWith("@")) {
+      var searchTerm = lastWord.substring(1);
+
+      var suggestions = names.filter(function (name) {
+        return (
+          name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1
+        );
+      });
+
+      var suggestionHtml = "<ul class='name-list'>";
+      suggestions.forEach(function (suggestion) {
+        suggestionHtml += "<li>" + suggestion + "</li>";
+      });
+      suggestionHtml += "</ul>";
+
+      $(".suggestions").html(suggestionHtml);
+    } else {
+      $(".suggestions").html(""); // Clear suggestions if "@" is not typed
+    }
+  });
+
+  $(document).on("click", ".name-list li", function () {
+    var suggestion = $(this).text();
+    var textarea = $(".comment-box");
+    var cursorPosition = textarea[0].selectionStart;
+
+    var text = textarea.val();
+    var newText =
+      text.substr(0, cursorPosition) +
+      suggestion +
+      " @" +
+      text.substr(cursorPosition);
+
+    textarea.val(newText);
+    textarea[0].selectionStart = textarea[0].selectionEnd =
+      cursorPosition + suggestion.length + 2;
+
+    $(".suggestions").html(""); // Clear suggestions after selection
+  });
+
+  // Hide suggestions on clicking outside
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".suggestions").length && !$(e.target).is(".comment-box")) {
+      $(".suggestions").html("");
+    }
+  });
+
+  // Clear suggestions on blur
+  $(".comment-box").on("blur", function () {
+    $(".suggestions").html("");
+  });
+});
+</script>
+</body>
+</html>

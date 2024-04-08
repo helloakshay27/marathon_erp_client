@@ -210,7 +210,7 @@
           <div class="sidebar sidebar_inner d-flex">
             <div class="main-search"></div>
             <div class="left-1" style="width: fit-content">
-              <div class="search-main text-center" id="secondary-search">
+              <div class="search-main text-center" id="secondary-search"  data-section="land">
                 <svg
                   class="search-og"
                   width="16"
@@ -843,7 +843,7 @@
                       <a
                         class="nav-link"
                         aria-current="page"
-                        href="./snagging-Unit-Snag-List.html"
+                        href="/erp_home_module/erp_purchase/erp_material_issue_slip.html"
                       >
                         <img alt="" src="../images/snag-unit-list.svg" /><span
                           class="text"
@@ -855,7 +855,7 @@
                       <a
                         class="nav-link"
                         aria-current="page"
-                        href="./Snagging-observation.html"
+                        href="/erp_home_module/erp_purchase/erp_material_return_slip.html"
                       >
                         <img alt="" src="../images/Snag.svg" /><span
                           class="text"
@@ -881,9 +881,10 @@
                     <li class="nav-item">
                       <div class="btn-group2">
                         <a
-                          class="text nav-link dropdown-toggle asset-after"
+                          class="text nav-link  asset-after"
                           data-bs-toggle="dropdown"
                           aria-expanded="true"
+                          href="/erp_home_module/erp_purchase/erp_material_return_slip.html"
                         >
                           <img alt="" src="../images/OSR.svg" /><span
                             class="text"
@@ -1119,15 +1120,12 @@
 
         <!-- webpage conteaint start -->
         <div class="website-content overflow-auto">
-          <div class="container">
-            <h2>Dynamic Bootstrap Tabs Example</h2>
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <!-- Dynamic tabs will be inserted here -->
             </ul>
             <div class="tab-content" id="myTabContent">
               <!-- Dynamic tab content will be inserted here -->
             </div>
-          </div>
 
           <footer class="footer">
             <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
@@ -1156,8 +1154,19 @@
       $(".cancel,.closebtn").click(function () {
         toggleNav(); // Toggle the sidebar when the cancel button is clicked
       });
-    });
 
+      $(".search-main").click(function () {
+        
+   
+        emptyToggleNav (); // Toggle the sidebar when the search-main button is clicked
+  });
+    });
+function emptyToggleNav(){
+  $("#mySidebar").fadeToggle(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
+  $(".main-section").hide();
+  $("#mySidebar").width(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
+
+}
     function toggleNav() {
       $("#mySidebar").fadeToggle(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
     }

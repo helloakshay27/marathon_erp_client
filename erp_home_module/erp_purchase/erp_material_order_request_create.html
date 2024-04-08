@@ -409,7 +409,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="tab-content mor-content" id="pills-tabContent">
+                <div class="tab-content mor-content active" id="pills-tabContent">
                   <div
                     class="tab-pane fade show active"
                     id="pills-home"
@@ -417,6 +417,48 @@
                     aria-labelledby="pills-home-tab"
                   >
                     <section class="mor p-5">
+
+                      <div class="row justify-content-center my-4">
+                        <div class="col-md-10">
+                          <div class="progress-steps">
+                            <div class="top">
+                                <div class="progress"><span></span></div>
+                                <div class="steps">
+                                  
+                                  <div class="layer1">
+                                    <div class="step active" data-step="1"><span></span>
+                                    </div>
+                                    <p>layer1</p>
+                                  </div>
+                                    
+                                    
+                                  <div class="layer1">
+                                    <div class="step active" data-step="2"><span></span>
+                                    </div>
+                                    <p>layer2</p>
+                                  </div>                               
+                                  <div class="layer1">
+                                    <div class="step active" data-step="3"><span></span>
+                                    </div>
+                                    <p>layer3</p>
+                                  </div>
+                                  <div class="layer1">
+                                    <div class="step active" data-step="4"><span></span>
+                                    </div>
+                                    <p>layer4</p>
+                                 </div>                               
+                                 </div>
+                            </div>
+                            <div class="buttons d-m">
+                                <button class="btn btn-prev disabled" disabled>prev</button>
+                                <button class="btn btn-next">Next</button>
+                            </div>
+                         </div>
+                        </div>
+                     
+                      </div>
+
+
                       <div class="container-fluid">
                         <div class="row">
                           <!-- SELECT2 EXAMPLE -->
@@ -433,20 +475,7 @@
                             <!-- /.card-header -->
                             <div class="card-body">
 
-                              <ol class="steps">
-                                <li class="step is-complete" data-step="1">
-                                  Create Account
-                                </li>
-                                <li class="step is-complete" data-step="2">
-                                  Login
-                                </li>
-                                <li class="step is-active" data-step="3">
-                                  Payment
-                                </li>
-                                <li class="step" data-step="4">
-                                  Confirm
-                                </li>
-                              </ol>
+                           
                               <div class="row">
                                 <div class="col-md-3">
                                   <div class="form-group">
@@ -679,11 +708,11 @@
                               </div> 
 
                               <!-- /.col -->
-                            </div>
+                         </div>
                             <!-- /.row -->
 
                             <!-- /.row -->
-                          </div>
+                      </div>
 
                           <div class="row my-2 justify-content-start">
                             <div class="col-md-12">
@@ -735,9 +764,9 @@
                                 data-card-widget="collapse"
                               >
                               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-<circle cx="16" cy="16" r="16" fill="#8B0203"/>
-<path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"/>
-</svg>
+                                <circle cx="16" cy="16" r="16" fill="#8B0203"/>
+                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"/>
+                                </svg>
 
                                 
                               </button>
@@ -1264,7 +1293,7 @@
                         <!-- /.row -->
                       </div>
                       <!-- /.container-fluid -->
-                    </section>
+                  </section>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -1501,6 +1530,52 @@
         // Toggle card collapse state
         $card.toggleClass('collapsed-card');
     });
+});
+
+
+
+
+
+
+
+let progress = document.querySelector(".progress span");
+let steps = document.querySelectorAll(".step");
+let btnNext = document.querySelector(".btn-next");
+let btnPrev = document.querySelector(".btn-prev");
+let countSteps = steps.length;
+let step = 1;
+
+btnNext.addEventListener("click", () => {
+    let widthProgress = (step / (countSteps - 1)) * 100;
+    btnPrev.classList.remove("disabled");
+    btnPrev.removeAttribute("disabled");
+    if (step + 1 <= countSteps) {
+        step++;
+        // add class active on step
+        let newStep = document.querySelector(`[data-step="${step}"]`);
+        progress.style.width = `${widthProgress}%`;
+        newStep.classList.add("active");
+    }
+    if (step === countSteps) {
+        btnNext.classList.add("disabled");
+        btnNext.setAttribute("disabled", "disabled");
+    }
+});
+
+btnPrev.addEventListener("click", () => {
+    btnNext.classList.remove("disabled");
+    btnNext.removeAttribute("disabled");
+    if (step > 1) {
+        let newStep = document.querySelector(`[data-step="${step}"]`);
+        newStep.classList.remove("active");
+        step--;
+        let widthProgress = ((step - 1) / (countSteps - 1)) * 100;
+        progress.style.width = `${widthProgress}%`;
+    }
+    if (step === 1) {
+        btnPrev.classList.add("disabled");
+        btnPrev.setAttribute("disabled", "disabled");
+    }
 });
 
   
