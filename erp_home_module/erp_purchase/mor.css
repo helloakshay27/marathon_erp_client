@@ -161,6 +161,9 @@ select,
 a {
   text-decoration: none !important;
 }
+
+
+
 .form-check-input {
   border: 1px solid black;
   height: 15px;
@@ -325,7 +328,7 @@ ul {
 
 .form-check-input:checked,
 .form-switch .on-off-toggler.form-check-input:checked {
-  background-color: #01c875 !important;
+  background-color: var(--red) !important;
   border: #01c875 !important;
 }
 
@@ -2723,6 +2726,14 @@ input[type="checkbox"].violet-check {
   height: 50px;
 }
 
+.modal-header{
+  color: var(--red);
+}
+
+.modal-footer a{
+  color: var(--body-bg-color);
+}
+
 .gray-border-input::placeholder,
 .gray-border-input option {
   color: #9b9b9b;
@@ -3589,7 +3600,7 @@ select,
 }
 
 .form-check-input {
-  background-color: #e2445b !important;
+  background-color: var(--body-bg-color);
   border: 1px solid #e2445b !important;
 }
 
