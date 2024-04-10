@@ -11,6 +11,31 @@
   --text-color: #084236;
 }
 
+:root {
+  --scrollbar-width: 10px;
+  --scrollbar-color: #ff0000; /* Red color */
+}
+
+/* Hide default scrollbar */
+::-webkit-scrollbar {
+  width: var(--scrollbar-width);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Light grey */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-color); /* Use custom color */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Dark grey */
+}
+
 body {
   
   font-family: "Poppins";
@@ -3887,11 +3912,11 @@ border:  1px solid #ced4da;
 
 } 
 
-.mor-tabs ul li  {
-  padding: 0rem 1rem;
-
-
-
+.mor-tabs ul li {
+  padding: 0rem 0.5rem 0rem 0rem;
+}
+ul#pills-tab{
+  row-gap: 12px;
 }
 
 
@@ -3969,6 +3994,17 @@ border:  1px solid #ced4da;
 
 
 }
+
+.tbl-search label{
+margin: 5px 0px;
+
+
+}
+.tbl-search p{
+  margin: 5px 0px;
+  
+  
+  }
 
 .btn-default {
   background-color: #f8f9fa;
@@ -4467,11 +4503,11 @@ body {
   cursor: no-drop;
 }
 
-/* .tab-content {
+.tab-content1 {
   display: none;
-} */
+}
 
-.tab-content.active {
+.tab-content1.active {
   display: block;
 }
 
