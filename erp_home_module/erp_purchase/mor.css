@@ -613,7 +613,7 @@ a.purple-btn2 {
 
 input[type="checkbox"].violet-check,
 input[type="checkbox"] {
-  accent-color: #77216f;
+  accent-color: var(--red);
 }
 
 .span-collection .dropdown-toggle::after {
@@ -3987,7 +3987,18 @@ ul#pills-tab{
   border-top-right-radius: 0.25rem;
 }
 
-.card-header2 .form-control{
+
+
+.card-header3 {
+  background-color: transparent;
+  border-bottom: unset;
+  padding: 1.5rem 1.25rem;
+  position: relative;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.card-header2 .form-control, .card-header3 .form-control {
   color: var(--red);
   
   
@@ -4093,12 +4104,12 @@ margin: 5px 0px;
 
 
 
-.card-header>.card-tools {
+.card-header>.card-tools, .card-header3>.card-tools {
   float: right;
   margin-right: -0.625rem;
 }
 
-.card-body::after, .card-footer::after, .card-header::after {
+.card-body::after, .card-footer::after, .card-header::after,.card-body::after, .card-footer::after, .card-header3::after {
   display: block;
   clear: both;
   content: "";
@@ -4183,17 +4194,23 @@ label {
  
     flex: 0 0 auto;
     width: 19.666667%;
+    max-width: 19.666667%;
+
 
 }
 
 .separteinto5 .col-md-2{
   flex: 0 0 auto;
   width: 19.666667%;
+  max-width: 19.666667%;
+
 
 }
 .separteinto7 .col-md-2 {
   flex: 0 0 auto;
   width: 14%;
+  max-width: 14%;
+
 }
 
 .pro-radio-tabs {
@@ -4532,3 +4549,57 @@ body {
 }
 
 
+.multi-dropdown {
+  width: 100% !important;
+}
+
+.select-font2 {
+  font-size: 14px;
+}
+
+option {
+  padding: 3px !important;
+}
+
+.ms-choice {
+  height: 20px !important;
+  line-height: 30px !important;
+}
+
+.ms-choice {
+  border: none !important;
+}
+
+.ms-drop span, .ms-parent span {
+  color: black;
+}
+
+.ms-drop.bottom ul li label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.ms-drop {
+left: 0 !important;
+}
+
+.form-control {
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-select{
+  font-size: 14px !important;
+}
+
+.form-control option {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.form-group{
+  margin-bottom: 0px;
+}

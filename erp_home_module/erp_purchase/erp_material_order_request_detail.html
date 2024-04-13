@@ -420,7 +420,7 @@
                         aria-selected="false"
                       >
                       Material 
-Received
+                         Received
                       </button>
                     </li>
                     <li class="nav-item" role="presentation">
@@ -446,7 +446,6 @@ Received
                     role="tabpanel"
                     aria-labelledby="pills-home-tab"
                   >
-                    <section class="mor p-5">
 
                       <div class="row justify-content-center my-4">
                         <div class="col-md-10">
@@ -497,47 +496,62 @@ Received
                             class="card card-default"
                             id="mor-material-details"
                           >
-                            <div class="card-header">
-                              <h3 class="card-title">MOR Details</h3>
 
-                     
-                            </div>
-                            <!-- /.card-header -->
-                            <div class="card-body">
+                          <div class="details_page">
+                            <h5>MOR Details</h5>
+
 
                            
-                              <div class="row px-3 ">
-                             
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Company</div>
-                                    <div class="col-6">: - data</div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Project</div>
-                                    <div class="col-6">: - 22/03/2024  4:17 PM</div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Sub-project</div>
-                                    <div class="col-6">: - Technical </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Status</div>
-                                    <div class="col-6">: - Pending</div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Subcategory</div>
-                                    <div class="col-6">: - </div>
-                                </div>
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Admin Priority</div>
-                                    <div class="col-6">: - P1</div>
-                                </div> 
-                                <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
-                                    <div class="col-6 text-muted">Reference Number</div>
-                                    <div class="col-6">: -  </div>
-                                </div>
-                              </div>
+                            <div class="row px-3 ">
+                           
+                              <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                                  <div class="col-6 ">
 
+                                    <label>Company</label>
+
+                                  </div>
+                                  <div class="col-6">                                     
+                                     <label class="text"><span class="me-3">:</span>Company</label>
+                                  </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                                  <div class="col-6 ">                                      
+                                    <label>Project</label>
+                                  </div>
+                                  <div class="col-6">: - </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                                <div class="col-6 ">
+
+                                  <label>Sub-Project</label>
+
+                                </div>
+                                <div class="col-6">: - data</div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                                <div class="col-6 ">                                      
+                                  <label>Created On</label>
+                                </div>
+                                <div class="col-6">: - 01-02-2024</div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                              <div class="col-6 ">
+
+                                <label>Request to Dept.</label>
+
+                              </div>
+                              <div class="col-6">: - Purchase</div>
+                          </div>
+                          <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                              <div class="col-6 ">                                      
+                                <label>Material Type</label>
+                              </div>
+                              <div class="col-6">: - Tiles</div>
+                          </div>
+                            </div>
+
+                          </div>
+                         
                               <div class="row mt-4">
                                 <div class="col-md-2">
                                   <div class="form-group">
@@ -784,7 +798,7 @@ Received
                            
                             <!-- /.card-header -->
 
-                            <div class="card-body-container show-this-in-collapsed-view" >
+                            <div class="card-body-container show-this-in-collapsed-view mt-0" >
                               <div class="row">
 
                      
@@ -1304,7 +1318,6 @@ Received
                         <!-- /.row -->
                       </div>
                       <!-- /.container-fluid -->
-                  </section>
                   </div>
                   <div
                     class="tab-pane fade"
@@ -1349,30 +1362,30 @@ Received
   
   $(document).ready(function(){
     // Collapse card when button is clicked
-    
     $('[data-card-widget="collapse"]').click(function() {
-        var $card = $(this).closest('.card');
-        var $sectionToShow = $card.find('.show-this-in-collapsed-view');
-        var $cardBody = $card.find('.card-body');
+    var $card = $(this).closest('.card');
+    var $sectionToShow = $card.find('.show-this-in-collapsed-view');
+    var $cardBody = $card.find('.card-body');
 
-        // Toggle collapse icon
-        $(this).toggleClass('collapsed');
-        
-        // Toggle card body with animation
-        $cardBody.slideToggle('slow', function() {
-            // Check if card body is visible
-            if ($cardBody.is(':visible')) {
-                // Card body is visible, show section
-                $sectionToShow.hide('slow');
-            } else {
-                // Card body is hidden, hide section
-                $sectionToShow.show('slow');
-            }
-        });
-        
-        // Toggle card collapse state
-        $card.toggleClass('collapsed-card');
-    });
+    // Toggle collapse icon
+    $(this).toggleClass('collapsed');
+
+    // Toggle card body without animation
+    $cardBody.toggle();
+
+    // Check if card body is visible
+    if ($cardBody.is(':visible')) {
+        // Card body is visible, hide section
+        $sectionToShow.hide();
+    } else {
+        // Card body is hidden, show section
+        $sectionToShow.show();
+    }
+
+    // Toggle card collapse state
+    $card.toggleClass('collapsed-card');
+});
+
 });
 
 

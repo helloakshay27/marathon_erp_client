@@ -24,6 +24,8 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
     <link rel="stylesheet" href="mor.css" />
+    <link rel="stylesheet" href="./multiple-select.css" />
+
     <link
       rel="icon"
       type="image/x-icon"
@@ -1178,7 +1180,7 @@
 
             <div class="tab-content1 active" id="total-content">
               <!-- Total Content Here -->
-              <div class="card mt-5 pb-4">
+              <div class="card mt-3 pb-4">
                 <div class="card-body">
                   <div class="row mt-3">
                     <div class="col-sm-2">
@@ -1250,21 +1252,48 @@
                   </div>
                   <div class="row my-4 align-items-end">
                     <div class="col-md-2">
-                      <div class="form-group">
-                        <label>Company</label>
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Alabama</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
+                      <label>Company</label>
+
+                      <select
+                        name="task_tag_ids[]"
+                        id="task_tags_select"
+                        data-placeholder="Select Client Tags"
+                        class="form-control form-select select-font2 multi-dropdown"
+                        multiple="multiple"
+                      >
+                        <option value="11">GoPhygital</option>
+                        <option value="26">PSIPL</option>
+                        <option value="27">Vodafone</option>
+                        <option value="28">Godrej Living</option>
+                        <option value="29">Godrej Snag360</option>
+                        <option value="30">Runwal</option>
+                        <option value="31">Arvind</option>
+                        <option value="32">Panchshil</option>
+                        <option value="33">TRIL</option>
+                        <option value="34">ZS</option>
+                        <option value="35">CMRL</option>
+                        <option value="36">Global Infocity</option>
+                        <option value="37">Birla</option>
+                        <option value="38">Chandak</option>
+                        <option value="39">Mehta</option>
+                        <option value="40">Marathon</option>
+                        <option value="41">Mirchandani</option>
+                        <option value="44">Piramal</option>
+                        <option value="45">Bajaj</option>
+                        <option value="46">Phoenix</option>
+                        <option value="60">All Sites</option>
+                        <option value="61">Oberoi 360</option>
+                        <option value="62">JP Infra</option>
+                        <option value="63">Lockated</option>
+                        <option value="83">L Decor</option>
+                        <option value="85">RHB</option>
+                        <option value="93">Kalpartaru</option>
+                        <option value="94">Marathon</option>
+                        <option value="97">Rustomjee</option>
+                        <option value="98">Urban Wrk</option>
+                        <option value="105">Delhi</option>
+                      </select>
+
                       <!-- /.form-group -->
 
                       <!-- /.form-group -->
@@ -1273,17 +1302,44 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Alabama</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
+                        name="task_tag_ids[]"
+                        id="task_tags_select"
+                        data-placeholder="Select Client Tags"
+                        class="form-control form-select select-font2 multi-dropdown"
+                        multiple="multiple"
+                      >
+                        <option value="11">GoPhygital</option>
+                        <option value="26">PSIPL</option>
+                        <option value="27">Vodafone</option>
+                        <option value="28">Godrej Living</option>
+                        <option value="29">Godrej Snag360</option>
+                        <option value="30">Runwal</option>
+                        <option value="31">Arvind</option>
+                        <option value="32">Panchshil</option>
+                        <option value="33">TRIL</option>
+                        <option value="34">ZS</option>
+                        <option value="35">CMRL</option>
+                        <option value="36">Global Infocity</option>
+                        <option value="37">Birla</option>
+                        <option value="38">Chandak</option>
+                        <option value="39">Mehta</option>
+                        <option value="40">Marathon</option>
+                        <option value="41">Mirchandani</option>
+                        <option value="44">Piramal</option>
+                        <option value="45">Bajaj</option>
+                        <option value="46">Phoenix</option>
+                        <option value="60">All Sites</option>
+                        <option value="61">Oberoi 360</option>
+                        <option value="62">JP Infra</option>
+                        <option value="63">Lockated</option>
+                        <option value="83">L Decor</option>
+                        <option value="85">RHB</option>
+                        <option value="93">Kalpartaru</option>
+                        <option value="94">Marathon</option>
+                        <option value="97">Rustomjee</option>
+                        <option value="98">Urban Wrk</option>
+                        <option value="105">Delhi</option>
+                      </select>
                       </div>
                       <!-- /.form-group -->
 
@@ -1296,17 +1352,44 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Alabama</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
+                        name="task_tag_ids[]"
+                        id="task_tags_select"
+                        data-placeholder="Select Client Tags"
+                        class="form-control form-select select-font2 multi-dropdown"
+                        multiple="multiple"
+                      >
+                        <option value="11">GoPhygital</option>
+                        <option value="26">PSIPL</option>
+                        <option value="27">Vodafone</option>
+                        <option value="28">Godrej Living</option>
+                        <option value="29">Godrej Snag360</option>
+                        <option value="30">Runwal</option>
+                        <option value="31">Arvind</option>
+                        <option value="32">Panchshil</option>
+                        <option value="33">TRIL</option>
+                        <option value="34">ZS</option>
+                        <option value="35">CMRL</option>
+                        <option value="36">Global Infocity</option>
+                        <option value="37">Birla</option>
+                        <option value="38">Chandak</option>
+                        <option value="39">Mehta</option>
+                        <option value="40">Marathon</option>
+                        <option value="41">Mirchandani</option>
+                        <option value="44">Piramal</option>
+                        <option value="45">Bajaj</option>
+                        <option value="46">Phoenix</option>
+                        <option value="60">All Sites</option>
+                        <option value="61">Oberoi 360</option>
+                        <option value="62">JP Infra</option>
+                        <option value="63">Lockated</option>
+                        <option value="83">L Decor</option>
+                        <option value="85">RHB</option>
+                        <option value="93">Kalpartaru</option>
+                        <option value="94">Marathon</option>
+                        <option value="97">Rustomjee</option>
+                        <option value="98">Urban Wrk</option>
+                        <option value="105">Delhi</option>
+                      </select>
                       </div>
                       <!-- /.form-group -->
                     </div>
@@ -1362,33 +1445,39 @@
                   </div>
                 </div>
 
-                <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                <div class="card mx-3 mt-2">
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -1402,9 +1491,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -1447,14 +1536,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -1465,14 +1554,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -1513,7 +1602,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -1794,7 +1888,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -1814,7 +1908,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -1837,7 +1931,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -1904,32 +1998,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -1943,9 +2043,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -1988,14 +2088,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -2006,14 +2106,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -2054,7 +2154,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -2335,7 +2440,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2355,7 +2460,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2378,7 +2483,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2445,32 +2550,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -2484,9 +2595,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -2529,14 +2640,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -2547,14 +2658,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -2595,7 +2706,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -2876,7 +2992,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2896,7 +3012,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2919,7 +3035,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -2986,32 +3102,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -3025,9 +3147,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -3070,14 +3192,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -3088,14 +3210,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -3136,7 +3258,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -3417,7 +3544,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -3437,7 +3564,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -3460,7 +3587,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -3527,32 +3654,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -3566,9 +3699,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -3611,14 +3744,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -3629,14 +3762,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -3677,7 +3810,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -3958,7 +4096,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -3978,7 +4116,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -4001,7 +4139,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -4068,32 +4206,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -4107,9 +4251,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -4152,14 +4296,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -4170,14 +4314,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -4218,7 +4362,12 @@
                             </button>
                           </div>
                           <div class="col-md-3">
-                            <button type="submit" class="btn btn-md">
+                            <button
+                              type="submit"
+                              class="btn btn-md"
+                              data-bs-toggle="modal"
+                              data-bs-target="#settings"
+                            >
                               <svg
                                 width="22"
                                 height="24"
@@ -4499,7 +4648,7 @@
                       <div class="form-group">
                         <label>Company</label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -4519,7 +4668,7 @@
                       <div class="form-group">
                         <label>Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -4542,7 +4691,7 @@
                       <div class="form-group">
                         <label>Sub-Project <span>*</span></label>
                         <select
-                          class="form-control select2"
+                          class="form-control form-select"
                           style="width: 100%"
                         >
                           <option selected="selected">Alabama</option>
@@ -4609,32 +4758,38 @@
                 </div>
 
                 <div class="card mx-3 mt-3">
-                  <div class="card-header2">
-                    <h3 class="card-title2">
-                      <div class="form-group">
-                        <select
-                          class="form-control select2"
-                          style="width: 100%"
-                        >
-                          <option selected="selected">Bulk Action</option>
-                          <option>Alaska</option>
-                          <option>California</option>
-                          <option>Delaware</option>
-                          <option>Tennessee</option>
-                          <option>Texas</option>
-                          <option>Washington</option>
-                        </select>
-                      </div>
-                    </h3>
-                  </div>
+                  <div class="card-header3">
+                    <h3 class="card-title">Bulk Action</h3>
 
-                  <div class="card-body">
+                    <div class="card-tools">
+                      <button
+                        type="button"
+                        class="btn btn-tool"
+                        data-card-widget="collapse"
+                      >
+                        <svg
+                          width="32"
+                          height="32"
+                          viewBox="0 0 32 32"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <circle cx="16" cy="16" r="16" fill="#8B0203" />
+                          <path
+                            d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="card-body mt-0 pt-0">
                     <div class="row align-items-center">
                       <div class="col-md-4">
                         <div class="form-group">
-                          <label>Company</label>
+                          <label>From Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -4648,9 +4803,9 @@
                         </div>
 
                         <div class="form-group mt-3">
-                          <label>Company</label>
+                          <label>To Status</label>
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -4693,14 +4848,14 @@
                   <div class="col-md-3">
                     <div class="form-group">
                       <label for="">Rows Per Page</label>
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">25 Rows</option>
+                        <option>50 Rows</option>
+                        <option>100 Rows</option>
+                        <option>1000 Rows</option>
                       </select>
                     </div>
                   </div>
@@ -4711,14 +4866,14 @@
                     "
                         >Last Created</label
                       >
-                      <select class="form-control select2" style="width: 100%">
-                        <option selected="selected">Bulk Action</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
+                      <select
+                        class="form-control form-select"
+                        style="width: 100%"
+                      >
+                        <option selected="selected">Last week</option>
+                        <option>Last Month</option>
+                        <option>Last Quarter</option>
+                        <option>Last 6 Month</option>
                       </select>
                     </div>
                   </div>
@@ -5099,7 +5254,7 @@
                           </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5120,7 +5275,7 @@
                           <label>Company </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5138,7 +5293,7 @@
                           <label>Project </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5156,7 +5311,7 @@
                           <label>Sub-project </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5176,7 +5331,7 @@
                           <label>Material Type </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5194,7 +5349,7 @@
                           <label>Material Sub Tupe </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5212,7 +5367,7 @@
                           <label>Material </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5232,7 +5387,7 @@
                           <label>Activity </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5250,7 +5405,7 @@
                           <label>Status </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5268,7 +5423,7 @@
                           <label>MOR No. </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5288,7 +5443,7 @@
                           <label>Overdue </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5306,7 +5461,7 @@
                           <label>Requisition Department </label>
 
                           <select
-                            class="form-control select2"
+                            class="form-control form-select"
                             style="width: 100%"
                           >
                             <option selected="selected">Alabama</option>
@@ -5389,7 +5544,14 @@
                         <label for=""> Sr No.</label>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group custom-switch"></div>
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div
@@ -5416,7 +5578,14 @@
                         <label for=""> Sr No.</label>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group custom-switch"></div>
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div
@@ -5443,7 +5612,14 @@
                         <label for=""> Sr No.</label>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group custom-switch"></div>
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div
@@ -5470,7 +5646,14 @@
                         <label for=""> Sr No.</label>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group custom-switch"></div>
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div
@@ -5497,13 +5680,49 @@
                         <label for=""> Sr No.</label>
                       </div>
                       <div class="col-md-4">
-                        <div class="form-group custom-switch">Toogle</div>
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
                       </div>
                     </div>
                     <div
                       class="row mt-2 justify-content-between align-items-center"
                     >
-                      <div class="col-md-12"></div>
+                      <div class="col-md-6">
+                        <button type="submit" class="btn btn-md">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="22"
+                            height="22"
+                            viewBox="0 0 48 48"
+                            fill="none"
+                          >
+                            <path
+                              fill-rule="evenodd"
+                              clip-rule="evenodd"
+                              d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                              fill="black"
+                            />
+                          </svg>
+                        </button>
+
+                        <label for=""> Sr No.</label>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-check form-switch mt-1">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckDefault"
+                          />
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -5511,6 +5730,8 @@
             </div>
             <!-- Setting modal End-->
           </div>
+  
+         </div>
 
           <footer class="footer">
             <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
@@ -5525,6 +5746,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./multiple-select.js"></script>
+  <script src="./multiselect.min.js"></script>
 
   <script>
     $(document).ready(function () {
@@ -5569,6 +5792,11 @@
       });
       button.classList.add("active");
     }
+
+    $(".multi-dropdown").multipleSelect({
+      width: 250,
+      filter: true,
+    });
   </script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
