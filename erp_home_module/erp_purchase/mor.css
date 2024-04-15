@@ -669,10 +669,9 @@ input[type="checkbox"] {
   box-shadow: 0px 2.8828866481781006px 7.687697887420654px 0px #0000003D;
 
   overflow: auto;
-  height: fit-content;
-  max-height: 200px;
+  height: max-content;
+  max-height: 300px;
   margin: 10px 0;
-padding: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -4131,7 +4130,7 @@ label {
   margin-bottom: 0.5rem;
 }
 
-.select2-hidden-accessible {
+.form-select-hidden-accessible {
   border: 0 !important;
   clip: rect(0 0 0 0) !important;
   -webkit-clip-path: inset(50%) !important;
@@ -4144,11 +4143,11 @@ label {
   white-space: nowrap !important;
 }
 
-.select2-container {
+.form-select-container {
   display: block;
 }
 
-.select2-container {
+.form-select-container {
   box-sizing: border-box;
   display: inline-block;
   margin: 0;
@@ -4156,28 +4155,28 @@ label {
   vertical-align: middle;
 }
 
-.select2-container--default.select2-container--focus .select2-selection--multiple, .select2-container--default.select2-container--focus .select2-selection--single {
+.form-select-container--default.form-select-container--focus .form-select-selection--multiple, .form-select-container--default.form-select-container--focus .form-select-selection--single {
   border-color: #80bdff;
 }
 
-.select2-container--default .select2-selection--single {
+.form-select-container--default .form-select-selection--single {
   border: 1px solid #ced4da;
   padding: 0.46875rem 0.75rem;
   height: calc(2.25rem + 2px);
 }
 
-.select2-container--default .select2-selection--single .select2-selection__rendered {
+.form-select-container--default .form-select-selection--single .form-select-selection__rendered {
   padding-left: 0;
   height: auto;
   margin-top: -3px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow {
+.form-select-container--default .form-select-selection--single .form-select-selection__arrow {
   height: 31px;
   right: 6px;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
+.form-select-container--default .form-select-selection--single .form-select-selection__arrow b {
   border-color: #888 transparent transparent transparent;
   border-style: solid;
   border-width: 5px 4px 0 4px;
@@ -4602,4 +4601,29 @@ left: 0 !important;
 }
 .form-group{
   margin-bottom: 0px;
+}
+
+
+.details_page label{
+
+  font-weight: 500;
+  font-size: 15px;
+
+}
+
+.details_page .text{
+
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--red);
+
+}
+
+
+.details_page text span{
+
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--red) !important;
+
 }
