@@ -28,6 +28,12 @@
       type="image/x-icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU"
     />
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+  />
+  
 
     <script src="../js/main.js"></script>
     <title>Schedule unit offer</title>
@@ -595,7 +601,7 @@
                                     <label>MOR No.</label>
                                     <input
                                     class="form-control"
-                                    type="date"
+                                    type="text"
                                     placeholder="Default input"
                                   />
                                   </div>
@@ -609,11 +615,15 @@
 
                                   <div class="form-group">
                                     <label>MOR Date <span>*</span></label>
-                                    <input
-                                      class="form-control"
-                                      type="date"
-                                      placeholder="Default input"
-                                    />
+                                    <div
+                                      id="datepicker"
+                                      class="input-group date"
+                                      data-date-format="mm-dd-yyyy"
+                                    >
+                                      <input class="form-control" type="text"  />
+                                      <span class="input-group-addon">
+                                        <i class="fa-solid fa-calendar-days" style="color: #8B0203;"></i>                                      </span>
+                                    </div>
                                   </div>
                                   <!-- /.form-group -->
                                 </div>
@@ -768,9 +778,10 @@
                                 data-card-widget="collapse"
                               >
                               <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <circle cx="16" cy="16" r="16" fill="#8B0203"/>
-                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"/>
-                                </svg>
+                              <circle cx="16" cy="16" r="16" fill="#8B0203"/>
+                              <path d="M16.866 22.5C16.4811 23.1667 15.5189 23.1667 15.134 22.5L9.93782 13.5C9.55292 12.8333 10.034 12 10.8038 12L21.1962 12C21.966 12 22.4471 12.8333 22.0622 13.5L16.866 22.5Z" fill="white"/>
+                              </svg>
+
 
                                 
                               </button>
@@ -1123,12 +1134,25 @@
                                       <table class="w-100">
                                           <thead class="w-100">
                                               <tr>
-                                                  <th class="main2-th">Document Name</th>
+                                                <th class="main2-th">Sr. No.</th>
+
+                                                <th class="main2-th">Document Name</th>
+
+                                                <th class="main2-th">Attachment Name</th>
+
+                                                  <th class="main2-th">File Type</th>
                                                   <th class="main2-th">Upload Date</th>
+                                                  <th class="main2-th">Action</th>
+
                                               </tr>
                                           </thead>
                                           <tbody>
                                               <tr>
+                                                <th>1</th>
+                                                <td>03-03-2024</td>
+                                                <th>MTO Copy.pdf</th>
+                                                <td>03-03-2024</td>
+
                                                   <th>MTO Copy.pdf</th>
                                                   <td>03-03-2024</td>
                                               </tr>
@@ -1225,13 +1249,7 @@
   
                                   <!-- /.col -->
                                 </div>
-                                <div class="row mt-2 justify-content-center">
-                                
-                                  <div class="col-md-2 ">
-                                    <button class="purple-btn2 w-50 "> Delete</button>
-                                  </div>
-                                
-                                </div>
+
   
                                 <!-- /.col -->
                               </div>
@@ -1312,7 +1330,7 @@
                               <button class="purple-btn2 w-100">Submit</button>
                             </div>
                             <div class="col-md-2">
-                              <button class="purple-btn2 w-100">Cancel</button>
+                              <button class="purple-btn1 w-100">Cancel</button>
                             </div>
                           </div>
 
@@ -1338,14 +1356,7 @@
 
                                       <th>Ordered Qty</th>
 
-                                      <th>Available at 
-                                        Own Project</th>
-
-                                      <th>Available at 
-                                        Other Project</th>
-                                      <th>Available at 
-                                        Other Company</th>
-
+                                    
                                       <th>MTO Qty</th>
 
                                       <th>Qty for PO</th>
@@ -1507,11 +1518,8 @@
                             </tbody>
                           </table>
                         </div>
-                        <!-- /.form-group -->
                       </div>
-                      <!-- /.col -->
-  
-                      <!-- /.col -->
+ 
                     </div>
                    
                   </div>
@@ -1548,6 +1556,8 @@
     crossorigin="anonymous"
   ></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
   <script>    
   
   $(document).ready(function(){
@@ -1630,5 +1640,15 @@ $(document).ready(function() {
         $('#myModal22').modal('show'); // Show the modal when "Yes" is clicked
     });
 });
+
+
+$(function () {
+        $("#datepicker")
+          .datepicker({
+            autoclose: true,
+            todayHighlight: true,
+          })
+          .datepicker("update", new Date());
+      });
   </script>
 </html>
