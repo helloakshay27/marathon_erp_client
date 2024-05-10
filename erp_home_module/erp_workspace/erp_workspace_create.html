@@ -1119,293 +1119,917 @@
         </aside>
 
         <div class="website-content overflow-auto">
-          <div class="module-data-section workflow p-4 position-relative"  >
+          <div class="module-data-section workflow p-4 position-relative" style="    margin-bottom: 250px;
+         "  >
             <a href="">Home > Purchase > MOR > Material Order Request list</a>
             <h5 class="mt-4 ms-4">Workflow List Page</h5>
 
-           
-         
-            <div class="card mx-3 mt-3 collapsed-card" id="when">
-              <div class="card-header4" data-card-widget="collapse">
-                <h3 class="card-title">When</h3>
 
-                <div class="card-tools"  class="btn btn-tool"
-                >
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="collapse"
-                  >
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="16" cy="16" r="16" fill="#8B0203" />
-                      <path
-                        d="M16 24L9.0718 12L22.9282 12L16 24Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body mt-0 pt-0">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <div class="form-group">
-                      <label>This rule will be executed when
-                      </label>
-                      <select
-                        class="form-control form-select"
-                        style="width: 100%"
-                      >
-                        <option selected="selected">Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-
-
-                  </div>
-
-        
-
-       
-                </div>
-              </div>
-
-              <div class="card-footer ">
-
-                <div class=" justify-content-center d-flex gap-3">
-                  <button class="purple-btn1 m-0 w-10">
-                     
-                    Cancel
-                </button>
-  
-                <button class="purple-btn2 m-0">
-                  
-                    Next
-                </button>
-                </div>
-
- 
- 
-              </div>
-            </div>
-
-            <div class="card mx-3 mt-2 collapsed-card" id="condition">
-              <div class="card-header4">
-                <h3 class="card-title">Condition</h3>
-
-                <div class="card-tools">
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="collapse"
-                  >
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="16" cy="16" r="16" fill="#8B0203" />
-                      <path
-                        d="M16 24L9.0718 12L22.9282 12L16 24Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body mt-0 pt-0">
-                <div class="row align-items-center">
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label>Which MOR would you like to apply the rule to?
-                      </label>
- 
-                    </div>
-
-
-
-   
-                  </div>
-
-
+            <div class="workfolow-creation m-2" id="workflow">
 
                 
-                </div>
+                <div class="row  mt-4  align-items-start when" id="when">
 
 
-                <div class="row">
-
-                  <div class="col-md-2">
-                    <div class="form-group mt-3">
-                      <div class="form-group">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="radio1">
-                          <label class="form-check-label">MOR Matching certain conditions
-                          </label>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="col-md-2 setLine nextLine position-relative">
+                    <div class="wf_rnd crm-font-bold f14 caps"><span class="wfWhenText">When</span></div>
                   </div>
+                  <div class="col-md-6">
+                    <div class="wfSubSec " id="trigEditSumMode">
+                       
+                      <div class="card mx-3 mt-3 " id="when">
 
-                  <div class="col-md-2">
-                    <div class="form-group mt-3">
-                      <div class="form-group">
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="radio1">
-                          <label class="form-check-label">All MOR
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              
-              <div class="card-footer ">
-
-                <div class=" justify-content-center d-flex gap-3">
-                  <button class="purple-btn1 m-0 w-10">
-                     
-                    Cancel
-                </button>
-  
-                <button class="purple-btn2 m-0">
+                        <div class="card-body ">
+                          <div class="row align-items-center">
+                            <div class="col-md-6
+                            ">
+                              <div class="form-group">
+                                <label>This rule will be executed when
+                                </label>
+                         
+                              </div>
+          
+          
+                            </div>
+                            <div class="col-md-6
+                            ">
+                              <div class="form-group">
+                         
+                                <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+          
+          
+                            </div>
+          
+          
                   
-                    Next
-                </button>
+          
+                 
+                          </div>
+                        </div>
+          
+                        <div class="card-footer ">
+          
+                          <div class=" justify-content-center d-flex gap-3">
+                            <button class="purple-btn1 m-0 w-10">
+                               
+                              Cancel
+                          </button>
+            
+                          <button class="purple-btn2 m-0">
+                            
+                              Next
+                          </button>
+                          </div>
+          
+           
+           
+                        </div>
+                      </div>
+
+
+
+                    </div>
+                  </div>
                 </div>
 
- 
- 
-              </div>
+
+
+
+               <div class="condition" id="condition_container">
+                <div class="row  mt-4 align-items-start">
+
+
+                  <div class="col-md-2 criLine setLine  position-relative">
+                    <div class="wf_rnd criRnd crm-font-bold f14 caps">
+                      <span class="wfConditionText">Condition <span class="countercondition"></span></span></div>
+                      <div class="add-condition mt-5" >
+                        <button class="remove_condition_btn btn p-0 " onclick="addCondition()">
+                          + Add Condition
+
+                        </button>
+                      </div>
+                  </div>
+           
+                  <div class="col-md-7   actionnextLine position-relative ">
+                    <div class="wfSubSec " id="trigEditSumMode">
+
+                      <div class="card mx-3 mt-2" id="condition">
+    
+                        <div class="card-body " style="display: block;">
+                          <div class="row align-items-center">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Which MOR would you like to apply the rule to?
+                                </label>
+           
+                              </div>
+          
+          
+          
+             
+                            </div>
+          
+          
+          
+                          
+                          </div>
+          
+          
+                          <div class="row">
+          
+                            <div class="col-md-6">
+                              <div class="form-group mt-3">
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                    <label class="form-check-label">MOR Matching certain conditions
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                            <div class="col-md-5">
+                              <div class="form-group mt-3">
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                    <label class="form-check-label">All MOR
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                          </div>
+                          <div class="row mt-3 align-items-center " id="sub-condition-template">
+                            <div class="col-md-1">
+                              <div class="counter">
+                                1
+                              </div>
+                            </div>
+          
+                            <div class="col-md-4">
+                              <div class="form-group">
+                         
+                                <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Filed</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+          
+                            <div class="col-md-2">
+                              <div class="form-group">
+                                 <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Is</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Send For Approvol</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-1">
+                                <button class="btn p-0"  onclick="addSubCondition()">
+                                  <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <button class="btn p-0 removeSubCondition" onclick="removeSubCondition(this)" style="display: none;">
+                                  <i class="fa-solid fa-minus"></i>
+                                    
+                                </button>
+                               
+                                  
+                                  
+                            </div>
+          
+                          </div>
+                          <div id="sub-condition-container">
+
+                          </div>
+                        </div>
+          
+                        
+                        <div class="card-footer " style="display: block;">
+          
+                          <div class=" justify-content-center d-flex gap-3">
+                            <button class="purple-btn1 m-0 w-10">
+                               
+                              Cancel
+                          </button>
+            
+                          <button class="purple-btn2 m-0">
+                            
+                              Next
+                          </button>
+                          </div>
+          
+           
+           
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row mt-4">
+                  <div class="col-md-2    position-relative">
+                  </div>
+                  <div class="col-md-7  position-relative ">
+    
+                         <div class="row">
+                            <div class="col-md-4 actionLine  position-relative">
+                                <div class="card p-2">
+                                  <div class="instant-action d-flex gap-3 justify-content-center curser_p" data-target=".wfActInsActUl" >
+                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M15.9744 9.99724C15.9373 9.82957 15.8606 9.67357 15.7508 9.54272C15.6409 9.41187 15.5013 9.31011 15.3439 9.24624L10.8936 7.44192L11.8144 1.21803C11.8483 0.994537 11.8105 0.765944 11.7068 0.565783C11.603 0.365621 11.4387 0.204425 11.238 0.10584C11.0373 0.00725379 10.8107 -0.0235334 10.5914 0.017994C10.3721 0.0595214 10.1718 0.171178 10.0197 0.336585L0.2808 10.9139C0.165036 11.0396 0.0812397 11.192 0.0366686 11.3579C-0.00790245 11.5238 -0.0119044 11.6982 0.0250092 11.866C0.0619228 12.0338 0.138639 12.19 0.248514 12.321C0.358389 12.452 0.498109 12.5539 0.655574 12.6178L5.10591 14.4221L4.18506 20.6486C4.15126 20.8721 4.18899 21.1007 4.29274 21.3009C4.39648 21.501 4.56076 21.6622 4.7615 21.7608C4.96223 21.8594 5.18885 21.8902 5.40811 21.8487C5.62737 21.8071 5.82773 21.6955 5.9798 21.5301L15.7187 10.9527C15.835 10.8267 15.9191 10.6737 15.9636 10.5072C16.0082 10.3406 16.0119 10.1656 15.9744 9.99724ZM6.74761 17.5927L7.29281 13.9109C7.32765 13.6752 7.28298 13.4345 7.16604 13.2278C7.04909 13.0212 6.86672 12.8605 6.64848 12.772L2.84683 11.2304L9.2519 4.27401L8.7067 7.95581C8.67186 8.19145 8.71653 8.43212 8.83347 8.63882C8.95042 8.84551 9.13279 9.00613 9.35103 9.09464L13.1527 10.6363L6.74761 17.5927Z" fill="#8B0203"/>
+                                      </svg>
+                                      Instant Action
+
+                                  </div>
+
+                                  <ul class="wfActInsActUl capt wfActUlList"  style="left: auto;right: 0px;top: 50px; display: none;">
+                                    <li class="wfFieldupdateIc " data-bs-toggle="modal"
+                                    data-bs-target="#update_flied" >
+                                    <span class="bdrTopB"  ></span> Field Update
+                                  
+                                   </li>
+                                    
+                                    
+                                    <li data-bs-toggle="modal"
+                                    data-bs-target="#assign_user">
+                                    <span class="bdrTopB"></span> Assign Owner
+                                  </li>
+                                    <li data-bs-toggle="modal"
+                                    data-bs-target="#add_tags">
+                                    <span class="bdrTopB"></span> Tags
+                                  </li>
+                                  <li  data-bs-toggle="modal"
+                                  data-bs-target="#notification">
+                                    <span class="bdrTopB"></span> Email Notification
+                                  </li>
+                                 </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="offset-md-2 col-md-4">
+                              <div class="card p-2 " style="cursor: pointer;" data-bs-toggle="modal"
+                              data-bs-target="#set_time">
+                                <div class="instant-action d-flex gap-3 justify-content-center" >
+                                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9744 9.99724C15.9373 9.82957 15.8606 9.67357 15.7508 9.54272C15.6409 9.41187 15.5013 9.31011 15.3439 9.24624L10.8936 7.44192L11.8144 1.21803C11.8483 0.994537 11.8105 0.765944 11.7068 0.565783C11.603 0.365621 11.4387 0.204425 11.238 0.10584C11.0373 0.00725379 10.8107 -0.0235334 10.5914 0.017994C10.3721 0.0595214 10.1718 0.171178 10.0197 0.336585L0.2808 10.9139C0.165036 11.0396 0.0812397 11.192 0.0366686 11.3579C-0.00790245 11.5238 -0.0119044 11.6982 0.0250092 11.866C0.0619228 12.0338 0.138639 12.19 0.248514 12.321C0.358389 12.452 0.498109 12.5539 0.655574 12.6178L5.10591 14.4221L4.18506 20.6486C4.15126 20.8721 4.18899 21.1007 4.29274 21.3009C4.39648 21.501 4.56076 21.6622 4.7615 21.7608C4.96223 21.8594 5.18885 21.8902 5.40811 21.8487C5.62737 21.8071 5.82773 21.6955 5.9798 21.5301L15.7187 10.9527C15.835 10.8267 15.9191 10.6737 15.9636 10.5072C16.0082 10.3406 16.0119 10.1656 15.9744 9.99724ZM6.74761 17.5927L7.29281 13.9109C7.32765 13.6752 7.28298 13.4345 7.16604 13.2278C7.04909 13.0212 6.86672 12.8605 6.64848 12.772L2.84683 11.2304L9.2519 4.27401L8.7067 7.95581C8.67186 8.19145 8.71653 8.43212 8.83347 8.63882C8.95042 8.84551 9.13279 9.00613 9.35103 9.09464L13.1527 10.6363L6.74761 17.5927Z" fill="#8B0203"/>
+                                    </svg>
+                                    Scheduled Action
+
+
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                  </div>
+
+                </div>
+               </div>
+
+               <div class="condition condition_demo" id="condition_demo" style="display: none;">
+                <div class="row  mt-4 align-items-start">
+
+
+                  <div class="col-md-2 criLine setLine  position-relative">
+                    <div class="wf_rnd criRnd crm-font-bold f14 caps">
+                      <span class="wfConditionText">Condition <span class="countercondition"></span></span></div>
+                      <div class="add-condition mt-5" >
+                        <button class="remove_condition_btn btn p-0 " onclick="addCondition()">
+                          + Add Condition
+
+                        </button>
+                      </div>
+                  </div>
+           
+                  <div class="col-md-7   actionnextLine position-relative ">
+                    <div class="wfSubSec " id="trigEditSumMode">
+
+                      <div class="card mx-3 mt-2" id="condition">
+    
+                        <div class="card-body " style="display: block;">
+                          <div class="row align-items-center">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Which MOR would you like to apply the rule to?
+                                </label>
+           
+                              </div>
+          
+          
+          
+             
+                            </div>
+          
+          
+          
+                          
+                          </div>
+          
+          
+                          <div class="row">
+          
+                            <div class="col-md-6">
+                              <div class="form-group mt-3">
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                    <label class="form-check-label">MOR Matching certain conditions
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                            <div class="col-md-5">
+                              <div class="form-group mt-3">
+                                <div class="form-group">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                    <label class="form-check-label">All MOR
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+          
+                          </div>
+                          <div class="row mt-3 align-items-center " id="sub-condition-template">
+                            <div class="col-md-1">
+                              <div class="counter">
+                                1
+                              </div>
+                            </div>
+          
+                            <div class="col-md-4">
+                              <div class="form-group">
+                         
+                                <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Filed</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+          
+                            <div class="col-md-2">
+                              <div class="form-group">
+                                 <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Is</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-4">
+                              <div class="form-group">
+                                <select class="form-control form-select" style="width: 100%">
+                                  <option selected="selected">Send For Approvol</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-md-1">
+                                <button class="btn p-0"  onclick="addSubCondition()">
+                                  <i class="fa-solid fa-plus"></i>
+                                </button>
+                                <button class="btn p-0 removeSubCondition" onclick="removeSubCondition(this)" style="display: none;">
+                                  <i class="fa-solid fa-minus"></i>
+                                    
+                                </button>
+                               
+                                  
+                                  
+                            </div>
+          
+                          </div>
+                          <div id="sub-condition-container">
+
+                          </div>
+                        </div>
+          
+                        
+                        <div class="card-footer " style="display: block;">
+          
+                          <div class=" justify-content-center d-flex gap-3">
+                            <button class="purple-btn1 m-0 w-10">
+                               
+                              Cancel
+                          </button>
+            
+                          <button class="purple-btn2 m-0">
+                            
+                              Next
+                          </button>
+                          </div>
+          
+           
+           
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row mt-4">
+                  <div class="col-md-2    position-relative">
+                  </div>
+                  <div class="col-md-7  position-relative ">
+    
+                         <div class="row">
+                            <div class="col-md-4 actionLine  position-relative">
+                                <div class="card p-2">
+                                  <div class="instant-action d-flex gap-3 justify-content-center curser_p" data-target=".wfActInsActUl" >
+                                    <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M15.9744 9.99724C15.9373 9.82957 15.8606 9.67357 15.7508 9.54272C15.6409 9.41187 15.5013 9.31011 15.3439 9.24624L10.8936 7.44192L11.8144 1.21803C11.8483 0.994537 11.8105 0.765944 11.7068 0.565783C11.603 0.365621 11.4387 0.204425 11.238 0.10584C11.0373 0.00725379 10.8107 -0.0235334 10.5914 0.017994C10.3721 0.0595214 10.1718 0.171178 10.0197 0.336585L0.2808 10.9139C0.165036 11.0396 0.0812397 11.192 0.0366686 11.3579C-0.00790245 11.5238 -0.0119044 11.6982 0.0250092 11.866C0.0619228 12.0338 0.138639 12.19 0.248514 12.321C0.358389 12.452 0.498109 12.5539 0.655574 12.6178L5.10591 14.4221L4.18506 20.6486C4.15126 20.8721 4.18899 21.1007 4.29274 21.3009C4.39648 21.501 4.56076 21.6622 4.7615 21.7608C4.96223 21.8594 5.18885 21.8902 5.40811 21.8487C5.62737 21.8071 5.82773 21.6955 5.9798 21.5301L15.7187 10.9527C15.835 10.8267 15.9191 10.6737 15.9636 10.5072C16.0082 10.3406 16.0119 10.1656 15.9744 9.99724ZM6.74761 17.5927L7.29281 13.9109C7.32765 13.6752 7.28298 13.4345 7.16604 13.2278C7.04909 13.0212 6.86672 12.8605 6.64848 12.772L2.84683 11.2304L9.2519 4.27401L8.7067 7.95581C8.67186 8.19145 8.71653 8.43212 8.83347 8.63882C8.95042 8.84551 9.13279 9.00613 9.35103 9.09464L13.1527 10.6363L6.74761 17.5927Z" fill="#8B0203"/>
+                                      </svg>
+                                      Instant Action
+
+                                  </div>
+
+                                  <ul class="wfActInsActUl capt wfActUlList"  style="left: auto;right: 0px;top: 50px; display: none;">
+                                    <li class="wfFieldupdateIc " data-bs-toggle="modal"
+                                    data-bs-target="#update_flied" >
+                                    <span class="bdrTopB"  ></span> Field Update
+                                  
+                                   </li>
+                                    
+                                    
+                                    <li data-bs-toggle="modal"
+                                    data-bs-target="#assign_user">
+                                    <span class="bdrTopB"></span> Assign Owner
+                                  </li>
+                                    <li style="" data-bs-toggle="modal"
+                                    data-bs-target="#add_tags">
+                                    <span class="bdrTopB"></span> Tags<div class="notifyRightArrow"></div>
+                                  </li>
+                                  <li style="" data-bs-toggle="modal"
+                                  data-bs-target="#notification">
+                                    <span class="bdrTopB"></span> Email Notification
+                                  </li>
+                                 </ul>
+                                    
+                                </div>
+                            </div>
+                            <div class="offset-md-2 col-md-4">
+                              <div class="card p-2 " style="cursor: pointer;" data-bs-toggle="modal"
+                              data-bs-target="#set_time">
+                                <div class="instant-action d-flex gap-3 justify-content-center" >
+                                  <svg width="16" height="22" viewBox="0 0 16 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.9744 9.99724C15.9373 9.82957 15.8606 9.67357 15.7508 9.54272C15.6409 9.41187 15.5013 9.31011 15.3439 9.24624L10.8936 7.44192L11.8144 1.21803C11.8483 0.994537 11.8105 0.765944 11.7068 0.565783C11.603 0.365621 11.4387 0.204425 11.238 0.10584C11.0373 0.00725379 10.8107 -0.0235334 10.5914 0.017994C10.3721 0.0595214 10.1718 0.171178 10.0197 0.336585L0.2808 10.9139C0.165036 11.0396 0.0812397 11.192 0.0366686 11.3579C-0.00790245 11.5238 -0.0119044 11.6982 0.0250092 11.866C0.0619228 12.0338 0.138639 12.19 0.248514 12.321C0.358389 12.452 0.498109 12.5539 0.655574 12.6178L5.10591 14.4221L4.18506 20.6486C4.15126 20.8721 4.18899 21.1007 4.29274 21.3009C4.39648 21.501 4.56076 21.6622 4.7615 21.7608C4.96223 21.8594 5.18885 21.8902 5.40811 21.8487C5.62737 21.8071 5.82773 21.6955 5.9798 21.5301L15.7187 10.9527C15.835 10.8267 15.9191 10.6737 15.9636 10.5072C16.0082 10.3406 16.0119 10.1656 15.9744 9.99724ZM6.74761 17.5927L7.29281 13.9109C7.32765 13.6752 7.28298 13.4345 7.16604 13.2278C7.04909 13.0212 6.86672 12.8605 6.64848 12.772L2.84683 11.2304L9.2519 4.27401L8.7067 7.95581C8.67186 8.19145 8.71653 8.43212 8.83347 8.63882C8.95042 8.84551 9.13279 9.00613 9.35103 9.09464L13.1527 10.6363L6.74761 17.5927Z" fill="#8B0203"/>
+                                    </svg>
+                                    Scheduled Action
+
+
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+
+                  </div>
+
+                </div>
+               </div>
+
+               <div class="condition-template" id="condition_template">
+                 
+                     
+
+
+               </div>
+             
+
+
             </div>
 
 
 
-
-            <div class="card mx-3 mt-2 collapsed-card" id="action">
-              <div class="card-header4">
-                <h3 class="card-title">Action</h3>
-
-                <div class="card-tools">
-                  <button
-                    type="button"
-                    class="btn btn-tool"
-                    data-card-widget="collapse"
-                  >
-                    <svg
-                      width="32"
-                      height="32"
-                      viewBox="0 0 32 32"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <circle cx="16" cy="16" r="16" fill="#8B0203" />
-                      <path
-                        d="M16 24L9.0718 12L22.9282 12L16 24Z"
-                        fill="white"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="card-body mt-0 pt-0">
-                <div class="row align-items-center">
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label>From Status</label>
-                      <select
-                        class="form-control form-select"
-                        style="width: 100%"
-                      >
-                        <option selected="selected">Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-
-                    <div class="form-group mt-3">
-                      <label>To Status</label>
-                      <select
-                        class="form-control form-select"
-                        style="width: 100%"
-                      >
-                        <option selected="selected">Alabama</option>
-                        <option>Alaska</option>
-                        <option>California</option>
-                        <option>Delaware</option>
-                        <option>Tennessee</option>
-                        <option>Texas</option>
-                        <option>Washington</option>
-                      </select>
-                    </div>
-                  </div>
-
-                  <div class="col-md-4">
-                    <div class="form-group">
-                      <label>Remark</label>
-                      <textarea
-                        class="form-control"
-                        rows="4"
-                        placeholder="Enter ..."
-                      ></textarea>
-                    </div>
-                  </div>
-
-                  <div class="offset-md-1 col-md-2">
-                    <button class="purple-btn2 m-0">
-                      <a
-                        style="color: white"
-                        href="./erp-material-order-request-create.html"
-                      >
-                        Submit
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
+         
+          
 
             
           </div>
 
+          <!-- assign user action -->
 
 
-              <!-- Total Content Here -->
+          <div
+          class="modal fade"
+          id="assign_user"
+          tabindex="-1"
+          aria-labelledby="exampleModal2Label"
+          style="display: none"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog  modal-dialog-scrollable modal-md" 
+         >
+            <div class="modal-content">
+              <div class="modal-header modal-header-k">
+                <h4
+                  class="modal-title text-center w-100"
+                  id="exampleModalLabel"
+                  style="font-weight: 500"
+                >
+                Assign to User
 
 
-            <!-- filter modal -->
-                  <div
+
+                </h4>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body" style="height: 200px;">
+                <div class="row justify-content-start align-items-center mt-3">
+                  <div class=" col-md-4">
+    
+                  <label for=""> Assign owner in</label>
+               
+                  </div>
+                  <div class="col-md-8">
+                    <select
+                    name="task_tag_ids[]"
+                    id="task_tags_select"
+                    data-placeholder="Minutes"
+                    class=" form-control form-select select-font2 multi-dropdown"
+                    multiple="multiple" style="background-color: #8b0203; border: none;"
+                  >
+                    <option value="11">GoPhygital</option>
+                    <option value="26">PSIPL</option>
+                    <option value="27">Vodafone</option>
+                    <option value="28">Godrej Living</option>
+                    <option value="29">Godrej Snag360</option>
+                    <option value="30">Runwal</option>
+                    <option value="31">Arvind</option>
+                    <option value="32">Panchshil</option>
+                    <option value="33">TRIL</option>
+                    <option value="34">ZS</option>
+                    <option value="35">CMRL</option>
+                    <option value="36">Global Infocity</option>
+                    <option value="37">Birla</option>
+                    <option value="38">Chandak</option>
+                    <option value="39">Mehta</option>
+                    <option value="40">Marathon</option>
+                    <option value="41">Mirchandani</option>
+                    <option value="44">Piramal</option>
+                    <option value="45">Bajaj</option>
+                    <option value="46">Phoenix</option>
+                    <option value="60">All Sites</option>
+                    <option value="61">Oberoi 360</option>
+                    <option value="62">JP Infra</option>
+                    <option value="63">Lockated</option>
+                    <option value="83">L Decor</option>
+                    <option value="85">RHB</option>
+                    <option value="93">Kalpartaru</option>
+                    <option value="94">Marathon</option>
+                    <option value="97">Rustomjee</option>
+                    <option value="98">Urban Wrk</option>
+                    <option value="105">Delhi</option>
+                  </select>
+                  </div>
+
+                </div>
+
+                <div class="row justify-content-start align-items-center mt-2">
+                 
+                 <div class="col-md-5 mb-2">
+                  <div class="form-group">
+                    <div class="form-check d-flex align-items-start gap-2">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="radio1"
+                      />
+                      <label class="form-check-label"
+                        >Category</label
+                      >
+                    </div>
+                  </div>
+                 </div>
+                  <label class="" for=""> Select User Based On</label>
+
+
+
+                  <div class="col-md-3 mb-2">
+                    <select
+                    name="task_tag_ids[]"
+                    id="task_tags_select"
+                    data-placeholder="Minutes"
+                    class=" form-control form-select select-font2 multi-dropdown"
+                    multiple="multiple" style="background-color: #8b0203; border: none;"
+                  >
+                    <option value="11">GoPhygital</option>
+                    <option value="26">PSIPL</option>
+                    <option value="27">Vodafone</option>
+                    <option value="28">Godrej Living</option>
+                    <option value="29">Godrej Snag360</option>
+                    <option value="30">Runwal</option>
+                    <option value="31">Arvind</option>
+                    <option value="32">Panchshil</option>
+                    <option value="33">TRIL</option>
+                    <option value="34">ZS</option>
+                    <option value="35">CMRL</option>
+                    <option value="36">Global Infocity</option>
+                    <option value="37">Birla</option>
+                    <option value="38">Chandak</option>
+                    <option value="39">Mehta</option>
+                    <option value="40">Marathon</option>
+                    <option value="41">Mirchandani</option>
+                    <option value="44">Piramal</option>
+                    <option value="45">Bajaj</option>
+                    <option value="46">Phoenix</option>
+                    <option value="60">All Sites</option>
+                    <option value="61">Oberoi 360</option>
+                    <option value="62">JP Infra</option>
+                    <option value="63">Lockated</option>
+                    <option value="83">L Decor</option>
+                    <option value="85">RHB</option>
+                    <option value="93">Kalpartaru</option>
+                    <option value="94">Marathon</option>
+                    <option value="97">Rustomjee</option>
+                    <option value="98">Urban Wrk</option>
+                    <option value="105">Delhi</option>
+                  </select>
+                  </div>
+
+                  <div class="col-md-9 mb-2">
+                    <select
+                    name="task_tag_ids[]"
+                    id="task_tags_select"
+                    data-placeholder="Minutes"
+                    class=" form-control form-select select-font2 multi-dropdown"
+                    multiple="multiple" style="background-color: #8b0203; border: none;"
+                  >
+                    <option value="11">GoPhygital</option>
+                    <option value="26">PSIPL</option>
+                    <option value="27">Vodafone</option>
+                    <option value="28">Godrej Living</option>
+                    <option value="29">Godrej Snag360</option>
+                    <option value="30">Runwal</option>
+                    <option value="31">Arvind</option>
+                    <option value="32">Panchshil</option>
+                    <option value="33">TRIL</option>
+                    <option value="34">ZS</option>
+                    <option value="35">CMRL</option>
+                    <option value="36">Global Infocity</option>
+                    <option value="37">Birla</option>
+                    <option value="38">Chandak</option>
+                    <option value="39">Mehta</option>
+                    <option value="40">Marathon</option>
+                    <option value="41">Mirchandani</option>
+                    <option value="44">Piramal</option>
+                    <option value="45">Bajaj</option>
+                    <option value="46">Phoenix</option>
+                    <option value="60">All Sites</option>
+                    <option value="61">Oberoi 360</option>
+                    <option value="62">JP Infra</option>
+                    <option value="63">Lockated</option>
+                    <option value="83">L Decor</option>
+                    <option value="85">RHB</option>
+                    <option value="93">Kalpartaru</option>
+                    <option value="94">Marathon</option>
+                    <option value="97">Rustomjee</option>
+                    <option value="98">Urban Wrk</option>
+                    <option value="105">Delhi</option>
+                  </select>
+                  </div>
+
+                  <div class="col-md-8 mb-2">
+                    <div class="form-group">
+                      <div class="form-check d-flex align-items-start gap-2">
+                        <input
+                          class="form-check-input"
+                          type="radio"
+                          name="radio1"
+                        />
+                        <label class="form-check-label"
+                        >Users Matching Certain Condition</label
+                      >
+                      </div>
+                    </div>
+                   </div>
+
+                  <div class="col-md-5 ">
+                    <div class="form-group">
+                      <div class="form-check d-flex align-items-start gap-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="radio1"
+                        />
+                        <label class="form-check-label"
+                          >Assign Only To Online Users</label
+                        >
+                      </div>
+                    </div>
+                   </div>
+                   <div class="col-md-7  ">
+                    <div class="form-group">
+                      <div class="form-check d-flex align-items-start gap-2">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          name="radio1"
+                        />
+                        <label class="form-check-label"
+                          >Send Email Notification To the New Owner</label
+                        >
+                      </div>
+                    </div>
+                   </div>
+
+
+                </div>
+
+
+               
+
+
+
+              </div>
+              <div
+              class="modal-footer modal-footer-k justify-content-center"
+            >
+              <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="purple-btn2" >Save and Associate</button>
+
+
+             
+            </div>
+            </div>
+          </div>
+         </div>
+
+
+          <!-- assign user action end -->
+
+
+
+
+
+          <!-- Add Tags action -->
+
+
+      <div
+      class="modal fade"
+      id="add_tags"
+      tabindex="-1"
+      aria-labelledby="exampleModal2Label"
+      style="display: none"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog  modal-dialog-scrollable modal-md" 
+     >
+        <div class="modal-content">
+          <div class="modal-header modal-header-k">
+            <h4
+              class="modal-title text-center w-100"
+              id="exampleModalLabel"
+              style="font-weight: 500"
+            >
+            Add Tags
+
+
+
+            </h4>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body" style="height: 200px;">
+            <div class="row justify-content-start align-items-center mt-3">
+
+              <div class="col-md-12">
+                <div class="form-group">
+                  <input class="form-control" type="text" placeholder="Enter Tags">
+                </div>
+              </div>
+
+            </div>
+
+            <div class="row justify-content-start align-items-center mt-2">
+             
+             <div class="col-md-12 mb-2">
+              <div class="form-group">
+                <div class="form-check d-flex align-items-start gap-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    name="radio1"
+                  />
+                  <label class="form-check-label"
+                    >Overwrite any existing Tags in the selected records with the above Tags(s)</label
+                  >
+                </div>
+              </div>
+             </div>
+
+
+
+
+
+            </div>
+
+
+           
+
+
+
+          </div>
+          <div
+          class="modal-footer modal-footer-k justify-content-center"
+        >
+          <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="purple-btn2" >Save and Associate</button>
+
+
+         
+        </div>
+        </div>
+      </div>
+    </div>
+          <!-- Add Tags action end -->
+
+
+          <!--  Update filed list page action -->
+
+
+                   <div
                     class="modal fade"
-                    id="exampleModal2"
+                    id="update_flied"
                     tabindex="-1"
                     aria-labelledby="exampleModal2Label"
                     style="display: none"
                     aria-hidden="true"
                   >
                     <div
-                      class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
-                    >
+                      class="modal-dialog  modal-dialog-scrollable modal-lg " 
+                    style="max-width: 1000px;">
                       <div class="modal-content">
                         <div class="modal-header modal-header-k">
                           <h4
@@ -1413,7 +2037,10 @@
                             id="exampleModalLabel"
                             style="font-weight: 500"
                           >
-                            Filters
+                          Update Field
+
+
+
                           </h4>
                           <button
                             type="button"
@@ -1423,350 +2050,384 @@
                           ></button>
                         </div>
 
-                        <div class="modal-body">
-                          <div class="row">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label style="font-size: 16px; font-weight: 600"
-                                  >MOR Date
-                                </label>
+                        <div class="modal-body" style="height: 200px;">
+                          <div class="row justify-content-center align-items-center mt-3">
+                            <div class=" col-md-4">
+              
 
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>From</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>To</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
+                              <form>
+                                <div class="input-group">
+                                  <input type="search" class="form-control tbl-search" placeholder="Type your keywords here">
+                                  <div class="input-group-append">
+                                    <button type="submit" class="btn btn-md btn-default">
+                                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.66927 13.939C3.9026 13.939 0.835938 11.064 0.835938 7.53271C0.835938 4.00146 3.9026 1.12646 7.66927 1.12646C11.4359 1.12646 14.5026 4.00146 14.5026 7.53271C14.5026 11.064 11.4359 13.939 7.66927 13.939ZM7.66927 2.06396C4.44927 2.06396 1.83594 4.52021 1.83594 7.53271C1.83594 10.5452 4.44927 13.0015 7.66927 13.0015C10.8893 13.0015 13.5026 10.5452 13.5026 7.53271C13.5026 4.52021 10.8893 2.06396 7.66927 2.06396Z" fill="#8B0203"></path>
+                                        <path d="M14.6676 14.5644C14.5409 14.5644 14.4143 14.5206 14.3143 14.4269L12.9809 13.1769C12.7876 12.9956 12.7876 12.6956 12.9809 12.5144C13.1743 12.3331 13.4943 12.3331 13.6876 12.5144L15.0209 13.7644C15.2143 13.9456 15.2143 14.2456 15.0209 14.4269C14.9209 14.5206 14.7943 14.5644 14.6676 14.5644Z" fill="#8B0203"></path>
+                                      </svg>
+                                    </button>
                                   </div>
                                 </div>
-                              </div>
+                              </form>
+                              </label>
                             </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label style="font-size: 16px; font-weight: 600"
-                                  >Approval Date
-                                </label>
-
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>From</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>To</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
-                                  </div>
+                            <div class="col-md-3">
+                              <div class="row justify-content-center align-items-center">
+                                <div class=" col-md-5">
+                  
+    
+                                  <label for=""> Trigger Time
+    
+                                  </label>
                                 </div>
-                              </div>
-                            </div>
-                          </div>
-
-                          <div class="row mt-4 align-items-end">
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label style="font-size: 16px; font-weight: 600"
-                                  >Due Date
-                                </label>
-
-                                <div class="row">
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>From</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
-                                  </div>
-                                  <div class="col-md-6">
-                                    <div class="form-group">
-                                      <label>To</label>
-                                      <input
-                                        class="form-control"
-                                        type="date"
-                                        placeholder="Default input"
-                                      />
-                                    </div>
-                                  </div>
+                                <div class="col-md-7">
+                                  <select
+                                  name="task_tag_ids[]"
+                                  id="task_tags_select"
+                                  data-placeholder="Minutes"
+                                  class=" form-control form-select select-font2 multi-dropdown"
+                                  multiple="multiple" style="background-color: #8b0203; border: none;"
+                                >
+                                  <option value="11">GoPhygital</option>
+                                  <option value="26">PSIPL</option>
+                                  <option value="27">Vodafone</option>
+                                  <option value="28">Godrej Living</option>
+                                  <option value="29">Godrej Snag360</option>
+                                  <option value="30">Runwal</option>
+                                  <option value="31">Arvind</option>
+                                  <option value="32">Panchshil</option>
+                                  <option value="33">TRIL</option>
+                                  <option value="34">ZS</option>
+                                  <option value="35">CMRL</option>
+                                  <option value="36">Global Infocity</option>
+                                  <option value="37">Birla</option>
+                                  <option value="38">Chandak</option>
+                                  <option value="39">Mehta</option>
+                                  <option value="40">Marathon</option>
+                                  <option value="41">Mirchandani</option>
+                                  <option value="44">Piramal</option>
+                                  <option value="45">Bajaj</option>
+                                  <option value="46">Phoenix</option>
+                                  <option value="60">All Sites</option>
+                                  <option value="61">Oberoi 360</option>
+                                  <option value="62">JP Infra</option>
+                                  <option value="63">Lockated</option>
+                                  <option value="83">L Decor</option>
+                                  <option value="85">RHB</option>
+                                  <option value="93">Kalpartaru</option>
+                                  <option value="94">Marathon</option>
+                                  <option value="97">Rustomjee</option>
+                                  <option value="98">Urban Wrk</option>
+                                  <option value="105">Delhi</option>
+                                </select>
                                 </div>
+                    
                               </div>
                             </div>
-                            <div class="col-md-6">
-                              <div class="form-group">
-                                <label style="font-size: 16px; font-weight: 600"
-                                  >Approval Date
-                                </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
+                            <div class="offset-md-2 col-md-3 ">
+                              <button class="purple-btn2 m-0" data-bs-toggle="modal" data-bs-target="#new_update" class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close">
+                                  
+                                <span class="material-symbols-outlined align-text-top me-2">
+                                  add 
+                                </span>New Update
+                            </button>
+                           </div>
                           </div>
 
-                          <div class="row mt-3 align-items-end">
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Company </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Project </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Sub-project </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
+                          <div class="tbl-container  mt-3" style="height: 40vh; box-shadow: none;">
+                            <table class="w-100">
+                              <thead>
+                                <tr>
+          
+                                  <th>Field Update Name</th>
+                                  <th>                     
+                                      Module                     
+                                  </th>
+          
+                                  <th>Field to Update</th>
+                                  <th>New Value</th>
+                                
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+          
+                                  <td></td>
+          
+                                  <td>
+               
+                                  </td>
+                                  <td></td>
+                                  <td></td>
+                               
+                               
+                                </tr>
+                              </tbody>
+                            </table>
                           </div>
-                          <div class="row mt-3 align-items-end">
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Material Type </label>
+ 
 
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Material Sub Tupe </label>
+                         
 
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Material </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mt-3 align-items-end">
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Activity </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Status </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>MOR No. </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mt-3 align-items-end">
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Overdue </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                            <div class="col-md-4">
-                              <div class="form-group">
-                                <label>Requisition Department </label>
-
-                                <select
-                                  class="form-control form-select"
-                                  style="width: 100%"
-                                >
-                                  <option selected="selected">Alabama</option>
-                                  <option>Alaska</option>
-                                  <option>California</option>
-                                  <option>Delaware</option>
-                                  <option>Tennessee</option>
-                                  <option>Texas</option>
-                                  <option>Washington</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
+        
+      
                         </div>
                         <div
-                          class="modal-footer modal-footer-k justify-content-center"
-                        >
-                          <a
-                            class="purple-btn2"
-                            href="/pms/admin/task_managements/kanban_list?type="
-                            >Go</a
-                          >
-                        </div>
+                        class="modal-footer modal-footer-k justify-content-center"
+                      >
+                        <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
+
+                       
+                      </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- filter modal end -->
 
-                  <!-- Setting modal -->
+          <!--  Update filed list page action  -->
+
+          <!-- Add / edit Update filed action -->
+
+                  <div
+                  class="modal fade"
+                  id="new_update"
+                  tabindex="-1"
+                  aria-labelledby="exampleModal2Label"
+                  style="display: none"
+                  aria-hidden="true"
+                >
+                  <div
+                    class="modal-dialog  modal-dialog-scrollable modal-md " 
+                      >
+                    <div class="modal-content">
+                      <div class="modal-header modal-header-k">
+                        <h4
+                          class="modal-title text-center w-100"
+                          id="exampleModalLabel"
+                          style="font-weight: 500"
+                        >
+                        Update Field
+
+
+
+                        </h4>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+
+                      <div class="modal-body" style="height: 200px;">
+                        <div class="row justify-content-start align-items-center mt-3">
+                          <div class=" col-md-3">
+            
+                            <label for=""> Name</label>
+
+                          </div>
+                          <div class="col-md-9">
+                            <div class="form-group">
+                              <input class="form-control" type="text" placeholder="Enter Tags">
+                            </div>
+
+                          </div>
+
+
+                        
+
+                        </div>
+
+                        <div class="row justify-content-start align-items-center mt-3">
+                          <div class=" col-md-3">
+            
+                            <label for=""> Module</label>
+
+                          </div>
+                          <div class="col-md-9">
+                            <select
+                            name="task_tag_ids[]"
+                            id="task_tags_select"
+                            data-placeholder="60"
+                            class=" form-control form-select select-font2 multi-dropdown"
+                            multiple="multiple" style="background-color: #8b0203; border: none;"
+                          >
+                            <option value="11">GoPhygital</option>
+                            <option value="26">PSIPL</option>
+                            <option value="27">Vodafone</option>
+                            <option value="28">Godrej Living</option>
+                            <option value="29">Godrej Snag360</option>
+                            <option value="30">Runwal</option>
+                            <option value="31">Arvind</option>
+                            <option value="32">Panchshil</option>
+                            <option value="33">TRIL</option>
+                            <option value="34">ZS</option>
+                            <option value="35">CMRL</option>
+                            <option value="36">Global Infocity</option>
+                            <option value="37">Birla</option>
+                            <option value="38">Chandak</option>
+                            <option value="39">Mehta</option>
+                            <option value="40">Marathon</option>
+                            <option value="41">Mirchandani</option>
+                            <option value="44">Piramal</option>
+                            <option value="45">Bajaj</option>
+                            <option value="46">Phoenix</option>
+                            <option value="60">All Sites</option>
+                            <option value="61">Oberoi 360</option>
+                            <option value="62">JP Infra</option>
+                            <option value="63">Lockated</option>
+                            <option value="83">L Decor</option>
+                            <option value="85">RHB</option>
+                            <option value="93">Kalpartaru</option>
+                            <option value="94">Marathon</option>
+                            <option value="97">Rustomjee</option>
+                            <option value="98">Urban Wrk</option>
+                            <option value="105">Delhi</option>
+                          </select>
+                          </div>
+
+
+                        
+
+                        </div>
+
+
+                        <div class="row justify-content-start align-items-center mt-3">
+                          <div class=" col-md-3">
+            
+                            <label for=""> Update</label>
+
+                          </div>
+                          <div class="col-md-2">
+                            <select
+                            name="task_tag_ids[]"
+                            id="task_tags_select"
+                            data-placeholder="60"
+                            class=" form-control form-select select-font2 multi-dropdown"
+                            multiple="multiple" style="background-color: #8b0203; border: none;"
+                          >
+                            <option value="11">GoPhygital</option>
+                            <option value="26">PSIPL</option>
+                            <option value="27">Vodafone</option>
+                            <option value="28">Godrej Living</option>
+                            <option value="29">Godrej Snag360</option>
+                            <option value="30">Runwal</option>
+                            <option value="31">Arvind</option>
+                            <option value="32">Panchshil</option>
+                            <option value="33">TRIL</option>
+                            <option value="34">ZS</option>
+                            <option value="35">CMRL</option>
+                            <option value="36">Global Infocity</option>
+                            <option value="37">Birla</option>
+                            <option value="38">Chandak</option>
+                            <option value="39">Mehta</option>
+                            <option value="40">Marathon</option>
+                            <option value="41">Mirchandani</option>
+                            <option value="44">Piramal</option>
+                            <option value="45">Bajaj</option>
+                            <option value="46">Phoenix</option>
+                            <option value="60">All Sites</option>
+                            <option value="61">Oberoi 360</option>
+                            <option value="62">JP Infra</option>
+                            <option value="63">Lockated</option>
+                            <option value="83">L Decor</option>
+                            <option value="85">RHB</option>
+                            <option value="93">Kalpartaru</option>
+                            <option value="94">Marathon</option>
+                            <option value="97">Rustomjee</option>
+                            <option value="98">Urban Wrk</option>
+                            <option value="105">Delhi</option>
+                          </select>
+                          </div>
+                          <div class="col-md-1">
+                               =
+                          </div>
+                          <div class="col-md-2">
+                            <select
+                            name="task_tag_ids[]"
+                            id="task_tags_select"
+                            data-placeholder="60"
+                            class=" form-control form-select select-font2 multi-dropdown"
+                            multiple="multiple" style="background-color: #8b0203; border: none;"
+                          >
+                            <option value="11">GoPhygital</option>
+                            <option value="26">PSIPL</option>
+                            <option value="27">Vodafone</option>
+                            <option value="28">Godrej Living</option>
+                            <option value="29">Godrej Snag360</option>
+                            <option value="30">Runwal</option>
+                            <option value="31">Arvind</option>
+                            <option value="32">Panchshil</option>
+                            <option value="33">TRIL</option>
+                            <option value="34">ZS</option>
+                            <option value="35">CMRL</option>
+                            <option value="36">Global Infocity</option>
+                            <option value="37">Birla</option>
+                            <option value="38">Chandak</option>
+                            <option value="39">Mehta</option>
+                            <option value="40">Marathon</option>
+                            <option value="41">Mirchandani</option>
+                            <option value="44">Piramal</option>
+                            <option value="45">Bajaj</option>
+                            <option value="46">Phoenix</option>
+                            <option value="60">All Sites</option>
+                            <option value="61">Oberoi 360</option>
+                            <option value="62">JP Infra</option>
+                            <option value="63">Lockated</option>
+                            <option value="83">L Decor</option>
+                            <option value="85">RHB</option>
+                            <option value="93">Kalpartaru</option>
+                            <option value="94">Marathon</option>
+                            <option value="97">Rustomjee</option>
+                            <option value="98">Urban Wrk</option>
+                            <option value="105">Delhi</option>
+                          </select>
+                          </div>
+
+                          <div class="col-md-4">
+                            <div class="form-group">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" name="radio1">
+                                <label class="form-check-label">Set as Empty
+                                </label>
+                              </div>
+                            </div>                         
+                           </div>
+
+
+
+                        
+
+                        </div>
+
+
+                       
+
+      
+    
+                      </div>
+                      <div
+                      class="modal-footer modal-footer-k justify-content-center"
+                    >
+                      <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="purple-btn2" >Save and Associate</button>
+
+
+                     
+                    </div>
+                    </div>
+                  </div>
+                </div>
+
+          <!--Add / edit Update filed action  -->
+
+
+          <!-- Add manual time action -->
 
                   <div
                     class="modal fade"
-                    id="create_rule"
+                    id="set_time"
                     tabindex="-1"
                     aria-labelledby="exampleModal2Label"
                     style="display: none"
@@ -1782,7 +2443,8 @@
                             id="exampleModalLabel"
                             style="font-weight: 500"
                           >
-                          Create New Rule
+                          Scheduled Action
+
 
                           </h4>
                           <button
@@ -1795,17 +2457,18 @@
 
                         <div class="modal-body" style="height: 200px;">
                           <div class="row justify-content-center align-items-center">
-                            <div class=" col-md-5">
+                            <div class=" col-md-4">
               
 
-                              <label for=""> Module
+                              <label for=""> Trigger Time
+
                               </label>
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-md-4">
                                   <select
                                   name="task_tag_ids[]"
                                   id="task_tags_select"
-                                  data-placeholder="All Module"
+                                  data-placeholder="60"
                                   class=" form-control form-select select-font2 multi-dropdown"
                                   multiple="multiple" style="background-color: #8b0203; border: none;"
                                 >
@@ -1842,111 +2505,267 @@
                                   <option value="105">Delhi</option>
                                 </select>
                             </div>
+                            <div class="col-md-4">
+                              <select
+                              name="task_tag_ids[]"
+                              id="task_tags_select"
+                              data-placeholder="Minutes"
+                              class=" form-control form-select select-font2 multi-dropdown"
+                              multiple="multiple" style="background-color: #8b0203; border: none;"
+                            >
+                              <option value="11">GoPhygital</option>
+                              <option value="26">PSIPL</option>
+                              <option value="27">Vodafone</option>
+                              <option value="28">Godrej Living</option>
+                              <option value="29">Godrej Snag360</option>
+                              <option value="30">Runwal</option>
+                              <option value="31">Arvind</option>
+                              <option value="32">Panchshil</option>
+                              <option value="33">TRIL</option>
+                              <option value="34">ZS</option>
+                              <option value="35">CMRL</option>
+                              <option value="36">Global Infocity</option>
+                              <option value="37">Birla</option>
+                              <option value="38">Chandak</option>
+                              <option value="39">Mehta</option>
+                              <option value="40">Marathon</option>
+                              <option value="41">Mirchandani</option>
+                              <option value="44">Piramal</option>
+                              <option value="45">Bajaj</option>
+                              <option value="46">Phoenix</option>
+                              <option value="60">All Sites</option>
+                              <option value="61">Oberoi 360</option>
+                              <option value="62">JP Infra</option>
+                              <option value="63">Lockated</option>
+                              <option value="83">L Decor</option>
+                              <option value="85">RHB</option>
+                              <option value="93">Kalpartaru</option>
+                              <option value="94">Marathon</option>
+                              <option value="97">Rustomjee</option>
+                              <option value="98">Urban Wrk</option>
+                              <option value="105">Delhi</option>
+                            </select>
+                        </div>
                           </div>
-                          <div class="row justify-content-center align-items-center mt-3">
-                              <div class=" col-md-5">
-                
-        
-                                <label for=""> Process
-
-                                </label>
-                              </div>
-                              <div class="col-md-6">
-                                    <select
-                                    name="task_tag_ids[]"
-                                    id="task_tags_select"
-                                    data-placeholder="All Module"
-                                    class=" form-control form-select select-font2 multi-dropdown"
-                                    multiple="multiple" 
-                                  >
-                                    <option value="11">GoPhygital</option>
-                                    <option value="26">PSIPL</option>
-                                    <option value="27">Vodafone</option>
-                                    <option value="28">Godrej Living</option>
-                                    <option value="29">Godrej Snag360</option>
-                                    <option value="30">Runwal</option>
-                                    <option value="31">Arvind</option>
-                                    <option value="32">Panchshil</option>
-                                    <option value="33">TRIL</option>
-                                    <option value="34">ZS</option>
-                                    <option value="35">CMRL</option>
-                                    <option value="36">Global Infocity</option>
-                                    <option value="37">Birla</option>
-                                    <option value="38">Chandak</option>
-                                    <option value="39">Mehta</option>
-                                    <option value="40">Marathon</option>
-                                    <option value="41">Mirchandani</option>
-                                    <option value="44">Piramal</option>
-                                    <option value="45">Bajaj</option>
-                                    <option value="46">Phoenix</option>
-                                    <option value="60">All Sites</option>
-                                    <option value="61">Oberoi 360</option>
-                                    <option value="62">JP Infra</option>
-                                    <option value="63">Lockated</option>
-                                    <option value="83">L Decor</option>
-                                    <option value="85">RHB</option>
-                                    <option value="93">Kalpartaru</option>
-                                    <option value="94">Marathon</option>
-                                    <option value="97">Rustomjee</option>
-                                    <option value="98">Urban Wrk</option>
-                                    <option value="105">Delhi</option>
-                                  </select>
-                              </div>
-                            </div>
-
-                            <div class="row justify-content-center align-items-center mt-3">
-                              <div class=" col-md-5">
-                
-        
-                                <label for=""> Rule Name
 
 
-                                </label>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="form-group">
+                         
 
-                                      <input class="form-control" type="text"
-                                      placeholder="Default input" />
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="row justify-content-center align-items-center mt-3">
-                              <div class=" col-md-5">
-                
-        
-                                <label for=""> Description
-
-
-                                </label>
-                              </div>
-                              <div class="col-md-6">
-                                  <div class="form-group">
-
-                                  <input class="form-control" type="text"
-                                  placeholder="Default input" />
-                              </div>
-
-                              </div>
-                            </div>
         
       
                         </div>
                         <div
                         class="modal-footer modal-footer-k justify-content-center"
                       >
-                        <button type="button" class="purple-btn1" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
 
                         <a
                           class="purple-btn2"
-                          href="/pms/admin/task_managements/kanban_list?type="
+                          id="add_timeout"
                           >Save</a
                         >
                       </div>
                       </div>
                     </div>
                   </div>
-            <!-- Setting modal End-->
+
+       <!-- Add manual time action end -->
+
+                 <!-- Add notification  action -->
+
+                 <div
+                 class="modal fade"
+                 id="notification"
+                 tabindex="-1"
+                 aria-labelledby="exampleModal2Label"
+                 style="display: none"
+                 aria-hidden="true"
+               >
+                 <div
+                   class="modal-dialog  modal-dialog-scrollable modal-lg " 
+                 >
+                   <div class="modal-content">
+                     <div class="modal-header modal-header-k">
+                       <h4
+                         class="modal-title text-center w-100"
+                         id="exampleModalLabel"
+                         style="font-weight: 500"
+                       >
+                       Email | SMS | WhatsApp
+
+
+                       </h4>
+                       <button
+                         type="button"
+                         class="btn-close"
+                         data-bs-dismiss="modal"
+                         aria-label="Close"
+                       ></button>
+                     </div>
+
+                     <div class="modal-body" style="height: 200px;">
+                       <div class="row justify-content-start align-items-center mb-3">
+                        <div class=" col-md-3">
+            
+                          <label for=""> Name</label>
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Enter Tags">
+                          </div>
+
+                        </div>
+
+                       </div>
+                       <div class="row justify-content-start align-items-center mb-3">
+                        <div class=" col-md-3">
+            
+                          <label for=""> To</label>
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Enter Tags">
+                          </div>
+
+                        </div>
+
+                       </div>
+                       <div class="row justify-content-start align-items-center mb-3">
+                        <div class=" col-md-3">
+            
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" name="radio1">
+                              <label class="form-check-label">Send this notification as a Single Mass Email with all recipients displayed
+                              </label>
+                            </div>
+                          </div>               
+                        </div>
+
+                       </div>
+                       <div class="row justify-content-start align-items-center mb-3">
+                        <div class=" col-md-3">
+            
+                          <label for=""> CC</label>
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Enter Tags">
+                          </div>
+
+                        </div>
+
+                       </div>
+                       <div class="row justify-content-start align-items-center mb-3">
+                        <div class=" col-md-3">
+            
+                          <label for=""> Email Template</label>
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <select
+                            name="task_tag_ids[]"
+                            id="task_tags_select"
+                            data-placeholder="Minutes"
+                            class=" form-control form-select select-font2 multi-dropdown"
+                            multiple="multiple" style="background-color: #8b0203; border: none;"
+                          >
+                            <option value="11">GoPhygital</option>
+                            <option value="26">PSIPL</option>
+                            <option value="27">Vodafone</option>
+                            <option value="28">Godrej Living</option>
+                            <option value="29">Godrej Snag360</option>
+                            <option value="30">Runwal</option>
+                            <option value="31">Arvind</option>
+                            <option value="32">Panchshil</option>
+                            <option value="33">TRIL</option>
+                            <option value="34">ZS</option>
+                            <option value="35">CMRL</option>
+                            <option value="36">Global Infocity</option>
+                            <option value="37">Birla</option>
+                            <option value="38">Chandak</option>
+                            <option value="39">Mehta</option>
+                            <option value="40">Marathon</option>
+                            <option value="41">Mirchandani</option>
+                            <option value="44">Piramal</option>
+                            <option value="45">Bajaj</option>
+                            <option value="46">Phoenix</option>
+                            <option value="60">All Sites</option>
+                            <option value="61">Oberoi 360</option>
+                            <option value="62">JP Infra</option>
+                            <option value="63">Lockated</option>
+                            <option value="83">L Decor</option>
+                            <option value="85">RHB</option>
+                            <option value="93">Kalpartaru</option>
+                            <option value="94">Marathon</option>
+                            <option value="97">Rustomjee</option>
+                            <option value="98">Urban Wrk</option>
+                            <option value="105">Delhi</option>
+                          </select>                          </div>
+
+                        </div>
+
+                       </div>
+
+                       <div class="row justify-content-start align-items-start mb-3">
+                        <div class=" col-md-3">
+            
+                          <label for=""> Email Body</label>
+
+                        </div>
+                        <div class="col-md-9">
+                          <div class="form-group">
+                            <textarea
+                              class="form-control"
+                              rows="3"
+                              placeholder="Email Body"
+                            ></textarea>
+                          </div>
+
+                        </div>
+
+                       </div>
+                       <div class="d-flex justify-content-end align-items-start mb-3">
+                           <button class="purple-btn2">
+                             View Email
+                           </button>
+
+                       </div>
+
+
+                      
+
+     
+   
+                     </div>
+                     <div
+                     class="modal-footer modal-footer-k justify-content-center"
+                   >
+                     <button type="button" class="purple-btn1" data-bs-dismiss="modal">Cancel</button>
+
+                     <a
+                       class="purple-btn2"
+                       id="add_timeout"
+                       >Save</a
+                     >
+                   </div>
+                   </div>
+                 </div>
+               </div>
+
+
+
+
+              <!-- Add notification end -->
+
+
           </div>
   
          </div>
@@ -1970,21 +2789,139 @@
 
 
   <script>
-    $(document).ready(function () {
-      $(".menu-link").click(function (e) {
-        e.preventDefault();
-        var sectionId = $(this).data("section");
-        $(".main-section").hide();
-        $("#" + sectionId).show();
-        toggleNav(); // Toggle the sidebar when a menu item is clicked
-      });
 
-      $(".cancel,.closebtn").click(function () {
-        toggleNav(); // Toggle the sidebar when the cancel button is clicked
-      });
+
+
+
+$(".instant-action").click(function() {
+    // Get the target element from the data-target attribute
+    var target = $(this).data("target");
+    // Toggle the visibility of the target element
+    $(target).toggle();
+});
+
+
+
+
+
+
+var counter = 1; // Define the counter variable outside the functions
+
+var conditionNumber = 1; // Initialize conditionNumber
+
+function addCondition() {
+    // Clone the container
+    var containerClone = $('#condition_demo').clone(true);
+    var container = $('#condition_container');
+    var containertemplate = $('#condition_template');
+
+    // Remove the ID from the cloned container
+    containerClone.removeAttr('id');
+
+    // Show the cloned container
+    containerClone.show();
+
+    // Hide the add condition button in the existing container
+    container.find('.setLine').addClass('conditionnextLine');
+    containertemplate.find('.setLine').addClass('conditionnextLine');
+
+    // Increment and set condition number
+    conditionNumber++;
+    updateConditionNumber(containerClone);
+
+    // Hide add condition buttons
+    container.find('.add-condition').hide();
+    containertemplate.find('.add-condition').hide();
+
+    // Show the remove button for the new row
+    containerClone.find('.condition_demo').show();
+
+    // Append the cloned container to the template row
+    $('#condition_template').append(containerClone);
+}
+
+// Function to set condition number
+function updateConditionNumber(containerClone) {
+    containerClone.find('.wfConditionText').text('Condition ' + conditionNumber);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function addSubCondition() {
+    // Clone the template row
+    var templateRow = document.querySelector('#sub-condition-template');
+    var newRow = templateRow.cloneNode(true);
+
+    // Increment and update the number in the counter
+    counter++;
+    var container = document.querySelector('#sub-condition-container');
+    var currentCount = container.querySelectorAll('.counter').length + 2; // Get the current number of sub-conditions
+    newRow.querySelector('.counter').textContent = currentCount; // Update the counter in the cloned row
+
+    // Add a class to the new row and set its display to "block"
+    newRow.classList.add('sub-condition-row');
+
+    // Remove the template ID from the new row
+    newRow.removeAttribute('id');
+
+    // Append the new row to the container
+    container.appendChild(newRow);
+
+    // Set display to "block" for elements with class removeSubCondition
+    var removeSubConditions = document.querySelectorAll('.removeSubCondition');
+    for (var i = 1; i < removeSubConditions.length; i++) {
+        removeSubConditions[i].style.display = 'block';
+    }
+}
+
+function removeSubCondition(button) {
+    var rowToRemove = button.parentNode.parentNode; // Get the parent row of the button
+    rowToRemove.remove(); // Remove the row
+    counter--; // Decrement the counter
+    // Update counter display if needed
+    var counters = document.querySelectorAll('.counter');
+    for (var i = 0; i < counters.length; i++) {
+        counters[i].textContent = i + 1;
+    }
+}
+
+// Access counter variable
+console.log(counter);
+
+
+
+  $(document).ready(function () 
+    {
+        $(".menu-link").click(function (e) {
+          e.preventDefault();
+          var sectionId = $(this).data("section");
+          $(".main-section").hide();
+          $("#" + sectionId).show();
+          toggleNav(); // Toggle the sidebar when a menu item is clicked
+        });
+
+        $(".cancel,.closebtn").click(function () {
+          toggleNav(); // Toggle the sidebar when the cancel button is clicked
+        });
     });
 
-    function toggleNav() {
+
+    function toggleNav() 
+    {
       $("#mySidebar").fadeToggle(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
     }
 
