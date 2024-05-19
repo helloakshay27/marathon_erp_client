@@ -773,8 +773,8 @@ fieldset {
 /* single page navigation ends */
 
 .pagination a {
-  color: white;
-  background-color: #5e2750;
+  color: var(--body-bg-color);
+  background-color: var(--red);
   padding: 5px 10px;
   border-radius: 5px;
   margin: 20px 5px;
