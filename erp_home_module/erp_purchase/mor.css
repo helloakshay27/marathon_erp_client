@@ -4007,8 +4007,13 @@ label {
   text-align: center;
 }
 
+.details_page label span{
+  color: var(--black);
+}
+
+
 label span{
-  color: red;
+  color: var(--black);
 }
 
 .mor {
@@ -4074,6 +4079,7 @@ label span{
   font-size: 12px;
   padding: 5px 10px;
 }
+
 .PO-blue-btn {
   background-color: lightblue;
 padding: 6px 20px;
