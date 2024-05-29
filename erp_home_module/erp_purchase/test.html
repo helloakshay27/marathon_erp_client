@@ -1146,6 +1146,7 @@
       $(".menu-link").click(function (e) {
         e.preventDefault();
         var sectionId = $(this).data("section");
+        console.log(sectionId);
         $(".main-section").hide();
         $("#" + sectionId).show();
         toggleNav(); // Toggle the sidebar when a menu item is clicked
