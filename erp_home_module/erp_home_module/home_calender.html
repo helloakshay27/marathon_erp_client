@@ -22,7 +22,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <link rel="stylesheet" href="mor.css" />
+    <link rel="stylesheet" href="../erp_purchase/mor.css" />
     <link
       rel="icon"
       type="image/x-icon"
@@ -32,6 +32,7 @@
     <script src="../js/main.js"></script>
     <title>Schedule unit offer</title>
   </head>
+  <style></style>
 
   <body>
     <main class="h-100 w-100">
@@ -210,7 +211,7 @@
           <div class="sidebar sidebar_inner d-flex">
             <div class="main-search"></div>
             <div class="left-1" style="width: fit-content">
-              <div class="search-main text-center" id="secondary-search" >
+              <div class="search-main text-center" id="secondary-search">
                 <svg
                   class="search-og"
                   width="16"
@@ -234,23 +235,33 @@
                 class="menu-list px-2 d-flex pt-2"
                 style="flex-direction: column"
               >
-              <li class="menu-item d-flex active">
-                <a
-                  class="menu-link d-flex"
-                  style="flex-direction: column"
-                  href="#"
-                  data-section="Home"
-                >
-                <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M15.7733 5.69575L9.579 0.559758C8.66141 -0.186586 7.34602 -0.186586 6.42843 0.559758L0.226764 5.70385C-0.044407 5.93483 -0.076996 6.34191 0.153995 6.6131C0.384975 6.88428 0.792057 6.91686 1.06324 6.68588L1.73941 6.10919V11.2312C1.74144 12.604 2.85385 13.7164 4.22671 13.7185H11.7991C13.1684 13.7114 14.2752 12.6004 14.2772 11.2312V6.11538L14.937 6.67743C15.0582 6.78089 15.2069 6.83145 15.3548 6.83145C15.5372 6.83145 15.7184 6.75444 15.846 6.60474C16.077 6.33359 16.0444 5.9266 15.7733 5.69575ZM12.9875 11.2312C12.9865 11.8922 12.4509 12.4278 11.7899 12.4288H4.2175C3.56011 12.4227 3.0301 11.8886 3.02912 11.2312V5.01846L7.24463 1.55836C7.68681 1.19876 8.32062 1.19876 8.7628 1.55836L12.9875 5.01846V11.2312Z" fill="black"/>
-                  <path d="M5 9.06056C5 9.64629 5.4483 10.1211 6.00129 10.1211H10.5786C11.1316 10.1211 11.5799 9.64629 11.5799 9.06056C11.5799 8.47484 11.1316 8 10.5786 8H6.00129C5.4483 8 5 8.47484 5 9.06056Z" fill="black"/>
-                  </svg>
-                  
-                  
+                <li class="menu-item d-flex active">
+                  <a
+                    class="menu-link d-flex"
+                    style="flex-direction: column"
+                    href="#"
+                    data-section="Home"
+                  >
+                    <svg
+                      width="16"
+                      height="14"
+                      viewBox="0 0 16 14"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M15.7733 5.69575L9.579 0.559758C8.66141 -0.186586 7.34602 -0.186586 6.42843 0.559758L0.226764 5.70385C-0.044407 5.93483 -0.076996 6.34191 0.153995 6.6131C0.384975 6.88428 0.792057 6.91686 1.06324 6.68588L1.73941 6.10919V11.2312C1.74144 12.604 2.85385 13.7164 4.22671 13.7185H11.7991C13.1684 13.7114 14.2752 12.6004 14.2772 11.2312V6.11538L14.937 6.67743C15.0582 6.78089 15.2069 6.83145 15.3548 6.83145C15.5372 6.83145 15.7184 6.75444 15.846 6.60474C16.077 6.33359 16.0444 5.9266 15.7733 5.69575ZM12.9875 11.2312C12.9865 11.8922 12.4509 12.4278 11.7899 12.4288H4.2175C3.56011 12.4227 3.0301 11.8886 3.02912 11.2312V5.01846L7.24463 1.55836C7.68681 1.19876 8.32062 1.19876 8.7628 1.55836L12.9875 5.01846V11.2312Z"
+                        fill="black"
+                      />
+                      <path
+                        d="M5 9.06056C5 9.64629 5.4483 10.1211 6.00129 10.1211H10.5786C11.1316 10.1211 11.5799 9.64629 11.5799 9.06056C11.5799 8.47484 11.1316 8 10.5786 8H6.00129C5.4483 8 5 8.47484 5 9.06056Z"
+                        fill="black"
+                      />
+                    </svg>
 
-                  <span class="menu-link-text">Home</span>
-                </a>
-              </li>
+                    <span class="menu-link-text">Home</span>
+                  </a>
+                </li>
                 <li class="menu-item d-flex">
                   <a
                     class="menu-link d-flex"
@@ -405,7 +416,7 @@
                 </li>
                 <li class="menu-item d-flex">
                   <a
-                    class="menu-link  d-flex"
+                    class="menu-link d-flex"
                     href="#"
                     style="flex-direction: column"
                     data-section="purchase"
@@ -619,7 +630,6 @@
                 </div>
                 <li class="main-section nav-item mt-2" id="Home">
                   <ul class="p-0">
-
                     <li class="nav-item">
                       <a
                         class="nav-link active"
@@ -639,7 +649,6 @@
                         <img alt="" src="../images/snag-unit-list.svg" /><span
                           class="text"
                           >Approval
-
                         </span>
                       </a>
                     </li>
@@ -664,12 +673,10 @@
                         <img alt="" src="../images/Snag.svg" /><span
                           class="text"
                           >Favourite Reports
-                          </span
-                        >
+                        </span>
                       </a>
                     </li>
-                    </ul>
-
+                  </ul>
                 </li>
 
                 <li class="main-section nav-item mt-2" id="land">
@@ -952,7 +959,7 @@
                     <li class="nav-item">
                       <div class="btn-group2">
                         <a
-                          class="text nav-link  asset-after"
+                          class="text nav-link asset-after"
                           data-bs-toggle="dropdown"
                           aria-expanded="true"
                           href="/erp_home_module/erp_purchase/erp_material_return_slip.html"
@@ -1188,106 +1195,144 @@
           </div>
         </aside>
         <!-- sidebar ends above -->
+        <style>
 
+
+          .wrapper {
+
+            margin: 15px auto;
+          }
+
+          .container-calendar {
+            background: #ffffff;
+            padding: 15px;
+            margin: 0 auto;
+            overflow: auto;
+          }
+
+          .button-container-calendar button {
+            cursor: pointer;
+            display: inline-block;
+            zoom: 1;
+            background: var(--red);
+
+            color: #fff;
+            border: 1px solid  ;
+            border-radius: 4px;
+            padding: 5px 10px;
+          }
+
+          .table-calendar {
+            border-collapse: collapse;
+            width: 100%;
+            height: 50vh;
+
+          }
+
+          .table-calendar td,
+          .table-calendar th {
+            padding: 5px;
+            border: 1px solid #e2e2e2;
+            text-align: center;
+            vertical-align: top;
+          }
+
+          .date-picker.selected {
+            font-weight: bold;
+            outline: 1px dashed #00bcd4;
+          }
+
+          .date-picker.selected span {
+            border-bottom: 2px solid currentColor;
+          }
+
+          /* sunday */
+          .date-picker:nth-child(1) {
+            color: red;
+          }
+
+          /* friday */
+          .date-picker:nth-child(6) {
+            color: green;
+          }
+
+          #monthAndYear {
+            text-align: center;
+            margin-top: 0;
+          }
+
+          .button-container-calendar {
+            position: relative;
+            margin-bottom: 1em;
+            overflow: hidden;
+            clear: both;
+          }
+
+          #previous {
+            float: left;
+          }
+
+          #next {
+            float: right;
+          }
+
+          .footer-container-calendar {
+            margin-top: 1em;
+            border-top: 1px solid #dadada;
+            padding: 10px 0;
+          }
+
+          .footer-container-calendar select {
+            cursor: pointer;
+            display: inline-block;
+            zoom: 1;
+            background: #ffffff;
+            color: #585858;
+            border: 1px solid #bfc5c5;
+            border-radius: 3px;
+            padding: 5px 1em;
+          }
+        </style>
         <!-- webpage conteaint start -->
         <div class="website-content overflow-auto">
-          <div class="content-wrapper">
-            <!-- Content Header (Page header) -->
-            <section class="content-header">
-              <div class="container-fluid">
-                <div class="row mb-2">
-                  <div class="col-sm-6">
-                    <h1>Calendar</h1>
-                  </div>
-                  <div class="col-sm-6">
-                    <ol class="breadcrumb float-sm-right">
-                      <li class="breadcrumb-item"><a href="#">Home</a></li>
-                      <li class="breadcrumb-item active">Calendar</li>
-                    </ol>
-                  </div>
+          <div class="module-data-section p-4 Calendar">
+            <a href="">Home > Calendar </a>
+            <h5 class="mt-4">Calendar</h5>
+            <div class="wrapper">
+              <div class="container-calendar">
+                <h3 id="monthAndYear"></h3>
+
+                <div class="button-container-calendar">
+                  <button id="previous" onclick="previous()">&#8249;</button>
+                  <button id="next" onclick="next()">&#8250;</button>
                 </div>
-              </div><!-- /.container-fluid -->
-            </section>
-        
-            <!-- Main content -->
-            <section class="content">
-              <div class="container-fluid">
-                <div class="row">
-                  <div class="col-md-3">
-                    <div class="sticky-top mb-3">
-                      <div class="card">
-                        <div class="card-header">
-                          <h4 class="card-title">Draggable Events</h4>
-                        </div>
-                        <div class="card-body">
-                          <!-- the events -->
-                          <div id="external-events">
-                            <div class="external-event bg-success">Lunch</div>
-                            <div class="external-event bg-warning">Go home</div>
-                            <div class="external-event bg-info">Do homework</div>
-                            <div class="external-event bg-primary">Work on UI design</div>
-                            <div class="external-event bg-danger">Sleep tight</div>
-                            <div class="checkbox">
-                              <label for="drop-remove">
-                                <input type="checkbox" id="drop-remove">
-                                remove after drop
-                              </label>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- /.card-body -->
-                      </div>
-                      <!-- /.card -->
-                      <div class="card">
-                        <div class="card-header">
-                          <h3 class="card-title">Create Event</h3>
-                        </div>
-                        <div class="card-body">
-                          <div class="btn-group" style="width: 100%; margin-bottom: 10px;">
-                            <ul class="fc-color-picker" id="color-chooser">
-                              <li><a class="text-primary" href="#"><i class="fas fa-square"></i></a></li>
-                              <li><a class="text-warning" href="#"><i class="fas fa-square"></i></a></li>
-                              <li><a class="text-success" href="#"><i class="fas fa-square"></i></a></li>
-                              <li><a class="text-danger" href="#"><i class="fas fa-square"></i></a></li>
-                              <li><a class="text-muted" href="#"><i class="fas fa-square"></i></a></li>
-                            </ul>
-                          </div>
-                          <!-- /btn-group -->
-                          <div class="input-group">
-                            <input id="new-event" type="text" class="form-control" placeholder="Event Title">
-        
-                            <div class="input-group-append">
-                              <button id="add-new-event" type="button" class="btn btn-primary">Add</button>
-                            </div>
-                            <!-- /btn-group -->
-                          </div>
-                          <!-- /input-group -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- /.col -->
-                  <div class="col-md-9">
-                    <div class="card card-primary">
-                      <div class="card-body p-0">
-                        <!-- THE CALENDAR -->
-                        <div id="calendar"></div>
-                      </div>
-                      <!-- /.card-body -->
-                    </div>
-                    <!-- /.card -->
-                  </div>
-                  <!-- /.col -->
+
+                <table class="table-calendar" id="calendar" data-lang="en">
+                  <thead id="thead-month"></thead>
+                  <tbody id="calendar-body"></tbody>
+                </table>
+
+                <div class="footer-container-calendar">
+                  <label for="month">Jump To: </label>
+                  <select id="month" onchange="jump()">
+                    <option value="0">Jan</option>
+                    <option value="1">Feb</option>
+                    <option value="2">Mar</option>
+                    <option value="3">Apr</option>
+                    <option value="4">May</option>
+                    <option value="5">Jun</option>
+                    <option value="6">Jul</option>
+                    <option value="7">Aug</option>
+                    <option value="8">Sep</option>
+                    <option value="9">Oct</option>
+                    <option value="10">Nov</option>
+                    <option value="11">Dec</option>
+                  </select>
+                  <select id="year" onchange="jump()"></select>
                 </div>
-                <!-- /.row -->
-              </div><!-- /.container-fluid -->
-            </section>
-            <!-- /.content -->
+              </div>
+            </div>
           </div>
-
-          </div>
-
-
 
           <footer class="footer">
             <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
@@ -1295,6 +1340,7 @@
         </div>
       </div>
     </main>
+    <!-- filter modal -->
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -1308,7 +1354,6 @@
       $(".menu-link").click(function (e) {
         e.preventDefault();
         var sectionId = $(this).data("section");
-        console.log(sectionId);
         $(".main-section").hide();
         $("#" + sectionId).show();
         toggleNav(); // Toggle the sidebar when a menu item is clicked
@@ -1317,76 +1362,163 @@
       $(".cancel,.closebtn").click(function () {
         toggleNav(); // Toggle the sidebar when the cancel button is clicked
       });
-
-      $(".search-main").click(function () {
-        
-   
-        emptyToggleNav (); // Toggle the sidebar when the search-main button is clicked
-  });
     });
-function emptyToggleNav(){
-  $("#mySidebar").fadeToggle(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
-  $(".main-section").hide();
-  $("#mySidebar").width(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
 
-}
     function toggleNav() {
       $("#mySidebar").fadeToggle(300); // Toggle the visibility of the sidebar with a duration of 300 milliseconds
     }
-  </script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
- function addTab(url, label) {
-    // Encode the URL for the id attribute
-    var encodedUrl = url.replace(/\//g, '_').replace(/\./g, '_');
 
-    // Check if a tab link with the same data-bs-target already exists
-    if ($('#myTab').find('[data-bs-target="#' + encodedUrl + '"]').length > 0) {
-      // Tab link already exists, do not create a new one
-      return;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function generate_year_range(start, end) {
+    var years = "";
+    for (var year = start; year <= end; year++) {
+        years += "<option value='" + year + "'>" + year + "</option>";
+    }
+    return years;
+}
+
+today = new Date();
+currentMonth = today.getMonth();
+currentYear = today.getFullYear();
+selectYear = document.getElementById("year");
+selectMonth = document.getElementById("month");
+
+
+createYear = generate_year_range(1970, 2050);
+/** or
+ * createYear = generate_year_range( 1970, currentYear );
+ */
+
+document.getElementById("year").innerHTML = createYear;
+
+var calendar = document.getElementById("calendar");
+var lang = calendar.getAttribute('data-lang');
+
+var months = "";
+var days = "";
+
+var monthDefault = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+var dayDefault = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+if (lang == "en") {
+    months = monthDefault;
+    days = dayDefault;
+} else if (lang == "id") {
+    months = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+    days = ["Ming", "Sen", "Sel", "Rab", "Kam", "Jum", "Sab"];
+} else if (lang == "fr") {
+    months = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
+    days = ["dimanche", "lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi"];
+} else {
+    months = monthDefault;
+    days = dayDefault;
+}
+
+
+var $dataHead = "<tr>";
+for (dhead in days) {
+    $dataHead += "<th data-days='" + days[dhead] + "'>" + days[dhead] + "</th>";
+}
+$dataHead += "</tr>";
+
+//alert($dataHead);
+document.getElementById("thead-month").innerHTML = $dataHead;
+
+
+monthAndYear = document.getElementById("monthAndYear");
+showCalendar(currentMonth, currentYear);
+
+
+
+function next() {
+    currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
+    currentMonth = (currentMonth + 1) % 12;
+    showCalendar(currentMonth, currentYear);
+}
+
+function previous() {
+    currentYear = (currentMonth === 0) ? currentYear - 1 : currentYear;
+    currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+    showCalendar(currentMonth, currentYear);
+}
+
+function jump() {
+    currentYear = parseInt(selectYear.value);
+    currentMonth = parseInt(selectMonth.value);
+    showCalendar(currentMonth, currentYear);
+}
+
+function showCalendar(month, year) {
+
+    var firstDay = ( new Date( year, month ) ).getDay();
+
+    tbl = document.getElementById("calendar-body");
+
+    
+    tbl.innerHTML = "";
+
+    
+    monthAndYear.innerHTML = months[month] + " " + year;
+    selectYear.value = year;
+    selectMonth.value = month;
+
+    // creating all cells
+    var date = 1;
+    for ( var i = 0; i < 6; i++ ) {
+        
+        var row = document.createElement("tr");
+
+        
+        for ( var j = 0; j < 7; j++ ) {
+            if ( i === 0 && j < firstDay ) {
+                cell = document.createElement( "td" );
+                cellText = document.createTextNode("");
+                cell.appendChild(cellText);
+                row.appendChild(cell);
+            } else if (date > daysInMonth(month, year)) {
+                break;
+            } else {
+                cell = document.createElement("td");
+                cell.setAttribute("data-date", date);
+                cell.setAttribute("data-month", month + 1);
+                cell.setAttribute("data-year", year);
+                cell.setAttribute("data-month_name", months[month]);
+                cell.className = "date-picker";
+                cell.innerHTML = "<span>" + date + "</span>";
+
+                if ( date === today.getDate() && year === today.getFullYear() && month === today.getMonth() ) {
+                    cell.className = "date-picker selected";
+                }
+                row.appendChild(cell);
+                date++;
+            }
+
+
+        }
+
+        tbl.appendChild(row);
     }
 
-    // Create tab link
-    var tabLink = $('<button class="nav-link" data-bs-toggle="tab" role="tab" aria-selected="false"></button>').html(label);
-    tabLink.attr({
-      'data-bs-target': '#' + encodedUrl,
-      'aria-controls': encodedUrl
-    });
+}
 
-    // Create cancel button
-    var cancelButton = $('<button type="button" class="btn-close" aria-label="Close"></button>');
-    cancelButton.click(function() {
-      // Get the parent tab content
-      var tabContentId = tabLink.attr('data-bs-target');
-      $(tabContentId).remove();
-      tabLink.parent().remove(); // Remove the parent of tab link itself
-    });
-
-    // Append cancel button to tab link
-    tabLink.append(cancelButton);
-
-    // Create tab content
-    var tabContent = $('<div class="tab-pane fade active show" role="tabpanel"></div>').attr('id', encodedUrl).html('<iframe src="' + url + '" style="width:100%;height:85vh;border:none;"></iframe>');
-
-    // Append tab link and content to the DOM
-    $('#myTab').append($('<li class="nav-item"></li>').append(tabLink));
-    $('#myTabContent').append(tabContent);
-
-    // Activate the newly added tab
-    var bsTab = new bootstrap.Tab(tabLink[0]);
-    bsTab.show();
-  }
-
-  // Example usage: add tab when anchor tag is clicked
-  $(document).on('click', '.nav-item a', function(event) {
-    event.preventDefault(); // Prevent default link behavior
-    var url = $(this).attr('href');
-    var label = $(this).text();
-    addTab(url, label);
-  });
-
-  // Show corresponding tab content when tab link is clicked
-
+function daysInMonth(iMonth, iYear) {
+    return 32 - new Date(iYear, iMonth, 32).getDate();
+}
   </script>
-
 </html>
