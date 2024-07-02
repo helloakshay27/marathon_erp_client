@@ -3,6 +3,21 @@
 $(document).ready(function() {
 
 
+
+
+    var selectedContent = $('input[name="contentSelector"]:checked').val();
+        $('#' + selectedContent).show();
+
+        $('input[name="contentSelector"]').on('click', function() {
+          var selectedContent = $('input[name="contentSelector"]:checked').val();
+          $('.contentpo').hide();
+          $('#' + selectedContent).show();
+        });
+
+
+
+
+
     $(".password-toggle").click(function() {
         // Find the password input element
         var passwordInput = $("#password");
@@ -67,54 +82,3 @@ $(document).ready(function() {
 
 
 
-// $(document).ready(function () {
-//     // Hide OTP and Create Password forms initially
-//     $("#otpForm, #createPasswordForm,#forgetPasswordContainer").hide();
-
-
-// $(".forget-btn").click(function(){
-//     $("#forgetPasswordContainer").show();
-//     $("#loginForm").hide();
-
-
-
-// });
-
-
-//     // Submit forget password form
-//     $("#forgetPasswordForm").submit(function (event) {
-//         event.preventDefault();
-//         var email = $("#forgetEmail").val();
-//         // Perform AJAX request to send OTP to the provided email
-//         // Upon success, show OTP form and hide forget password form
-//         // You can simulate success for demonstration purpose
-//         // Replace the following lines with actual AJAX call
-//         $("#forgetPasswordForm").hide();
-//         $("#otpForm").show();
-//     });
-
-//     // Submit OTP form
-//     $("#otpForm").submit(function (event) {
-//         event.preventDefault();
-//         var otp = $("#otp").val();
-//         // Perform AJAX request to verify OTP
-//         // Upon success, show create new password form and hide OTP form
-//         // You can simulate success for demonstration purpose
-//         // Replace the following lines with actual AJAX call
-//         $("#otpForm").hide();
-//         $("#createPasswordForm").show();
-//     });
-
-//     // Submit create password form
-//     $("#createPasswordForm").submit(function (event) {
-//         event.preventDefault();
-//         var newPassword = $("#newPassword").val();
-//         var confirmPassword = $("#confirmPassword").val();
-//         // Perform validation for password matching, length, etc.
-//         // If validation passes, proceed to update password
-//         // You can simulate success for demonstration purpose
-//         // Replace the following lines with actual password update logic
-//         alert("Password updated successfully!");
-//         // Redirect user to login page or any other desired action
-//     });
-// });

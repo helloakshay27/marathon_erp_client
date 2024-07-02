@@ -748,7 +748,7 @@
 
                                                             <tr>
                                                                 <td><input type="checkbox"></td>
-                                                                <td ></td>
+                                                                <td><i class="fa-solid fa-arrow-turn-down me-2 collapse-icon" id="collapseRow1-icon" data-toggle="collapse" data-target=".collapseRow1"></i> MOR</td>
                                                                 <td>24.16000MT</td>
                                                                 <td></td>
                                                                 <td></td>
@@ -757,9 +757,20 @@
                                                                 <td></td>
                                                                 <td></td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr class="collapse collapseRow1 material-type">
                                                                 <td><input type="checkbox"></td>
-                                                                <td > ROPO/S/NXZPh2/17454</td>
+                                                                <td class="ps-4">Material</td>
+                                                                <td></td>
+                                                                <td>24.160 MT</td>
+                                                                <td>MT</td>
+                                                                <td>24.160</td>
+                                                                <td>2100.0000</td>
+                                                                <td>50736.000</td>
+                                                                <td>50.787</td>
+                                                            </tr>
+                                                            <tr class="collapse collapseRow1">
+                                                                <td><input type="checkbox"></td>
+                                                                <td class="ps-5">PO</td>
                                                                 <td></td>
                                                                 <td>24.160 MT</td>
                                                                 <td>MT</td>
@@ -769,6 +780,7 @@
                                                                 <td>50.787</td>
                                                             </tr>
                                                         </tbody>
+
                                                     </table>
 
                                                 </div>
@@ -1335,6 +1347,22 @@
 
 <script>
     // Toggle visibility and apply slide animation when clicking on a link
+
+
+    $('.collapse-icon').click(function() {
+        var icon = $(this);
+        var target = $(icon.data('target'));
+
+        target.on('shown.bs.collapse', function() {
+            icon.removeClass('fa-solid fa-arrow-turn-up').addClass('fa-solid fa-arrow-turn-down');
+        });
+
+        target.on('hidden.bs.collapse', function() {
+            icon.removeClass('fa-solid fa-arrow-turn-down').addClass('fa-solid fa-arrow-turn-up');
+        });
+
+        target.collapse('toggle');
+    });
 
     function openNav() {
         document.getElementById("mySidebar").style.display = "block";

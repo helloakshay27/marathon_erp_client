@@ -1,0 +1,133 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.progress-section {
+    width: max-content;
+}
+
+.progress-bars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 18px;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.st_tmlne_stts_txt_span {
+    color: #FFF;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    width: max-content;
+}
+
+.flow-status-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.status-timeline {
+    /* width: 219px; */
+    /* height: 50px; */
+    padding: 8px 54px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.statuscol_blue {
+    background-color: #36a2eb;
+}
+
+.progress-section .Completed{
+    background-color:#83D17A ;
+}
+
+.progress-section .Overdue{
+    background-color: #FF2733;
+
+}
+
+.progress-section .Hold{
+    background-color: #FFA800;
+
+}
+
+.progress-section .Progress{
+    background-color: #08AEEA;
+
+}
+
+.progress-section .open{
+    background-color: #E4636A;
+
+}
+
+.flow-transiton-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30px;
+    position: relative;
+}
+
+.flow-transition-content {
+    color: #000;
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    width: max-content;
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.flow-transition-content::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -25px;
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    display: none;
+    z-index: 10;
+}
+
+.flow-transition-content:hover::after {
+    display: block;
+}
+.flow-status-holder:after {
+    content: '';
+    border-top: 1px dashed #777;
+    position: absolute;
+    width: 211px;
+    height: 1px;
+    top: 50%;
+    /* left: 0; */
+    right: -33px;
+    /* transform: translateY(-50%); */
+    color: #777;
+    z-index: -1;
+}
+
+
+
+.flow-status-holder:last-child:after {
+    content: none;
+}

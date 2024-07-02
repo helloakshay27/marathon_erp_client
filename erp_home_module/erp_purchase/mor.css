@@ -13,6 +13,21 @@
 
 }
 
+
+.collapse-icon {
+  cursor: pointer;
+}
+.collapsible-content {
+  display: none;
+}
+td i{
+  color: #AEAEAE;
+  font-size: 12px;
+  border-radius: 1px;
+border: 1px solid #AEAEAE;
+padding: 4px 3px ;
+}
+
 .master_pages input[type="checkbox"].violet-check,.master_pages input[type="checkbox"] {
     accent-color: green;
 }
