@@ -1799,30 +1799,30 @@ background-color: white !important;
 
 
 
-.container {
+ .container {
   width: 80%;
   margin: auto;
   padding-top: 20px;
 }
 
-.details, .quote, .time {
+.analytics .details, .quote, .time {
   margin-bottom: 20px;
 }
 
-label {
+.analytics label {
   font-weight: bold;
 }
 
-.details span, .details select {
+.analytics .details span, .details select {
   margin-right: 10px;
 }
 
-.quote div, .time div {
+.analytics .quote div, .time div {
   display: inline-block;
   margin-right: 20px;
 }
 
-#container {
+.analytics #container {
   height: 400px;
   margin-top: 20px;
 }
