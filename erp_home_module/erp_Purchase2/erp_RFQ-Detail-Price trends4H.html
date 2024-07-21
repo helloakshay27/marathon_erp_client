@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../erp_purchase/mor.css" />
 
   <link rel="stylesheet" href="/erp_event_module/erp_event.css">
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="script.js" defer></script>
 
   <!-- <link rel="stylesheet" href="erp_event1.css">
   <link rel="stylesheet" href="responsive.css"> -->
@@ -34,33 +36,7 @@
 
 <body>
   <style>
-       .dropdown {
-      position: relative;
-      display: inline-block;
-    }
-    .dropdown-menu {
-            right: -30px;
-
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    .dropdown-menu .dropdown-item {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-    }
-    .dropdown-menu .dropdown-item:hover {
-      background-color: #f1f1f1;
-    }
-    .accordion-button:not(.collapsed) {
-    color: black !important;
-    background-color: white !important;
-}
+    
   </style>
 
   <main class="h-100 w-100">
@@ -2679,8 +2655,47 @@
                   </div>
                 </div>
               </div>
-              <div class="tab-pane fade" id="analytics" role="tabpanel" aria-labelledby="analytics-tab" tabindex="0">
-                <!-- Content for Analytics tab -->
+              <div class="tab-pane fade analytics" id="analytics" role="tabpanel" aria-labelledby="analytics-tab" tabindex="0">
+                <div class="container">
+                  <div class="details">
+                      <label for="details">Show the details according to</label>
+                      <select id="details">
+                          <option value="productPrice">Product Price</option>
+                      </select>
+                      <span>for</span>
+                      <select id="product">
+                          <option value="woodenDoorFrame">Wooden Door Frame (...</option>
+                      </select>
+                  </div>
+                  <div class="d-flex ">
+                    <div class="quote">
+                      <div>
+                          <label>Initial Quote</label>
+                          <p>₹10,800 / Nos</p>
+                      </div>
+                      <div  class="ms-3">
+                          <label>Final Best Price</label>
+                          <p>₹10,800 / Nos</p>
+                      </div>
+                      <div  class="ms-3">
+                          <label>Realized Savings</label>
+                          <p>₹0 - 0%</p>
+                      </div>
+                  </div>
+                  <div class="time ms-5">
+                      <div>
+                          <label>Start Time</label>
+                          <p>06:10 PM Apr 01, 24</p>
+                      </div>
+                      <div class="ms-3">
+                          <label>End Time</label>
+                          <p>03:35 PM Apr 06, 24</p>
+                      </div>
+                  </div>
+                  </div>
+                
+                  <div id="container"></div>
+              </div>
               </div>
               <div class="tab-pane fade" id="priceTrends" role="tabpanel" aria-labelledby="priceTrends-tab"
                 tabindex="0">
@@ -2814,7 +2829,7 @@
             <div class="form-group">
               <label class="form-group" for="">Order Type
               </label>
-              Buy
+              <p  style="font-weight: 600;">Buy</p>
             </div>
           </div>
           <div class="col-md-2">
@@ -2823,7 +2838,7 @@
             <div class="form-group">
               <label class="form-group" for="">ORDER MODE
               </label>
-              RFQ
+              <p style="font-weight: 600;">RFQ</p>
             </div>
           </div>
         </div>
@@ -2955,7 +2970,7 @@
         <h5 class="mt-5">Auction Configurations</h5>
 
 
-        <div class="row  justify-content-between align-items-center">
+        <div class="row  justify-content-between align-items-center mt-3">
 
           <p>Event End Time Duration</p>
           
@@ -3032,7 +3047,7 @@
           </div>
         </div>
 
-        <div class="row  justify-content-between align-items-center mt-2">
+        <div class="row   align-items-center mt-2">
 
           <p>Evaluation Duration</p>
           <div class="col-md-2">
@@ -3080,7 +3095,7 @@
        
 
 
-    <div class="row mt-2 align-items-end">
+    <div class="row mt-3 align-items-end ">
 
       <div class="col-md-3">
         <label for="">Delivery Date</label>
@@ -3759,7 +3774,7 @@ style="width: 400px;">
 
 <div
 class="modal fade"
-id="activityModal"
+id="Shared"
 tabindex="-1"
 aria-labelledby="exampleModal2Label"
 style="display: none"
@@ -4002,7 +4017,7 @@ style="width: 600px;">
 
 <div
 class="modal fade"
-id="activityModal"
+id=""
 tabindex="-1"
 aria-labelledby="exampleModal2Label"
 style="display: none"
@@ -4374,7 +4389,7 @@ style="width: 700px;">
 
 
 
-<div class="modal fade" id="activityModa1l" tabindex="-1" aria-labelledby="activityModalLabel" aria-hidden="true">
+<div class="modal fade" id="activityModal" tabindex="-1" aria-labelledby="activityModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-scrollable">
       <div class="modal-content">
           <div class="modal-header">
@@ -4462,6 +4477,52 @@ y
         icon.classList.add("fa-minus");
     }
 }
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    Highcharts.chart('container', {
+        chart: {
+            type: 'scatter',
+            zoomType: 'xy'
+        },
+        title: {
+            text: ''
+        },
+        xAxis: {
+            type: 'datetime',
+            title: {
+                text: null
+            },
+            labels: {
+                format: '{value:%m/%d %H:%M %p}'
+            }
+        },
+        yAxis: {
+            title: {
+                text: null
+            },
+            labels: {
+                format: '₹{value}'
+            }
+        },
+        legend: {
+            enabled: true
+        },
+        series: [{
+            name: 'LUCKY PLY AND LAMINATES',
+            data: [
+                [Date.UTC(2024, 3, 2, 22, 23), 13000],
+                [Date.UTC(2024, 3, 2, 16, 11), 10000],
+            ]
+        }, {
+            name: 'OMFURN INDIA LIMITED',
+            data: [
+                [Date.UTC(2024, 3, 2, 19, 48), 14200],
+                [Date.UTC(2024, 3, 2, 15, 36), 10800]
+            ]
+        }]
+    });
+});
 
 </script>
 
