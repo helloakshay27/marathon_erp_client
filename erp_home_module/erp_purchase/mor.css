@@ -656,6 +656,7 @@ input[type="checkbox"] {
 
 
 .tbl-container th {
+  text-align: left;
   padding: 5px 10px;
   min-height: 40px;
 }
@@ -668,6 +669,8 @@ input[type="checkbox"] {
 }
 
 .tbl-container  td {
+  text-align: left;
+
   border: 1px solid #dfdfdf;
   
   font-family: "Poppins", sans-serif;
