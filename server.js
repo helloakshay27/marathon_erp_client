@@ -16,8 +16,22 @@ app.use(express.static(path.join(__dirname)));
 // Helper function to generate file structure
 function generateFileList(dir, baseUrl) {
     let fileList = '';
-    const files = fs.readdirSync(dir);
-    
+    let files;
+
+    try {
+        files = fs.readdirSync(dir);
+    } catch (error) {
+        console.error(`Error reading directory: ${dir}`, error);
+        return '';
+    }
+
+    // Add mandatory directories first if they are not in the file list
+    INCLUDE_DIRS.forEach(includeDir => {
+        if (!files.includes(includeDir)) {
+            files.push(includeDir);
+        }
+    });
+
     files.forEach(file => {
         if (EXCLUDE_DIRS.includes(file)) return;
 
@@ -25,23 +39,15 @@ function generateFileList(dir, baseUrl) {
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
 
-        if (fs.statSync(filePath).isDirectory()) {
-            fileList += `<li><strong>${file}/</strong></li>`;
-            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
-        } else {
-            fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
-        }
-    });
-
-    // Add mandatory directories if not already included
-    INCLUDE_DIRS.forEach(includeDir => {
-        const filePath = path.join(__dirname, includeDir);
-        const relativePath = path.relative(__dirname, filePath);
-        const urlPath = `${baseUrl}/${relativePath}`;
-        
-        if (!files.includes(includeDir)) {
-            fileList += `<li><strong>${includeDir}/</strong></li>`;
-            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
+        try {
+            if (fs.statSync(filePath).isDirectory()) {
+                fileList += `<li><strong>${file}/</strong></li>`;
+                fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
+            } else {
+                fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
+            }
+        } catch (error) {
+            console.error(`Error accessing file: ${filePath}`, error);
         }
     });
 
@@ -49,9 +55,10 @@ function generateFileList(dir, baseUrl) {
 }
 
 // Serve the directory listing
-app.get('/files', (req, res) => {
+app.get('/erp_home_module', (req, res) => {
     try {
-        const fileList = generateFileList(__dirname, '');
+        const specificDir = path.join(__dirname, 'erp_home_module');
+        const fileList = generateFileList(specificDir, '');
         const html = `
             <!DOCTYPE html>
             <html>
@@ -70,6 +77,9 @@ app.get('/files', (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 });
+
+
+
 
 // Serve the index.html file
 app.get('/', (req, res) => {
