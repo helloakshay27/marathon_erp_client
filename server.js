@@ -15,7 +15,7 @@ function generateFileList(dir, baseUrl) {
     const EXCLUDE_DIRS = ['.git', 'node_modules'];
 
     files.forEach(file => {
-        if (EXCLUDE_DIRS.includes(file)) return;
+        // if (EXCLUDE_DIRS.includes(file)) return;
 
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
