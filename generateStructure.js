@@ -49,7 +49,7 @@ app.get('/files', (req, res) => {
     res.send(html);
 });
 
-// Serve the index.html file
+// Serve the index.html files
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
