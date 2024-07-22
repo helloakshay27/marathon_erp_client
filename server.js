@@ -50,20 +50,25 @@ function generateFileList(dir, baseUrl) {
 
 // Serve the directory listing
 app.get('/files', (req, res) => {
-    const fileList = generateFileList(__dirname, '');
-    const html = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Directory Listing</title>
-        </head>
-        <body>
-            <h1>Directory Listing</h1>
-            <ul>${fileList}</ul>
-        </body>
-        </html>
-    `;
-    res.send(html);
+    try {
+        const fileList = generateFileList(__dirname, '');
+        const html = `
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <title>Directory Listing</title>
+            </head>
+            <body>
+                <h1>Directory Listing</h1>
+                <ul>${fileList}</ul>
+            </body>
+            </html>
+        `;
+        res.send(html);
+    } catch (error) {
+        console.error('Error generating file list:', error);
+        res.status(500).send('Internal Server Error');
+    }
 });
 
 // Serve the index.html file
