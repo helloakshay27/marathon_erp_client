@@ -2,9 +2,28 @@
 <html>
 <head>
     <title>Welcome to MARTHON_ERP</title>
+    <style>
+        #welcome-message {
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        #navigation {
+            margin-top: 20px;
+        }
+        #files-link {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        #files-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to MARTHON_ERP</h1>
-    <p><a href="/files">View Directory Listing</a></p>
+    <h1 id="welcome-message">Welcome to MARTHON_ERP</h1>
+    <p id="description">This is the home page of the MARTHON_ERP application.</p>
+    <div id="navigation">
+        <div id="files-link" onclick="location.href='/files'">View Directory Listing</div>
+    </div>
 </body>
 </html>

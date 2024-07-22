@@ -12,22 +12,22 @@ app.use(express.static(path.join(__dirname)));
 function generateFileList(dir, baseUrl) {
     let fileList = '';
     const files = fs.readdirSync(dir);
+    const EXCLUDE_DIRS = ['.git', 'node_modules'];
 
     files.forEach(file => {
-        if (file === 'node_modules') return;
+        if (EXCLUDE_DIRS.includes(file)) return;
 
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
 
         if (fs.statSync(filePath).isDirectory()) {
-            fileList += `<li><strong><a href="${urlPath}">${file}/</a></strong></li>`;
+            fileList += `<li><strong>${file}/</strong></li>`;
             fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
         } else {
             fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
         }
     });
-
     return fileList;
 }
 
@@ -49,11 +49,9 @@ app.get('/files', (req, res) => {
     res.send(html);
 });
 
-// Serve the index.html files
+// Serve the index.html file
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = app;
