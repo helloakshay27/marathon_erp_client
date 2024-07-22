@@ -1,34 +1,62 @@
-// This is a mock function to simulate fetching directory structure
-function fetchDirectoryStructure() {
-    return [
-        { name: '.vscode', type: 'directory' },
-        { name: 'assets', type: 'directory' },
-        { name: 'components', type: 'directory' },
-        { name: 'erp_event_module', type: 'directory' },
-        { name: 'erp_home_module', type: 'directory' },
-        { name: 'erp_home_page', type: 'directory' },
-        { name: 'erp_login_module', type: 'directory' },
-        { name: 'erp_login_module.zip', type: 'file' },
-        { name: 'generateStructure.js', type: 'file' },
-        { name: 'index.html', type: 'file' }
-    ];
-}
+// generateStructure.js
+const express = require('express');
+const fs = require('fs');
+const path = require('path');
 
-function renderDirectoryList() {
-    const directoryListContainer = document.getElementById('directory-list');
-    const items = fetchDirectoryStructure();
-    let html = '';
+const app = express();
+const PORT = process.env.PORT || 3000;
 
-    items.forEach(item => {
-        if (item.type === 'directory') {
-            html += `<div class="directory-item"><strong>${item.name}/</strong></div>`;
+// List of directories to exclude from the listing
+const EXCLUDE_DIRS = ['.git', 'node_modules', 'generateStructure.js'];
+
+// Serve static files
+app.use(express.static(path.join(__dirname)));
+
+// Helper function to generate file structure
+function generateFileList(dir, baseUrl) {
+    let fileList = '';
+    const files = fs.readdirSync(dir);
+    
+    files.forEach(file => {
+        if (EXCLUDE_DIRS.includes(file)) return; // Skip excluded directories
+
+        const filePath = path.join(dir, file);
+        const relativePath = path.relative(__dirname, filePath);
+        const urlPath = `${baseUrl}/${relativePath}`;
+
+        if (fs.statSync(filePath).isDirectory()) {
+            fileList += `<li><strong>${file}/</strong></li>`;
+            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
         } else {
-            html += `<div class="directory-item">${item.name}</div>`;
+            fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
         }
     });
-
-    directoryListContainer.innerHTML = html;
+    return fileList;
 }
 
-// Render the directory list when the page loads
-document.addEventListener('DOMContentLoaded', renderDirectoryList);
+// Serve the directory listing
+app.get('/files', (req, res) => {
+    const fileList = generateFileList(__dirname, '');
+    const html = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Directory Listing</title>
+        </head>
+        <body>
+            <h1>Directory Listing</h1>
+            <ul>${fileList}</ul>
+        </body>
+        </html>
+    `;
+    res.send(html);
+});
+
+// Serve the index.html file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
+});
