@@ -18,21 +18,11 @@
   <div id="folder-structure"></div>
   
   <script>
-    // Mock folder structure data
-    const folderStructure = {
-      "folder1": {
-        "subfolder1": {
-          "file1.txt": null,
-          "file2.txt": null
-        },
-        "subfolder2": {
-          "file3.txt": null
-        }
-      },
-      "folder2": {
-        "file4.txt": null
-      }
-    };
+    fetch('folderStructure.json')
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('folder-structure').appendChild(createList(data));
+      });
 
     function createList(structure) {
       const ul = document.createElement('ul');
@@ -46,8 +36,6 @@
       }
       return ul;
     }
-
-    document.getElementById('folder-structure').appendChild(createList(folderStructure));
   </script>
 </body>
 </html>
