@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folder Structure</title>
+  <style>
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Folder Structure</h1>
+  <div id="folder-structure"></div>
+  
+  <script>
+    // Mock folder structure data
+    const folderStructure = {
+      "folder1": {
+        "subfolder1": {
+          "file1.txt": null,
+          "file2.txt": null
+        },
+        "subfolder2": {
+          "file3.txt": null
+        }
+      },
+      "folder2": {
+        "file4.txt": null
+      }
+    };
+
+    function createList(structure) {
+      const ul = document.createElement('ul');
+      for (const [key, value] of Object.entries(structure)) {
+        const li = document.createElement('li');
+        li.textContent = key;
+        if (value) {
+          li.appendChild(createList(value));
+        }
+        ul.appendChild(li);
+      }
+      return ul;
+    }
+
+    document.getElementById('folder-structure').appendChild(createList(folderStructure));
+  </script>
+</body>
+</html>
