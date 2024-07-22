@@ -57,7 +57,7 @@ function generateFileList(dir, baseUrl) {
 // Serve the directory listing
 app.get('/files', (req, res) => {
     try {
-        const specificDir = path.join(__dirname, 'erp_home_module', 'erp_purchase');
+        const specificDir = path.join(__dirname, 'master');
         const fileList = generateFileList(specificDir, '');
         const html = `
             <!DOCTYPE html>

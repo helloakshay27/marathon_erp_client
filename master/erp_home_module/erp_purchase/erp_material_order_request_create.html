@@ -1,0 +1,1793 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="mor.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU"
+    />
+    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"
+  />
+  
+
+    <script src="/master/assets/js/main.js"></script>
+    <title>Schedule unit offer</title>
+  </head>
+  <body>
+    <main class="h-100 w-100">
+      <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid py-1">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            onclick="openNav()"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <img
+            alt="logo"
+            class="go-logo mx-3 my-2"
+            src="../assets/icons/marathon-logo_500px 1.svg"
+          />
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./1CF_Main.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./31Dashboard_Daily.html"
+                  >Dashboard</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+              </li>
+            </ul>
+            <div class="top-nav-right">
+              <div class="d-flex search-input w-50 mx-auto">
+                <span class="material-symbols-outlined"> search </span>
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </div>
+
+              <div class="btn-group">
+                <button
+                  class="btn btn-sm dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  1201/D Jyoti Tower
+                </button>
+                <ul class="dropdown-menu">
+                  <li>1346/F Hayat Tower</li>
+                  <li>9876/A JP Morgan Tower</li>
+                  <li>Busan Rcidency</li>
+                </ul>
+              </div>
+              <span class="material-symbols-outlined align-middle"> apps </span>
+              <div
+                class="avatar"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#userInfo"
+              >
+                <div class="avatar__letters">A</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- top navigation above -->
+
+      <div class="main-content">
+        <aside>
+          <div class="sidebar sidebar_inner" id="mySidebar">
+            <p class="closebtn">
+              <span
+                class="material-symbols-outlined cancel"
+                onclick="closeNav()"
+              >
+                cancel
+              </span>
+            </p>
+            <ul class="p-0">
+              <!--  button for closing sidebar-->
+              <div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                  <input
+                    class="form-control form-control-sidebar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                      <i class="fas fa-search fa-fw"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-header">MOR</li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./Snagging-ProjectStatus-Unit.html"
+                >
+                  <span class="text">Material Order Request </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./snagging-Unit-Snag-List.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Material Issue Slip
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-observation.html"
+                >
+                  <img alt="" src="../images/Snag.svg" /><span class="text"
+                    >Material Return Slip</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-observation.html"
+                >
+                  <img alt="" src="../images/Snag.svg" /><span class="text"
+                    >Material Order Approval</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-header">MTO</li>
+
+              <li class="nav-item">
+                <div class="btn-group2">
+                  <a
+                    class="text nav-link dropdown-toggle asset-after"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    <img alt="" src="../images/OSR.svg" /><span class="text"
+                      >Material Transfer Request
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu" data-popper-placement="top-start">
+                    <li>
+                      <a href="./Snagging-Schedules-UnitOffer.html"
+                        >MTO Pending Approval
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./Snagging-Schedules-DailyTask.html"
+                        >Daily Task</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >MTO Pending Approval</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-header">Procurement</li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="/erp_home_module/erp_home.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Dashboard</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Events
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >PO
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Advance Note
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- sidebar ends above -->
+
+        <!-- webpage conteaint start -->
+        <div class="website-content overflow-auto">
+    
+
+          <div class="module-data-section container-fluid">
+            <a href=""
+              >Home > Purchase > MOR > Material Order Request  > Create
+              MOR</a
+            >
+            <h5 class="mt-3">Material Order Request </h5>
+
+            <div class="row my-4 align-items-center">
+              <div class="col-md-12 px-2">
+                <div class="head-material text-center"><h4>Create MOR</h4></div>
+
+                <div class="mor-tabs mt-4">
+                  <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-home-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-home"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-home"
+                        aria-selected="true"
+                      >
+                      MOR (1/4)
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-profile-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-profile"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-profile"
+                        aria-selected="false"
+                      >
+                      MOR Approval
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Acceptance
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Auction / 
+                      RFQ
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      PO
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Acceptance
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Advance
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Material Received
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-contact-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-contact"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-contact"
+                        aria-selected="false"
+                      >
+                      Billing
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-content mor-content active" id="pills-tabContent">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                    aria-labelledby="pills-home-tab"
+                  >
+                    <section class="mor p-2 pt-2">
+
+                      <div class="row justify-content-center my-4">
+                        <div class="col-md-10">
+                          <div class="progress-steps">
+                            <div class="top">
+                                <div class="progress"><span></span></div>
+                                <div class="steps">
+                                  
+                                  <div class="layer1">
+                                    <div class="step active" data-step="1"><span></span>
+                                    </div>
+                                    <p>layer1</p>
+                                  </div>
+                                    
+                                    
+                                  <div class="layer1">
+                                    <div class="step active" data-step="2"><span></span>
+                                    </div>
+                                    <p>layer2</p>
+                                  </div>                               
+                                  <div class="layer1">
+                                    <div class="step active" data-step="3"><span></span>
+                                    </div>
+                                    <p>layer3</p>
+                                  </div>
+                                  <div class="layer1">
+                                    <div class="step active" data-step="4"><span></span>
+                                    </div>
+                                    <p>layer4</p>
+                                 </div>                               
+                                 </div>
+                            </div>
+                            <div class="buttons d-m">
+                                <button class="btn btn-prev disabled" disabled>prev</button>
+                                <button class="btn btn-next">Next</button>
+                            </div>
+                         </div>
+                        </div>
+                     
+                      </div>
+
+
+                        <div class="row">
+                          <!-- form-select EXAMPLE -->
+
+                          <div
+                            class="card card-default"
+                            id="mor-material-details"
+                          >
+                            <div class="card-header">
+                              <h3 class="card-title">MOR Details</h3>
+
+                     
+                            </div>
+                            <!-- /.card-header -->
+                            <div class="card-body">
+
+                           
+                              <div class="row">
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label>Company <span>*</span></label>
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-md-3">
+                                  <div class="form-group">
+                                    <label>Project <span>*</span></label>
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-3">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label>Sub-Project <span>*</span></label>
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+
+                                <div class="col-md-3">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label>Department</label>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Default input"
+                                    />
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                           
+                              </div>
+
+                              <div class="row mt-4">
+                                <div class="col-md-2">
+                                  <div class="form-group">
+                                    <label>MOR No.</label>
+                                    <input
+                                    class="form-control"
+                                    type="text"
+                                    placeholder="Default input"
+                                  />
+                                  </div>
+                                  <!-- /.form-group -->
+
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label>MOR Date <span>*</span></label>
+                                    <div
+                                      id="datepicker"
+                                      class="input-group date"
+                                      data-date-format="mm-dd-yyyy"
+                                    >
+                                      <input class="form-control" type="text"  />
+                                      <span class="input-group-addon">
+                                        <i class="fa-solid fa-calendar-days" style="color: #8B0203;"></i>                                      </span>
+                                    </div>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label>Created On </label>
+                                    <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Default input"
+                                    />
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-md-2">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label
+                                      >Request to Dept.<span>*</span></label
+                                    >
+                                    <select
+                                    class="form-control form-select"
+                                    style="width: 100%"
+                                  >
+                                    <option selected="selected">
+                                      Alabama
+                                    </option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                  </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+                                <div class="col-md-2 ">
+                                  <!-- /.form-group -->
+
+                                  <div class="form-group">
+                                    <label
+                                      >Material Type <span>*</span></label
+                                    >
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                                </div>
+
+                                <div class="col-md-2 mt-2">
+                                  <div class="form-group">
+                                    <label
+                                      >Consumption Category
+                                      <span>*</span></label
+                                    >
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+
+                            
+                                </div>
+                                <!-- /.col -->
+                              </div> 
+
+                              <!-- /.col -->
+                         </div>
+                            <!-- /.row -->
+
+                            <!-- /.row -->
+
+                          <div class="row my-2 justify-content-start">
+                            <div class="col-md-12">
+                              <button class="purple-btn1">
+                                <svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.9488 6.7488H9.2496V1.0496C9.24834 0.771618 9.13735 0.505381 8.94078 0.308816C8.74422 0.112251 8.47798 0.00126262 8.2 0L7.8 0C7.52202 0.00126262 7.25578 0.112251 7.05922 0.308816C6.86265 0.505381 6.75166 0.771618 6.7504 1.0496V6.7488H1.0512C0.773216 6.74964 0.506809 6.86022 0.309945 7.05649C0.11308 7.25275 0.00168605 7.51882 0 7.7968L0 8.1968C0.00126262 8.47478 0.112251 8.74102 0.308816 8.93758C0.505381 9.13415 0.771618 9.24514 1.0496 9.2464H6.7504V14.9456C6.7504 15.2244 6.86083 15.4919 7.05753 15.6895C7.25423 15.8871 7.52119 15.9987 7.8 16H8.2C8.47798 15.9987 8.74422 15.8877 8.94078 15.6912C9.13735 15.4946 9.24834 15.2284 9.2496 14.9504V9.2464H14.9488C15.2271 9.24556 15.4937 9.13476 15.6906 8.93815C15.8875 8.74154 15.9987 8.47506 16 8.1968V7.7968C15.9983 7.51882 15.8869 7.25275 15.6901 7.05649C15.4932 6.86022 15.2268 6.74964 14.9488 6.7488Z" fill="black"/>
+                                  </svg>
+                                   Add Material
+                              </button>
+                              <button class="purple-btn1"><svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.6 14.8V15.6C5.6 15.8208 5.4208 16 5.2 16H0.4C0.1792 16 0 15.8208 0 15.6V10.8C0 10.5792 0.1792 10.4 0.4 10.4H1.2C1.4208 10.4 1.6 10.5792 1.6 10.8V14.4H5.2C5.4208 14.4 5.6 14.5792 5.6 14.8ZM15.6 10.4H14.8C14.5792 10.4 14.4 10.5792 14.4 10.8V14.4H10.8C10.5792 14.4 10.4 14.5792 10.4 14.8V15.6C10.4 15.8208 10.5792 16 10.8 16H15.6C15.8208 16 16 15.8208 16 15.6V10.8C16 10.5792 15.8208 10.4 15.6 10.4ZM15.6 0H10.8C10.5792 0 10.4 0.1792 10.4 0.4V1.2C10.4 1.4208 10.5792 1.6 10.8 1.6H14.4V5.2C14.4 5.4208 14.5792 5.6 14.8 5.6H15.6C15.8208 5.6 16 5.4208 16 5.2V0.4C16 0.1792 15.8208 0 15.6 0ZM0.4 5.6H1.2C1.4208 5.6 1.6 5.4208 1.6 5.2V1.6H5.2C5.4208 1.6 5.6 1.4208 5.6 1.2V0.4C5.6 0.1792 5.4208 0 5.2 0H0.4C0.1792 0 0 0.1792 0 0.4V5.2C0 5.4208 0.1792 5.6 0.4 5.6ZM15.6 7.2H0.4C0.1792 7.2 0 7.3792 0 7.6V8.4C0 8.6208 0.1792 8.8 0.4 8.8H15.6C15.8208 8.8 16 8.6208 16 8.4V7.6C16 7.3792 15.8208 7.2 15.6 7.2Z" fill="black"/>
+                                </svg>
+                                QR</button>
+                              <button class="purple-btn1"> <svg class="me-3" width="16" height="18" viewBox="0 0 16 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.3846 17.2308H0.615385C0.246154 17.2308 0 16.9846 0 16.6154V11.6923C0 11.3231 0.246154 11.0769 0.615385 11.0769C0.984615 11.0769 1.23077 11.3231 1.23077 11.6923V16H14.7692V11.6923C14.7692 11.3231 15.0154 11.0769 15.3846 11.0769C15.7538 11.0769 16 11.3231 16 11.6923V16.6154C16 16.9846 15.7538 17.2308 15.3846 17.2308ZM8 13.5385C7.93846 13.5385 7.81539 13.5385 7.75385 13.4769C7.69231 13.4769 7.63077 13.4154 7.56923 13.3538L2.64615 8.43077C2.4 8.18462 2.4 7.81538 2.64615 7.56923C2.89231 7.32308 3.26154 7.32308 3.50769 7.56923L7.38462 11.4462V0.615385C7.38462 0.246154 7.63077 0 8 0C8.36923 0 8.61539 0.246154 8.61539 0.615385V11.4462L12.4923 7.56923C12.7385 7.32308 13.1077 7.32308 13.3538 7.56923C13.6 7.81538 13.6 8.18462 13.3538 8.43077L8.43077 13.3538C8.36923 13.4154 8.30769 13.4769 8.24615 13.4769C8.18462 13.5385 8.06154 13.5385 8 13.5385Z" fill="black"/>
+                                </svg>
+                                Download</button>
+
+                              <button class="purple-btn1"><svg  class="me-3" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.1892 16.0745H0.794209C0.364012 16.0745 0 15.7435 0 15.3133V8.03309C0 7.61944 0.347466 7.27197 0.794209 7.27197C1.24095 7.27197 1.58842 7.60289 1.58842 8.03309V14.5688H14.4116V8.03309C14.4116 7.61944 14.759 7.27197 15.2058 7.27197C15.6525 7.27197 16 7.60289 16 8.03309V15.3133C15.9669 15.727 15.6194 16.0745 15.1892 16.0745Z" fill="black"/>
+                                <path d="M11.6321 3.28438L8.57105 0.223371C8.27322 -0.0744571 7.77684 -0.0744571 7.46247 0.223371L4.36836 3.28438C4.21945 3.4333 4.13672 3.63185 4.13672 3.84695C4.13672 4.06205 4.21945 4.24405 4.36836 4.39297C4.51728 4.54188 4.71583 4.62461 4.91438 4.62461C5.12948 4.62461 5.32803 4.54188 5.47695 4.39297L7.16464 2.72182V10.5812C7.16464 11.0445 7.52865 11.4085 7.99194 11.4085C8.45523 11.4085 8.81924 11.0445 8.81924 10.5812V2.68873L10.5235 4.39297C10.8213 4.6908 11.3177 4.6908 11.6321 4.39297C11.781 4.24405 11.8637 4.0455 11.8637 3.84695C11.8637 3.63185 11.781 3.4333 11.6321 3.28438Z" fill="black"/>
+                                </svg>
+                                Upload</button>
+
+                              <button class="purple-btn1"> <svg class="me-3" width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5145 20.975H5.41904C4.59933 20.9741 3.9342 20.309 3.93332 19.4893V17.0487H1.48573C0.666018 17.0478 0.00177149 16.3836 7.7057e-06 15.563V4.55604C-0.000875544 4.36613 0.0742043 4.18329 0.208469 4.0499C0.229669 4.04636 4.04991 0.194215 4.06845 0.189919L4.07198 0.186386L4.0764 0.182853H4.07551C4.20713 0.0644889 4.37848 -0.000875301 4.55515 8.85393e-06H10.581C11.4007 0.000892104 12.0658 0.666019 12.0667 1.48573V3.93332H14.5143C15.3349 3.9342 15.9991 4.59933 16 5.41904V19.4893C15.9991 20.309 15.334 20.9741 14.5143 20.975L14.5145 20.975ZM5.34668 17.0488V19.4893C5.34491 19.5088 5.35286 19.5282 5.36611 19.5415C5.38024 19.5556 5.39968 19.5627 5.41911 19.5618H14.5146C14.5543 19.5609 14.587 19.5291 14.587 19.4893V5.41907C14.587 5.37932 14.5543 5.34664 14.5146 5.34664H12.067V15.563C12.0661 16.3836 11.401 17.0479 10.5813 17.0488L5.34668 17.0488ZM4.64003 15.6355H10.5811C10.6199 15.6328 10.6508 15.6019 10.6535 15.563V1.48576C10.6508 1.44689 10.6199 1.41598 10.5811 1.41333H5.25645V3.801C5.26087 4.18876 5.10894 4.56153 4.83511 4.83534C4.5613 5.10916 4.18853 5.26109 3.80076 5.25757H1.41309V15.5631C1.41574 15.6019 1.44666 15.6328 1.48553 15.6355L4.64003 15.6355ZM2.41321 3.8441H3.80088L3.81943 2.43698L2.41321 3.8441Z" fill="black"/>
+                                </svg>
+                                Copy</button>
+                              <button class="purple-btn1 d-none">
+                                <svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M14.9488 6.7488H9.2496V1.0496C9.24834 0.771618 9.13735 0.505381 8.94078 0.308816C8.74422 0.112251 8.47798 0.00126262 8.2 0L7.8 0C7.52202 0.00126262 7.25578 0.112251 7.05922 0.308816C6.86265 0.505381 6.75166 0.771618 6.7504 1.0496V6.7488H1.0512C0.773216 6.74964 0.506809 6.86022 0.309945 7.05649C0.11308 7.25275 0.00168605 7.51882 0 7.7968L0 8.1968C0.00126262 8.47478 0.112251 8.74102 0.308816 8.93758C0.505381 9.13415 0.771618 9.24514 1.0496 9.2464H6.7504V14.9456C6.7504 15.2244 6.86083 15.4919 7.05753 15.6895C7.25423 15.8871 7.52119 15.9987 7.8 16H8.2C8.47798 15.9987 8.74422 15.8877 8.94078 15.6912C9.13735 15.4946 9.24834 15.2284 9.2496 14.9504V9.2464H14.9488C15.2271 9.24556 15.4937 9.13476 15.6906 8.93815C15.8875 8.74154 15.9987 8.47506 16 8.1968V7.7968C15.9983 7.51882 15.8869 7.25275 15.6901 7.05649C15.4932 6.86022 15.2268 6.74964 14.9488 6.7488Z" fill="black"/>
+                                  </svg>
+                                   Create Issue Slip
+                              </button>
+                            </div>
+                          </div>
+
+                    
+
+                          <div
+                            class="card card-default  mt-3"
+                            id="create-material-details"
+                          >
+                            <div class="card-header">
+                              <h3 class="card-title">Material Details</h3>
+
+                              <div class="card-tools">
+                                <button
+                                type="button"
+                                class="btn btn-tool"
+                                data-card-widget="collapse"
+                              >
+                              <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <circle cx="16" cy="16" r="16" fill="#8B0203"/>
+                              <path d="M16.866 22.5C16.4811 23.1667 15.5189 23.1667 15.134 22.5L9.93782 13.5C9.55292 12.8333 10.034 12 10.8038 12L21.1962 12C21.966 12 22.4471 12.8333 22.0622 13.5L16.866 22.5Z" fill="white"/>
+                              </svg>
+
+
+                                
+                              </button>
+                              </div>
+                            </div>
+                           
+                            <!-- /.card-header -->
+
+                            <div class="card-body-container show-this-in-collapsed-view mt-0 pt-2" >
+                              <div class="row">
+
+                     
+                                <div class="col-md-2">
+                                  <div class="form-group">
+                                    <label>Select Activity <span>*</span></label>
+                                    <select
+                                      class="form-control form-select"
+                                      style="width: 100%"
+                                    >
+                                      <option selected="selected">
+                                        Alabama
+                                      </option>
+                                      <option>Alaska</option>
+                                      <option>California</option>
+                                      <option>Delaware</option>
+                                      <option>Tennessee</option>
+                                      <option>Texas</option>
+                                      <option>Washington</option>
+                                    </select>
+                                  </div>
+                                  <!-- /.form-group -->
+                             
+                                
+
+                                 
+                               
+                                  <!-- /.form-group -->
+                                </div>
+                                <!-- /.col -->
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label
+                                        >Material Description
+                                        <span>*</span></label
+                                      >
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                  </div>
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label>MOR Till Date</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                  </div>
+                              
+  
+                                  </div>
+                          
+                             
+                              </div>
+
+
+                              <div class="card-body mt-0 pt-2">
+                                <div class="row">
+  
+                                  <div class="col-md-12 mb-3">
+                                    <div class="col-md-2">
+                                      <div class="form-group   d-flex align-items-center gap-4 show-this-in-collapsed-view">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="radio1" />
+                                          <label class="form-check-label">WBS</label>
+                                        </div>
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="radio" name="radio1" />
+                                          <label class="form-check-label">Non- WBS</label>
+                                        </div>
+                                   
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label>Select Activity <span>*</span></label>
+                                      <select
+                                        class="form-control form-select"
+                                        style="width: 100%"
+                                      >
+                                        <option selected="selected">
+                                          Alabama
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                      </select>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group">
+                                      <label
+                                        >Material Description
+                                        <span>*</span></label
+                                      >
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Use from Stock <span></span></label>
+                                      <div class="radio-buttons d-flex align-items-center gap-4">
+                                      
+                                          <div class="form-check">
+                                            <button class="border-0 " data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal2">
+                                            <input class="form-check-input" type="radio" name="radio1" >
+                                          </button>
+                                            <label class="form-check-label" for="yesRadio">Yes</label>
+                                        </div>
+                        
+                                        
+                                          <div class="form-check">
+                                              <input class="form-check-input" type="radio" name="radio1" id="noRadio">
+                                              <label class="form-check-label" for="noRadio">No</label>
+                                          </div>
+                                      </div>
+                                  </div>
+  
+                                    <div class="form-group">
+                                      <label>MOR Till Date</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                  <!-- /.col -->
+                          
+                                  <div class="col-md-2">
+                                 
+                                    <div class="form-group">
+                                      <label>Material Type <span>*</span></label>
+                                      <select
+                                        class="form-control form-select"
+                                        style="width: 100%"
+                                      >
+                                        <option selected="selected">
+                                          Alabama
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                      </select>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group">
+                                      <label>Specification <span>*</span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Per Box Qty <span></span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Approved Qty</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+  
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label
+                                        >Material Sub-Type <span>*</span>
+                                      </label>
+                                      <select
+                                        class="form-control form-select"
+                                        style="width: 100%"
+                                      >
+                                        <option selected="selected">
+                                          Alabama
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                      </select>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group">
+                                      <label>UOM <span>*</span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Required Boxes <span></span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Pending PO / MTO Qty</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label>Material <span>*</span></label>
+                                      <select
+                                        class="form-control form-select"
+                                        style="width: 100%"
+                                      >
+                                        <option selected="selected">
+                                          Alabama
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                      </select>
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group">
+                                      <label>Required Qty <span>*</span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Priority* <span></span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Lead Time</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                  <div class="col-md-2">
+                                    <div class="form-group">
+                                      <label>Material ID </label>
+                                      <input
+                                      class="form-control"
+                                      type="text"
+                                      placeholder="Default input"
+                                    />
+                                    </div>
+                                    <!-- /.form-group -->
+                                    <div class="form-group">
+                                      <label>Available Qty </label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Estimated Qty <span></span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+  
+                                    <div class="form-group">
+                                      <label>Expected Date of Delivery</label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                </div>
+
+                                <!-- div for table main page -->
+                                <div class="row my-3" style="align-items: flex-start;">
+                                  <div class="col-md-2 ps-3 mt-3">
+                                      <button class="purple-btn2 m-0" data-bs-toggle="modal"
+                                      data-bs-target="#file_attchement"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M15.1892 16.0745H0.794209C0.364012 16.0745 0 15.7435 0 15.3133V8.03309C0 7.61944 0.347466 7.27197 0.794209 7.27197C1.24095 7.27197 1.58842 7.60289 1.58842 8.03309V14.5688H14.4116V8.03309C14.4116 7.61944 14.759 7.27197 15.2058 7.27197C15.6525 7.27197 16 7.60289 16 8.03309V15.3133C15.9669 15.727 15.6194 16.0745 15.1892 16.0745Z" fill="white"/>
+                                        <path d="M11.6318 3.28438L8.57081 0.223371C8.27298 -0.0744571 7.7766 -0.0744571 7.46222 0.223371L4.36812 3.28438C4.2192 3.4333 4.13647 3.63185 4.13647 3.84695C4.13647 4.06205 4.2192 4.24405 4.36812 4.39297C4.51703 4.54188 4.71558 4.62461 4.91414 4.62461C5.12924 4.62461 5.32779 4.54188 5.4767 4.39297L7.1644 2.72182V10.5812C7.1644 11.0445 7.52841 11.4085 7.9917 11.4085C8.45498 11.4085 8.819 11.0445 8.819 10.5812V2.68873L10.5232 4.39297C10.8211 4.6908 11.3174 4.6908 11.6318 4.39297C11.7807 4.24405 11.8635 4.0455 11.8635 3.84695C11.8635 3.63185 11.7807 3.4333 11.6318 3.28438Z" fill="white"/>
+                                        </svg>
+                                        <span class="ms-2">Attchment File </span></button>
+                                     
+                                  </div>
+                                  <div class="col-md-9" style="width: 79% !important; max-width: 79% !important;">
+                                    <div class="tbl-container m-0">
+                                      <table class="w-100">
+                                          <thead class="w-100">
+                                              <tr>
+                                                <th class="main2-th">Sr. No.</th>
+
+                                                <th class="main2-th">Document Name</th>
+
+                                                <th class="main2-th">File Name</th>
+
+                                                  <th class="main2-th">File Type</th>
+                                                  <th class="main2-th">Upload Date</th>
+                                                  <th class="main2-th">Action</th>
+
+                                              </tr>
+                                          </thead>
+                                          <tbody>
+                                              <tr>
+                                                <th>1</th>
+                                                <td>03-03-2024</td>
+                                                <th>MTO Copy.pdf</th>
+                                                <td>03-03-2024</td>
+
+                                                  <th>MTO Copy.pdf</th>
+                                                  <td ><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                    data-bs-target="#document_attchment" style="font-size: 18px;"></i></td>
+                                              </tr>
+                                            
+                                          </tbody>
+                                      </table>
+                                  </div>
+                                  </div>
+                                  <!-- /.col -->
+  
+                                  <!-- /.col -->
+                                </div>
+                                  <!-- div for table main page end -->
+
+                                <div class="row mt-2">
+                                  <div class="col-md-12">
+                                    <div class="form-group">
+                                      <label>Note <span></span></label>
+                                      <input
+                                        class="form-control"
+                                        type="text"
+                                        placeholder="Default input"
+                                      />
+                                    </div>
+                                  </div>
+                                </div>
+  
+                                <div class="row mt-2 justify-content-end">
+                                 
+                                  <div class="col-md-3">
+                                    <button class="purple-btn1  "><svg class="me-3" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                      <path d="M14.9488 6.7488H9.2496V1.0496C9.24834 0.771618 9.13735 0.505381 8.94078 0.308816C8.74422 0.112251 8.47798 0.00126262 8.2 0L7.8 0C7.52202 0.00126262 7.25578 0.112251 7.05922 0.308816C6.86265 0.505381 6.75166 0.771618 6.7504 1.0496V6.7488H1.0512C0.773216 6.74964 0.506809 6.86022 0.309945 7.05649C0.11308 7.25275 0.00168605 7.51882 0 7.7968L0 8.1968C0.00126262 8.47478 0.112251 8.74102 0.308816 8.93758C0.505381 9.13415 0.771618 9.24514 1.0496 9.2464H6.7504V14.9456C6.7504 15.2244 6.86083 15.4919 7.05753 15.6895C7.25423 15.8871 7.52119 15.9987 7.8 16H8.2C8.47798 15.9987 8.74422 15.8877 8.94078 15.6912C9.13735 15.4946 9.24834 15.2284 9.2496 14.9504V9.2464H14.9488C15.2271 9.24556 15.4937 9.13476 15.6906 8.93815C15.8875 8.74154 15.9987 8.47506 16 8.1968V7.7968C15.9983 7.51882 15.8869 7.25275 15.6901 7.05649C15.4932 6.86022 15.2268 6.74964 14.9488 6.7488Z" fill="black"/>
+                                      </svg>Add Delivery Schedule</button>
+                                  </div>
+                                
+                                </div>
+                                <div class="row mt-4">
+                                  <div class="col-12 px-4">
+                                    <h5>Deliver Schedule</h5>
+  
+                                    <div class="tbl-container me-2 mt-3">
+                                      <table class="w-100">
+                                        <thead>
+                                          <tr>
+                                            <th>Batch No.</th>
+                                            <th>Delivery Date</th>
+                                            <th>Delivery Qty</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1</td>
+                                            <td>MOR/MAR/MAX/101/02/2024</td>
+                                            <td>01-02-2024</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                  <!-- /.col -->
+  
+                                  <!-- /.col -->
+                                </div>
+  
+                                <div class="row mt-4">
+                                  <div class="col-12 px-4">
+                                    <h5>Recent Orders</h5>
+  
+                                    <div class="tbl-container me-2 mt-3">
+                                      <table class="w-100">
+                                        <thead>
+                                          <tr>
+                                            <th>MOR No.</th>
+                                            <th>Order Date</th>
+                                            <th>Qty</th>
+                                            <th>Status</th>
+  
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>MOR/MAR/MAX/01/11/2023</td>
+                                            <td>01-11-202</td>
+                                            <td>150</td>
+                                            <td>GRN Created</td>
+  
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.form-group -->
+                                  </div>
+                                  <!-- /.col -->
+  
+                                  <!-- /.col -->
+                                </div>
+
+  
+                                <!-- /.col -->
+                              </div>
+  
+                            </div>
+
+                      
+                            </div>
+
+
+                            <div class="row mt-2 justify-content-end">
+                              
+                              <div class="col-md-2 ">
+                                <button class="purple-btn2 w-50 "> Delete</button>
+                              </div>
+                            
+
+
+
+                            <!-- /.row -->
+
+                            <!-- /.row -->
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Remark</label>
+                                <textarea
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Enter ..."
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row">
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <label>Comments</label>
+                                <textarea
+                                  class="form-control"
+                                  rows="3"
+                                  placeholder="Enter ..."
+                                ></textarea>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mt-4 justify-content-end align-items-center">
+                            <div class="col-md-3">
+                              <div
+                                class="form-group d-flex gap-3 align-items-center"
+                              >
+                                <label style="font-size: 1.1rem">status</label>
+                                <select
+                                  class="form-control form-select"
+                                  style="width: 100%"
+                                >
+                                  <option selected="selected">Alabama</option>
+                                  <option>Alaska</option>
+                                  <option>California</option>
+                                  <option>Delaware</option>
+                                  <option>Tennessee</option>
+                                  <option>Texas</option>
+                                  <option>Washington</option>
+                                </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="row mt-2 justify-content-end">
+                            <div class="col-md-2">
+                              <button class="purple-btn2 w-100">Print</button>
+                            </div>
+                            <div class="col-md-2">
+                              <button class="purple-btn2 w-100">Submit</button>
+                            </div>
+                            <div class="col-md-2">
+                              <button class="purple-btn1 w-100">Cancel</button>
+                            </div>
+                          </div>
+
+                          <div class="row mt-2">
+                            <div class="col-12 px-4">
+                              <h5>Material Summary</h5>
+
+                              <div class="tbl-container me-2 mt-3">
+                                <table class="w-100">
+                                  <thead>
+                                    <tr>
+                                      <th>Sr.No.</th>
+                                      <th>Activity</th>
+                                      <th>Material</th>
+                                      <th>Specification</th>
+
+                                      <th>UOM</th>
+                                      <th>QTY</th>
+
+                                      <th>Required Qty</th>
+
+                                      <th>Available Qty</th>
+
+                                      <th>Ordered Qty</th>
+
+                                    
+                                      <th>MTO Qty</th>
+
+                                      <th>Qty for PO</th>
+
+
+
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>Pratham Shastri</td>
+                                      <td>15-02-2024</td>
+                                      <td>Verified</td>
+
+                                      <td>Verified & Processed</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- /.form-group -->
+                            </div>
+                            <!-- /.col -->
+
+                            <!-- /.col -->
+                          </div>
+
+
+                          <div class="row mt-2">
+                            <div class="col-12 px-4">
+                              <h5>Audit Log</h5>
+
+                              <div class="tbl-container me-2 mt-3">
+                                <table class="w-100">
+                                  <thead>
+                                    <tr>
+                                      <th>Sr.No.</th>
+                                      <th>User</th>
+                                      <th>Date</th>
+                                      <th>Status</th>
+
+                                      <th>Remark</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>Pratham Shastri</td>
+                                      <td>15-02-2024</td>
+                                      <td>Verified</td>
+
+                                      <td>Verified & Processed</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                              <!-- /.form-group -->
+                            </div>
+                            <!-- /.col -->
+
+                            <!-- /.col -->
+                          </div>
+                          <!-- /.card-body -->
+                        </div>
+                        <!-- /.card -->
+
+                        <!-- form-select EXAMPLE -->
+
+                        <!-- /.card -->
+
+                        <!-- /.row -->
+                  </div>
+                      <!-- /.container-fluid -->
+                  </section>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-profile"
+                    role="tabpanel"
+                    aria-labelledby="pills-profile-tab"
+                  >
+                    ...
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="pills-contact"
+                    role="tabpanel"
+                    aria-labelledby="pills-contact-tab"
+                  >
+                    ...
+                  </div>
+                </div>
+              </div>
+   <!-- delivery schedule modal -->
+              <div
+              class="modal fade"
+              id="exampleModal2"
+              tabindex="-1"
+              aria-labelledby="exampleModal2Label"
+              style="display: none"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+              >
+                <div class="modal-content">
+                  <div class="modal-header modal-header-k">
+                    <h4
+                      class="modal-title text-center w-100"
+                      id="exampleModalLabel"
+                      style="font-weight: 500"
+                    >
+                    Deliver Schedule
+                    </h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+  
+                  <div class="modal-body p-1">
+  
+                    <div class="row mt-2">
+                      <div class="col-12 px-2">
+  
+                        <div class="tbl-container me-2 ">
+                          <table class="w-100">
+                            <thead>
+                              <tr>
+                                <th><input type="checkbox" /></th>
+  
+                                <th>Activity</th>
+                                <th>MOR No</th>
+                                <th>PO No.</th>
+                                <th>GRN No.</th>
+  
+                                <th>GRN Creation Date</th>
+                                <th>Available Qty</th>
+  
+                              
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td><input type="checkbox" /></td>
+  
+                                <td>Tiling</td>
+  
+                                <td>MOR/MAR/MAX/101/02/2024</td>
+                                <td>PO 1</td>
+                                <td>GRN 1536</td>
+                                <td>04-05-2024</td>
+                                <td>40</td>
+  
+                                
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+ 
+                    </div>
+                   
+                  </div>
+   
+                </div>
+              </div>
+            </div>
+     <!-- delivery schedule modal end -->
+
+
+
+
+
+
+   <!-- file_attchement add modal -->
+
+            <div
+            class="modal fade"
+            id="file_attchement"
+            tabindex="-1"
+            aria-labelledby="exampleModal2Label"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-md"
+            >
+              <div class="modal-content">
+                <div class="modal-header modal-header-k">
+                  <h5
+                    class="modal-title text-center w-100"
+                    id="exampleModalLabel"
+                  >
+                  Upload File
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body ">
+
+                  <div class="row mt-2">
+                   <div class="col-md-12">
+
+                    <div class="form-group">
+                      <label>Name of the Document<span>*</span></label>
+                      <input
+                        class="form-control"
+                        type="text"
+                        placeholder="Default input"
+                      />
+                    </div>
+
+                   </div>
+          
+
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-md-12">
+ 
+                     <div class="form-group">
+                       <label>File Upload <span>*</span></label>
+                       <input
+                         class="form-control"
+                         type="file"
+                         placeholder="Default input"
+                       />
+                     </div>
+ 
+                    </div>
+                  
+ 
+                   </div>
+                 
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                  <button class="purple-btn2">
+                        Sumbit
+                  </button>
+                </div>
+
+
+ 
+              </div>
+            </div>
+          </div>
+
+             <!-- file_attchement add modal end -->
+
+                <!-- document_attchment schedule modal -->
+
+            <div
+            class="modal fade"
+            id="document_attchment"
+            tabindex="-1"
+            aria-labelledby="exampleModal2Label"
+            style="display: none"
+            aria-hidden="true"
+          >
+            <div
+              class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"
+            >
+              <div class="modal-content">
+                <div class="modal-header modal-header-k">
+                  <h5
+                    class="modal-title text-center w-100"
+                    id="exampleModalLabel"
+                  >
+                  Document Attchement
+                  </h5>
+                     
+
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="modal-body ">
+
+
+
+                  <div class="row mt-2">
+                    <div class="col-12 px-4">
+                      <div class="d-flex justify-content-between">
+                        <h5>Latest Documents</h5>
+                        <button class="purple-btn2 m-0" data-bs-toggle="modal"
+                        data-bs-target="#file_attchement" data-bs-dismiss="modal"
+                        aria-label="Close"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M15.1892 16.0745H0.794209C0.364012 16.0745 0 15.7435 0 15.3133V8.03309C0 7.61944 0.347466 7.27197 0.794209 7.27197C1.24095 7.27197 1.58842 7.60289 1.58842 8.03309V14.5688H14.4116V8.03309C14.4116 7.61944 14.759 7.27197 15.2058 7.27197C15.6525 7.27197 16 7.60289 16 8.03309V15.3133C15.9669 15.727 15.6194 16.0745 15.1892 16.0745Z" fill="white"/>
+                          <path d="M11.6318 3.28438L8.57081 0.223371C8.27298 -0.0744571 7.7766 -0.0744571 7.46222 0.223371L4.36812 3.28438C4.2192 3.4333 4.13647 3.63185 4.13647 3.84695C4.13647 4.06205 4.2192 4.24405 4.36812 4.39297C4.51703 4.54188 4.71558 4.62461 4.91414 4.62461C5.12924 4.62461 5.32779 4.54188 5.4767 4.39297L7.1644 2.72182V10.5812C7.1644 11.0445 7.52841 11.4085 7.9917 11.4085C8.45498 11.4085 8.819 11.0445 8.819 10.5812V2.68873L10.5232 4.39297C10.8211 4.6908 11.3174 4.6908 11.6318 4.39297C11.7807 4.24405 11.8635 4.0455 11.8635 3.84695C11.8635 3.63185 11.7807 3.4333 11.6318 3.28438Z" fill="white"/>
+                          </svg>
+                          <span class="ms-2">Attchment File </span>
+                        </button>
+                      </div>
+                    
+
+                      <div class="tbl-container me-2 mt-3">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th>Sr.No.</th>
+                              <th>Document Name</th>
+                              <th>Attchement Name</th>
+                              <th>Upload Date</th>
+
+                              <th>Upload By</th>
+                              <th>Action</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>MTC</td>
+                              <td>Material test cert.pdf</td>
+                              <td>01-11-202</td>
+
+                              <td>vendor user</td>
+                              <td><i class="fa-regular fa-eye"></i></td>
+
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- /.form-group -->
+                    </div>
+                    <!-- /.col -->
+
+                    <!-- /.col -->
+                  </div>
+                  <div class="row mt-2">
+                    <div class="col-12 px-4">
+                      <h5> Documents Attchment History</h5>
+
+                      <div class="tbl-container me-2 mt-3">
+                        <table class="w-100">
+                          <thead>
+                            <tr>
+                              <th>Sr.No.</th>
+                              <th>Document Name</th>
+                              <th>Attchement Name</th>
+                              <th>Upload Date</th>
+
+                              <th>Upload By</th>
+                              <th>Action</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>1</td>
+                              <td>MTC</td>
+                              <td>Material test cert.pdf</td>
+                              <td>01-11-202</td>
+
+                              <td>vendor user</td>
+                              <td><i class="fa-regular fa-eye"></i></td>
+
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <!-- /.form-group -->
+                    </div>
+                    <!-- /.col -->
+
+                    <!-- /.col -->
+                  </div>
+                 
+                </div>
+
+                <div class="modal-footer justify-content-center">
+                  <button class="purple-btn2" type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close">
+                        Close
+                  </button>
+                </div>
+
+
+ 
+              </div>
+            </div>
+          </div>
+
+             <!-- document_attchment schedule modal end -->
+
+    </div>
+
+
+
+
+
+     
+          </div>
+
+          <footer class="footer">
+            <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+
+
+  </body>
+
+
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
+</html>
