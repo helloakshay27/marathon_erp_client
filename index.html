@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to MARTHON_ERP</title>
+    <style>
+        /* Optional CSS to style elements with IDs */
+        #welcome-message {
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        #navigation {
+            margin-top: 20px;
+        }
+        #files-link {
+            color: #007BFF;
+            cursor: pointer; /* Change cursor to indicate it's clickable */
+            text-decoration: underline;
+        }
+        #files-link:hover {
+            text-decoration: none;
+        }
+        #file-list {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="welcome-message">Welcome to MARTHON_ERP</h1>
+    <p id="description">This is the home page of the MARTHON_ERP application.</p>
+    <div id="navigation">
+        <span id="files-link">View Directory Listing</span>
+    </div>
+    <div id="file-list"></div>
+
+    <script>
+        // Function to fetch directory listing
+        function fetchDirectoryListing() {
+            fetch('/files') // Adjust this if you have a different endpoint for directory listing
+                .then(response => response.text())
+                .then(html => {
+                    document.getElementById('file-list').innerHTML = html;
+                })
+                .catch(error => {
+                    console.error('Error fetching directory listing:', error);
+                });
+        }
+
+        // Set up event listener
+        document.addEventListener('DOMContentLoaded', () => {
+            const filesLink = document.getElementById('files-link');
+            filesLink.addEventListener('click', () => {
+                fetchDirectoryListing();
+            });
+        });
+    </script>
+</body>
+</html>

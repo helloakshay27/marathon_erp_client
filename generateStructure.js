@@ -5,6 +5,9 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// List of directories to exclude from the listing
+const EXCLUDE_DIRS = ['.git', 'node_modules', 'generateStructure.js'];
+
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
@@ -12,7 +15,10 @@ app.use(express.static(path.join(__dirname)));
 function generateFileList(dir, baseUrl) {
     let fileList = '';
     const files = fs.readdirSync(dir);
+    
     files.forEach(file => {
+        if (EXCLUDE_DIRS.includes(file)) return; // Skip excluded directories
+
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
@@ -28,7 +34,7 @@ function generateFileList(dir, baseUrl) {
 }
 
 // Serve the directory listing
-app.get('/', (req, res) => {
+app.get('/files', (req, res) => {
     const fileList = generateFileList(__dirname, '');
     const html = `
         <!DOCTYPE html>
@@ -45,7 +51,11 @@ app.get('/', (req, res) => {
     res.send(html);
 });
 
-// Start the server
+// Serve the index.html file
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
