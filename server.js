@@ -25,6 +25,13 @@ function generateFileList(dir, baseUrl) {
         return '';
     }
 
+    // Add mandatory directories first if they are not in the file list
+    INCLUDE_DIRS.forEach(includeDir => {
+        if (!files.includes(includeDir)) {
+            files.push(includeDir);
+        }
+    });
+
     files.forEach(file => {
         if (EXCLUDE_DIRS.includes(file)) return;
 
@@ -41,24 +48,6 @@ function generateFileList(dir, baseUrl) {
             }
         } catch (error) {
             console.error(`Error accessing file: ${filePath}`, error);
-        }
-    });
-
-    // Add mandatory directories if not already included
-    INCLUDE_DIRS.forEach(includeDir => {
-        const filePath = path.join(__dirname, includeDir);
-        const relativePath = path.relative(__dirname, filePath);
-        const urlPath = `${baseUrl}/${relativePath}`;
-
-        if (!files.includes(includeDir)) {
-            try {
-                if (fs.statSync(filePath).isDirectory()) {
-                    fileList += `<li><strong>${includeDir}/</strong></li>`;
-                    fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
-                }
-            } catch (error) {
-                console.error(`Error accessing mandatory directory: ${filePath}`, error);
-            }
         }
     });
 
