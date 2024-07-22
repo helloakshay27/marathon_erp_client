@@ -15,31 +15,14 @@
 </head>
 <body>
   <h1>Folder Structure</h1>
-  <div id="folder-structure"></div>
-  
-  <script>
-    fetch('folderStructure.json')
-      .then(response => response.json())
-      .then(data => {
-        document.getElementById('folder-structure').appendChild(createList(data));
-      });
+  <div id="folder-structure">
 
-    function createList(structure) {
-      const ul = document.createElement('ul');
-      for (const [key, value] of Object.entries(structure)) {
-        const li = document.createElement('li');
-        if (value && typeof value === 'object' && value.path) {
-          const a = document.createElement('a');
-          a.textContent = key;
-          a.href = value.path;
-          a.target = "_blank"; // Open in a new tab
-          li.appendChild(a);
-          li.appendChild(createList(value.children));
-        }
-        ul.appendChild(li);
-      }
-      return ul;
-    }
-  </script>
+
+    <a href="./assets/"></a>
+    <a href="/componets/"></a>
+    <a href="/erp_home_module/"></a>
+  </div>
+  
+  
 </body>
 </html>
