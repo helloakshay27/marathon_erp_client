@@ -12,7 +12,11 @@ app.use(express.static(path.join(__dirname)));
 function generateFileList(dir, baseUrl) {
     let fileList = '';
     const files = fs.readdirSync(dir);
+    const EXCLUDE_DIRS = ['.git', 'node_modules'];
+
     files.forEach(file => {
+        if (EXCLUDE_DIRS.includes(file)) return;
+
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
@@ -50,6 +54,4 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = app;
