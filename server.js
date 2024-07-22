@@ -57,8 +57,7 @@ function generateFileList(dir, baseUrl) {
 // Serve the directory listing
 app.get('/files', (req, res) => {
     try {
-        const specificDir = path.join(__dirname, 'master');
-        const fileList = generateFileList(specificDir, '');
+        const fileList = generateFileList(__dirname);
         const html = `
             <!DOCTYPE html>
             <html>
@@ -77,7 +76,6 @@ app.get('/files', (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 });
-
 
 // Serve the index.html file
 app.get('/', (req, res) => {
