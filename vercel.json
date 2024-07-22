@@ -7,6 +7,6 @@
       { "src": "/files/(.*)", "dest": "/server.js" },
       { "src": "/", "dest": "/server.js" }
     ],
-    "outputDirectory": "public"  // Adjust if you have a specific output directoryss
+    "outputDirectory": "public"  // Adjust if you have a specific output directoryssvddvvdv
   }
   
