@@ -1,71 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Welcome to MARTHON_ERP, a comprehensive ERP solution.">
     <title>Welcome to MARTHON_ERP</title>
-    <style>
-        #welcome-message {
-            color: #333;
-            font-family: Arial, sans-serif;
-        }
-        #navigation {
-            margin-top: 20px;
-        }
-        #files-link {
-            color: #007BFF;
-            text-decoration: none;
-        }
-        #files-link:hover {
-            text-decoration: underline;
-        }
-        #file-list {
-            margin-top: 20px;
-        }
-        #file-list ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        #file-list li {
-            margin: 5px 0;
-        }
-    </style>
 </head>
 <body>
-    <h1 id="welcome-message">Welcome to MARTHON_ERP</h1>
-    <p id="description">This is the home page of the MARTHON_ERP application.</p>
-    <div id="navigation">
-        <a id="files-link" href="#" onclick="showFiles(); return false;">View Files</a>
-    </div>
-    <div id="file-list"></div>
-
-    <script>
-        function showFiles() {
-            const files = [
-                { name: 'assets/', isDirectory: true },
-                { name: 'components/', isDirectory: true },
-                { name: 'erp_event_module/', isDirectory: true },
-                { name: 'erp_home_module/', isDirectory: true },
-                { name: 'erp_home_page/', isDirectory: true },
-                { name: 'erp_login_module/', isDirectory: true },
-                { name: 'index.html', isDirectory: false },
-                { name: 'generateStructure.js', isDirectory: false }
-            ];
-
-            const fileListDiv = document.getElementById('file-list');
-            fileListDiv.innerHTML = '<h2>File List:</h2><ul>';
-
-            files.forEach(file => {
-                if (file.isDirectory) {
-                    fileListDiv.innerHTML += `<li><strong>${file.name}/</strong></li>`;
-                } else {
-                    fileListDiv.innerHTML += `<li><a href="${file.name}" target="_blank">${file.name}</a></li>`;
-                }
-            });
-
-            fileListDiv.innerHTML += '</ul>';
-        }
-    </script>
+    <h1>Welcome to MARTHON_ERP</h1>
+    <p><a href="/files">View Directory Listing</a></p>
 </body>
 </html>
