@@ -1,20 +1,11 @@
 {
     "version": 2,
     "builds": [
-      {
-        "src": "generateStructure.js",
-        "use": "@vercel/node"
-      }
+      { "src": "server.js", "use": "@vercel/node" }
     ],
     "routes": [
-      {
-        "src": "/files",
-        "dest": "generateStructure.js"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "generateStructure.js"
-      }
+      { "src": "/files/(.*)", "dest": "/server.js" },
+      { "src": "/", "dest": "/server.js" }
     ]
   }
   
