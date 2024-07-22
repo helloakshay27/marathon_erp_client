@@ -1,62 +1,16 @@
-// generateStructure.js
 const express = require('express');
-const fs = require('fs');
 const path = require('path');
 
 const app = express();
-const PORT = process.env.PORT || 3000;
 
-// List of directories to exclude from the listing
-const EXCLUDE_DIRS = ['.git', 'node_modules', 'generateStructure.js'];
-
-// Serve static files
 app.use(express.static(path.join(__dirname)));
 
-// Helper function to generate file structure
-function generateFileList(dir, baseUrl) {
-    let fileList = '';
-    const files = fs.readdirSync(dir);
-    
-    files.forEach(file => {
-        if (EXCLUDE_DIRS.includes(file)) return; // Skip excluded directories
-
-        const filePath = path.join(dir, file);
-        const relativePath = path.relative(__dirname, filePath);
-        const urlPath = `${baseUrl}/${relativePath}`;
-
-        if (fs.statSync(filePath).isDirectory()) {
-            fileList += `<li><strong>${file}/</strong></li>`;
-            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
-        } else {
-            fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
-        }
-    });
-    return fileList;
-}
-
-// Serve the directory listing
 app.get('/files', (req, res) => {
-    const fileList = generateFileList(__dirname, '');
-    const html = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-            <title>Directory Listing</title>
-        </head>
-        <body>
-            <h1>Directory Listing</h1>
-            <ul>${fileList}</ul>
-        </body>
-        </html>
-    `;
-    res.send(html);
+    res.send('Files endpoint is working!');
 });
 
-// Serve the index.html file
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+    res.send('Index endpoint is working!');
 });
 
-app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-});
+module.exports = app;
