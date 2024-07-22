@@ -5,6 +5,8 @@
     ],
     "routes": [
       { "src": "/erp_home_module", "dest": "/server.js" },
+      { "src": "/erp_login_module", "dest": "/server.js" },
+
       { "src": "/(.*)", "dest": "/server.js" }
     ]
   }

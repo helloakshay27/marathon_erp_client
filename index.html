@@ -2,8 +2,9 @@
 <html>
 <head>
     <title>Welcome to MARTHON_ERP</title>
+    <!-- Include Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Optional CSS to style elements with IDs */
         #welcome-message {
             color: #333;
             font-family: Arial, sans-serif;
@@ -11,21 +12,34 @@
         #navigation {
             margin-top: 20px;
         }
-        #files-link {
+        #files-link a {
             color: #007BFF;
             text-decoration: none;
         }
-        #files-link:hover {
+        #files-link a:hover {
             text-decoration: underline;
         }
     </style>
 </head>
 <body>
-    <h1 id="welcome-message">Welcome to MARTHON_ERP</h1>
-    <p id="description">This is the home page of the MARTHON_ERP application.</p>
-    <div id="navigation">
-        <div id="files-link"><a href="/erp_home_module">View Filess</a></div>
+    <div class="container mt-5">
+        <h1 id="welcome-message" class="text-center">Welcome to MARTHON_ERP</h1>
+        <p id="description" class="text-center">This is the home page of the MARTHON_ERP application.</p>
+        <div id="navigation" class="text-center mt-4">
+            <div id="files-link">
+                <a href="/erp_home_module" class="btn btn-primary">ERP Home Module</a>
+                <a class="mt-2" href="/erp_login_module" class="btn btn-primary">ERP Login Module</a>
+
+            </div>
+        </div>
+        <div id="directory-list" class="mt-5">
+            <!-- Additional directory list content goes here -->
+        </div>
     </div>
-    <div id="directory-list"></div>
+
+    <!-- Include Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
