@@ -8,17 +8,13 @@ const PORT = process.env.PORT || 3000;
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
-// List of directories to exclude from the listing
-const EXCLUDE_DIRS = ['node_modules', '.git'];
-
 // Helper function to generate file structure
 function generateFileList(dir, baseUrl) {
     let fileList = '';
     const files = fs.readdirSync(dir);
 
     files.forEach(file => {
-        // Skip excluded directories
-        if (EXCLUDE_DIRS.includes(file)) return;
+        if (file === 'node_modules') return;
 
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
