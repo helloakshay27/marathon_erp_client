@@ -5,6 +5,8 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const EXCLUDE_DIRS = ['.git', 'node_modules'];
+
 // Serve static files
 app.use(express.static(path.join(__dirname)));
 
@@ -12,8 +14,7 @@ app.use(express.static(path.join(__dirname)));
 function generateFileList(dir, baseUrl) {
     let fileList = '';
     const files = fs.readdirSync(dir);
-    const EXCLUDE_DIRS = ['.git', 'node_modules'];
-
+    
     files.forEach(file => {
         if (EXCLUDE_DIRS.includes(file)) return;
 
@@ -52,6 +53,10 @@ app.get('/files', (req, res) => {
 // Serve the index.html file
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on http://localhost:${PORT}`);
 });
 
 module.exports = app;
