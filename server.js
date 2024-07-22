@@ -16,8 +16,15 @@ app.use(express.static(path.join(__dirname)));
 // Helper function to generate file structure
 function generateFileList(dir, baseUrl) {
     let fileList = '';
-    const files = fs.readdirSync(dir);
-    
+    let files;
+
+    try {
+        files = fs.readdirSync(dir);
+    } catch (error) {
+        console.error(`Error reading directory: ${dir}`, error);
+        return '';
+    }
+
     files.forEach(file => {
         if (EXCLUDE_DIRS.includes(file)) return;
 
@@ -25,11 +32,15 @@ function generateFileList(dir, baseUrl) {
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
 
-        if (fs.statSync(filePath).isDirectory()) {
-            fileList += `<li><strong>${file}/</strong></li>`;
-            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
-        } else {
-            fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
+        try {
+            if (fs.statSync(filePath).isDirectory()) {
+                fileList += `<li><strong>${file}/</strong></li>`;
+                fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
+            } else {
+                fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
+            }
+        } catch (error) {
+            console.error(`Error accessing file: ${filePath}`, error);
         }
     });
 
@@ -38,10 +49,16 @@ function generateFileList(dir, baseUrl) {
         const filePath = path.join(__dirname, includeDir);
         const relativePath = path.relative(__dirname, filePath);
         const urlPath = `${baseUrl}/${relativePath}`;
-        
+
         if (!files.includes(includeDir)) {
-            fileList += `<li><strong>${includeDir}/</strong></li>`;
-            fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
+            try {
+                if (fs.statSync(filePath).isDirectory()) {
+                    fileList += `<li><strong>${includeDir}/</strong></li>`;
+                    fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
+                }
+            } catch (error) {
+                console.error(`Error accessing mandatory directory: ${filePath}`, error);
+            }
         }
     });
 
