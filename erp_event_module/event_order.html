@@ -1,0 +1,783 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/componets/erp_sidebar.css" />
+    <link rel="stylesheet" href="/erp_event_module/erp_event.css" />
+    
+    
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <style></style>
+
+    <main class="Home">
+      <header class="header">
+        <div class="header-section py-2">
+          <div class="erp_logo">
+            <img src="/assets/icons/marathon-logo_500px 1.svg" alt="" />
+          </div>
+
+          <div class="user_name">
+            <h3>Welcome, Chetan Bafna</h3>
+          </div>
+
+          <input
+            type="search"
+            class="erp_search form-control rounded"
+            placeholder="Search"
+            aria-label="Search"
+            aria-describedby="search-addon"
+          />
+
+          <div class="calender">
+            <div class="form-outline datepicker d-flex gap-3">
+              <input
+                type="date"
+                class="form-control"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+                id="myDatepicker"
+              />
+              <div class="vr"></div>
+
+              <input
+                type="date"
+                class="form-control"
+                name="trip-start"
+                value="2018-07-22"
+                min="2018-01-01"
+                max="2018-12-31"
+                id="myDatepicker1"
+              />
+            </div>
+          </div>
+
+          <div class="header-icons">
+            <ul>
+              <li>
+                <a href=""></a><a href=""></a><a href=""></a><a href=""></a
+                ><a href=""><img src="../assets/icons/task.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""></a><a href=""></a><a href=""></a><a href=""></a
+                ><a href=""
+                  ><img src="../assets/icons/notification.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""></a><a href=""></a><a href=""></a><a href=""></a
+                ><a href=""
+                  ><img src="../assets/icons/reminder.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href=""></a><a href=""></a><a href=""></a><a href=""></a
+                ><a href=""><img src="../assets/icons/message.svg" alt="" /></a>
+              </li>
+              <li>
+                <a href=""></a><a href=""></a><a href=""></a><a href=""></a
+                ><a href=""><img src="../assets/icons/user.svg" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="home__body">
+        <nav class="navbar">
+          <div class="navbar-container">
+            <!--logo div-->
+
+            <!--item list-->
+            <ul class="menu-list">
+              <li class="menu-item">
+                <a class="menu-link" href="/erp_home_module/erp_home.html">
+                  <img src="/assets/icons/Home.svg" alt="" />
+                  <span class="menu-link-text">Home</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="/erp_event_module/erp_event.html">
+                  <img src="/assets/icons/Events.svg" alt="" />
+                  <span class="menu-link-text">Events</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" class="menu-link" href="#">
+                  <img src="/assets/icons/Contact.svg" alt="" />
+                  <span class="menu-link-text">Contracts</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">
+                  <img src="/assets/icons/Vendor.svg" alt="" />
+                  <span class="menu-link-text">Vendors</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="#">
+                  <img src="/assets/icons/Manage.svg" alt="" />
+                  <span class="menu-link-text">Manage</span>
+                </a>
+              </li>
+              <li class="menu-item">
+                <a
+                  class="menu-link"
+                  href="/erp_event_module/Events-Detail-Setting.html"
+                >
+                  <img src="/assets/icons/Settings.svg" alt="" />
+                  <span class="menu-link-text">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <!--div user info-->
+          <div class="user-container">
+            <div class="user-info">
+              <!-- <i class="fas fa-solid fa-user-secret"></i> -->
+              <div class="user-details">Collaspe</div>
+
+              <button
+                type="button"
+                class="navbar-toggler ant-btn collapseIcon collapseIcon-collapsed-state ant-btn-link ant-btn-lg ant-btn-icon-only"
+              >
+                <i
+                  aria-label="icon: double-right"
+                  class="anticon anticon-double-right"
+                >
+                  <svg
+                    class="collapse-btn"
+                    width="14"
+                    height="24"
+                    viewBox="0 0 14 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 2L2 12L12 22"
+                      stroke="#8B0203"
+                      stroke-width="2.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </i>
+              </button>
+            </div>
+          </div>
+        </nav>
+
+        <div class="event-order-page">
+          <div class="w-100 buy_event">
+            <div class="d-flex mt-3 eventD-top pb-3 pt-2">
+              <p class="mb-0 align-items-center modal-p d-flex">Event Title:</p>
+              <input
+                class="modal-search eventD-main"
+                placeholder="Enter the title of this event"
+                type="text"
+              />
+            </div>
+            <div class="mt-3 mb-4">
+              <div>
+                <form class="event-inputs d-flex px-2">
+                  <div>
+                    <div class="d-flex mb-2">
+                      <img
+                        src="/erp_event_module/img/trophy.svg"
+                        class="eventD-forms-logo"
+                        alt=""
+                      />
+                      <p class="mb-0 eventD-formsP ps-1">Event Type</p>
+                    </div>
+                    <select
+                      name="language"
+                      class="eventD-forms buyEvent-forms"
+                      required
+                    >
+                      <option value="" disabled selected hidden>
+                        Rank on Lot
+                      </option>
+                      <option value="indian">Indian</option>
+                      <option value="nepali">Nepali</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <p class="mb-2 eventD-formsP">Templates</p>
+                    <select
+                      name="language"
+                      class="eventD-forms buyEvent-forms"
+                      required
+                    >
+                      <option value="" disabled selected hidden>
+                        Buy Template
+                      </option>
+                      <option value="indian">Indian</option>
+                      <option value="nepali">Nepali</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <p class="mb-2 eventD-formsP">Participants</p>
+                    <select
+                      name="language"
+                      class="eventD-forms buyEvent-forms"
+                      required
+                    >
+                      <option value="" disabled selected hidden>
+                        Select Participants
+                      </option>
+                      <option value="indian">Indian</option>
+                      <option value="nepali">Nepali</option>
+                      <option value="others">Others</option>
+                    </select>
+                  </div>
+                  <div>
+                    <p class="mb-2 eventD-formsP">Schedule</p>
+                    <div class="input-with-icon eventD-date">
+                      <img
+                        src="/erp_event_module/img/clock-circle.svg"
+                        alt="Trophy Icon"
+                        class="icon"
+                      />
+                      <input type="date" class="" />
+                    </div>
+                  </div>
+                  <div>
+                      <button class="event-btn3" style="margin-top: 33px">
+                        <a href="/erp_event_module/Events-Detail-Price trends.html" style="color: white;">
+
+                        Publish Event
+                      </button>
+                    </a>
+
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="ant-drawer-body">
+            <div class="styles_auctionConfigContainer__huK3U">
+              <div class="ant-row ant-form-item">
+                <div class="ant-col ant-form-item-label">
+                  <label class="ant-form-item-required" title="Event Type"
+                    >Event Type</label
+                  >
+                </div>
+                <div class="ant-col ant-form-item-control-wrapper">
+                  <div class="ant-form-item-control">
+                    <span class="ant-form-item-children"
+                      ><div
+                        class="pro-radio-tabs pro-radio-tabs1"
+                        style="grid-template-columns: 1fr 1fr 1fr"
+                      >
+                        <div
+                          class="pro-radio-tabs__tab pro-radio-tabs__tab__selected"
+                          tabindex="0"
+                          role="radio"
+                          aria-checked="true"
+                          id="Auction-tab"
+                        >
+                          <div class="pro-radio-tabs__check-icon">
+                            <label
+                              class="ant-radio-wrapper ant-radio-wrapper-checked"
+                              ><span class="ant-radio ant-radio-checked"
+                                ><input
+                                  type="radio"
+                                  tabindex="-1"
+                                  class="ant-radio-input"
+                                  value=""
+                                  checked="" /><span
+                                  class="ant-radio-inner"
+                                ></span></span
+                            ></label>
+                          </div>
+                          <div class="styles_mainTabMenuOptions__41myZ">
+                            <p class="pro-text pro-body pro-text--normal">
+                              Auction
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="pro-radio-tabs__tab"
+                          tabindex="0"
+                          role="radio"
+                          aria-checked="false"
+                          id="RFQ-tab"
+                        >
+                          <div class="pro-radio-tabs__check-icon">
+                            <label class="ant-radio-wrapper"
+                              ><span class="ant-radio"
+                                ><input
+                                  type="radio"
+                                  tabindex="-1"
+                                  class="ant-radio-input"
+                                  value="" /><span
+                                  class="ant-radio-inner"
+                                ></span></span
+                            ></label>
+                          </div>
+                          <div class="styles_mainTabMenuOptions__41myZ">
+                            <p class="pro-text pro-body pro-text--normal">
+                              RFQ
+                            </p>
+                          </div>
+                        </div>
+                      </div></span
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="pro-radio-tabs pro-radio-tabs2 rfq-tab-hide"
+                style="grid-template-columns: 1fr 1fr 1fr 1fr 1fr"
+              >
+                <div
+                  class="pro-radio-tabs__tab pro-radio-tabs__tab__selected"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="true"
+                >
+                  <div class="pro-radio-tabs__check-icon">
+                    <label class="ant-radio-wrapper ant-radio-wrapper-checked"
+                      ><span class="ant-radio ant-radio-checked"
+                        ><input
+                          type="radio"
+                          tabindex="-1"
+                          class="ant-radio-input"
+                          value=""
+                          checked="" /><span
+                          class="ant-radio-inner"
+                        ></span></span
+                    ></label>
+                  </div>
+                  <div class="styles_strategy__xc2r+">
+                    <div class="styles_strategyContent__c-1Di">
+                      <p class="pro-text pro-body pro-text--medium">
+                        Rank Based
+                      </p>
+                      <p
+                        class="pro-text pro-body pro-text--normal styles_strategySub__R7Aot"
+                      >
+                        Vendors will be ranked on bid price
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pro-radio-tabs__tab"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  <div class="pro-radio-tabs__check-icon">
+                    <label class="ant-radio-wrapper"
+                      ><span class="ant-radio"
+                        ><input
+                          type="radio"
+                          tabindex="-1"
+                          class="ant-radio-input"
+                          value="" /><span class="ant-radio-inner"></span></span
+                    ></label>
+                  </div>
+                  <div class="styles_strategy__xc2r+">
+                    <div class="styles_strategyContent__c-1Di">
+                      <p class="pro-text pro-body pro-text--medium">
+                        Price Based
+                      </p>
+                      <p
+                        class="pro-text pro-body pro-text--normal styles_strategySub__R7Aot"
+                      >
+                        Minimum bid price visible to vendors
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pro-radio-tabs__tab"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  <div class="pro-radio-tabs__check-icon">
+                    <label class="ant-radio-wrapper"
+                      ><span class="ant-radio"
+                        ><input
+                          type="radio"
+                          tabindex="-1"
+                          class="ant-radio-input"
+                          value="" /><span class="ant-radio-inner"></span></span
+                    ></label>
+                  </div>
+                  <div class="styles_strategy__xc2r+">
+                    <div class="styles_strategyContent__c-1Di">
+                      <p class="pro-text pro-body pro-text--medium">
+                        Traffic Light
+                      </p>
+                      <p
+                        class="pro-text pro-body pro-text--normal styles_strategySub__R7Aot"
+                      >
+                        Vendors will be divided based on a specified range
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pro-radio-tabs__tab"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  <div class="pro-radio-tabs__check-icon">
+                    <label class="ant-radio-wrapper"
+                      ><span class="ant-radio"
+                        ><input
+                          type="radio"
+                          tabindex="-1"
+                          class="ant-radio-input"
+                          value="" /><span class="ant-radio-inner"></span></span
+                    ></label>
+                  </div>
+                  <div class="styles_strategy__xc2r+">
+                    <div class="styles_strategyContent__c-1Di">
+                      <p class="pro-text pro-body pro-text--medium">Knockout</p>
+                      <p
+                        class="pro-text pro-body pro-text--normal styles_strategySub__R7Aot"
+                      >
+                        Vendors will accept/reject your offer
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="pro-radio-tabs__tab"
+                  tabindex="0"
+                  role="radio"
+                  aria-checked="false"
+                >
+                  <div class="pro-radio-tabs__check-icon">
+                    <label class="ant-radio-wrapper"
+                      ><span class="ant-radio"
+                        ><input
+                          type="radio"
+                          tabindex="-1"
+                          class="ant-radio-input"
+                          value="" /><span class="ant-radio-inner"></span></span
+                    ></label>
+                  </div>
+                  <div class="styles_strategy__xc2r+">
+                    <div class="styles_strategyContent__c-1Di">
+                      <p class="pro-text pro-body pro-text--medium">
+                        Dutch Auction
+                      </p>
+                      <p
+                        class="pro-text pro-body pro-text--normal styles_strategySub__R7Aot"
+                      >
+                        First come first serve allocation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <section class="ant-layout">
+                <main class="ant-layout-content">
+                  <div>
+                    <div class="ant-row ant-form-item">
+                      <div class="ant-col ant-form-item-label">
+                        <label
+                          class="ant-form-item-required"
+                          title="How will you award the event?"
+                          >How will you award the event?</label
+                        >
+                      </div>
+                      <div class="ant-col ant-form-item-control-wrapper">
+                        <div class="ant-form-item-control">
+                          <span class="ant-form-item-children"
+                            ><div style="max-width: 700px">
+                              <div
+                                class="pro-radio-tabs pro-radio-tabs3"
+                                style="grid-template-columns: 1fr 1fr"
+                              >
+                                <div
+                                  class="pro-radio-tabs__tab pro-radio-tabs__tab__selected"
+                                  tabindex="0"
+                                  role="radio"
+                                  aria-checked="true"
+                                >
+                                  <div class="pro-radio-tabs__check-icon">
+                                    <label
+                                      class="ant-radio-wrapper ant-radio-wrapper-checked"
+                                      ><span class="ant-radio ant-radio-checked"
+                                        ><input
+                                          type="radio"
+                                          tabindex="-1"
+                                          class="ant-radio-input"
+                                          value=""
+                                          checked="" /><span
+                                          class="ant-radio-inner"
+                                        ></span></span
+                                    ></label>
+                                  </div>
+                                  <p class="pro-text pro-body pro-text--normal">
+                                    I'll award the entire lot to single vendor
+                                  </p>
+                                </div>
+                                <div
+                                  class="pro-radio-tabs__tab"
+                                  tabindex="0"
+                                  role="radio"
+                                  aria-checked="false"
+                                >
+                                  <div class="pro-radio-tabs__check-icon">
+                                    <label class="ant-radio-wrapper"
+                                      ><span class="ant-radio"
+                                        ><input
+                                          type="radio"
+                                          tabindex="-1"
+                                          class="ant-radio-input"
+                                          value="" /><span
+                                          class="ant-radio-inner"
+                                        ></span></span
+                                    ></label>
+                                  </div>
+                                  <p class="pro-text pro-body pro-text--normal">
+                                    I may partially award the event to multiple
+                                    vendors
+                                  </p>
+                                </div>
+                              </div>
+                            </div></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                    <div></div>
+                    <div
+                      class="ant-row ant-form-item"
+                      style="margin-bottom: 0px"
+                    ></div>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
+                        <div class="label-date">
+                          <label for="Datepicker"
+                            >Dynamic Event Extension</label
+                          >
+                          <label for="Datepicker " class="my-2"
+                            >Extend closing time in last 1 min in case of rank /
+                            price changes in top selected bids.</label
+                          >
+                          <span class="ant-radio d-flex gap-3">
+                            <input
+                              type="radio "
+                              tabindex="-1"
+                              class="ant-radio-input"
+                              value=""
+                              checked=""
+                            />
+                            <div class="pricerank d-flex gap-5 my-3">
+                              <div class="price d-flex gap-3">
+                                <span class="ant-radio-inner"> </span>
+                                <span>Price</span>
+                              </div>
+                              <div class="rank d-flex gap-3">
+                                <span class="ant-radio-inner"> </span>
+                                <span>Rank</span>
+                              </div>
+                            </div>
+                          </span>
+                          <div
+                            class="dynamic-time d-flex w-100 align-items-center gap-5"
+                          >
+                            <div class="trigger-time">
+                              <label for=""
+                                ><span class="star-symbol">*</span>Trigger time
+                                extension on last</label
+                              >
+                              <div class="time-range">
+                                <input type="text" />
+                                Min(s)
+                              </div>
+                            </div>
+                            <div class="extend-time">
+                              <label for=""
+                                ><span class="star-symbol">*</span>Extend time
+                                by</label
+                              >
+                              <div class="time-range">
+                                <input type="text" />
+                                Min(s)
+                              </div>
+                            </div>
+                            <div class="time-extention">
+                              <label for=""
+                                ><span class="star-symbol">*</span> Time
+                                extension on change in:</label
+                              >
+
+                              <div class="time-range">
+                                <select name="" id="">
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                  <option value=""></option>
+                                </select>
+                                Min(s)
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
+                        <div class="label-date">
+                          <label for="Datepicker"
+                            >Set minimum revisions to show Rank</label
+                          >
+                          <input
+                            class="rank"
+                            placeholder="Enter Number of revisions required"
+                            type="text"
+                            name="delivery-date"
+                            id="Datepicker"
+                          />
+                        </div>
+                      </div>
+                    </form>
+
+                    <form class="ant-form-item my-4">
+                      <div class="delivery">
+                        <span class="ant-radio">
+                          <input
+                            type="radio"
+                            tabindex="-1"
+                            class="ant-radio-input"
+                            value=""
+                            checked=""
+                          />
+                          <span class="ant-radio-inner"></span>
+                        </span>
+                        <div class="label-date">
+                          <label for="Datepicker">Delivery date</label>
+                          <input
+                            class="delivery-date"
+                            placeholder="Select a date"
+                            type="date"
+                            name="delivery-date"
+                            id="Datepicker"
+                          />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </main>
+              </section>
+              <div class="styles_bottomNudge__FUsAV">
+                <button type="button" class="ant-btn cancel-btn">
+                  <span>Cancel</span></button
+                ><button type="button" class="ant-btn save-btn ant-btn-primary">
+                  <span>Save</span>
+                </button>
+              </div>
+              <!-- <div class="styles_bottomNudge__FUsAV">
+                <button type="button" class="ant-btn cancel-btn">
+                  <span>Cancel</span></button
+                ><button type="button" class="ant-btn save-btn ant-btn-primary">
+                  <span>Save</span>
+                </button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script src="/erp_event_module/events.js"></script>
+
+  <script>
+    const btnToggler = window.document.querySelector(".navbar-toggler");
+    const inputSearch = window.document.querySelector(".navbar-search");
+    const iconSearch = window.document.querySelector("#icon-search");
+    const navbar = window.document.querySelector(".navbar");
+
+    //events
+    btnToggler.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+
+    inputSearch.addEventListener("click", () => {
+      if (!navbar.classList.contains("active")) {
+        navbar.classList.add("active");
+      }
+    });
+
+    iconSearch.addEventListener("click", () => {
+      if (!navbar.classList.contains("active")) {
+        navbar.classList.add("active");
+      }
+    });
+
+    var datepickerEl = document.getElementById("myDatepicker");
+    var datepicker = new mdb.Datepicker(myModalEl);
+    datepicker.open();
+  </script>
+</html>

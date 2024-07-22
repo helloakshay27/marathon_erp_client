@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="mor.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<body>
+    <!-- Navigation Top -->
+    <main class="w-100 h-100">
+    <nav class="navbar navbar-expand-lg navbar-light p-0">
+        <div class="container-fluid py-1">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="openNav()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                    </li>
+                </ul>
+                <div class="top-nav-right">
+                    <div class="d-flex search-input w-50 mx-auto">
+                        <span class="material-symbols-outlined"> search </span>
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    </div>
+
+                    <div class="btn-group">
+                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            1201/D Jyoti Tower
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li>1346/F Hayat Tower</li>
+                            <li>9876/A JP Morgan Tower</li>
+                            <li>Busan Rcidency</li>
+                        </ul>
+                    </div>
+                    <span class="material-symbols-outlined align-middle"> apps </span>
+                    <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                        <div class="avatar__letters">A</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- top navigation above -->
+
+    <div class="main-content">
+        <aside>
+            <div class="sidebar sidebar_inner" id="mySidebar">
+              <p class="closebtn">
+                <span
+                  class="material-symbols-outlined cancel"
+                  onclick="closeNav()"
+                >
+                  cancel
+                </span>
+              </p>
+              <ul class="p-0">
+                <!--  button for closing sidebar-->
+                <div class="form-inline">
+                  <div class="input-group" data-widget="sidebar-search">
+                    <input
+                      class="form-control form-control-sidebar"
+                      type="search"
+                      placeholder="Search"
+                      aria-label="Search"
+                    />
+                    <div class="input-group-append">
+                      <button class="btn btn-sidebar">
+                        <i class="fas fa-search fa-fw"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+  
+                <li class="nav-header">MOR</li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="./Snagging-ProjectStatus-Unit.html"
+                  >
+                    <span class="text">Material Order Request </span>
+                  </a>
+                </li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./snagging-Unit-Snag-List.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Material Issue Slip
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-observation.html"
+                  >
+                    <img alt="" src="../images/Snag.svg" /><span class="text"
+                      >Material Return Slip</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-observation.html"
+                  >
+                    <img alt="" src="../images/Snag.svg" /><span class="text"
+                      >Material Order Approval</span
+                    >
+                  </a>
+                </li>
+  
+                <li class="nav-header">MTO</li>
+  
+                <li class="nav-item">
+                  <div class="btn-group2">
+                    <a
+                      class="text nav-link dropdown-toggle asset-after"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="true"
+                    >
+                      <img alt="" src="../images/OSR.svg" /><span class="text"
+                        >Material Transfer Request
+                      </span>
+                    </a>
+                    <ul class="dropdown-menu" data-popper-placement="top-start">
+                      <li>
+                        <a href="./Snagging-Schedules-UnitOffer.html"
+                          >MTO Pending Approval
+                        </a>
+                      </li>
+                      <li>
+                        <a href="./Snagging-Schedules-DailyTask.html"
+                          >Daily Task</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >MTO Pending Approval</span
+                    >
+                  </a>
+                </li>
+  
+                <li class="nav-header">Procurement</li>
+  
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="/erp_home_module/erp_home.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Dashboard</span
+                    >
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Events
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >PO
+                    </span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    aria-current="page"
+                    href="./Snagging-Attendance.html"
+                  >
+                    <img alt="" src="../images/snag-unit-list.svg" /><span
+                      class="text"
+                      >Advance Note
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </aside>
+        <!-- sidebar ends above -->
+
+        <!-- webpage conteaint start -->
+        <div class="website-content">
+     
+
+            <div class="module-data-section p-3">
+                <a href="">Home > Purchase > MOR > Material Order Approval list > MOR Approval</a>
+                <section class="container-fluid mor-table-main_apporval">
+                    <div class="row">
+
+                        <div class="col-lg-12 " >
+                          <div class="card card-default mt-5 px-4 pb-34" id="mor-material-slip" >
+                            <h5 class="text-center mt-4">Select Company for MTO</h5>
+
+
+                          <div class="tbl-container mx-2 my-4" style="height: 40vh; max-height: fit-content;">
+                       
+                                <table class="w-100">
+                                    <thead>
+                                        <tr>
+                                            <th >Company</th>
+                                            <th >Project</th>
+                                            <th >Sub Project</th>
+                                            <th >Store</th>
+                                            <th >Is Deadstock</th>
+                                            <th >Available Qty</th>
+                                            <th >MTO Qty</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td  rowspan="4">MRPL</td>
+                                            <td  rowspan="4">Nexzone</td>
+                                            <td >vega</td>
+                                            <td >Store 1</td>
+                                            <td class="mor-td">Yes</td>
+                                            <td >0</td>
+                                            <td >40</td>
+                                        </tr>
+                                        <tr>
+                                            <td >Ion</td>
+                                            <td >Store 2</td>
+                                            <td ></td>
+                                            <td >0</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td >vega</td>
+                                            <td >Store 2</td>
+                                            <td ></td>
+                                            <td >0</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td >Zenith</td>
+                                            <td >Store 2</td>
+                                            <td ></td>
+                                            <td >0</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td  rowspan="5">MRPL</td>
+                                            <td  rowspan="5">Nexzone</td>
+                                            <td >opel</td>
+                                            <td >Store 11</td>
+                                            <td >Yes</td>
+                                            <td >0</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td >Topaz</td>
+                                            <td >Store 12</td>
+                                            <td ></td>
+                                            <td >0</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td >Coral</td>
+                                            <td >Store 13</td>
+                                            <td >Yes</td>
+                                            <td >5</td>
+                                            <td ></td>
+                                        </tr>
+                                        <tr>
+                                            <td  class="mor-td">Saphphare</td>
+                                            <td  class="mor-td">Store 14</td>
+                                            <td  class="mor-td"></td>
+                                            <td  class="mor-td">5</td>
+                                            <td  class="mor-td"></td>
+                                        </tr>
+                                        <tr>
+                                            <td >Amber</td>
+                                            <td >Store 15</td>
+                                            <td >Yes</td>
+                                            <td >20</td>
+                                            <td >20</td>
+                                        </tr>
+                                        <tr>
+                                            <th  colspan="4" class="text-center">Total</th>
+                                            <th ></th>
+                                            <th >90</th>
+                                            <th >70</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                              </div>
+                              <div class="d-flex justify-content-end p-3">
+
+                                  <button class="purple-btn2" style="">Save</button>
+
+                            </div>
+
+                            </div>
+                        
+                        </div>
+                    </div>
+                   
+                </section>
+
+
+
+            </div>
+
+            <footer class="footer">
+                <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+            </footer>
+        </div>
+    </div>
+    <!-- sidebar start below -->
+
+    <!-- webpage container end -->
+
+    <!-- add task Modal -->
+    <div class="modal fade" id="add-task" tabindex="-1" aria-labelledby="add-tasklLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title m-0">Add Activity</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- input section -->
+                    <div class="d-flex flex-wrap mx-3">
+                        <input class="border rounded col-lg-2 col-md-3 col-sm-5 mx-2 my-1" input="" type="text"
+                            placeholder="Select Date" onfocus="(this.type='date')" />
+
+                        <select class="border rounded col-lg-2 col-md-3 col-sm-5 mx-2 my-1" required="">
+                            <option value="" disabled="" selected="" hidden="">
+                                Select Stage
+                            </option>
+                            <option value="0">Site1</option>
+                            <option value="1">Site2</option>
+                        </select>
+                        <select class="border rounded col-lg-2 col-md-3 col-sm-5 mx-2 my-1" required="">
+                            <option value="" disabled="" selected="" hidden="">
+                                Select Role
+                            </option>
+                            <option value="0">Site1</option>
+                            <option value="1">Site2</option>
+                        </select>
+                        <select class="border rounded col-lg-2 col-md-3 col-sm-5 mx-2 my-1" required="">
+                            <option value="" disabled="" selected="" hidden="">
+                                Select The User
+                            </option>
+                            <option value="0">Site1</option>
+                            <option value="1">Site2</option>
+                        </select>
+                    </div>
+                    <!-- details / data section -->
+                    <div class="row mx-2 my-4">
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="user-assoc-container">
+                                <p class="text-violate fw-bold ms-2">SELECT TOWER</p>
+
+                                <div class="tbl-container">
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white active">
+                                        Retes Moy
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        Retes Moy
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="user-assoc-container">
+                                <p class="text-violate">
+                                    <input class="align-middle mx-2" type="checkbox" />
+                                    <span class="align-middle fw-bold"> SELECT FLOOR </span>
+                                </p>
+
+                                <div class="tbl-container">
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white active">
+                                        1st Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        2nd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        3rd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        2nd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        3rd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        2nd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        3rd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        2nd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        3rd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        2nd Floor
+                                    </p>
+                                    <p class="my-2 px-2 py-1 text-violate rounded bg-white">
+                                        3rd Floor
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="user-assoc-container">
+                                <p class="text-violate">
+                                    <input class="align-middle mx-2" type="checkbox" />
+                                    <span class="align-middle fw-bold"> SELECT FLATE </span>
+                                </p>
+                                <div class="tbl-container">
+                                    <div class="d-flex flex-wrap">
+                                        <span class="purple-btn1">101</span>
+                                        <span class="purple-btn1">102</span>
+                                        <span class="purple-btn1">103</span>
+                                        <span class="purple-btn1">104</span>
+                                        <span class="purple-btn1">103</span>
+                                        <span class="purple-btn1">104</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12">
+                            <div class="user-assoc-container">
+                                <p class="text-violate fw-bold ms-2">PREVIEW</p>
+
+                                <div class="tbl-container text-violate">
+                                    <table>
+                                        <tr>
+                                            <td class="fw-bold">Tower :</td>
+                                            <td>Tower A</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Floor</td>
+                                            <td>1st Floor</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="fw-bold">Flats</td>
+                                            <td>101, 102, 103</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="purple-btn1 px-4 mx-auto">SET SCHEDULE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+</html>

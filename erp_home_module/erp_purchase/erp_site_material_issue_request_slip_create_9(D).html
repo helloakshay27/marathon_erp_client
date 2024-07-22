@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="mor.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU"
+    />
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+  </head>
+  <body>
+    <main class="h-100 w-100">
+
+
+      <div class="main-content">
+        <aside>
+          <div class="sidebar sidebar_inner" id="mySidebar">
+            <p class="closebtn">
+              <span
+                class="material-symbols-outlined cancel"
+                onclick="closeNav()"
+              >
+                cancel
+              </span>
+            </p>
+            <ul class="p-0">
+              <!--  button for closing sidebar-->
+              <div class="form-inline">
+                <div class="input-group" data-widget="sidebar-search">
+                  <input
+                    class="form-control form-control-sidebar"
+                    type="search"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <div class="input-group-append">
+                    <button class="btn btn-sidebar">
+                      <i class="fas fa-search fa-fw"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <li class="nav-header">MOR</li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./Snagging-ProjectStatus-Unit.html"
+                >
+                  <span class="text">Material Order Request </span>
+                </a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./snagging-Unit-Snag-List.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Material Issue Slip
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-observation.html"
+                >
+                  <img alt="" src="../images/Snag.svg" /><span class="text"
+                    >Material Return Slip</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-observation.html"
+                >
+                  <img alt="" src="../images/Snag.svg" /><span class="text"
+                    >Material Order Approval</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-header">MTO</li>
+
+              <li class="nav-item">
+                <div class="btn-group2">
+                  <a
+                    class="text nav-link dropdown-toggle asset-after"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="true"
+                  >
+                    <img alt="" src="../images/OSR.svg" /><span class="text"
+                      >Material Transfer Request
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu" data-popper-placement="top-start">
+                    <li>
+                      <a href="./Snagging-Schedules-UnitOffer.html"
+                        >MTO Pending Approval
+                      </a>
+                    </li>
+                    <li>
+                      <a href="./Snagging-Schedules-DailyTask.html"
+                        >Daily Task</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >MTO Pending Approval</span
+                  >
+                </a>
+              </li>
+
+              <li class="nav-header">Procurement</li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Dashboard</span
+                  >
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Events
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >PO
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="./Snagging-Attendance.html"
+                >
+                  <img alt="" src="../images/snag-unit-list.svg" /><span
+                    class="text"
+                    >Advance Note
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+        <!-- sidebar ends above -->
+
+        <!-- webpage conteaint start -->
+        <div class="website-content overflow-auto">
+      
+
+          <div class="module-data-section p-3 details_page">
+            <h3 class="mt-3 mb-2 text-center" style="font-weight: 600;">Material Issue Slip</h3>
+
+
+            <div class="row justify-content-center my-4">
+              <div class="col-md-10">
+                <div class="progress-steps">
+                  <div class="top">
+                      <div class="progress"><span></span></div>
+                      <div class="steps">
+                        
+                        <div class="layer1">
+                          <div class="step active" data-step="1"><span></span>
+                          </div>
+                          <p>layer1</p>
+                        </div>
+                          
+                          
+                        <div class="layer1">
+                          <div class="step active" data-step="2"><span></span>
+                          </div>
+                          <p>layer2</p>
+                        </div>                               
+                        <div class="layer1">
+                          <div class="step active" data-step="3"><span></span>
+                          </div>
+                          <p>layer3</p>
+                        </div>
+                        <div class="layer1">
+                          <div class="step active" data-step="4"><span></span>
+                          </div>
+                          <p>layer4</p>
+                       </div>                               
+                       </div>
+                  </div>
+                  <div class="buttons d-m">
+                      <button class="btn btn-prev disabled" disabled="">prev</button>
+                      <button class="btn btn-next">Next</button>
+                  </div>
+               </div>
+              </div>
+           
+            </div>
+
+          
+            <div class="card  card-default mt-3  pb-4">
+              <div class="card-header3">
+                <h3 class="card-title">Material Slip</h3>
+
+              </div>
+              <div class="card-body mt-0 pt-0">
+                <div class="row px-3 mt-3">
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-6">
+                      <label>Project </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Material
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-6">
+                      <label>Sub-Project </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Sanvo Resorts Pvt.
+                        Ltd.-II
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Store</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Nexzone - Phase II
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Issue Slip No</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>82423
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Date</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>PO/SRPL/NXZPh2/18254
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Activity</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>INR 65,47,926.82
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Location</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>INR 65,47,926.82
+                      </label>
+                    </div>
+                  </div>
+               
+                </div>
+
+
+
+           
+
+                <!-- /.col -->
+              </div>
+
+             
+              <div class="card card-default mx-4 px-2s" id="mor-material-details">
+    
+                <div class="card-body mt-0 mb-2">
+                  
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-3">
+                      <label>MOR No. </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Material
+                      </label>
+                    </div>
+                  </div>
+
+
+                    <div class="row mt-3 justify-content-between align-items-end">
+                         
+                      <h5 class="col-md-3"> Material Details</h5>
+         
+                    
+                    </div>
+
+                    <div class="tbl-container p-0 mt-2">
+                      <table class="w-100">
+                        <thead>
+                          <tr>
+                            <th>Sr.No.</th>
+                            <th>Material Type</th>
+                            <th>Material Description<htd>
+                            <th>Available Qty in Store
+                            </td>
+                            <th>Requested Qty</th>
+                            <th>Balance Qty</th>
+                
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Tiles</td>
+                            <td>600 x 600 Tiles</td>
+                            <td>400</td>
+                            <td>50</td>
+                            <td>350</td>
+                            
+                          
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="row mt-3">
+                 
+                      <!-- /.col -->
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <div class="col-6">
+                          <label>Contractor Name </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+                        <!-- /.form-group -->
+    
+                        <!-- /.form-group -->
+                      </div>
+    
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+    
+                        <div class="col-6">
+                          <label>Person Name </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+                        <!-- /.form-group -->
+    
+                      
+                        <!-- /.form-group -->
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <!-- /.form-group -->
+                        <div class="col-6">
+                          <label>Phone No. </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+    
+             
+                        <!-- /.form-group -->
+                      </div>
+                    </div>
+
+                    <div class="row mt-1">
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <div class="col-md-6">
+                          <label>Remark </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+     
+
+                  
+              
+                  </div>
+  
+                 
+  
+                  <!-- /.col -->
+                </div>
+               
+            </div>
+            <div class="card  card-default mt-4  pb-4">
+              <div class="card-header3">
+                <h3 class="card-title">Material Slip</h3>
+
+              </div>
+              <div class="card-body mt-0 pt-0">
+                <div class="row px-3 mt-3">
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-6">
+                      <label>Project </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Material
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-6">
+                      <label>Sub-Project </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Sanvo Resorts Pvt.
+                        Ltd.-II
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Store</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Nexzone - Phase II
+                      </label>
+                    </div>
+                  </div>
+            
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Date</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>PO/SRPL/NXZPh2/18254
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Activity</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>INR 65,47,926.82
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                    <div class="col-6">
+                      <label>Location</label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>INR 65,47,926.82
+                      </label>
+                    </div>
+                  </div>
+               
+                </div>
+
+
+
+           
+
+                <!-- /.col -->
+              </div>
+
+             
+              <div class="card card-default mx-4 px-2 mt-3" id="mor-material-details">
+    
+                <div class="card-body mt-0 mb-2">
+                  
+
+                  <div class="col-lg-6 col-md-6 col-sm-12 row px-3">
+                    <div class="col-3">
+                      <label>MOR No. </label>
+                    </div>
+                    <div class="col-6">
+                      <label class="text"><span class="me-3">:</span>Material
+                      </label>
+                    </div>
+                  </div>
+
+
+                    <div class="row mt-3 justify-content-between align-items-end">
+                         
+                      <h5 class="col-md-3"> Material Details</h5>
+         
+                    
+                    </div>
+
+                    <div class="tbl-container p-0 mt-2">
+                      <table class="w-100">
+                        <thead>
+                          <tr>
+                            <th>Sr.No.</th>
+                            <th>Material Type</th>
+                            <th>Material Description<htd>
+                            <th>Available Qty in Store
+                            </td>
+                            <th>Requested Qty</th>
+                            <th>Balance Qty</th>
+                
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>Tiles</td>
+                            <td>600 x 600 Tiles</td>
+                            <td>400</td>
+                            <td>50</td>
+                            <td>350</td>
+                            
+                          
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="row mt-3">
+                 
+                      <!-- /.col -->
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <div class="col-6">
+                          <label>Contractor Name </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+                        <!-- /.form-group -->
+    
+                        <!-- /.form-group -->
+                      </div>
+    
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+    
+                        <div class="col-6">
+                          <label>Person Name </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+                        <!-- /.form-group -->
+    
+                      
+                        <!-- /.form-group -->
+                      </div>
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <!-- /.form-group -->
+                        <div class="col-6">
+                          <label>Phone No. </label>
+                        </div>
+                        <div class="col-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+    
+             
+                        <!-- /.form-group -->
+                      </div>
+                    </div>
+
+                    <div class="row mt-1">
+                      <div class="col-lg-4 col-md-4 col-sm-12 row px-3">
+                        <div class="col-md-6">
+                          <label>Remark </label>
+                        </div>
+                        <div class="col-md-6">
+                          <label class="text"><span class="me-3">:-</span>Material
+                          </label>
+                        </div>
+
+                      </div>
+                    </div>
+
+     
+
+                  
+              
+                  </div>
+  
+                 
+  
+                  <!-- /.col -->
+                </div>
+               
+            </div>
+
+
+              <div class="row mt-4 mx-2 justify-content-end">
+                <div class="col-md-3">
+                  <div
+                    class="form-group d-flex gap-3 align-items-center"
+                  >
+                    <label style="font-size: 1.1rem">status</label>
+                    <select
+                      class="form-control form-select"
+                      style="width: 100%"
+                    >
+                      <option selected="selected">Alabama</option>
+                      <option>Alaska</option>
+                      <option>California</option>
+                      <option>Delaware</option>
+                      <option>Tennessee</option>
+                      <option>Texas</option>
+                      <option>Washington</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-2 justify-content-end">
+                <div class="col-md-2">
+                    <button class="purple-btn2 w-100">Print</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="purple-btn2 w-100">Submit</button>
+                </div>
+                <div class="col-md-2">
+                    <button class="purple-btn1 w-100">Cancel</button>
+                </div>
+
+            </div>
+            <div class="row mt-4">
+              <h5>Audit Log</h5>
+            
+            </div>
+            <div class="tbl-container px-0">
+
+              <table class="w-100">
+                  <thead>
+                      <tr>
+                          <th>Sr.No.</th>
+                          <th>User</th>
+                          <th>Date</th>
+                          <th>Status</th>
+                          <th>Remark</th>
+
+                      </tr>
+                  </thead>
+                  <tbody>
+                      <tr>
+                          <th>1</th>
+                          <td>Pratham Shastri</td>
+                          <td>15-02-2024</td>
+                          <td>Verified</td>
+                          <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                      </tr>
+
+                  </tbody>
+              </table>
+          </div>
+
+
+            </div>
+
+
+      
+           
+            </div>
+
+
+
+
+
+          
+      
+
+
+
+
+
+     
+
+
+
+
+
+
+          </div>
+
+          <footer class="footer">
+            <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+          </footer>
+        </div>
+      </div>
+    </main>
+
+  
+    <!-- Modal Attributes-->
+    <div
+      class="modal fade"
+      id="select-mor"
+      tabindex="-1"
+      aria-labelledby="customModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" >Select MoR</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+             <div class="modal-body" style="max-height: 500px; overflow-y: auto;">
+
+                <div class="card-body mt-0 p-0 pt-1">
+                    <div class="row">
+                      <div class="col-md-4 mt-0">
+                        <div class="form-group">
+                          <label class="po-fontBold">Company
+                           </label>
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="MRPL"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4 mt-0">
+                        <div class="form-group">
+                          <label class="po-fontBold">Project
+                           </label>
+                          <input
+                            class="form-control"
+                            type="text"
+                            placeholder="MRPL"
+                          />
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="form-group">
+                          <label class="po-fontBold">Sub Project</label>
+                          <select
+                            class="form-control form-select"
+                            style="width: 100%"
+                          >
+                            <option selected="selected">[Select One]</option>
+                            <option>Alaska</option>
+                            <option>California</option>
+                            <option>Delaware</option>
+                            <option>Tennessee</option>
+                            <option>Texas</option>
+                            <option>Washington</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">Mor No.</label>
+                            <input class="form-control" type="text" placeholder=" " />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">Activity</label>
+                            <input class="form-control" type="text" placeholder=" " />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">Material Type</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Not Selected"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">Material Sub- Type</label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Not Selected"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">Material </label>
+                            <input
+                              class="form-control"
+                              type="text"
+                              placeholder="Not Selected"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">From Date
+  
+                             </label>
+                             <input
+                             class="form-control"
+                             type="date"
+                             placeholder="Default input"
+                           />
+                          </div>
+                        </div>
+                        <div class="col-md-4 mt-2">
+                          <div class="form-group">
+                            <label class="po-fontBold">To date
+  
+                             </label>
+                             <input
+                             class="form-control"
+                             type="date"
+                             placeholder="Default input"
+                           />
+                          </div>
+                        </div>
+                   
+                    </div>
+
+                  </div>
+
+
+            <div class="row mt-3 align-items-end justify-content-end px-3">
+
+              <div class="col-md-6">
+                <div class="row justify-content-end">
+                  <div class="col-md-5">
+         
+                  </div>
+
+                  <div class="col-md-6">
+                    <form>
+                      <div class="input-group">
+                        <input
+                          type="search"
+                          class="form-control tbl-search"
+                          placeholder="Type your keywords here"
+                        />
+                        <div class="input-group-append">
+                          <button
+                            type="submit"
+                            class="btn btn-md btn-default"
+                          >
+                            <svg
+                              width="16"
+                              height="16"
+                              viewBox="0 0 16 16"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M7.66927 13.939C3.9026 13.939 0.835938 11.064 0.835938 7.53271C0.835938 4.00146 3.9026 1.12646 7.66927 1.12646C11.4359 1.12646 14.5026 4.00146 14.5026 7.53271C14.5026 11.064 11.4359 13.939 7.66927 13.939ZM7.66927 2.06396C4.44927 2.06396 1.83594 4.52021 1.83594 7.53271C1.83594 10.5452 4.44927 13.0015 7.66927 13.0015C10.8893 13.0015 13.5026 10.5452 13.5026 7.53271C13.5026 4.52021 10.8893 2.06396 7.66927 2.06396Z"
+                                fill="#8B0203"
+                              />
+                              <path
+                                d="M14.6676 14.5644C14.5409 14.5644 14.4143 14.5206 14.3143 14.4269L12.9809 13.1769C12.7876 12.9956 12.7876 12.6956 12.9809 12.5144C13.1743 12.3331 13.4943 12.3331 13.6876 12.5144L15.0209 13.7644C15.2143 13.9456 15.2143 14.2456 15.0209 14.4269C14.9209 14.5206 14.7943 14.5644 14.6676 14.5644Z"
+                                fill="#8B0203"
+                              />
+                            </svg>
+                          </button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="tbl-container me-2 mt-3" style="max-height: 500px;">
+              <table class="w-100">
+                <thead>
+         
+                  <tr>
+          
+                    <th><input type="checkbox"></th>
+                    <th>Sr. No.
+                    </th>
+                    <th>Project</th>
+                    <th>Sub-Project
+                    </th>
+                    <th>MOR NO.
+                    </th>
+                    <th>Activity
+                    </th>
+                    <th>Material Type
+                    </th>
+            
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                   
+                    <td><input type="checkbox" /></td>
+                    <td>Steel</td>
+                    <td>STEEL-TMT</td>
+                    <td>TEEL (TMT-500)-08MM</td>
+                    <td>MT</td>
+                    <td>10.611</td>
+                    <td>36.020</td>
+    
+                  </tr>
+         
+                </tbody>
+              </table>
+           
+            </div>
+
+
+
+            </div>
+
+            <div class="modal-footer justify-content-center">
+                <button class="purple-btn2">Accept Selected</button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal end -->
+  
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+  <script>
+
+    
+
+$(document).ready(function(){
+    $("#edit_action").click(function(){
+        $("#mor-material-slip").toggle();
+    });
+});
+
+
+  </script>
+</html>

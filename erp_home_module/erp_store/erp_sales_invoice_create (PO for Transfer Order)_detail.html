@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../erp_purchase/mor.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<style>
+    .closebtn {
+        display: flex;
+        margin: 7px auto 0 5px;
+    }
+
+    .left-1 ul {
+        padding: 0;
+        /* display: flex; */
+    }
+
+    .left-1 ul li a {
+        align-items: center;
+    }
+
+    .left-1 ul li a img {
+        width: 32px;
+    }
+
+    .left-1 ul li {
+        justify-content: center;
+    }
+
+    .collapse-logo {
+        padding-left: 23px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* .left-2 {} */
+</style>
+
+<body>
+    <main class="h-100 w-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid py-1">
+                <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                        </li>
+                    </ul>
+                    <div class="top-nav-right">
+                        <div class="d-flex search-input w-50 mx-auto">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                1201/D Jyoti Tower
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1346/F Hayat Tower</li>
+                                <li>9876/A JP Morgan Tower</li>
+                                <li>Busan Rcidency</li>
+                            </ul>
+                        </div>
+                        <span class="material-symbols-outlined align-middle"> apps </span>
+                        <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                            <div class="avatar__letters">A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- top navigation above -->
+
+        <div class="main-content">
+            <aside>
+                <div class="sidebar sidebar_inner d-flex">
+                    <div class="left-1 px-2" style="width: fit-content">
+                        <ul class="menu-list d-flex pt-2" style="flex-direction: column">
+                            <li class="menu-item d-flex ">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_home_module/erp_home.html">
+                                    <img src="/assets/icons/Home.svg" alt="" />
+                                    <span class="menu-link-text">Land</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/erp_event.html">
+                                    <img src="/assets/icons/Events.svg" alt="" />
+                                    <span class="menu-link-text">Legal</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" class="menu-link" href="#">
+                                    <img src="/assets/icons/Contact.svg" alt="" />
+                                    <span class="menu-link-text">Liaison</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Vendor.svg" alt="" />
+                                    <span class="menu-link-text">Project</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Manage.svg" alt="" />
+                                    <span class="menu-link-text">Manage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Engg.</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link  active d-flex" data-bs-toggle="collapse" href="#Purchase"
+                                    style="flex-direction: column">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Purchase</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Sales</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Rental</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Store</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">FM</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Security</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="left-2 mt-3" id="mySidebar">
+                        <p class="closebtn">
+                            <span class="material-symbols-outlined cancel" onclick="closeNav()">
+                                cancel
+                            </span>
+                        </p>
+                        <ul class="p-0">
+                            <!--  button for closing sidebar-->
+                            <div class="form-inline">
+                                <div class="input-group" data-widget="sidebar-search">
+                                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sidebar">
+                                            <i class="fas fa-search fa-fw"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Land</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Legal</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Liaison</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Project</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Engg.</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <ul class="collapse p-0" id="Purchase">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Sales</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Rental</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Store">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Store</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+
+                                <ul class="collapse p-0" id="Store">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#FM">
+                                    <img alt="" src="../images/user.svg" /><span class="text">FM</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="FM">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Security">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Security</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="Security">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- sidebar ends above -->
+
+            <!-- webpage conteaint start --> 
+            <div class="website-content overflow-auto details_page" >
+                <div class="module-data-section container-fluid">
+                    <a href="">Home > Purchase > MTO >  MTO Pending Approval 
+                        MOR</a>
+                    <h5 class="mt-3">MTO Pending Approval Details</h5>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 px-2">
+                            <div class="head-material text-center">
+                                <h4>PO for Transfer order</h4>
+                            </div>
+
+                            <div class="mor-tabs mt-4">
+                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#create-mor"
+                                            type="button" role="tab" aria-controls="create-mor" aria-selected="false">
+                                            MOR
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#mor-approval-create" type="button" role="tab"
+                                            aria-controls="mor-approval-create" aria-selected="true">
+                                            MTO Creation
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            MTO Approval
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            PO
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Material issue
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Material Received
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content mor-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="create-mor" role="tabpanel"
+                                    aria-labelledby="create-mor">
+                        
+                                    <section class="mor p-2 pt-5">
+                                        <div class="container-fluid card">
+                                           
+                                            <div class="card-header">
+                                                <h3 class="card-title">PO Details</h3>
+                  
+                                         
+                                              </div>
+                                           
+                                              
+                                                <div class="card-body ">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>PO No	</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>Material
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>MOR No		</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>Sanvo Resorts Pvt. Ltd.-II
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>MTO No		</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>Nexzone - Phase II
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>MTO Date*		</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>82423
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>Created On	</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>PO/SRPL/NXZPh2/18254
+
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>Ref No				</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>INR 65,47,926.82
+
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 mt-1">
+                                                            <div class="col-6 ">
+                  
+                                                              <label>Department	</label>
+                  
+                                                            </div>
+                                                            <div class="col-6">                                     
+                                                              <label class="text"><span class="me-3">:-</span>INR 0.00
+
+
+                                                              </label>
+                                                            </div>
+                                                        </div>
+                     
+                                                  
+
+                                                    </div>
+                                              
+                                                <div class="tbl-container me-2 mt-3">
+                                                    <table class="w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-start">Transfer Details</th>
+                                                                <th>Transfer Form</th>
+                                                                <th>Transfer To</th>
+                                                                <th>PO Details
+                                                                </th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tr>
+                                                            <th class="text-start">Company</th>
+                                                            <td class="text-start">MRPL</td>
+                                                            <td class="text-start">MNRL</td>
+                                                            <td>Name of Company: MNRL
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-start">Project</th>
+                                                            <td class="text-start">Nexzone</td>
+                                                            <td class="text-start">Neo Valley</td>
+                                                            <td>Company Address:
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-start">Sub-Project</th>
+                                                            <td class="text-start">Vega</td>
+                                                            <td class="text-start">Neo-valley Building</td>
+                                                            <td>GSTIN No.:
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th class="text-start">Store</th>
+                                                            <td class="text-start">Store 3</td>
+                                                            <td class="text-start">STR-1</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                 
+                                                <div class=" ">
+                                                    <h5 class=" ">Material Details</h5>
+                                                    </div>
+
+                                                <div class="tbl-container me-2 mt-3">
+                                                    <table class="w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Material ID</th>
+                                                                <th>HSN Code</th>
+                                                                <th>Material Type</th>
+                                                                <th>Material Sub-Type</th>
+                                                                <th>Material</th>
+                                                                <th>Material Description</th>
+                                                                <th>Material Specifications
+                                                                </th>
+                                                                <th>UOM</th>
+                                                                <th>Qty</th>
+                                                                <th>Rate (INR)</th>
+                                                                <th>Transfer Order Value</th>
+                                                                <th>Tax</th>
+                                                                <th>Tax Amount</th>
+                                                                <th>Total Value</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td >152156</td>
+                                                                <td >HSN6562</td>
+                                                                <td >Tiles</td>
+                                                                <td >Flooring Tiles</td>
+                                                                <td >Plain IVORY Tiles</td>
+                                                                <td>Plain IVORY Tiles</td>
+                                                                <td>300 x 300 mm</td>
+                                                                <td >Nos</td>
+                                                                <td>40</td>
+                                                                <td>54</td>
+                                                                <td >2160</td>
+                                                                <td class="text-decoration-underline" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">Select</td>
+                                                                <td >388.8</td>
+                                                                <td >2548.8</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                                <div class="mt-2">
+                                                  
+                                                    <div class="d-flex justify-content-between align-items-center">
+                                                        <h5 class=" ">Other Cost</h5>
+                          
+
+                                                      </div>
+
+                                                    <div class="tbl-container me-2 mt-3">
+                                                        <table class="w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Transportation, Loading & Unloading Details</th>
+                                                                    <th>Cost</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tr>
+                                                                <th>Loading</th>
+                                                                <td>0 00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>UnLoading</th>
+                                                                <td>0 00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Transportation</th>
+                                                                <td>0 00</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Total</th>
+                                                                <td>0 00</td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class=" d-flex justify-content-between align-items-center">
+                                                        <h5 class=" mt-3">Document Attachment</h5>
+                               
+                                                    </div>
+                                    
+                                                    <div class=" mt-2">
+                                                        <div class="tbl-container px-0  m-0">
+                                                            <table class="w-100">
+                                                                <thead class="w-100">
+                                                                    <tr>
+                                                                      <th class="main2-th">Sr. No.</th>
+                                        
+                                                                      <th class="main2-th">Document Name</th>
+                                        
+                                                                      <th class="main2-th">File Name</th>
+                                        
+                                                                        <th class="main2-th">File Type</th>
+                                                                        <th class="main2-th">Upload Date</th>
+                                                                        <th class="main2-th">Action</th>
+                                        
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                      <th>1</th>
+                                                                      <td>03-03-2024</td>
+                                                                      <th>MTO Copy.pdf</th>
+                                                                      <td>03-03-2024</td>
+                                        
+                                                                        <th>MTO Copy.pdf</th>
+                                                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#document_attchment" style="font-size: 18px;"></i></td>
+                                                                    </tr>
+                                                                  
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mt-2">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="">Note</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+
+                                                   
+                                                    <div class="mt-2 ">
+                                                        <h5 class=" ">Term & Conditions</h5></div>
+
+                                                    <div class="tbl-container me-2 mt-3">
+                                                        <table class="w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Conditions Category</th>
+                                                                    <th>Condition</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="dropdown">
+                                                                        <button class="btn dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+
+                                                                        </button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Action</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Another action</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Something else here</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </th>
+                                                                <td>
+                                                                    <div class="dropdown">
+                                                                        <button class="btn dropdown-toggle"
+                                                                            type="button" data-bs-toggle="dropdown"
+                                                                            aria-expanded="false">
+
+                                                                        </button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Action</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Another action</a></li>
+                                                                            <li><a class="dropdown-item"
+                                                                                    href="#">Something else here</a>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label">Remark</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+
+                                                    <div class="mb-3">
+                                                        <label for="exampleFormControlTextarea1"
+                                                            class="form-label">Comments</label>
+                                                        <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                            rows="3"></textarea>
+                                                    </div>
+                                                    <div class="d-flex justify-content-end align-items-center">
+                                                        <p class="pe-2 pt-1">Status</p>
+                                                        <div class="dropdown">
+                                                            <button class="purple-btn2 dropdown-toggle"
+                                                                type="button" data-bs-toggle="dropdown"
+                                                                aria-expanded="false">
+                                                                MTO for PO
+                                                            </button>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                                                <li><a class="dropdown-item" href="#">Another action</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item" href="#">Something else
+                                                                        here</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-2 justify-content-end">
+                                                        <div class="col-md-2">
+                                                            <button class="purple-btn2 w-100">Print</button>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <button class="purple-btn2 w-100">Submit</button>
+                                                        </div>
+                                                        <div class="col-md-2">
+                                                            <button class="purple-btn1 w-100">Cancel</button>
+                                                        </div>
+                                        
+                                                    </div>
+                                                </div>
+                                            </div>
+                                              
+                                    </section>
+                                    <h5 class=" mt-3">Audit Log</h5>
+    
+                                    <div class="px-3">
+                                        <div class="tbl-container px-0">
+                        
+                                            <table class="w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sr.No.</th>
+                                                        <th>User</th>
+                                                        <th>Date</th>
+                                                        <th>Status</th>
+                                                        <th>Remark</th>
+                                                        <th>Comments</th>
+                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>Pratham Shastri</td>
+                                                        <td>15-02-2024</td>
+                                                        <td>Verified</td>
+                                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                            data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                                                            <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                                data-bs-target="#comments-modal" style="font-size: 18px;"></i></td>
+                                                    </tr>
+                           
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                      </div>
+
+                                </div>
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <!-- Navigation Top -->
+
+    <!-- sidebar start below -->
+
+    <!-- webpage container end -->
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">View Tax & Rate</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Material</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>HSN Code</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Material PO No.</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Total PO Qty</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Rate per Nos</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Rate</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Last PO Rate</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Material Cost</label>
+                                <input class="form-control" type="text" fdprocessedid="6pbn8">
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Remark</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                              </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Additional Info</label>
+                                <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tbl-container me-2 mt-3">
+                    <table class="w-100">
+                    <thead>
+                        <tr>
+                            <th>Tax / Charge Type</th>
+                            <th>Tax / Charges per UOM (INR)</th>
+                            <th>Inclusive</th>
+                            <th>Amount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="text-center">
+                            <th>Total Base Cost</th>
+                            <td></td>
+                            <td></td>
+                            <td>2160</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>Other Charges</td>
+                            <td>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle drop-modal-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                      select 
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">Action</a></li>
+                                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                  </div>
+                            </td>
+                            <td><input type="checkbox"></td>
+                            <td>0 00</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>IGST</td>
+                            <td> <div class="dropdown">
+                                <button class="btn dropdown-toggle drop-modal-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  select 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div></td>
+                            <td><input type="checkbox"></td>
+                            <td>0 00</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>SGST</td>
+                            <td> <div class="dropdown">
+                                <button class="btn dropdown-toggle drop-modal-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  select 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div></td>
+                            <td><input type="checkbox"></td>
+                            <td>194.4</td>
+                        </tr>
+                        <tr class="text-center">
+                            <td>CGST</td>
+                            <td> <div class="dropdown">
+                                <button class="btn dropdown-toggle drop-modal-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  select 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div></td>
+                            <td><input type="checkbox"></td>
+                            <td>194.4</td>
+                        </tr>
+                        <tr class="text-center">
+                            <th>Sub Total A</th>
+                            <td></td>
+                            <td></td>
+                            <th>2548.8</th>
+                        </tr>
+                        <tr class="text-center">
+                            <td>TDS</td>
+                            <td> <div class="dropdown">
+                                <button class="btn dropdown-toggle drop-modal-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  select 
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </div></td>
+                            <td><input type="checkbox"></td>
+                            <td>0 00</td>
+                        </tr>
+                        <tr class="text-center">
+                            <th>Sub Total B</th>
+                            <td></td>
+                            <td></td>
+                            <th>0 00</th>
+                        </tr>
+                        <tr class="text-center">
+                            <th>Net Cost</th>
+                            <td></td>
+                            <td></td>
+                            <th>2548.8</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<script>
+    // Toggle visibility and apply slide animation when clicking on a link
+
+    function openNav() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</html>

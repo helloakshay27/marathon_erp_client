@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../erp_purchase/mor.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<style>
+    .closebtn {
+        display: flex;
+        margin: 7px auto 0 5px;
+    }
+
+    .left-1 ul {
+        padding: 0;
+        /* display: flex; */
+    }
+
+    .left-1 ul li a {
+        align-items: center;
+    }
+
+    .left-1 ul li a img {
+        width: 32px;
+    }
+
+    .left-1 ul li {
+        justify-content: center;
+    }
+
+    .collapse-logo {
+        padding-left: 23px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* .left-2 {} */
+</style>
+
+<body>
+    <main class="h-100 w-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid py-1">
+                <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                        </li>
+                    </ul>
+                    <div class="top-nav-right">
+                        <div class="d-flex search-input w-50 mx-auto">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                1201/D Jyoti Tower
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1346/F Hayat Tower</li>
+                                <li>9876/A JP Morgan Tower</li>
+                                <li>Busan Rcidency</li>
+                            </ul>
+                        </div>
+                        <span class="material-symbols-outlined align-middle"> apps </span>
+                        <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                            <div class="avatar__letters">A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- top navigation above -->
+
+        <div class="main-content">
+            <aside>
+                <div class="sidebar sidebar_inner d-flex">
+                    <div class="left-1 px-2" style="width: fit-content">
+                        <ul class="menu-list d-flex pt-2" style="flex-direction: column">
+                            <li class="menu-item d-flex ">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_home_module/erp_home.html">
+                                    <img src="/assets/icons/Home.svg" alt="" />
+                                    <span class="menu-link-text">Land</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/erp_event.html">
+                                    <img src="/assets/icons/Events.svg" alt="" />
+                                    <span class="menu-link-text">Legal</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" class="menu-link" href="#">
+                                    <img src="/assets/icons/Contact.svg" alt="" />
+                                    <span class="menu-link-text">Liaison</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Vendor.svg" alt="" />
+                                    <span class="menu-link-text">Project</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Manage.svg" alt="" />
+                                    <span class="menu-link-text">Manage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Engg.</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link  active d-flex" data-bs-toggle="collapse" href="#Purchase"
+                                    style="flex-direction: column">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Purchase</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Sales</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Rental</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Store</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">FM</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Security</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="left-2 mt-3" id="mySidebar">
+                        <p class="closebtn">
+                            <span class="material-symbols-outlined cancel" onclick="closeNav()">
+                                cancel
+                            </span>
+                        </p>
+                        <ul class="p-0">
+                            <!--  button for closing sidebar-->
+                            <div class="form-inline">
+                                <div class="input-group" data-widget="sidebar-search">
+                                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sidebar">
+                                            <i class="fas fa-search fa-fw"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Land</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Legal</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Liaison</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Project</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Engg.</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <ul class="collapse p-0" id="Purchase">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Sales</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Rental</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Store">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Store</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+
+                                <ul class="collapse p-0" id="Store">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#FM">
+                                    <img alt="" src="../images/user.svg" /><span class="text">FM</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="FM">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Security">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Security</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="Security">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- sidebar ends above -->
+
+            <!-- webpage conteaint start -->
+            <div class="website-content overflow-auto">
+                <div class="module-data-section container-fluid">
+                    <a href="">Home > Finance > PO Advance</a>
+                    <h5 class="mt-3">Advance</h5>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 px-2">
+                            <div class="mor-tabs mt-4">
+                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#create-mor"
+                                            type="button" role="tab" aria-controls="create-mor" aria-selected="false">
+                                            MOR
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" data-bs-toggle="pill"
+                                            data-bs-target="#mor-approval-create" type="button" role="tab"
+                                            aria-controls="mor-approval-create" aria-selected="true">
+                                            MOR Approval
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            PO
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Advance
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Material Received
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link  active" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Billing
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content mor-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="create-mor" role="tabpanel"
+                                    aria-labelledby="create-mor">
+                                    <section class="mor p-2 pt-2">
+                                        <div class="container-fluid">
+                                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                                aria-labelledby="nav-home-tab" tabindex="0">
+                                                <div class="text-end text-decoration-underline"><a href="#">Existing
+                                                        Allocated PO & Advance</a></div>
+                                                <div class="card-body">
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Company</label>
+                                                                <select class="form-control form-select"
+                                                                    style="width: 100%">
+                                                                    <option selected="selected">
+                                                                        Marathon
+                                                                    </option>
+                                                                    <option>Alaska</option>
+                                                                    <option>California</option>
+                                                                    <option>Delaware</option>
+                                                                    <option>Tennessee</option>
+                                                                    <option>Texas</option>
+                                                                    <option>Washington</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Project</label>
+                                                                <select class="form-control form-select"
+                                                                    style="width: 100%">
+                                                                    <option selected="selected">
+                                                                        Neo Valley
+                                                                    </option>
+                                                                    <option>Alaska</option>
+                                                                    <option>California</option>
+                                                                    <option>Delaware</option>
+                                                                    <option>Tennessee</option>
+                                                                    <option>Texas</option>
+                                                                    <option>Washington</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Sub Project</label>
+                                                                <select class="form-control form-select"
+                                                                    style="width: 100%">
+                                                                    <option selected="selected">
+                                                                        Neo Valley- Building
+                                                                    </option>
+                                                                    <option>Alaska</option>
+                                                                    <option>California</option>
+                                                                    <option>Delaware</option>
+                                                                    <option>Tennessee</option>
+                                                                    <option>Texas</option>
+                                                                    <option>Washington</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Advance No.</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="ADV65622652" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Certificate No.</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="567459565" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">PO N0.</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="PO 251" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Performa Amount</label>
+                                                                <input class="form-control" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Invoice Date</label>
+                                                                <input class="form-control" type="date" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Supplier Name</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="Shreeram Ceramics" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">GSTN No.</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="GST5448784" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">PAN No.</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="PAN6545154" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Balance Payble</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="3000.00" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Advance %</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="50" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Advance Amount</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="INR 3000.00" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Tax Deductions Amount</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="INR 600" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Payment Amount</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="INR 240 " />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Mode of Payment</label>
+                                                                <select class="form-control form-select"
+                                                                    style="width: 100%">
+                                                                    <option selected="selected">
+                                                                        Online Paumen from Portal / App
+                                                                    </option>
+                                                                    <option>Alaska</option>
+                                                                    <option>California</option>
+                                                                    <option>Delaware</option>
+                                                                    <option>Tennessee</option>
+                                                                    <option>Texas</option>
+                                                                    <option>Washington</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Favoring / Payee</label>
+                                                                <input class="form-control" type="text"
+                                                                    placeholder="Suresh G Sharma" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <div class="form-group">
+                                                                <label class="po-fontBold">Payment Due Date</label>
+                                                                <input class="form-control" type="date" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-4 mt-0">
+                                                            <label for="exampleFormControlTextarea1"
+                                                                class="form-label po-fontBold">Remark</label>
+                                                            <textarea class="form-control"
+                                                                id="exampleFormControlTextarea1" rows="2"></textarea>
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="">
+                                                    <h3 class=" " data-bs-toggle="modal" data-bs-target="#sereneModal">
+                                                        Tax Details</h3>
+                                                </div>
+
+                                                <div class="tbl-container me-2 mt-3">
+                                                    <table class="w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Tax / Charge Type</th>
+                                                                <th>Tax / Charges per UOM (INR)</th>
+                                                                <th>Inclusive / Exculsive</th>
+                                                                <th>Amount</th>
+                                                                <th>Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th>Total Base Cost</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Addition Tax & Charges</th>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                                    </svg></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            IGST
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            Select
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><input type="checkbox"></td>
+                                                                <td>0.00</td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            SGST
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            9
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><input type="checkbox"></td>
+                                                                <td>270</td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                                                                    </svg></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            CGST
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            9
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><input type="checkbox"></td>
+                                                                <td>270</td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                                                                    </svg></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="fw-bold">Sub Total A (Addition)</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="fw-bold">540</td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8" />
+                                                                    </svg></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="fw-bold">Gross Amount</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="fw-bold">3540</td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="fw-bold">Deduction Tax</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                                    </svg></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            TDS
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><select class="form-control form-select"
+                                                                        style="width: 100%" fdprocessedid="lz6z9">
+                                                                        <option selected="selected">
+                                                                            1
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select></td>
+                                                                <td><input type="checkbox"></td>
+                                                                <td>30</td>
+                                                                <td><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                        height="16" fill="currentColor"
+                                                                        class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                                                        <path
+                                                                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                                        <path
+                                                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                                    </svg></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="fw-bold">Sub Total B </td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="fw-bold">30</td>
+                                                                <td></td>
+                                                            </tr>
+
+                                                            <tr>
+                                                                <td class="fw-bold">Payble Amount</td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="fw-bold">3510</td>
+                                                                <td></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+
+                                                </div>
+
+                                                <div class="">
+                                                    <h3 class=" " data-bs-toggle="modal" data-bs-target="#sereneModal">
+                                                        Payment Details</h3>
+                                                </div>
+
+                                                <div class="tbl-container me-2 mt-3">
+                                                    <table class="w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Mide of Payment</th>
+                                                                <th>Instrument Date</th>
+                                                                <th>Instrument No</th>
+                                                                <th>Bank/ Cash Account</th>
+                                                                <th>Amount</th>
+                                                                <th>Created By</th>
+                                                                <th>Created On</th>
+                                                                <th>Status</th>
+                                                                <th>Reconsilation Date</th>
+                                                                <th>Cheque Print</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td class="text-decoration-underline">Print</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="d-flex">
+                                                        <p class="text-decoration-underline ms-3" data-bs-toggle="modal"
+                                                            data-bs-target="#cozyModal">Make Cash Payment</p>
+                                                        <p class="text-decoration-underline ms-3" data-bs-toggle="modal"
+                                                            data-bs-target="#zenithModal">Make Bank Payment</p>
+                                                        <p class="text-decoration-underline ms-3" data-bs-toggle="modal"
+                                                            data-bs-target="#sereneModal">Make Adjustment Entry
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="d-flex">
+                                                    <div>
+                                                        <p>Attchment</p>
+                                                        <form action="/upload" method="post"
+                                                            enctype="multipart/form-data">
+                                                            <label for="fileInput">Choose File:</label>
+                                                            <input type="file" id="fileInput" name="attachment">
+                                                        </form>
+                                                    </div>
+                                                    <div>
+                                                        <div class="tbl-container me-2 mt-3">
+                                                            <table class="w-100">
+                                                                <thead class="w-100">
+                                                                    <tr>
+                                                                        <th class="main2-th">Document Name</th>
+                                                                        <th class="main2-th">Upload Date</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <th>MTO Copy.pdf</th>
+                                                                        <td>03-03-2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>MTO Copy.pdf</th>
+                                                                        <td>03-03-2024</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <th>MTO Copy.pdf</th>
+                                                                        <td>03-03-2024</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Remark</label>
+                                                            <textarea class="form-control" rows="3"
+                                                                placeholder="Enter ..."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <label>Comments</label>
+                                                            <textarea class="form-control" rows="2"
+                                                                placeholder="Enter ..."></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-4 justify-content-end">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group d-flex gap-3 align-items-center">
+                                                            <label style="font-size: 1.1rem">status</label>
+                                                            <select class="form-control form-select" style="width: 100%">
+                                                                <option selected="selected">Advance Draft</option>
+                                                                <option>Alaska</option>
+                                                                <option>California</option>
+                                                                <option>Delaware</option>
+                                                                <option>Tennessee</option>
+                                                                <option>Texas</option>
+                                                                <option>Washington</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-2 justify-content-end">
+                                                    <div class="col-md-2">
+                                                        <button class="purple-btn1 w-100">Print</button>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button class="purple-btn1 w-100">Submit</button>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <button class="purple-btn1 w-100">Cancel</button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                    <section class="ms-4 me-4 mb-3">
+
+                                        <div class=" ">
+                                            <h3 class=" ">Audit Log</h3>
+                                        </div>
+
+                                        <div class="tbl-container me-2 mt-3">
+                                            <table class="w-100">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Sr.No.</th>
+                                                        <th>User</th>
+                                                        <th>Date</th>
+                                                        <th>Status</th>
+                                                        <th>Remark</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <th>1</th>
+                                                        <td>Pratham Shastri</td>
+                                                        <td>15-02-2024</td>
+                                                        <td>Verified</td>
+                                                        <td>Verified &amp; Processed</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>2</th>
+                                                        <td>Pratham Shastri</td>
+                                                        <td>30-01-2024</td>
+                                                        <td>Approved</td>
+                                                        <td>Ok Approved</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>3</th>
+                                                        <td>Dinesh Gupta</td>
+                                                        <td>15-01-2024</td>
+                                                        <td>Submit</td>
+                                                        <td>Send for approval</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>4</th>
+                                                        <td>Dinesh Gupta</td>
+                                                        <td>01-01-2024</td>
+                                                        <td>Draft</td>
+                                                        <td>MOR created as material required at site.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+                </footer>
+            </div>
+        </div>
+    </main>
+    <!-- Navigation Top -->
+
+    <!-- sidebar start below -->
+
+    <!-- webpage container end -->
+
+    <!-- Modal 1 start -->
+    <div class="modal fade" id="cozyModal" tabindex="-1" aria-labelledby="cozyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Cash Payment Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="">
+                        <p>While Payment is in Progress, Do not Refresh/Close the window</p>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Certifying Company</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>Sanvo Resorts Pvt. Ltd.</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Outstanding Amount</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>INR 6,624.00</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Voucher Date <span>*</span></p>
+                            </div>
+                            <div class="col-md-8">
+                                 <input type="date">
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Cash Account <span>*</span></p>
+                            </div>
+                            <div class="col-md-8">
+                                <select class="form-control form-select" style="width: 100%" fdprocessedid="33mf7l">
+                                    <option selected="selected">
+                                        [Select One]
+                                    </option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Closing Balance Amount</p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>INR 0.00</p>
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Favouring / Payee <span>*</span></p>
+                            </div>
+                            <div class="col-md-8">
+                                <input class="form-control" type="text" placeholder="D J ENTERPRISES" fdprocessedid="q89p7">
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Amount <s>*</s></p>
+                            </div>
+                            <div class="col-md-8">
+                                <p>INR</p>
+                                <input type="text">
+                            </div>
+                        </div>
+
+                        <div class="row mb-2">
+                            <div class="col-md-4">
+                                <p>Narration</p>
+                            </div>
+                            <div class="col-md-8">
+                                <textarea name="" id="" cols="30" rows="2"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-md-2 me-4">
+                            <button class="purple-btn1" fdprocessedid="xl4r6b">Submit</button>
+                        </div>
+                        <div class="col-md-2 me-4">
+                            <button class="purple-btn1" fdprocessedid="gc57zj">Reset</button>
+                        </div>
+                        <div class="col-md-2 me-4">
+                            <button class="purple-btn1" fdprocessedid="wj58vf">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal 1 end -->
+
+ <!-- Modal 2 start -->
+ <div class="modal fade" id="zenithModal" tabindex="-1" aria-labelledby="zenithModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel">Cash Payment Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <p class="fw-bold">Note:</p>
+                    <p>• Narration field allows max of 250 characters.</p>
+                    <p>• Favouring field allows max of 100 characters.</p>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Company</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Sanvo Resorts Pvt. Ltd.</p>
+                        </div>
+                    </div>
+  
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Project<span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="form-control form-select" style="width: 100%" fdprocessedid="33mf7l">
+                                <option selected="selected">
+                                    [Select One]
+                                </option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Voucher Type</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Journal</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Voucher Date <span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                            <input class="form-control" type="text" placeholder="Mar 21, 2024" fdprocessedid="q89p7">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Amount <s>*</s></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>INR</p>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Narration</p>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea name="" id="" cols="30" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tbl-container me-2 mt-3">
+                    <table class="w-100">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th><input type="checkbox"></th>
+                                <th>Dr/Cr</th>
+                                <th>Ledger Account</th>
+                                <th>Amount</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                            <td><img src="" alt="">Click</td>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <select class="form-control form-select" style="width: 100%" fdprocessedid="33mf7l">
+                                    <option selected="selected">
+                                        Debit
+                                    </option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                </select> 
+                            </td>
+                            <td><input type="text"></td>
+                            
+                            <td><input type="text" placeholder="0.00"></td>
+                            <td></td>
+                        </tr>
+
+                        <tr>
+                            <td><img src="" alt="">Click</td>
+                            <td><input type="checkbox" name="" id=""></td>
+                            <td>
+                                <select class="form-control form-select" style="width: 100%" fdprocessedid="33mf7l">
+                                    <option selected="selected">
+                                        Credit
+                                    </option>
+                                    <option>Alaska</option>
+                                    <option>California</option>
+                                    <option>Delaware</option>
+                                    <option>Tennessee</option>
+                                    <option>Texas</option>
+                                    <option>Washington</option>
+                                </select> 
+                            </td>
+                            <td><input type="text"></td>
+                            
+                            <td><input type="text" placeholder="0.00"></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                        </table>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <p>Total</p>
+                            <p class="me-4">Dr:<span>  0.00 </span></p>
+                            <p>Cr:<span>  0.00 </span></p>
+                        </div>
+
+                <div class="card-body">
+                <div class="row mb-2">
+                    <div class="col-md-4">
+                        <p>Narration</p>
+                    </div>
+                    <div class="col-md-8">
+                        <textarea name="" id="" cols="30" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+
+                <div class="row text-center">
+                    <div class="col-md-2 me-4">
+                        <button class="purple-btn1" fdprocessedid="xl4r6b">Create</button>
+                    </div>
+                    <div class="col-md-2 me-4">
+                        <button class="purple-btn1" fdprocessedid="wj58vf">Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 2 end -->
+
+
+<!-- Modal 3 start -->
+<div class="modal fade" id="sereneModal" tabindex="-1" aria-labelledby="sereneModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fs-5" id="exampleModalLabel">Bank Payment Details</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="">
+                    <p>While Payment is in Progress, Do not Refresh/Close the window</p>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Certifying Company</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>Sanvo Resorts Pvt. Ltd.</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Outstanding Amount</p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>INR 6,624.00</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Voucher Date <span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                             <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Instrument Date <span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                             <input type="date">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Bank Account <span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="form-control form-select" style="width: 100%" fdprocessedid="33mf7l">
+                                <option selected="selected">
+                                    [Select One]
+                                </option>
+                                <option>Alaska</option>
+                                <option>California</option>
+                                <option>Delaware</option>
+                                <option>Tennessee</option>
+                                <option>Texas</option>
+                                <option>Washington</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Instrument No <span>*</span></p>
+                        </div>
+                        <div class="col-md-8">
+                             <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Closing Balance Amount</p>
+                        </div>
+                        <div class="col-md-8">
+                             <p>INR 0.00</p>
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Favouring / Payee<s>*</s></p>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="D J ENTERPRISES">
+                        </div>
+                    </div>
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Amount<s>*</s></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p>INR</p>
+                            <input type="6624">
+                        </div>
+                    </div>
+
+                    <div class="row mb-2">
+                        <div class="col-md-4">
+                            <p>Narration</p>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea name="" id="" cols="30" rows="2"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-2 me-4">
+                        <button class="purple-btn1" fdprocessedid="xl4r6b">Submit</button>
+                    </div>
+                    <div class="col-md-2 me-4">
+                        <button class="purple-btn1" fdprocessedid="gc57zj">Reset</button>
+                    </div>
+                    <div class="col-md-2 me-4">
+                        <button class="purple-btn1" fdprocessedid="wj58vf">Cancel</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal 3 end -->
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+
+<script>
+    // Toggle visibility and apply slide animation when clicking on a link
+
+    function openNav() {
+        document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.display = "none";
+    }
+</script>
+
+</html>

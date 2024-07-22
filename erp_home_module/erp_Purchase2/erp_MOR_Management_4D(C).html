@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="../erp_purchase/mor.css" />
+        <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<body>
+    <main class="h-100 w-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid py-1">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" onclick="openNav()">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                        </li>
+                    </ul>
+                    <div class="top-nav-right">
+                        <div class="d-flex search-input w-50 mx-auto">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                1201/D Jyoti Tower
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1346/F Hayat Tower</li>
+                                <li>9876/A JP Morgan Tower</li>
+                                <li>Busan Rcidency</li>
+                            </ul>
+                        </div>
+                        <span class="material-symbols-outlined align-middle"> apps </span>
+                        <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                            <div class="avatar__letters">A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- top navigation above -->
+
+        <div class="main-content">
+            <aside>
+                <div class="sidebar sidebar_inner" id="mySidebar">
+                    <p class="closebtn">
+                        <span class="material-symbols-outlined cancel" onclick="closeNav()">
+                            cancel
+                        </span>
+                    </p>
+                    <ul class="p-0">
+                        <!--  button for closing sidebar-->
+                        <div class="form-inline">
+                            <div class="input-group" data-widget="sidebar-search">
+                                <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                                    aria-label="Search" />
+                                <div class="input-group-append">
+                                    <button class="btn btn-sidebar">
+                                        <i class="fas fa-search fa-fw"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li class="nav-header">MOR</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./Snagging-ProjectStatus-Unit.html">
+                                <span class="text">Material Order Request </span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material Issue Slip
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                <img alt="" src="../images/Snag.svg" /><span class="text">Material Return Slip</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                <img alt="" src="../images/Snag.svg" /><span class="text">Material Order Approval</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-header">MTO</li>
+
+                        <li class="nav-item">
+                            <div class="btn-group2">
+                                <a class="text nav-link dropdown-toggle asset-after" data-bs-toggle="dropdown"
+                                    aria-expanded="true">
+                                    <img alt="" src="../images/OSR.svg" /><span class="text">Material Transfer Request
+                                    </span>
+                                </a>
+                                <ul class="dropdown-menu" data-popper-placement="top-start">
+                                    <li>
+                                        <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO Pending
+                                    Approval</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-header">Procurement</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance Note
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- sidebar ends above -->
+
+            <!-- webpage conteaint start -->
+            <div class="website-content overflow-auto">
+
+
+                <div class="module-data-section container-fluid">
+                    <a href="">Home > Purchase > Procurement > MOR Management
+                        MOR</a>
+                    <h5 class="mt-3">MOR Management</h5>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 px-2">
+                            <div class="head-material text-center">
+                                <h4>MOR Management</h4>
+                            </div>
+
+                            <div class="mor-tabs mt-4">
+                                <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link " id="pills-home-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-home" type="button" role="tab"
+                                            aria-controls="pills-home" aria-selected="true">
+                                            MOR (1/4)
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-profile" type="button" role="tab"
+                                            aria-controls="pills-profile" aria-selected="false">
+                                            MOR Approval
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Acceptance
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Auction /
+                                            RFQ
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            PO
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Acceptance
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Advance
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Material
+                                            Received
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                                            data-bs-target="#pills-contact" type="button" role="tab"
+                                            aria-controls="pills-contact" aria-selected="false">
+                                            Billing
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content mor-content active" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <section class="mor p-3">
+
+                                        <div class="row justify-content-center my-4">
+                                            <div class="col-md-10">
+                                                <div class="progress-steps">
+                                                    <div class="top">
+                                                        <div class="progress"><span></span></div>
+                                                        <div class="steps">
+
+                                                            <div class="layer1">
+                                                                <div class="step active" data-step="1"><span></span>
+                                                                </div>
+                                                                <p>layer1</p>
+                                                            </div>
+
+
+                                                            <div class="layer1">
+                                                                <div class="step active" data-step="2"><span></span>
+                                                                </div>
+                                                                <p>layer2</p>
+                                                            </div>
+                                                            <div class="layer1">
+                                                                <div class="step active" data-step="3"><span></span>
+                                                                </div>
+                                                                <p>layer3</p>
+                                                            </div>
+                                                            <div class="layer1">
+                                                                <div class="step active" data-step="4"><span></span>
+                                                                </div>
+                                                                <p>layer4</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="buttons d-m">
+                                                        <button class="btn btn-prev disabled" disabled>prev</button>
+                                                        <button class="btn btn-next">Next</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                     
+
+                                        </div>
+
+                                        <div class="d-flex justify-content-end ">
+                                                <button class="purple-btn2">Download</button>
+                                        </div>
+
+                                                <div class="card card-default" id="mor-material-details">
+                                                    <div class="card-header">
+                                                        <h3 class="card-title">MOR Details</h3>
+                                                    </div>
+                                                    <!-- /.card-header -->
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Company <span>*</span></label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Alabama
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Project <span>*</span></label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Alabama
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- /.col -->
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Sub-Project <span>*</span></label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Alabama
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Assigned to</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="Vijay Sharma" />
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>MOR No.</label>
+                                                                    <input class="form-control" type="date"
+                                                                        placeholder="MOR/MAR/MAX/101/02/2024" />
+                                                                </div>
+                                                            </div>
+
+                                                            <!-- /.col -->
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>MOR Date <span>*</span></label>
+                                                                    <input class="form-control" type="date" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Created On </label>
+                                                                    <input class="form-control" type="date" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+         
+                                                                <div class="form-group">
+                                                                    <label>Department</label>
+                                                                    <input class="form-control" type="text"
+                                                                        placeholder="Site" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-2 mt-4">
+                                                      
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Material ID</label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            152156
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Material Type</label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Tiles
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Material Sub-Type</label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Flooring Tiles
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Material</label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Plain IVORY Tiles
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-md-2">
+                                                                <div class="form-group">
+                                                                    <label>Material Description</label>
+                                                                    <select class="form-control select2"
+                                                                        style="width: 100%">
+                                                                        <option selected="selected">
+                                                                            Plain IVORY Tiles
+                                                                        </option>
+                                                                        <option>Alaska</option>
+                                                                        <option>California</option>
+                                                                        <option>Delaware</option>
+                                                                        <option>Tennessee</option>
+                                                                        <option>Texas</option>
+                                                                        <option>Washington</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="row mt-4">
+                                                            <div class="col-md-12">
+                                                                <div class="form-group">
+                                                                    <label>Other Technical Details</label>
+                                                                    <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+
+                                                            <div class=" d-flex justify-content-between align-items-center mt-2">
+                                                                <h5 class=" mt-3">Document Attachment</h5>
+                                                                <button class="purple-btn2 m-0" data-bs-toggle="modal" data-bs-target="#file_attchement"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                  <path d="M15.1892 16.0745H0.794209C0.364012 16.0745 0 15.7435 0 15.3133V8.03309C0 7.61944 0.347466 7.27197 0.794209 7.27197C1.24095 7.27197 1.58842 7.60289 1.58842 8.03309V14.5688H14.4116V8.03309C14.4116 7.61944 14.759 7.27197 15.2058 7.27197C15.6525 7.27197 16 7.60289 16 8.03309V15.3133C15.9669 15.727 15.6194 16.0745 15.1892 16.0745Z" fill="white"></path>
+                                                                  <path d="M11.6318 3.28438L8.57081 0.223371C8.27298 -0.0744571 7.7766 -0.0744571 7.46222 0.223371L4.36812 3.28438C4.2192 3.4333 4.13647 3.63185 4.13647 3.84695C4.13647 4.06205 4.2192 4.24405 4.36812 4.39297C4.51703 4.54188 4.71558 4.62461 4.91414 4.62461C5.12924 4.62461 5.32779 4.54188 5.4767 4.39297L7.1644 2.72182V10.5812C7.1644 11.0445 7.52841 11.4085 7.9917 11.4085C8.45498 11.4085 8.819 11.0445 8.819 10.5812V2.68873L10.5232 4.39297C10.8211 4.6908 11.3174 4.6908 11.6318 4.39297C11.7807 4.24405 11.8635 4.0455 11.8635 3.84695C11.8635 3.63185 11.7807 3.4333 11.6318 3.28438Z" fill="white"></path>
+                                                                  </svg>
+                                                                  <span class="ms-2">Attchment File </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class=" mt-2">
+                                                                <div class="tbl-container px-0  m-0">
+                                                                    <table class="w-100">
+                                                                        <thead class="w-100">
+                                                                            <tr>
+                                                                              <th class="main2-th">Sr. No.</th>
+                                                
+                                                                              <th class="main2-th">Document Name</th>
+                                                
+                                                                              <th class="main2-th">File Name</th>
+                                                
+                                                                                <th class="main2-th">File Type</th>
+                                                                                <th class="main2-th">Upload Date</th>
+                                                                                <th class="main2-th">Action</th>
+                                                
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                            <tr>
+                                                                              <th>1</th>
+                                                                              <td>03-03-2024</td>
+                                                                              <th>MTO Copy.pdf</th>
+                                                                              <td>03-03-2024</td>
+                                                
+                                                                                <th>MTO Copy.pdf</th>
+                                                                                <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#document_attchment" style="font-size: 18px;"></i></td>
+                                                                            </tr>
+                                                                          
+                                                                        </tbody>
+                                                                    </table>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row mt-4">
+                                                                <div class="col-md-12">
+                                                                    <div class="form-group">
+                                                                        <label>Note</label>
+                                                                        <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                                                    </div>
+                                                                </div>
+                                                             </div>
+
+                                                                <div class="row mt-4">
+                                                                    <div class="col-md-12">
+                                                                        <div class="form-group">
+                                                                            <label>Remark</label>
+                                                                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                    <div class="row mt-4">
+                                                                        <div class="col-md-12">
+                                                                            <div class="form-group">
+                                                                                <label>Comments</label>
+                                                                                <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                                                            </div>
+                                                                        </div>
+                                                                     </div>
+                                                                        
+                                                                        <div class="row mt-4 justify-content-end">
+                                                                            <div class="col-md-3 d-flex align-items-baseline">
+
+                                                                                <div class="col-3 ">
+                                                                                    <div class="form-group ms-3">
+                                                                                        <label >Status</label>
+ 
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-9">
+
+
+                                                                                    <div class="form-group">
+                                                                                        <select class="form-control form-select" style="width: 100%" fdprocessedid="91cup">
+                                                                                            <option selected="selected">Atul K</option>
+                                                                                            <option>Alaska</option>
+                                                                                            <option>California</option>
+                                                                                            <option>Delaware</option>
+                                                                                            <option>Tennessee</option>
+                                                                                            <option>Texas</option>
+                                                                                            <option>Washington</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+
+                                                                            <div class="col-md-3 d-flex align-items-baseline">
+
+                                                                                <div class="col-4">
+                                                                                    <div class="form-group ">
+                                                                                        <label >Operator Name</label>
+ 
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col-8">
+
+
+                                                                                    <div class="form-group">
+                                                                                        <select class="form-control form-select" style="width: 100%" fdprocessedid="91cup">
+                                                                                            <option selected="selected">Atul K</option>
+                                                                                            <option>Alaska</option>
+                                                                                            <option>California</option>
+                                                                                            <option>Delaware</option>
+                                                                                            <option>Tennessee</option>
+                                                                                            <option>Texas</option>
+                                                                                            <option>Washington</option>
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row mt-4 justify-content-end">
+
+                                                                        </div>
+
+                                                                        <div class="row mt-2 justify-content-end">
+                                                                            <div class="col-md-2">
+                                                                                <button class="purple-btn2 w-100" fdprocessedid="wpx8d">Print</button>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <button class="purple-btn2 w-100" fdprocessedid="v9u7oi">Submit</button>
+                                                                            </div>
+                                                                            <div class="col-md-2">
+                                                                                <button class="purple-btn1 w-100" fdprocessedid="shdx1">Cancel</button>
+                                                                            </div>
+                                                                        </div>
+                                                    </div>
+                                                </div>
+ 
+                                        <div class="row mt-2">
+                                            <div class="col-12 px-4">
+                                                <h5>Audit Log</h5>
+                                                    <div class="tbl-container px-0">
+                                    
+                                                        <table class="w-100">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th>Sr.No.</th>
+                                                                    <th>User</th>
+                                                                    <th>Date</th>
+                                                                    <th>Status</th>
+                                                                    <th>Remark</th>
+                                                                    <th>Comments</th>
+                                    
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th>1</th>
+                                                                    <td>Pratham Shastri</td>
+                                                                    <td>15-02-2024</td>
+                                                                    <td>Verified</td>
+                                                                    <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                                                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#comments-modal" style="font-size: 18px;"></i></td>
+                                                                </tr>
+                                       
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+
+                            </section>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab">
+                            ...
+                        </div>
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+                            aria-labelledby="pills-contact-tab">
+                            ...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+        </footer>
+        </div>
+        </div>
+    </main>
+ 
+</body>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="/assets/js/main.js"></script>
+<script>
+
+    $(document).ready(function () {
+        // Collapse card when button is clicked
+
+        $('[data-card-widget="collapse"]').click(function () {
+            var $card = $(this).closest('.card');
+            var $sectionToShow = $card.find('.show-this-in-collapsed-view');
+            var $cardBody = $card.find('.card-body');
+
+            // Toggle collapse icon
+            $(this).toggleClass('collapsed');
+
+            // Toggle card body with animation
+            $cardBody.slideToggle('slow', function () {
+                // Check if card body is visible
+                if ($cardBody.is(':visible')) {
+                    // Card body is visible, show section
+                    $sectionToShow.hide('slow');
+                } else {
+                    // Card body is hidden, hide section
+                    $sectionToShow.show('slow');
+                }
+            });
+
+            // Toggle card collapse state
+            $card.toggleClass('collapsed-card');
+        });
+    });
+
+
+
+
+
+
+
+    let progress = document.querySelector(".progress span");
+    let steps = document.querySelectorAll(".step");
+    let btnNext = document.querySelector(".btn-next");
+    let btnPrev = document.querySelector(".btn-prev");
+    let countSteps = steps.length;
+    let step = 1;
+
+    btnNext.addEventListener("click", () => {
+        let widthProgress = (step / (countSteps - 1)) * 100;
+        btnPrev.classList.remove("disabled");
+        btnPrev.removeAttribute("disabled");
+        if (step + 1 <= countSteps) {
+            step++;
+            // add class active on step
+            let newStep = document.querySelector(`[data-step="${step}"]`);
+            progress.style.width = `${widthProgress}%`;
+            newStep.classList.add("active");
+        }
+        if (step === countSteps) {
+            btnNext.classList.add("disabled");
+            btnNext.setAttribute("disabled", "disabled");
+        }
+    });
+
+    btnPrev.addEventListener("click", () => {
+        btnNext.classList.remove("disabled");
+        btnNext.removeAttribute("disabled");
+        if (step > 1) {
+            let newStep = document.querySelector(`[data-step="${step}"]`);
+            newStep.classList.remove("active");
+            step--;
+            let widthProgress = ((step - 1) / (countSteps - 1)) * 100;
+            progress.style.width = `${widthProgress}%`;
+        }
+        if (step === 1) {
+            btnPrev.classList.add("disabled");
+            btnPrev.setAttribute("disabled", "disabled");
+        }
+    });
+
+    $(document).ready(function () {
+        $('#yesRadio').click(function () {
+            $('#myModal22').modal('show'); // Show the modal when "Yes" is clicked
+        });
+    });
+</script>
+
+</html>

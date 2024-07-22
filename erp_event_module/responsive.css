@@ -1,0 +1,26 @@
+@media screen and (min-width: 1400px) {
+    .main-scroll-div {
+      box-shadow: 0px 3px 8px 0px #0000003d;
+      border-radius: 7px;
+      padding: 0rem 1rem 1.5rem 1rem;
+      /* height: 60%; */
+      height: max-content;
+      overflow-y:auto;
+    }
+    .main-scroll-div {
+        box-shadow: 0px 3px 8px 0px #0000003d;
+        border-radius: 7px;
+        padding: 0rem 1rem 1.5rem 1rem;
+        height: 65%;
+        overflow-y: auto;
+    }
+  }
+  /* @media screen and (min-width: 1600px) {
+    .main-scroll-div {
+      box-shadow: 0px 3px 8px 0px #0000003d;
+      border-radius: 7px;
+      padding: 0rem 1rem 1.5rem 1rem;
+      height: 70%;
+      overflow-y:auto;
+    }
+  } */

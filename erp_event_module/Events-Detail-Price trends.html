@@ -1,0 +1,1059 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sidebar</title>
+
+  <!--fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="../componets/erp_sidebar.css" />
+  <link rel="stylesheet" href="erp_event.css">
+  <link rel="stylesheet" href="/erp_home_module/erp_purchase/mor.css">
+
+  <!-- <link rel="stylesheet" href="erp_event1.css">
+  <link rel="stylesheet" href="responsive.css"> -->
+
+  <!-- <link rel="stylesheet" href="events.css"> -->
+
+  <!-- <link rel="stylesheet" href="/erp_event_module/events.css" /> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
+
+  <!-- Bootstrap Link Start-->
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <!-- Bootstrap Link End -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+</head>
+
+<body>
+  <style></style>
+
+  <main class="Home">
+    <header class="header">
+      <div class="header-section py-2">
+        <div class="erp_logo">
+          <img src="/assets/icons/marathon-logo_500px 1.svg" alt="" />
+        </div>
+
+        <div class="user_name">
+          <h3>Welcome, Chetan Bafna</h3>
+        </div>
+
+        <input type="search" class=" erp_search form-control rounded" placeholder="Search" aria-label="Search"
+          aria-describedby="search-addon" />
+
+
+
+        <div class="calender">
+          <div class="form-outline datepicker d-flex gap-3">
+            <input type="date" class="form-control" name="trip-start" value="2018-07-22" min="2018-01-01"
+              max="2018-12-31" id="myDatepicker">
+            <div class="vr"></div>
+
+            <input type="date" class="form-control" name="trip-start" value="2018-07-22" min="2018-01-01"
+              max="2018-12-31" id="myDatepicker1">
+
+          </div>
+        </div>
+
+
+
+
+        <div class="header-icons">
+          <ul>
+            <li>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img src="../assets/icons/task.svg"
+                  alt="" /></a>
+            </li>
+            <li>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                  src="../assets/icons/notification.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                  src="../assets/icons/reminder.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                  src="../assets/icons/message.svg" alt="" /></a>
+            </li>
+            <li>
+              <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img src="../assets/icons/user.svg"
+                  alt="" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section class="home__body">
+      <nav class="navbar">
+        <div class="navbar-container">
+          <!--logo div-->
+          <div class="navbar-logo-div">
+            <div class="procol-watermark" style="padding: 0px"></div>
+          </div>
+
+          <i id="icon-search" class="fas fa-regular fa-magnifying-glass"></i>
+
+          <!--item list-->
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a class="menu-link" href="/erp_home_module/erp_home.html">
+                <img src="/assets/icons/Home.svg" alt="" />
+                <span class="menu-link-text">Home</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/erp_event_module/erp_event.html">
+                <img src="/assets/icons/Events.svg" alt="" />
+                <span class="menu-link-text">Events</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" class="menu-link" href="#">
+                <img src="/assets/icons/Contact.svg" alt="" />
+                <span class="menu-link-text">Contracts</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">
+                <img src="/assets/icons/Vendor.svg" alt="" />
+                <span class="menu-link-text">Vendors</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="#">
+                <img src="/assets/icons/Manage.svg" alt="" />
+                <span class="menu-link-text">Manage</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a class="menu-link" href="/erp_event_module/Events-Detail-Setting.html">
+                <img src="/assets/icons/Settings.svg" alt="" />
+                <span class="menu-link-text">Settings</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!--div user info-->
+        <div class="user-container">
+          <div class="user-info">
+            <!-- <i class="fas fa-solid fa-user-secret"></i> -->
+            <div class="user-details">Collaspe</div>
+
+            <button type="button"
+              class="navbar-toggler ant-btn collapseIcon collapseIcon-collapsed-state ant-btn-link ant-btn-lg ant-btn-icon-only">
+              <i aria-label="icon: double-right" class="anticon anticon-double-right">
+                <svg class="collapse-btn" width="14" height="24" viewBox="0 0 14 24" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 2L2 12L12 22" stroke="#8B0203" stroke-width="2.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </i>
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <div class="event-order-page">
+        <div class=" event-tabs">
+          <div>
+            <h4 class="event-head px-2 ">Events</h4>
+          </div>
+          <div class="eventList-main">
+            <div class="d-flex flex-row-reverse ">
+
+              <div class="eventList-child1 event-participant-time">
+                <div class="eventList-time d-flex">
+                  <span><img class="eventList-time-img" src="../erp_event_module/img/timeExtensionBtn.svg"
+                      alt=""></span>
+                  <p style="margin-top: 2.5px;">24H:05M:10s</p><span class="d-flex align-items-center"><button
+                      class="eventList-time-btn">Upcoming</button></span>
+                </div>
+              </div>
+              <div class="d-flex align-bottom">
+                <button class="buyEvent-mainBtn download-reportBtn">Download Report</button>
+              </div>
+
+            </div>
+            <div class="d-flex justify-content-between eventList-child2">
+              <div class="m-2">
+                <p class="event-participant-cardHead mb-1">''E- AUCTION FOR CARRYING OUT SUPPLY, and
+                  regarding other materials at a ite which is located nearby Byculla in Mumbai area.</p>
+              </div>
+              <div class="d-flex flex-column justify-content-center text-center">
+                <button class="event-participant-cardBtn"><samp><img class="event-img1"
+                      src="../erp_event_module/img/live-dark.svg" alt=""></samp> Live</button>
+              </div>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mt-3">
+              <ul class="nav nav-tabs border-0" id="eventTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active buyEvent-mainBtn event-participant-btn" id="responses-tab"
+                    data-bs-toggle="tab" data-bs-target="#responses" type="button" role="tab" aria-controls="responses"
+                    aria-selected="true">Responses</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link buyEvent-mainBtn event-participant-btn" id="overview-tab "
+                    data-bs-toggle="tab" data-bs-target="#overview" type="button" role="tab" aria-controls="overview"
+                    aria-selected="false">Overview</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link buyEvent-mainBtn event-participant-btn" id="participants-tab "
+                    data-bs-toggle="tab" data-bs-target="#participants" type="button" role="tab"
+                    aria-controls="participants" aria-selected="false">Participants</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link buyEvent-mainBtn event-participant-btn" id="analytics-tab "
+                    data-bs-toggle="tab" data-bs-target="#analytics" type="button" role="tab" aria-controls="analytics"
+                    aria-selected="false">Analytics</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link buyEvent-mainBtn event-participant-btn" id="priceTrends-tab "
+                    data-bs-toggle="tab" data-bs-target="#priceTrends" type="button" role="tab"
+                    aria-controls="priceTrends" aria-selected="false">Price Trends</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link buyEvent-mainBtn event-participant-btn" id="participantRemarks-tab "
+                    data-bs-toggle="tab" data-bs-target="#participantRemarks" type="button" role="tab"
+                    aria-controls="participantRemarks" aria-selected="false">Participant
+                    Remarks</button>
+                </li>
+              </ul>
+              <div>
+                <button class="buyEvent-mainBtn event-participant-btn2 m-0 me-2 ps-4 pe-4"><span><img
+                      class="event-participant-btn2-img" src="../erp_event_module/img/Settings-dark.svg" alt=""></span>
+                  Setting</button>
+              </div>
+            </div>
+
+            <div class="tab-content mt-2 main-scroll-div">
+              <div class="tab-pane fade show active" id="responses" role="tabpanel" aria-labelledby="responses-tab"
+                tabindex="0">
+                <div class="viewBy-main">
+                  <div class="viewBy-main-child1">
+                    <div class="viewBy-header">
+                      <select name="language" class=" viewBy-headerForm" required>
+                        <option value="" disabled selected hidden><span><img class="buyEvent-forms-img"
+                              src="../erp_event_module/img/view-dark.svg" alt=""></span> View by Product
+                        </option>
+                        <option value="indian">
+                          xxxxxxxx
+                        </option>
+                        <option value="nepali">
+                          xxxxxxxx
+                        </option>
+                        <option value="others">
+                          Others
+                        </option>
+                      </select>
+                      <select name="language" class="viewBy-headerForm" required>
+                        <option value="" disabled selected hidden>Actions</option>
+                        <option value="indian">
+                          xxxxxxxx
+                        </option>
+                        <option value="nepali">
+                          xxxxxxxx
+                        </option>
+                        <option value="others">
+                          Others
+                        </option>
+                      </select>
+                      <div class="d-flex align-items-center">
+
+
+                        <div class="">
+                          <p class="viewBy-headerFormP"><span class="me-1"><img
+                                src="../erp_event_module/img/view-dark.svg" alt=""></span>Show /
+                            Hide</p>
+
+                        </div>
+                        <div class="me-2">
+                          <p class="viewBy-headerFormP"><span class="me-1"><img
+                                src="../erp_event_module/img/fullS-dark.svg" alt=""></span>Fullscreen</p>
+
+                        </div>
+                        <div>
+                          <img src="../erp_event_module/img/sideBtn-dark.svg" alt="">
+                        </div>
+                      </div>
+                      <div class="viewBy-zoom">
+                        <div class="viewBy-zoomIN"><img src="../erp_event_module/img/zoomOut-dark.svg" alt=""></div>
+                        <div class="viewBy-zoomOUT"><img src="../erp_event_module/img/zoomOut-dark.svg" alt=""></div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="viewBy-main-child2">
+                    <p class="viewBy-main-child2P"><span><img src="../erp_event_module/img/people.svg"
+                          alt=""></span>Participation :</p>
+                    <div class="d-flex">
+                      <div class="viewBy-main-child2-child1" id="viewBy-main-child2-child1"><span><img
+                            class="viewBy-main-child2-child1-img" src="../erp_event_module/img/tic.svg" alt=""></span>4
+                      </div>
+                      <div class="viewBy-main-child2-child2" id="viewBy-main-child2-child2"><span><img
+                            class="viewBy-main-child2-child1-img" src="../erp_event_module/img/message.svg"
+                            alt=""></span>4</div>
+                      <div class="viewBy-main-child2-child3" id="viewBy-main-child2-child3"><span><img
+                            class="viewBy-main-child2-child1-img" src="../erp_event_module/img/view-dark.svg"
+                            alt=""></span>4</div>
+                      <div class="viewBy-main-child2-child4" id="viewBy-main-child2-child4"><span><img
+                            class="viewBy-main-child2-child1-img" src="../erp_event_module/img/tic-cricle.svg"
+                            alt=""></span>4</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="viewBy-mainTable">
+                  <table>
+                    <tr>
+                      <td class="viewBy-tHead"></td>
+                      <td class="viewBy-tHead">
+                        <div class="viewBy-tHead-heading">
+                          <div class="viewBy-tHead-heading-child">
+                            <span class="viewBy-tHead-heading-child-span"><img class="viewBy-tHead-heading-img"
+                                src="../erp_event_module/img/viewBy-trophy.svg" alt="">1</span>
+                          </div>
+                          <div class="d-flex">
+                            <div class="me-3">
+                              <p class="viewBy-tHead-heading-p1" title="Manly ELECTRIC Product">Manly ELECTRIC P…</p>
+                              <p class="viewBy-tHead-heading-p2">11:40 am, 24 Jan 2024</p>
+                            </div>
+                            <button class="d-flex align-items-center"><img class="viewBy-tHead-heading-img2"
+                                src="../erp_event_module/img/3Dots.svg" alt=""></button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="viewBy-tHead-btn">Counter Offer</button>
+                        </div>
+                      </td>
+                      <td class="viewBy-tHead">
+                        <div class="viewBy-tHead-heading">
+                          <div class="viewBy-tHead-heading-child">
+                            <span class="viewBy-tHead-heading-child-span"><img class="viewBy-tHead-heading-img"
+                                src="../erp_event_module/img/viewBy-trophy.svg" alt="">1</span>
+                          </div>
+                          <div class="d-flex">
+                            <div class="me-3">
+                              <p class="viewBy-tHead-heading-p1" title="Manly ELECTRIC Product">Manly ELECTRIC P…</p>
+                              <p class="viewBy-tHead-heading-p2">11:40 am, 24 Jan 2024</p>
+                            </div>
+                            <button class="d-flex align-items-center"><img class="viewBy-tHead-heading-img2"
+                                src="../erp_event_module/img/3Dots.svg" alt=""></button>
+                          </div>
+                        </div>
+                        <div class="  justify-content-center">
+                          <div class="viewBy-bid-main">
+                            <button class="viewBy-bid-main-left"><img src="../erp_event_module/img/left_side_light.svg" alt=""></button>
+                            <p class="m-0 viewBy-bid-main-p">Current Bid 4</p>
+                            <button class="viewBy-bid-main-right"><img src="../erp_event_module/img/right_side.svg" alt=""></button>
+                            <img src="../erp_event_module/img/bid_message.svg" alt="">
+                          </div>
+                          <button class="viewBy-tHead-btn viewBy-tHead-btn2">Counter Offer</button>
+                        </div>
+                      </td>
+                      <td class="viewBy-tHead">
+                        <div class="viewBy-tHead-heading">
+                          <div class="viewBy-tHead-heading-child">
+                            <span class="viewBy-tHead-heading-child-span"><img class="viewBy-tHead-heading-img"
+                                src="../erp_event_module/img/viewBy-trophy.svg" alt="">1</span>
+                          </div>
+                          <div class="d-flex">
+                            <div class="me-3">
+                              <p class="viewBy-tHead-heading-p1" title="Manly ELECTRIC Product">Manly ELECTRIC P…</p>
+                              <p class="viewBy-tHead-heading-p2">11:40 am, 24 Jan 2024</p>
+                            </div>
+                            <button class="d-flex align-items-center"><img class="viewBy-tHead-heading-img2"
+                                src="../erp_event_module/img/3Dots.svg" alt=""></button>
+                          </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                          <button class="viewBy-tHead-btn">Counter Offer</button>
+                        </div>
+                      </td>
+                      <td class="viewBy-tHead">
+                        <div class="viewBy-tHead-heading">
+
+                        </div>
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="viewBy-tBody1-p">Sum Total</td>
+                      <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R">&#x20b9</span>6850692.71</td>
+                      <td class="viewBy-tBody1-2"><span class="viewBy-tBody1-R">&#x20b9</span>7681656.04</td>
+                      <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>14058103.00</td>
+                      <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R"></span></td>
+                    </tr>
+                  </table>
+                  <div class="accordion" id="accordionExample1">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button viewBy-collapT1" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <span class="pe-3"><img src="../erp_event_module/img/drop-btn.svg" alt=""></span> SITC of
+                          Electrical work <span class="viewBy-collapT1-span">(As per Technical Specification)</span>1
+                          Lumpsum Requested at Mumbai
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample1">
+                        <div class="accordion-body">
+                          <table class="table">
+                            <tr>
+                              <td class="viewBy-tBody2-p">Quantity Available</td>
+                              <td class="viewBy-tBody1-1">1<span class="viewBy-tBody1-R">Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1">1<span class="viewBy-tBody1-R">Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1">1<span class="viewBy-tBody1-R">Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R"></span></td>
+                            </tr>
+                            <tr>
+                              <td class="viewBy-tBody2-p">Price</td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R">&#x20b9</span>6850692.71<span
+                                  class="viewBy-tBody1-R">/Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1-active"><span
+                                  class="viewBy-tBody1-R">&#x20b9</span>65,09,878<span
+                                  class="viewBy-tBody1-R">/Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R">&#x20b9</span>1,40,58,103<span
+                                  class="viewBy-tBody1-R">/Lumpsum</span></td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R"></span><span
+                                  class="viewBy-tBody1-R"></span></td>
+                            </tr>
+                            <tr>
+                              <td class="viewBy-tBody2-p">GST</td>
+                              <td class="viewBy-tBody1-1">18<span class="viewBy-tBody1-R">%</span></td>
+                              <td class="viewBy-tBody1-1">18<span class="viewBy-tBody1-R">%</span></td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R">-</span></td>
+                              <td class="viewBy-tBody1-1"><span class="viewBy-tBody1-R"></span></td>
+                            </tr>
+                            <tr>
+                              <td class="viewBy-tBody2-p">Total Amount</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>68,50,692.71</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>76,81,656.04</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>1,40,58,103</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R"></span></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button viewBy-collapT1" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <span class="pe-3"><img src="../erp_event_module/img/drop-btn.svg" alt=""></span> Other
+                          Charges
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          <table class="table">
+                            <tr>
+                              <td class="viewBy-tBody2-p">Sum Total</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>68,50,692.71</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>76,81,656.04</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R">&#x20b9</span>1,40,58,103</td>
+                              <td class="viewBy-tBody1-3"><span class="viewBy-tBody1-R"></span></td>
+                            </tr>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <footer class="d-flex justify-content-end pageChange">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item pagechange-child"><a class="page-link pagechange-child-a" href="#"><span><img
+                              class="pageChangeIMG me-2" src="../erp_event_module/img/previous_arrow.svg" alt=""></span>
+                          Previous Event</a></li>
+                      <li class="page-item pagechange-child"><a class="page-link pagechange-child-a" href="#"> Next
+                          Event<span><img class="pageChangeIMG ms-2" src="../erp_event_module/img/next_arrow.svg"
+                              alt=""></span></a></li>
+                    </ul>
+                  </nav>
+                </footer>
+              </div>
+              <div class="tab-pane fade" id="overview" role="tabpanel" aria-labelledby="overview-tab" tabindex="0">
+                <section class="Erp-overview overflow-auto">
+                  <div class="row my-2 mx-3">
+                    <div class="viewBy-main" style="justify-content: end;">
+
+
+                      <div class="viewBy-main-child2">
+                        <p class="viewBy-main-child2P"><span><img src="../erp_event_module/img/people.svg"
+                              alt=""></span>Participation :</p>
+                        <div class="d-flex">
+                          <div class="viewBy-main-child2-child1" id="viewBy-main-child2-child1"><span><img
+                                class="viewBy-main-child2-child1-img" src="../erp_event_module/img/tic.svg"
+                                alt=""></span>4</div>
+                          <div class="viewBy-main-child2-child2" id="viewBy-main-child2-child2"><span><img
+                                class="viewBy-main-child2-child1-img" src="../erp_event_module/img/message.svg"
+                                alt=""></span>4</div>
+                          <div class="viewBy-main-child2-child3" id="viewBy-main-child2-child3"><span><img
+                                class="viewBy-main-child2-child1-img" src="../erp_event_module/img/view-dark.svg"
+                                alt=""></span>4</div>
+                          <div class="viewBy-main-child2-child4" id="viewBy-main-child2-child4"><span><img
+                                class="viewBy-main-child2-child1-img" src="../erp_event_module/img/tic-cricle.svg"
+                                alt=""></span>4</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#participation-summary" role="button"
+                        aria-expanded="false" aria-controls="participation-summary"
+                        onclick="toggleIcon('participation-summary')">
+                        <span id="participation-summary-icon" class="icon-1"><i
+                            class="fa-solid fa-plus"></i></span>Participation Summary
+                      </a>
+
+                      <div class="collapse multi-collapse participation-summary show" id="participation-summary">
+                        <div class="card card-body">
+                          <div class="participate-sec d-flex">
+                            <div class="totals-activity d-flex">
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="total-participants">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="active-participants">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="total-bids">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="revised-bids">3</span>
+                              </div>
+                            </div>
+
+                            <div class="rejected-bids d-flex">
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="rejected-bids">3</span>
+                              </div>
+
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="counter-offers">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="accepted-counter-offers">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="dynamic-time-extended">3</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-12 my-3">
+                      <div class="saving-summary-btn">
+                        <a class="btn" data-bs-toggle="collapse" href="#savings-summary" role="button"
+                          aria-expanded="false" aria-controls="savings-summary" onclick="toggleIcon('savings-summary')">
+                          <span id="savings-summary-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Savings
+                          Summary
+                        </a>
+                      </div>
+
+                      <div class="collapse multi-collapse savings-summary" id="savings-summary">
+                        <div class="card card-body">
+                          <div class="viewBy-main" style="justify-content: end;margin: 0!important;">
+
+
+                            <div class="viewBy-main-child2">
+                              <div class="view">
+                                View
+                              </div>
+                            </div>
+                          </div>
+                          <div class="saving-ref">
+                            <div class="deafut-sec d-flex">
+                              <div class="default d-flex gap-2">
+                                <svg width="13" height="14" viewBox="0 0 10 11" fill="none"
+                                  xmlns="http://www.w3.org/2000/svg">
+                                  <path
+                                    d="M4.35725 0.572266H0.285819C0.167962 0.572266 0.0715332 0.668694 0.0715332 0.786551V4.85798C0.0715332 4.97584 0.167962 5.07227 0.285819 5.07227H4.35725C4.4751 5.07227 4.57153 4.97584 4.57153 4.85798V0.786551C4.57153 0.668694 4.4751 0.572266 4.35725 0.572266ZM3.66082 4.16155H0.982248V1.48298H3.66082V4.16155ZM9.71439 0.572266H5.64296C5.52511 0.572266 5.42868 0.668694 5.42868 0.786551V4.85798C5.42868 4.97584 5.52511 5.07227 5.64296 5.07227H9.71439C9.83225 5.07227 9.92868 4.97584 9.92868 4.85798V0.786551C9.92868 0.668694 9.83225 0.572266 9.71439 0.572266ZM9.01796 4.16155H6.33939V1.48298H9.01796V4.16155ZM4.35725 5.92941H0.285819C0.167962 5.92941 0.0715332 6.02584 0.0715332 6.14369V10.2151C0.0715332 10.333 0.167962 10.4294 0.285819 10.4294H4.35725C4.4751 10.4294 4.57153 10.333 4.57153 10.2151V6.14369C4.57153 6.02584 4.4751 5.92941 4.35725 5.92941ZM3.66082 9.51869H0.982248V6.84012H3.66082V9.51869ZM9.71439 5.92941H5.64296C5.52511 5.92941 5.42868 6.02584 5.42868 6.14369V10.2151C5.42868 10.333 5.52511 10.4294 5.64296 10.4294H9.71439C9.83225 10.4294 9.92868 10.333 9.92868 10.2151V6.14369C9.92868 6.02584 9.83225 5.92941 9.71439 5.92941ZM9.01796 9.51869H6.33939V6.84012H9.01796V9.51869Z"
+                                    fill="#262626" />
+                                </svg>
+                                <span>Default</span>
+                              </div>
+
+                              <span>-</span>
+                            </div>
+
+                            <div class="saving-sec d-flex">
+                              <div class="saving-text">SAVINGS REFERENCE</div>
+                              <div class="default d-flex gap-3">
+                                <span>-</span>
+                                <span class="saving-amount"> ₹58,05,671.79</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#bidding-summary" role="button"
+                        aria-expanded="false" aria-controls="bidding-summary" onclick="toggleIcon('bidding-summary')">
+                        <span id="bidding-summary-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Bidding
+                        Summary
+                      </a>
+
+                      <div class="collapse multi-collapse bidding-summary" id="bidding-summary">
+                        <div class="card card-body">
+                          <div class="container table-responsive pb-5">
+                            <h5>Aggregate Lot Wise</h5>
+                            <table class="table table-bordered table-hover mt-4">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">Rank</th>
+                                  <th scope="col">Vendor Name</th>
+                                  <th scope="col">Initial Quote</th>
+                                  <th scope="col">Final Quote</th>
+                                  <th scope="col">Rev Count</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>₹ 61,50,643.6</td>
+                                  <td>₹ 61,50,643.6</td>
+                                  <td>2</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">2</th>
+                                  <td>Jacob</td>
+                                  <td>₹ 68,50,692.71</td>
+                                  <td>₹ 61,50,643.6</td>
+                                  <td>4</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">3</th>
+                                  <td>Larry</td>
+                                  <td>₹ 61,50,643.6</td>
+                                  <td>₹ 61,50,643.6</td>
+                                  <td>5</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h5>Line Item Wise</h5>
+                            <table class="table table-bordered table-hover">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">Best  Market Price</th>
+                                  <th scope="col">Rank 2 Market Price</th>
+                                  <th scope="col">Rank 3 Market Price</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th colspan="4" style="text-align: left;">
+                                    SITC of Electrical w...(As per Tec... - 1 Lumpsum)
+                                  </th>
+                                </tr>
+
+                                <tr>
+                                  <th scope="row">Vendor Name</th>
+                                  <td>ELECTRIC PRIVATE LIM...</td>
+                                  <td>AXIS ELECTRICAL COMPONENT...</td>
+                                  <td>@twitter</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Price Quoted</th>
+                                  <td>₹ 52,12,409.83/Lumpsum</td>
+                                  <td>Ampere Electrical Services</td>
+                                  <td>₹ 1,40,58,103/Lumpsum</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#product-sheet" role="button" aria-expanded="false"
+                        aria-controls="product-sheet" onclick="toggleIcon('product-sheet')">
+                        <span id="product-sheet-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Product
+                        Sheet
+                      </a>
+
+                      <div class="collapse multi-collapse product-sheet" id="product-sheet">
+                        <div class="card card-body">
+                          <div class="container table-responsive">
+                            <table class="table table-bordered table-hover">
+                              <thead class="thead-dark">
+                                <tr>
+                                  <th scope="col">#</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                  <th scope="col">First</th>
+                                  <th scope="col">Last</th>
+                                  <th scope="col">Handle</th>
+                                  <th scope="col">Handle</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">1</th>
+                                  <td>Mark</td>
+                                  <td>Otto</td>
+                                  <td>@mdo</td>
+                                  <td>Larry</td>
+                                  <td>the Bird</td>
+                                  <td>@twitter</td>
+                                  <td>@twitter</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#terms-and-conditions" role="button"
+                        aria-expanded="false" aria-controls="terms-and-conditions"
+                        onclick="toggleIcon('terms-and-conditions')">
+                        <span id="terms-and-conditions-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Terms
+                        and Conditions
+                      </a>
+
+                      <div class="collapse multi-collapse terms-and-conditions" id="terms-and-conditions">
+                        <div class="card card-body">
+                          <p>1. As per Mentioned in BOQ</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#order-configurations" role="button"
+                        aria-expanded="false" aria-controls="order-configurations"
+                        onclick="toggleIcon('order-configurations')">
+                        <span id="order-configurations-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Order
+                        Configurations
+                      </a>
+
+                      <div class="collapse multi-collapse order-configurations" id="order-configurations">
+                        <div class="card card-body">
+                          <div class="participate-sec d-flex">
+                            <div class="totals-activity d-flex">
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="total-participants">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="active-participants">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="total-bids">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="revised-bids">3</span>
+                              </div>
+                            </div>
+
+                            <div class="rejected-bids d-flex">
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="rejected-bids">3</span>
+                              </div>
+
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="counter-offers">3</span>
+                              </div>
+                              <div class="total-activity">
+                                <p>Total Participants</p>
+                                <span id="accepted-counter-offers">3</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 my-3">
+                      <a class="btn" data-bs-toggle="collapse" href="#order-details" role="button" aria-expanded="false"
+                        aria-controls="order-details" onclick="toggleIcon('order-details')">
+                        <span id="order-details-icon" class="icon-1"><i class="fa-solid fa-plus"></i></span>Order
+                        Details
+                      </a>
+
+                      <div class="collapse multi-collapse order-details" id="order-details">
+                        <div class="card card-body">
+                          Some placeholder content for the first collapse component of
+                          this multi-collapse example. This panel is hidden by default
+                          but revealed when the user activates the relevant trigger.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <div class="tab-pane fade" id="participants" role="tabpanel" aria-labelledby="participants-tab"
+                tabindex="0">
+                <div>
+                  <div class="d-flex justify-content-between mt-4 align-items-center">
+                    <input type="search" placeholder="Search vendors" class="event-participant-search-in">
+                    <div class="d-flex align-items-center">
+                      <div class="d-flex align-items-center">
+                        <p class="eventList-p1 mb-0 pe-1">Show only selected vendors</p>
+                        <div class="form-check form-switch mt-1">
+                          <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                        </div>
+                      </div>
+                      <div><img class="me-2" src="../erp_event_module/img/Separator-dark.svg" alt=""></div>
+                      <select name="language" class="event-participant-select eventD-forms buyEvent-forms" required>
+                        <option value="" disabled selected hidden>Filter by city</option>
+                        <option value="indian">
+                          xxxxxxxx
+                        </option>
+                        <option value="nepali">
+                          xxxxxxxx
+                        </option>
+                        <option value="others">
+                          Others
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <!--  -->
+                  <div class="w-100 d-flex mt-4">
+                    <p class="w-50 mb-1 table-top-list eventList-p1 fw-bold">Name</p>
+                    <p class="w-50 mb-1 eventList-p1 fw-bold">Bids Closed</p>
+                  </div>
+                  <div class="participants-table">
+                    <table class="table">
+                      </thead>
+                      <tbody>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">AXIS ELECTRICAL COMPONENTS INDIA
+                              PRIVATE LIMITED</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#">View Price Cap</a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">AJAY ELECTRICALS</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"> </a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">Ampere Electrical Services</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#">View Price Cap</a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">A.R. ENTERPRISE</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"></a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">BRAHMARI POWERTECH PRIVATE LIMITED
+                            </p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"></a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">CAPE ELECTRIC PRIVATE LIMITED</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#">View Price Cap</a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">ELECTRICAL SOLUTIONS</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"></a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">IQRA ENTERPRISES</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"></a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">MAC ELECTRICALS</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"> </a>
+                          </td>
+                        </tr>
+                        <tr class="go-shadow-k">
+                          <td class="text-start">
+                            <p class="participant-table mb-1">Moksh Infra</p>
+                          </td>
+                          <td class="text-start ">
+                            <a class="participant-table2" href="#"></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="analytics" role="tabpanel" aria-labelledby="analytics-tab" tabindex="0">
+                <!-- Content for Analytics tab -->
+              </div>
+              <div class="tab-pane fade" id="priceTrends" role="tabpanel" aria-labelledby="priceTrends-tab"
+                tabindex="0">
+                <div class="priceTrends-list-main">
+                  <div class="mt-2 priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                  <div class="priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                  <div class="priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                  <div class="priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                  <div class="priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                  <div class="priceTrends-list-parent">
+                    <div class="priceTrends-tag">A</div>
+                    <div class="mt-0 priceTrends-list-child go-shadow-k">
+                      <p class="eventList-p2 mb-0 fw-bold">AXIS CONTROL from AXIS ELECTRICAL
+                        COMPONENTS INDIA PRIVATE LIMITED</p>
+                      <p class="eventList-p1 mb-0">copper make</p>
+                    </div>
+                  </div>
+                </div>
+                <footer class="d-flex justify-content-end pageChange">
+                  <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                      <li class="page-item pagechange-child"><a class="page-link pagechange-child-a" href="#"><span><img
+                              class="pageChangeIMG me-2" src="../erp_event_module/img/previous_arrow.svg" alt=""></span>
+                          Previous Event</a></li>
+                      <li class="page-item pagechange-child"><a class="page-link pagechange-child-a" href="#"> Next
+                          Event<span><img class="pageChangeIMG ms-2" src="../erp_event_module/img/next_arrow.svg"
+                              alt=""></span></a></li>
+                    </ul>
+                  </nav>
+                </footer>
+              </div>
+              <div class="tab-pane fade" id="participantRemarks" role="tabpanel"
+                aria-labelledby="participantRemarks-tab" tabindex="0">
+                <!-- Content for Participant Remarks tab -->
+              </div>
+              <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
+                <!-- Content for Settings tab -->
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="/erp_event_module/events.js"></script>
+
+<script>
+  const btnToggler = window.document.querySelector(".navbar-toggler");
+  const inputSearch = window.document.querySelector(".navbar-search");
+  const iconSearch = window.document.querySelector("#icon-search");
+  const navbar = window.document.querySelector(".navbar");
+
+  //events
+  btnToggler.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+  });
+
+  inputSearch.addEventListener("click", () => {
+    if (!navbar.classList.contains("active")) {
+      navbar.classList.add("active");
+    }
+  });
+
+  iconSearch.addEventListener("click", () => {
+    if (!navbar.classList.contains("active")) {
+      navbar.classList.add("active");
+    }
+  });
+
+  var datepickerEl = document.getElementById('myDatepicker')
+  var datepicker = new mdb.Datepicker(myModalEl)
+  datepicker.open()
+
+
+</script>
+
+</html>

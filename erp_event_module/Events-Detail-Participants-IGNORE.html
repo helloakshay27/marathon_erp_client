@@ -1,0 +1,375 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sidebar</title>
+
+    <!--fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="../componets/erp_sidebar.css" />
+    <link rel="stylesheet" href="erp_event1.css">
+    <!-- Bootstrap Link Start-->
+   
+    <!-- Bootstrap Link End -->
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <style>
+            .form-check-input:checked {
+    background-color: var(--red);
+    border-color: var(--red);
+    box-shadow: none!important;
+    outline: none!important;
+}
+        </style>
+</head>
+
+<body>
+    <style></style>
+
+    <main class="Home">
+        <header class="header">
+            <div class="header-section py-2">
+                <div class="erp_logo">
+                    <img src="/assets/icons/marathon-logo_500px 1.svg" alt="" />
+                </div>
+
+                <div class="user_name">
+                    <h3>Welcome, Chetan Bafna</h3>
+                </div>
+
+                <input type="search" class=" erp_search form-control rounded" placeholder="Search" aria-label="Search"
+                    aria-describedby="search-addon" />
+
+
+
+                <div class="calender">
+                    <div class="form-outline datepicker d-flex gap-3">
+                        <input type="date" class="form-control" name="trip-start" value="2018-07-22" min="2018-01-01"
+                            max="2018-12-31" id="myDatepicker">
+                        <div class="vr"></div>
+
+                        <input type="date" class="form-control" name="trip-start" value="2018-07-22" min="2018-01-01"
+                            max="2018-12-31" id="myDatepicker1">
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="header-icons">
+                    <ul>
+                        <li>
+                            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                                    src="/assets/icons/Vector (2).svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                                    src="/assets/icons/Vector (2).svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                                    src="/assets/icons/Vector (2).svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                                    src="/assets/icons/Vector (2).svg" alt="" /></a>
+                        </li>
+                        <li>
+                            <a href=""></a><a href=""></a><a href=""></a><a href=""></a><a href=""><img
+                                    src="/assets/icons/Vector (2).svg" alt="" /></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <section class="home__body">
+            <nav class="navbar">
+                <div class="navbar-container">
+                    <!--logo div-->
+                    <div class="navbar-logo-div">
+                        <div class="procol-watermark" style="padding: 0px"></div>
+                    </div>
+
+                    <i id="icon-search" class="fas fa-regular fa-magnifying-glass"></i>
+
+                    <!--item list-->
+                    <ul class="menu-list">
+                        <li class="menu-item">
+                          <a class="menu-link" href="/erp_home_module/erp_home.html">
+                            <img src="/assets/icons/Home.svg" alt="" />
+                            <span class="menu-link-text">Home</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="/erp_event_module/erp_event.html">
+                            <img src="/assets/icons/Events.svg" alt="" />
+                            <span class="menu-link-text">Events</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" class="menu-link" href="#">
+                            <img src="/assets/icons/Contact.svg" alt="" />
+                            <span class="menu-link-text">Contracts</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <img src="/assets/icons/Vendor.svg" alt="" />
+                            <span class="menu-link-text">Vendors</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="#">
+                            <img src="/assets/icons/Manage.svg" alt="" />
+                            <span class="menu-link-text">Manage</span>
+                          </a>
+                        </li>
+                        <li class="menu-item">
+                          <a class="menu-link" href="/erp_event_module/Events-Detail-Setting.html">
+                            <img src="/assets/icons/Settings.svg" alt="" />
+                            <span class="menu-link-text">Settings</span>
+                          </a>
+                        </li>
+                      </ul>
+                </div>
+
+                <!--div user info-->
+                <div class="user-container">
+                    <div class="user-info">
+                        <!-- <i class="fas fa-solid fa-user-secret"></i> -->
+                        <div class="user-details">Collaspe</div>
+
+                        <button type="button"
+                            class="navbar-toggler ant-btn collapseIcon collapseIcon-collapsed-state ant-btn-link ant-btn-lg ant-btn-icon-only">
+                            <i aria-label="icon: double-right" class="anticon anticon-double-right">
+                                <svg class="collapse-btn" width="14" height="24" viewBox="0 0 14 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2L2 12L12 22" stroke="#8B0203" stroke-width="2.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="w-100 ms-4 me-5">
+                <div>
+                    <h4 class="event-head">Events</h4>
+                </div>
+                <div class="eventList-main">
+                    <div class="d-flex flex-row-reverse ">
+
+                        <div class="eventList-child1 event-participant-time">
+                            <div class="eventList-time d-flex">
+                                <span><img class="eventList-time-img" src="../erp_event_module/img/timeExtensionBtn.svg"
+                                        alt=""></span>
+                                <p style="margin-top: 2.5px;">24H:05M:10s</p><span
+                                    class="d-flex align-items-center"><button
+                                        class="eventList-time-btn">Upcoming</button></span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-bottom">
+                            <button class="buyEvent-mainBtn m-0 me-4 ps-4 pe-4">Download Report</button>
+                        </div>
+
+                    </div>
+                    <div class="d-flex justify-content-between eventList-child2">
+                        <div class="m-2">
+                            <p class="event-participant-cardHead mb-1">''E- AUCTION FOR CARRYING OUT SUPPLY, and
+                                regarding other materials at a ite which is located nearby Byculla in Mumbai area.</p>
+                        </div>
+                        <div class="d-flex flex-column justify-content-center text-center">
+                            <button class="event-participant-cardBtn"><samp><img class="event-img1"
+                                        src="../erp_event_module/img/live-dark.svg" alt=""></samp> Live</button>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between align-items-center mt-3">
+                        <div>
+                            <button class="buyEvent-mainBtn event-participant-btn">Responses</button>
+                            <button class="buyEvent-mainBtn event-participant-btn">Overview</button>
+                            <button class="buyEvent-mainBtn event-participant-btn">Participants</button>
+                            <button class="buyEvent-mainBtn event-participant-btn">Analytics</button>
+                            <button class="buyEvent-mainBtn event-participant-btn">Price Trends</button>
+                            <button class="buyEvent-mainBtn event-participant-btn">Participant Remarks</button>
+                        </div>
+                        <div>
+                            <button class="buyEvent-mainBtn event-participant-btn2 m-0 me-2 ps-4 pe-4"><span><img
+                                        class="event-participant-btn2-img" src="../erp_event_module/img/Settings-dark.svg"
+                                        alt=""></span> Setting</button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="d-flex justify-content-between mt-4 align-items-center">
+                        <div class="input-with-icon eventD-date event-participant-search ms-2 mt-0">
+                            <img src="../erp_event_module/img/search-dark.svg" alt="" class="icon participant-icon">
+                            <input type="search" class="">
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div class="d-flex align-items-center">
+                                <p class="eventList-p1 mb-0 pe-1">Show only selected vendors</p>       
+                                  <div class="form-check form-switch mt-1">
+                                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                  </div>
+                            </div>
+                            <select name="language" class="eventD-forms buyEvent-forms" style="height: 25px;" required>
+                                <option value="" disabled selected hidden>Filter by city</option>
+                                <option value="indian">
+                                    xxxxxxxx
+                                </option>
+                                <option value="nepali">
+                                    xxxxxxxx
+                                </option>
+                                <option value="others">
+                                    Others
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="w-100 d-flex mt-4">
+                        <p class="w-50 mb-1 table-top-list eventList-p1">Name</p>
+                        <p class="w-50 mb-1 eventList-p1">Bids Closed</p>
+                    </div>
+                    <div class="participants-table">
+                    <table class="table">
+                        </thead>
+                        <tbody>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">AXIS ELECTRICAL COMPONENTS INDIA PRIVATE LIMITED</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#">View Price Cap</a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">AJAY ELECTRICALS</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"> </a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">Ampere Electrical Services</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#">View Price Cap</a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">A.R. ENTERPRISE</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"></a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">BRAHMARI POWERTECH PRIVATE LIMITED</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"></a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">CAPE ELECTRIC PRIVATE LIMITED</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#">View Price Cap</a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">ELECTRICAL SOLUTIONS</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"></a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">IQRA ENTERPRISES</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"></a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">MAC ELECTRICALS</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"> </a>
+                                </td>
+                            </tr>
+                            <tr class="go-shadow-k">
+                                <td class="text-start">
+                                    <p class="participant-table mb-1">Moksh Infra</p>
+                                </td>
+                                <td class="text-start ">
+                                    <a class="participant-table2" href="#"></a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+<script>
+    const btnToggler = window.document.querySelector(".navbar-toggler");
+    const inputSearch = window.document.querySelector(".navbar-search");
+    const iconSearch = window.document.querySelector("#icon-search");
+    const navbar = window.document.querySelector(".navbar");
+
+    //events
+    btnToggler.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+    });
+
+    inputSearch.addEventListener("click", () => {
+        if (!navbar.classList.contains("active")) {
+            navbar.classList.add("active");
+        }
+    });
+
+    iconSearch.addEventListener("click", () => {
+        if (!navbar.classList.contains("active")) {
+            navbar.classList.add("active");
+        }
+    });
+
+    var datepickerEl = document.getElementById('myDatepicker')
+    var datepicker = new mdb.Datepicker(myModalEl)
+    datepicker.open()
+
+
+</script>
+
+</html>
