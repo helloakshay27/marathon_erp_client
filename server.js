@@ -57,7 +57,7 @@ function generateFileList(dir, baseUrl) {
 // Serve the directory listing for specific directory
 app.get('/files', (req, res) => {
     try {
-        const specificDir = path.join(__dirname, 'Marthon_erp');
+        const specificDir = path.join(__dirname, 'marthon_erp');
         const fileList = generateFileList(specificDir, '');
         const html = `
             <!DOCTYPE html>
