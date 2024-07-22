@@ -5,7 +5,6 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// List of directories to exclude from the listing
 const EXCLUDE_DIRS = ['.git', 'node_modules'];
 
 // Serve static files
@@ -27,7 +26,7 @@ function generateFileList(dir, baseUrl) {
             fileList += `<li><strong>${file}/</strong></li>`;
             fileList += `<ul>${generateFileList(filePath, baseUrl)}</ul>`;
         } else {
-            fileList += `<li>${file}</li>`;
+            fileList += `<li><a href="${urlPath}" target="_blank">${file}</a></li>`;
         }
     });
     return fileList;
