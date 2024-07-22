@@ -28,9 +28,13 @@
       const ul = document.createElement('ul');
       for (const [key, value] of Object.entries(structure)) {
         const li = document.createElement('li');
-        li.textContent = key;
-        if (value) {
-          li.appendChild(createList(value));
+        if (value && typeof value === 'object' && value.path) {
+          const a = document.createElement('a');
+          a.textContent = key;
+          a.href = value.path;
+          a.target = "_blank"; // Open in a new tab
+          li.appendChild(a);
+          li.appendChild(createList(value.children));
         }
         ul.appendChild(li);
       }

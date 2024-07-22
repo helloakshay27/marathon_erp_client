@@ -1,20 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 
-function getFolderStructure(dir) {
+function getFolderStructure(dir, baseDir) {
   const structure = {};
   fs.readdirSync(dir).forEach(file => {
     const fullPath = path.join(dir, file);
+    const relativePath = path.relative(baseDir, fullPath);
     if (fs.statSync(fullPath).isDirectory()) {
-      structure[file] = getFolderStructure(fullPath);
-    } else {
-      structure[file] = null;
+      structure[file] = {
+        path: relativePath,
+        children: getFolderStructure(fullPath, baseDir)
+      };
     }
   });
   return structure;
 }
 
-// Adjust the folder path to the MARTHON_ERP directory
 const folderPath = path.join(__dirname);
 
 if (!fs.existsSync(folderPath)) {
@@ -23,7 +24,7 @@ if (!fs.existsSync(folderPath)) {
 }
 
 try {
-  const structure = getFolderStructure(folderPath);
+  const structure = getFolderStructure(folderPath, folderPath);
   fs.writeFileSync('folderStructure.json', JSON.stringify(structure, null, 2));
   console.log('Folder structure generated successfully!');
 } catch (error) {
