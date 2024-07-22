@@ -37,7 +37,7 @@ function generateFileList(dir, baseUrl) {
 
         const filePath = path.join(dir, file);
         const relativePath = path.relative(__dirname, filePath);
-        const urlPath = `${baseUrl}/${relativePath.replace(/\\/g, '/')}`;
+        const urlPath = `${baseUrl}/${relativePath}`;
 
         try {
             if (fs.statSync(filePath).isDirectory()) {
@@ -54,10 +54,10 @@ function generateFileList(dir, baseUrl) {
     return fileList;
 }
 
-// Serve the directory listing for MARTHON_ERP directory
+// Serve the directory listing for specific directory
 app.get('/files', (req, res) => {
     try {
-        const specificDir = path.join(__dirname, 'Marthon_erp_client');
+        const specificDir = path.join(__dirname, 'Marthon_erp');
         const fileList = generateFileList(specificDir, '');
         const html = `
             <!DOCTYPE html>
