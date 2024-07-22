@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "generateStructure.js",
-"scripts": {
-  "start": "node generateStructure.js"
-},
+  "scripts": {
+    "start": "node generateStructure.js"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

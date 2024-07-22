@@ -5,7 +5,7 @@
     ],
     "routes": [
       { "src": "/files", "dest": "generateStructure.js" },
-      { "src": "/(.*)", "dest": "index.html" }
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
   }
   
