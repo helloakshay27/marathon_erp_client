@@ -155,9 +155,9 @@ app.get('/erp_login_module', (req, res) => {
     }
 });
 
-app.get('/masters', (req, res) => {
+app.get('/erp_home_module/masters', (req, res) => {
     try {
-        const specificDir = path.join(__dirname, 'masters');
+        const specificDir = path.join(__dirname, 'erp_home_module/masters');
         const fileList = generateFileList(specificDir, '');
         const html = `
         <!DOCTYPE html>
