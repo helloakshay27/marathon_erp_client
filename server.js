@@ -54,6 +54,9 @@ function generateFileList(dir, baseUrl) {
     return fileList;
 }
 
+app.use(express.static(path.join(__dirname)));
+app.use('/assets', express.static(path.join(__dirname, 'assets')));
+
 // Serve the directory listing
 app.get('/erp_home_module', (req, res) => {
     try {
