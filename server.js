@@ -155,6 +155,54 @@ app.get('/erp_login_module', (req, res) => {
     }
 });
 
+app.get('/masters', (req, res) => {
+    try {
+        const specificDir = path.join(__dirname, 'masters');
+        const fileList = generateFileList(specificDir, '');
+        const html = `
+        <!DOCTYPE html>
+        <html>
+        <head>
+            <title>Directory Listing</title>
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                body {
+                    padding: 20px;
+                }
+                h1 {
+                    margin-bottom: 20px;
+                }
+                ul {
+                    list-style-type: none;
+                    padding-left: 0;
+                }
+                ul li {
+                    margin: 5px 0;
+                }
+                ul li a {
+                    color: #007BFF;
+                    text-decoration: none;
+                }
+                ul li a:hover {
+                    text-decoration: underline;
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <h1 class="text-center">Directory Listing</h1>
+                <ul class="list-group">${fileList}</ul>
+            </div>
+        </body>
+        </html>
+    `;
+    res.send(html);
+}catch (error) {
+        console.error('Error generating file list:', error);
+        res.status(500).send('Internal Server Error');
+    }
+});
+
 
 
 
