@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cost Approval</title>
+    <style type="text/css">
+        @font-face {
+            font-family: 'Product Sans';
+            font-style: normal;
+            font-weight: normal;
+            src: url(product-sans-regular.ttf);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Product Sans';
+        }
+
+        body {
+            font-size: 14px;
+            color: #161616;
+            overflow-x: hidden;
+        }
+
+        h2 {
+            font-size: 16px;
+        }
+
+        .ticket-container {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        .assigned-ticket-info,
+        .generated-ticket-info {
+            background: #fff;
+            border: 1px solid #00000029;
+            /* box-shadow: 0px 3px 6px #00000029; */
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 0 1.5rem;
+        }
+
+        .ticket-details {
+            float: left;
+            width: 43.33%;
+            margin: 10px 0;
+            display: flex;
+        }
+
+        .ticket-summary {
+            float: left;
+            width: 25%;
+            margin: 10px 0;
+        }
+
+        .ticket-summary-fields {
+            display: inline-block;
+            width: 175px;
+            color: #707070;
+            font-size: 20px;
+            background: #f8f8f8;
+            padding: 0.5rem;
+            text-align: center;
+            border-top-right-radius: 8px;
+            border-top-left-radius: 8px;
+        }
+
+        .ticket-count {
+            display: inline-block;
+            width: 175px;
+            border: 4px solid #f8f8f8;
+            text-align: center;
+            font-size: 30px;
+            color: #d99529;
+            border-bottom-right-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+        }
+
+        .email-note {
+            color: #a4a4a4;
+            text-align: center;
+            clear: both;
+        }
+
+        .re-open-ticket {
+            width: 163px;
+            height: 40px;
+            background: #de3e3e;
+            color: #fff;
+            box-shadow: 0px 3px 6px #00000029;
+            border: 1px solid #de3e3e;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .cost-approval-status {
+            background: orange;
+            border-radius: 4px;
+            padding: 0.5rem;
+        }
+
+        .cost-approval-buttons {
+            width: 163px;
+            height: 40px;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 4px;
+            cursor: pointer;
+            outline: none;
+        }
+
+        .approve {
+            background: green;
+            color: #fff;
+            border: 1px solid green;
+            margin-right: 10px;
+        }
+
+        .reject {
+            background: red;
+            color: #fff;
+            border: 1px solid red;
+        }
+
+        table,
+        td,
+        th {
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th {
+            text-align: left;
+        }
+
+        /* Utility Classes */
+        .text-underline {
+            text-decoration: underline;
+        }
+
+        .text-bold {
+            font-weight: bold;
+        }
+
+        .mb-5 {
+            margin-bottom: 5px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .ticket-container {
+                width: 100%;
+            }
+
+            .assigned-ticket-info {
+                padding: 0.8rem;
+                margin: 0.8rem;
+            }
+
+            .ticket-summary {
+                width: 50%;
+            }
+
+            .ticket-summary-fields {
+                width: 150px;
+            }
+
+            .ticket-count {
+                width: 150px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="ticket-container">
+        <div>
+            <div>
+                <img src="https://www.lockated.com/assets/ticket_assigned.png" alt="Ticket Assigned"
+                    style="width: 100%;">
+            </div>
+
+            <div class="assigned-ticket-info">
+                <div>
+                    <span class="text-bold mb-5">Dear <%= @user.try(:firstname)%>,</span><br>
+                    <span>A cost approval request has been created.</span>
+                    <span>Below are the details:</span>
+                </div><br>
+
+                <h3>Ticket Details</h3><br>
+
+                <div>
+                    <div class="ticket-details">
+                        <span style="width: 100px;" class="text-bold mb-5">Ticket Number: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.ticket_number %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5">Status: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.latest_status %>
+                        </span>
+                    </div>
+                </div><br>
+
+                <div style="clear: both;">
+                    <div style="width: 100%;">
+                        <span class="text-bold mb-5">Title: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.heading %>
+                        </span>
+                    </div>
+                </div><br>
+
+                <div style="clear: both;">
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5">Category: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.category_type.try(:name) %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span style="width: 100px;" class="text-bold mb-5">Sub-category: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.sub_category.try(:name) %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span style="width: 120px;" class="text-bold mb-5">Issue Related To: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.issue_related_to %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5">Created On: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.created_at.strftime('%d/%m/%Y') %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span style="width: 100px;" class="text-bold mb-5">Created By: </span><br>
+                        <span>
+                            <%= @cost_request.complaint.user.try(:full_name) %>
+                        </span>
+                    </div>
+                </div><br>
+
+                <div style="clear: both;">
+                    <div>
+                        <h3 style="float: left;">Cost Details</h3>
+                        <label style="float: right;" class="cost-approval-status">
+                            <%= @approval_history.cost_approval_level.name%>
+                        </label>
+                    </div>
+                </div><br>
+
+
+                <div style="clear: both;">
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5">Amount: </span><br>
+                        <span>
+                            <%= @cost_request.cost%>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5">Approval Status: </span><br>
+                        <span>
+                            <%= @approval_history.status.titleize %>
+                        </span>
+                    </div>
+                    <div class="ticket-details">
+                        <span class="text-bold mb-5" style="width: 100px;">Requested By: </span><br>
+                        <span>
+                            <%= @cost_request.created_by.try(:full_name) %>
+                        </span>
+                    </div>
+                </div><br>
+
+                <div style="clear: both;">
+                    <div style="width: 100%;">
+                        <span class="text-bold mb-5">Description: </span><br>
+                        <span>
+                            <%= @cost_request.comment %>
+                        </span>
+                    </div>
+                </div><br>
+
+                <div style="text-align: center; clear: both;">
+                    <a
+                        href="https://www.lockated.com/cost_approval_popup?user_id=<%=@user.id%>&id=<%=@approval_history.id%>"><button
+                            class="cost-approval-buttons approve">Approve</button></a>
+                    <a
+                        href="https://www.lockated.com/cost_approval_popup?user_id=<%=@user.id%>&id=<%=@approval_history.id%>"><button
+                            class="cost-approval-buttons reject">Reject</button></a>
+                </div><br>
+                <% if @approval_history.cost_approval_level.present? %>
+                    <div class="mb-10">
+                        <span>Please have a look on the below matrix to understand the complete approval status</span>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Level</th>
+                                <th>Status</th>
+                                <th>Approver Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% @cost_request.cost_approval_histories.each do |history| %>
+                                <tr>
+                                    <td>
+                                        <%= history.try(:cost_approval_level).try(:name) %>
+                                    </td>
+                                    <td>
+                                        <%= history.try(:status).try(:titleize) %>
+                                    </td>
+                                    <td>
+                                        <%= history.try(:updated_by).try(:full_name) %>
+                                    </td>
+                                </tr>
+                                <% end %>
+                        </tbody>
+                    </table>
+                    <% end %>
+                        <div class="email-note">Note: This is an automated email. Please do not reply.</div>
+            </div>
+
+            <div class="footer">
+                <span>Powered By</span>
+                <img src="https://www.lockated.com/assets/lock-logo.png" alt="logo" width="50" height="50"
+                    style="display: block;" border="0">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

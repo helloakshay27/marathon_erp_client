@@ -1,0 +1,2196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../erp_purchase/mor.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+    <!-- table dropdown link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<style>
+    .closebtn {
+        display: flex;
+        margin: 7px auto 0 5px;
+    }
+
+    .left-1 ul {
+        padding: 0;
+        /* display: flex; */
+    }
+
+    .left-1 ul li a {
+        align-items: center;
+    }
+
+    .left-1 ul li a img {
+        width: 32px;
+    }
+
+    .left-1 ul li {
+        justify-content: center;
+    }
+
+    .collapse-logo {
+        padding-left: 23px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* .left-2 {} */
+         /* Add row css */
+         .row-2 {
+    display: none;
+}
+</style>
+
+<body>
+    <main class="h-100 w-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid py-1">
+                <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                        </li>
+                    </ul>
+                    <div class="top-nav-right">
+                        <div class="d-flex search-input w-50 mx-auto">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                1201/D Jyoti Tower
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1346/F Hayat Tower</li>
+                                <li>9876/A JP Morgan Tower</li>
+                                <li>Busan Rcidency</li>
+                            </ul>
+                        </div>
+                        <span class="material-symbols-outlined align-middle"> apps </span>
+                        <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                            <div class="avatar__letters">A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- top navigation above -->
+
+        <div class="main-content">
+            <aside>
+                <div class="sidebar sidebar_inner d-flex">
+                    <div class="left-1 px-2" style="width: fit-content">
+                        <ul class="menu-list d-flex pt-2" style="flex-direction: column">
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_home_module/erp_home.html">
+                                    <img src="/assets/icons/Home.svg" alt="" />
+                                    <span class="menu-link-text">Land</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/erp_event.html">
+                                    <img src="/assets/icons/Events.svg" alt="" />
+                                    <span class="menu-link-text">Legal</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" class="menu-link" href="#">
+                                    <img src="/assets/icons/Contact.svg" alt="" />
+                                    <span class="menu-link-text">Liaison</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Vendor.svg" alt="" />
+                                    <span class="menu-link-text">Project</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Manage.svg" alt="" />
+                                    <span class="menu-link-text">Manage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Engg.</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link active d-flex" data-bs-toggle="collapse" href="#Purchase"
+                                    style="flex-direction: column">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Purchase</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Sales</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Rental</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Store</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">FM</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Security</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="left-2 mt-3" id="mySidebar">
+                        <p class="closebtn">
+                            <span class="material-symbols-outlined cancel" onclick="closeNav()">
+                                cancel
+                            </span>
+                        </p>
+                        <ul class="p-0">
+                            <!--  button for closing sidebar-->
+                            <div class="form-inline">
+                                <div class="input-group" data-widget="sidebar-search">
+                                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sidebar">
+                                            <i class="fas fa-search fa-fw"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Land</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Legal</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Liaison</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Project</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Engg.</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <ul class="collapse p-0" id="Purchase">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Sales</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Rental</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Store">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Store</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+
+                                <ul class="collapse p-0" id="Store">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#FM">
+                                    <img alt="" src="../images/user.svg" /><span class="text">FM</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="FM">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Security">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Security</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="Security">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- sidebar ends above -->
+
+            <!-- webpage conteaint start -->
+            <div class="website-content overflow-auto">
+                <div class="module-data-section container-fluid">
+                    <a href="">Home > Billing & Accounts > Bill Booking</a>
+                    <h5 class="mt-3">Bill Booking</h5>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 ">
+                            <div class="card p-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>ID</label>
+                                            <input class="form-control" type="text" placeholder="123"
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Company</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Project</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Sub Project</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Alabama
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-2">
+                                        <div class="form-group">
+                                            <label>Supplier</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Vendor Name
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pt-2 mt-2">
+                                        <p class="mt-2 text-decoration-underline">View Details</p>
+                                    </div>
+
+
+
+                                    <div class="col-md-3 mt-2">
+                                        <div class="form-group">
+                                            <label>PO Number</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pt-4" data-bs-toggle="modal" data-bs-target="#selectModal">
+                                        <p class="mt-2 text-decoration-underline">Select</p>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>PO Type</label>
+                                            <input class="form-control" type="text" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Invoice Number</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>E-Invoice</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Vendor Name
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Invoice Date</label>
+                                            <input class="form-control" type="date" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Invoice Amount</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>PO Value</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 mt-2">
+                                        <div class="form-group">
+                                            <label>GSTIN</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-1 pt-4 mt-2">
+                                        <p class="mt-2 text-decoration-underline">Verify</p>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>PAN</label>
+                                            <input class="form-control" type="text" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Type of Certificate</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Vendor Name
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Retention Amount Payable</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Retention Amount Paid</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Retention Amount Pending</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Department</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="3x7jfv">
+                                                <option selected="selected">
+                                                    Vendor Name
+                                                </option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">GRN Details</h5>
+
+                                    <div class="card-tools d-flex" data-bs-toggle="modal"
+                                        data-bs-target="#RevisionModal">
+                                        <button class="purple-btn2 rounded-3" data-bs-toggle="modal"
+                                            data-bs-target="#RevisionModal" fdprocessedid="xn3e6n"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4">
+                                                </path>
+                                            </svg><span>Select GRN</span></button>
+
+                                    </div>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr. No.</th>
+                                                <th class="text-start">Material Name</th>
+                                                <th class="text-start">Material GRN Amount</th>
+                                                <th class="text-start">Certified Till Date</th>
+                                                <th class="text-start">Base Cost</th>
+                                                <th class="text-start">Net Taxes</th>
+                                                <th class="text-start">Net Charges</th>
+                                                <th class="text-start">Qty</th>
+                                                <th class="text-start">All Inclusive Cost</th>
+                                                
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"> 1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start text-decoration-underline"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th  class="text-start">Total</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Pending Advances (> 60 days)</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">PO No.</th>
+                                                <th class="text-start">Paid Ammount</th>
+                                                <th class="text-start">Adjusted Amount</th>
+                                                <th class="text-start">Balance Amount</th>
+                                                <th class="text-start">Current Adjustment Amount</th>
+                                                <th class="text-start">Net Amount</th>
+                                                <th class="text-start">Add Certificate No.</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"> 1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start text-decoration-underline"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th  class="text-start">Total</th>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                               
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Tax Deduction:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start" style="width: 200px;">Tax / Charge Type</th>
+                                                <th class="text-start">Tax / Charges per UOM (INR)</th>
+                                                <th class="text-start">Inclusive / Exculsive</th>
+                                                <th class="text-start">Amount</th>
+                                                <th class="text-start">Action</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-start">Taxable Amount</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Deduction Tax</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"> </td>
+                                                <td><a data-toggle="collapse" href="#collapse1" role="button"
+                                                        aria-expanded="false" aria-controls="collapse1"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-plus-circle"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                            <path
+                                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                        </svg></a></td>
+                                            </tr>
+                                            <tr id="collapse1" class="collapse">
+                                                <td colspan="2">
+                                                    <div class="d-flex">
+                                                        <select class="form-control form-select me-2" style="width: 61%"
+                                                            fdprocessedid="3x7jfv">
+                                                            <option selected="selected">
+                                                                TDS
+                                                            </option>
+                                                            <option>Alaska</option>
+                                                            <option>California</option>
+                                                            <option>Delaware</option>
+                                                            <option>Tennessee</option>
+                                                            <option>Texas</option>
+                                                            <option>Washington</option>
+                                                        </select>
+                                                        <select class="form-control form-select me-5 ms-5"
+                                                            style="width: 100%" fdprocessedid="3x7jfv">
+                                                            <option selected="selected">
+                                                                1
+                                                            </option>
+                                                            <option>Alaska</option>
+                                                            <option>California</option>
+                                                            <option>Delaware</option>
+                                                            <option>Tennessee</option>
+                                                            <option>Texas</option>
+                                                            <option>Washington</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="text-start">Total Deduction</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Payble Amount</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Tax Details:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Tax / Charge Type</th>
+                                                <th class="text-start">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">Base Cost</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">Handling Charges</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">CGST</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">SGST</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Total</th>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Adjusted:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Tax</th>
+                                                <th class="text-start">Tax Amount</th>
+                                                <th class="text-start">Tax Adjusted</th>
+                                                <th class="text-start">Net Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Details:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Project Name</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Advance Amount</th>
+                                                <th class="text-start">Advance Paid Till Date</th>
+                                                <th class="text-start">Debit Note for Advance</th>
+                                                <th class="text-start">Advance Outstanding</th>
+                                                <th class="text-start">Current Advance Deduction</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start">Total</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Current advance deduction:</h5>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Total advance deduction amount</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Other Deduction</label>
+                                            <input class="form-control" type="text" placeholder="123"
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="form-group">
+                                            <label>Other Deduction Remark</label>
+                                            <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Other Addition</label>
+                                            <input class="form-control" type="text" placeholder="123"
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mt-2">
+                                        <div class="form-group">
+                                            <label>Other Addition Remark</label>
+                                            <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Debit Note Adjustment</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Total Amount</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Retention Percentage</label>
+                                            <input class="form-control" type="number" placeholder="%"
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Retention Amount</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Amount Payable</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Round Off Amount</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Favouring / Payee</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Payment Mode</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Payment Due Date</label>
+                                            <input class="form-control" type="date" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Total Certified Till Date</label>
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 mt-2">
+                                        <div class="form-group">
+                                            <label>Remark</label>
+                                            <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Expected Payment Date</label>
+                                            <input class="form-control" type="date" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Processed Date</label>
+                                            <input class="form-control" type="date" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 mt-2">
+                                        <div class="form-group">
+                                            <label>Status</label>
+                                            <input class="form-control" type="text" placeholder=""
+                                                fdprocessedid="qv9ju9">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Adjusted:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">ID</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">Advance Amount (INR)</th>
+                                                <th class="text-start">Debit Note For Advance (INR)</th>
+                                                <th class="text-start">Advance Adjusted Till Date (INR)</th>
+                                                <th class="text-start">Advance Outstanding till Certificate Date (INR)
+                                                </th>
+                                                <th class="text-start">Advance Outstanding till current Date (INR)</th>
+                                                <th class="text-start">This Recovery (INR)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Payment Details</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Mode of Payment</th>
+                                                <th class="text-start">Instrument Date</th>
+                                                <th class="text-start">Instrument No.</th>
+                                                <th class="text-start">Bank / Cash Account</th>
+                                                <th class="text-start">Amount</th>
+                                                <th class="text-start">Created by</th>
+                                                <th class="text-start">Created On</th>
+                                                <th class="text-start">Status</th>
+                                                <th class="text-start">View Cheque Details</th>
+                                                <th class="text-start">Print</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Debit Note</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Debit Note No.</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">Debit Note Amount</th>
+                                                <th class="text-start">Debit Note Recovery Till Date</th>
+                                                <th class="text-start">Waive off Till Date</th>
+                                                <th class="text-start">Outstanding Amount (Certificate Date)</th>
+                                                <th class="text-start">Outstanding Amount (Current Date)</th>
+                                                <th class="text-start">Debit Note Reason Type</th>
+                                                <th class="text-start">This Recovery</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Document Attachment</h5>
+
+                                    <div class="card-tools d-flex" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                        <button class="purple-btn2 rounded-3"   data-bs-toggle="modal" data-bs-target="#viewDocumentModal" fdprocessedid="xn3e6n"><svg
+                                                xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4">
+                                                </path>
+                                            </svg><span>Attach</span></button>
+
+                                    </div>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr. No.</th>
+                                                <th class="text-start">Document Name</th>
+                                                <th class="text-start">File Name</th>
+                                                <th class="text-start">File Type</th>
+                                                <th class="text-start">Upload Date</th>
+                                                <th class="text-start">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start">PO.pdf</td>
+                                                <td class="text-start">04-03-2024</td>
+                                                <td class="text-decoration-underline cursor-pointer"
+                                                data-bs-toggle="modal"
+                                                data-bs-target="#RevisionModal">View</td>
+
+                                            </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Remark</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Comments</label>
+                                        <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <p class="">Assigned To User</p>
+                                <div class="dropdown">
+                                    <button class="btn purple-btn2 btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="d2d1ue">
+                                        Shamshik
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else
+                                                here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <p class="">Status</p>
+                                <div class="dropdown">
+                                    <button class="btn purple-btn2 btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="d2d1ue">
+                                        Received for Verification
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else
+                                                here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2 justify-content-end">
+
+                                <div class="col-md-2">
+                                    <button class="purple-btn2 w-100">Submit</button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="purple-btn1 w-100">Cancel</button>
+                                </div>
+
+                            </div>
+                            <h5 class=" mt-3">Audit Log</h5>
+                            <div class="px-3">
+                                <div class="tbl-container px-0">
+
+                                    <table class="w-100">
+                                        <thead>
+                                          <tr>
+                                            <th>Sr.No.</th>
+                                            <th>From Status</th>
+                                            <th>To Status</th>
+                                            <th>From Date</th>
+                                            <th>To Date</th>
+                                            <th>Days</th>
+                                            <th>User</th>
+                                            <th>Remark</th>
+                                            <th>Comments</th>
+                      
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th>1</th>
+                                            <td>Draft</td>
+                                            <td>Received</td>
+                                            <td>01-01-24</td>
+                                            <td>01-02-24</td>
+                                            <td></td>
+                                            <td>User 1</td>
+                                          
+                                            <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                                            <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#comments-modal" style="font-size: 18px;"></i></td>
+                                          </tr>
+                      
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+        </footer>
+        </div>
+        </div>
+    </main>
+    <!-- Navigation Top -->
+
+
+
+    <!-- Comments  modal start -->
+    <!-- Remark  modal start -->
+    <div class="modal fade" id="remark-modal" tabindex="-1" aria-labelledby="exampleModalLabel32" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5>
+                        Remark
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus sit nulla pariatur
+                        alias adipisci nesciunt. Ex molestiae itaque nihil doloremque incidunt? Est illum fugiat
+                        voluptates alias optio quae vel.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Remark  modal start end -->
+
+    <!-- Comments  modal start -->
+
+    <div class="modal fade" id="comments-modal" tabindex="-1" aria-labelledby="exampleModalLabel32" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5>
+                        comments
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus sit nulla pariatur
+                        alias adipisci nesciunt. Ex molestiae itaque nihil doloremque incidunt? Est illum fugiat
+                        voluptates alias optio quae vel.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Comments  modal start end -->
+
+    <!--Select PO Modal Start-->
+    <div class="modal fade" id="selectModal" tabindex="-1" aria-labelledby="selectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Select PO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-flex justify-content-between mt-3 me-2">
+                            <h5 class=" ">Category of PO</h5>
+                        </div>
+                        <div class="radio-buttons d-flex align-items-center gap-4">
+                            <div class="form-check">
+                                <button class="border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                </button>
+                                <label class="form-check-label" for="yesRadio">Material</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio1" id="noRadio">
+                                <label class="form-check-label" for="noRadio">Asset</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Project</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Sub Project</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>PO Number</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Supplier</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>PO Start Date</label>
+                                    <input class="form-control" type="date" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>PO End Date</label>
+                                    <input class="form-control" type="date" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Indent</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Work Order</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Work Catogery</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Contractor</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="row mt-2 justify-content-center">
+                            <div class="col-md-3">
+                                <button class="purple-btn2 w-100" fdprocessedid="u33pye">Search</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="purple-btn2 w-100" fdprocessedid="u33pye">Select All</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="purple-btn1 w-100" fdprocessedid="u33pye">Reset</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3 me-2">
+                            <h5 class=" ">Search Result</h5>
+
+                        </div>
+                        <div class="tbl-container mx-3 mt-3">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start">Sr.No</th>
+                                        <th class="text-start">PO Number</th>
+                                        <th class="text-start">PO Date</th>
+                                        <th class="text-start">Upload Date</th>
+                                        <th class="text-start">Uploaded By</th>
+                                        <th class="text-start">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start">1</td>
+                                        <td class="text-start">MTC</td>
+                                        <td class="text-start">Material test Cert 1.pdf</td>
+                                        <td class="text-start">01-04-2024</td>
+                                        <td class="text-start">vendor user</td>
+                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-md-2">
+                            <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Select PO Modal End-->
+
+    <!-- Revision Modal  start-->
+    <div class="modal fade" id="RevisionModal" tabindex="-1" aria-labelledby="RevisionModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Attach Other Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>PO Number</label>
+                                <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>GRN Number</label>
+                                <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Delivery Challan No</label>
+                                <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Amount (INR)</label>
+                                <input class="form-control" type="number" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Certified Till Date (INR)</label>
+                                <input class="form-control" type="number" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>All Inclusive Cost (INR)</label>
+                                <input class="form-control" type="number" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class=" mt-3 me-2">
+                        <h5 class=" ">GRN Details</h5>
+                    </div>
+
+                    <div class="tbl-container mx-3 mt-3">
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th><input type="checkbox"></th>
+                                    <th>Material Name</th>
+                                    <th>Material GRN Amount</th>
+                                    <th>Certified Till Date</th>
+                                    <th>Base cost</th>
+                                    <th>Net Taxes</th>
+                                    <th>Net Charges</th>
+                                    <th>Qty</th>
+                                    <th>All Inclusive Cost</th>
+                                    <th>Taxes</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox"></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="text-decoration-underline" data-bs-toggle="modal"
+                                        data-bs-target="#taxesModal">Taxes</td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+                    </div>
+
+
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-md-4">
+                            <button class="purple-btn2 w-100" fdprocessedid="u33pye">Submit</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="purple-btn1 w-100" fdprocessedid="af5l5g">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Revision Modal end-->
+
+    <!-- Attach other Modal start-->
+    <div class="modal fade" id="AttachModal" tabindex="-1" aria-labelledby="AttachModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Remark</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Attach other Modal end-->
+
+    <!-- View Document modal start -->
+    <div class="modal fade" id="viewDocumentModal" tabindex="-1" aria-labelledby="viewDocumentModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Attach Other Document</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-flex justify-content-between mt-3 me-2">
+                            <h5 class=" ">Latest Documents</h5>
+
+                            <div class="card-tools d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                <button class="purple-btn2 rounded-3" data-bs-toggle="modal"
+                                    data-bs-target="#RevisionModal" fdprocessedid="xn3e6n"><svg
+                                        xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                        class="bi bi-plus" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4">
+                                        </path>
+                                    </svg><span>Attach</span></button>
+
+                            </div>
+                        </div>
+                        <div class="tbl-container px-0">
+
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No.</th>
+                                        <th>Document Name</th>
+                                        <th>Attachment Name</th>
+                                        <th>Upload Date</th>
+                                        <th>Uploaded By</th>
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>MTC</td>
+                                        <td>Material test Cert 1.pdf</td>
+                                        <td>01-03-2024</td>
+                                        <td>vendor user</td>
+                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                data-bs-target="#comments-modal" style="font-size: 18px;"></i>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class=" mt-3 me-2">
+                            <h5 class=" ">Document Attachment History</h5>
+                        </div>
+                        <div class="tbl-container px-0">
+
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No.</th>
+                                        <th>Document Name</th>
+                                        <th>Attachment Name</th>
+                                        <th>Upload Date</th>
+                                        <th>Uploaded By</th>
+                                        <th>Action</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>MTC</td>
+                                        <td>Material test Cert 1.pdf</td>
+                                        <td>01-03-2024</td>
+                                        <td>vendor user</td>
+                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                data-bs-target="#comments-modal" style="font-size: 18px;"></i>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center">
+
+                        <div class="col-md-4">
+                            <button class="purple-btn1 w-100" fdprocessedid="af5l5g">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- View Document modal start -->
+
+    <!-- Taxes Modal start -->
+    <div class="modal fade" id="taxesModal" tabindex="-1" aria-labelledby="taxesModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tbl-container mx-3 mt-3">
+                        <table class="w-100">
+                            <thead>
+                                <tr>
+                                    <th>Tax / Charge Type</th>
+                                    <th>Tax / Charges per UOM (INR)</th>
+                                    <th>Inclusive / Exculsive</th>
+                                    <th>Amount</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Total Base Cost</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3000</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th>Addition Tax & Charges</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="row-1" data-group="1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                    </svg></td>
+                                </tr>
+                                <tr class="row-2" data-group="1">
+                                    <td><select class="form-control form-select" style="width: 100%" fdprocessedid="3x7jfv">
+                                        <option selected="selected">
+                                            Vendor Name
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select></td>
+                                    <td><select class="form-control form-select" style="width: 100%" fdprocessedid="3x7jfv">
+                                        <option selected="selected">
+                                            Vendor Name
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select></td>
+                                    <td><input type="checkbox"></td>
+                                    <td>270</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"></path>
+                                    </svg> </td>
+                                </tr>
+                                <tr class="row-2" data-group="1">
+                                    <td> Sub Total A (Addition)</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"></path>
+                                    </svg></td>
+                                </tr>
+                                <tr>
+                                    <th>Gross Amount</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3540</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <th class="row-1" data-group="2">Deduction Tax</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4"></path>
+                                    </svg></td>
+                                </tr>
+                                <tr class="row-2" data-group="2">
+                                    <td><select class="form-control form-select" style="width: 100%" fdprocessedid="3x7jfv">
+                                        <option selected="selected">
+                                            Vendor Name
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select></td>
+                                    <td><select class="form-control form-select" style="width: 100%" fdprocessedid="3x7jfv">
+                                        <option selected="selected">
+                                            Vendor Name
+                                        </option>
+                                        <option>Alaska</option>
+                                        <option>California</option>
+                                        <option>Delaware</option>
+                                        <option>Tennessee</option>
+                                        <option>Texas</option>
+                                        <option>Washington</option>
+                                    </select></td>
+                                    <td><input type="checkbox"></td>
+                                    <td>30</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"></path>
+                                    </svg> </td>
+                                </tr>
+                                <tr class="row-2" data-group="2">
+                                    <td>Payble Amount</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>3510</td>
+                                    <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"></path>
+                                        <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"></path>
+                                    </svg></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Taxes Modal end -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    // open row 
+    document.addEventListener("DOMContentLoaded", function() {
+    const row1Elements = document.querySelectorAll(".row-1");
+
+    row1Elements.forEach(row1 => {
+        row1.addEventListener("click", function() {
+            const group = row1.getAttribute("data-group");
+            const row2Elements = document.querySelectorAll(`.row-2[data-group="${group}"]`);
+            
+            row2Elements.forEach(row2 => {
+                if (row2.style.display === "none" || row2.style.display === "") {
+                    row2.style.display = "table-row"; // Change to "block" if you're not using a table
+                } else {
+                    row2.style.display = "none";
+                }
+            });
+        });
+    });
+
+    // Add event listeners to each row-2 to close individually
+    const row2Elements = document.querySelectorAll(".row-2");
+
+    row2Elements.forEach(row2 => {
+        row2.addEventListener("click", function() {
+            row2.style.display = "none";
+        });
+    });
+});
+
+        // open row end
+</script>
+
+
+</html>

@@ -1,0 +1,1770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="../erp_purchase/mor.css" />
+    <link rel="icon" type="image/x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTwoSuITuEldNJhrM8eTfyS-GYMoNbt-P5Dg&usqp=CAU" />
+    <!-- table dropdown link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <title>Schedule unit offer</title>
+</head>
+
+<style>
+    .closebtn {
+        display: flex;
+        margin: 7px auto 0 5px;
+    }
+
+    .left-1 ul {
+        padding: 0;
+        /* display: flex; */
+    }
+
+    .left-1 ul li a {
+        align-items: center;
+    }
+
+    .left-1 ul li a img {
+        width: 32px;
+    }
+
+    .left-1 ul li {
+        justify-content: center;
+    }
+
+    .collapse-logo {
+        padding-left: 23px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    /* .left-2 {} */
+</style>
+
+<body>
+    <main class="h-100 w-100">
+        <nav class="navbar navbar-expand-lg navbar-light p-0">
+            <div class="container-fluid py-1">
+                <img alt="logo" class="go-logo mx-3 my-2" src="../assets/icons/marathon-logo_500px 1.svg" />
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./1CF_Main.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./31Dashboard_Daily.html">Setup</a>
+                        </li>
+                    </ul>
+                    <div class="top-nav-right">
+                        <div class="d-flex search-input w-50 mx-auto">
+                            <span class="material-symbols-outlined"> search </span>
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        </div>
+
+                        <div class="btn-group">
+                            <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                1201/D Jyoti Tower
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>1346/F Hayat Tower</li>
+                                <li>9876/A JP Morgan Tower</li>
+                                <li>Busan Rcidency</li>
+                            </ul>
+                        </div>
+                        <span class="material-symbols-outlined align-middle"> apps </span>
+                        <div class="avatar" type="button" data-bs-toggle="modal" data-bs-target="#userInfo">
+                            <div class="avatar__letters">A</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- top navigation above -->
+
+        <div class="main-content">
+            <aside>
+                <div class="sidebar sidebar_inner d-flex">
+                    <div class="left-1 px-2" style="width: fit-content">
+                        <ul class="menu-list d-flex pt-2" style="flex-direction: column">
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_home_module/erp_home.html">
+                                    <img src="/assets/icons/Home.svg" alt="" />
+                                    <span class="menu-link-text">Land</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/erp_event.html">
+                                    <img src="/assets/icons/Events.svg" alt="" />
+                                    <span class="menu-link-text">Legal</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" class="menu-link" href="#">
+                                    <img src="/assets/icons/Contact.svg" alt="" />
+                                    <span class="menu-link-text">Liaison</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Vendor.svg" alt="" />
+                                    <span class="menu-link-text">Project</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column" href="#">
+                                    <img src="/assets/icons/Manage.svg" alt="" />
+                                    <span class="menu-link-text">Manage</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Engg.</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link active d-flex" data-bs-toggle="collapse" href="#Purchase"
+                                    style="flex-direction: column">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Purchase</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Sales</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Rental</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Store</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">FM</span>
+                                </a>
+                            </li>
+                            <li class="menu-item d-flex">
+                                <a class="menu-link d-flex" style="flex-direction: column"
+                                    href="/erp_event_module/Events-Detail-Setting.html">
+                                    <img src="/assets/icons/Settings.svg" alt="" />
+                                    <span class="menu-link-text">Security</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="left-2 mt-3" id="mySidebar">
+                        <p class="closebtn">
+                            <span class="material-symbols-outlined cancel" onclick="closeNav()">
+                                cancel
+                            </span>
+                        </p>
+                        <ul class="p-0">
+                            <!--  button for closing sidebar-->
+                            <div class="form-inline">
+                                <div class="input-group" data-widget="sidebar-search">
+                                    <input class="form-control form-control-sidebar" type="search" placeholder="Search"
+                                        aria-label="Search" />
+                                    <div class="input-group-append">
+                                        <button class="btn btn-sidebar">
+                                            <i class="fas fa-search fa-fw"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Land</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Legal</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Liaison</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Project</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Engg.</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <ul class="collapse p-0" id="Purchase">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Sales</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#userRoleCollapse">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Rental</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                            </li>
+
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Store">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Store</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+
+                                <ul class="collapse p-0" id="Store">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#FM">
+                                    <img alt="" src="../images/user.svg" /><span class="text">FM</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="FM">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mt-2">
+                                <a class="text nav-link dropdown-toggle d-flex justify-content-between"
+                                    data-bs-toggle="collapse" href="#Security">
+                                    <img alt="" src="../images/user.svg" /><span class="text">Security</span><i
+                                        class="bi bi-caret-right-fill collapse-logo"></i>
+                                </a>
+                                <ul class="collapse p-0" id="Security">
+                                    <li class="nav-header">MOR</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="./Snagging-ProjectStatus-Unit.html">
+                                            <span class="text">Material Order Request </span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./snagging-Unit-Snag-List.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Material
+                                                Issue Slip
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Return
+                                                Slip</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-observation.html">
+                                            <img alt="" src="../images/Snag.svg" /><span class="text">Material Order
+                                                Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">MTO</li>
+
+                                    <li class="nav-item">
+                                        <div class="btn-group2">
+                                            <a class="text nav-link dropdown-toggle asset-after"
+                                                data-bs-toggle="dropdown" aria-expanded="true">
+                                                <img alt="" src="../images/OSR.svg" /><span class="text">Material
+                                                    Transfer Request
+                                                </span>
+                                            </a>
+                                            <ul class="dropdown-menu" data-popper-placement="top-start">
+                                                <li>
+                                                    <a href="./Snagging-Schedules-UnitOffer.html">MTO Pending Approval
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="./Snagging-Schedules-DailyTask.html">Daily Task</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">MTO
+                                                Pending Approval</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="nav-header">Procurement</li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="/erp_home_module/erp_home.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span
+                                                class="text">Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Events
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">PO
+                                            </span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" aria-current="page" href="./Snagging-Attendance.html">
+                                            <img alt="" src="../images/snag-unit-list.svg" /><span class="text">Advance
+                                                Note
+                                            </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+            <!-- sidebar ends above -->
+
+            <!-- webpage conteaint start -->
+            <div class="website-content overflow-auto">
+                <div class="module-data-section container-fluid">
+                    <a href="">Home > Accounts > Bill Payment Details</a>
+                    <h5 class="mt-3">Bill Payment Details</h5>
+
+                    <div class="row my-4 align-items-center">
+                        <div class="col-md-12 ">
+                            <div class="card p-3">
+
+                                <div class="details_page">
+                                    <div class="row px-3">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>ID</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Aakash Infra Ltd.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Company</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Aakash Infra Ltd.</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Project</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Aakash Project</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Sub Project</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Aakash sub project</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Supplier</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Infra Ltd.</label>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>PO Type</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Ltd type</label>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>PO Number</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>989898</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Invoice Number</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>00009</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>E-Invoice</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Invoice</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Invoice Date</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>12/5/24</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Invoice Amount</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>6000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>PO Value</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Demo value</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>GSTIN</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>GSTIN989877</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>UAN Number</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>BAFPN5656</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>PAN</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>BAFPN5656</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Type of Certificate</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>demo certificate</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Retention Amount Payable</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>20000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Retention Amount Paid</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>4000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Retention Amount Pending</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>3000</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">GRN Details</h5>
+
+                                    
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr. No.</th>
+                                                <th class="text-start">Material Name</th>
+                                                <th class="text-start">Material GRN Amount</th>
+                                                <th class="text-start">Certified Till Date</th>
+                                                <th class="text-start">Base Cost</th>
+                                                <th class="text-start">Net Taxes</th>
+                                                <th class="text-start">Net Charges</th>
+                                                <th class="text-start">Qty</th>
+                                                <th class="text-start">All Inclusive Cost</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"> 1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start text-decoration-underline"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Pending Advances (> 60 days)</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">PO No.</th>
+                                                <th class="text-start">Paid Ammount</th>
+                                                <th class="text-start">Adjusted Amount</th>
+                                                <th class="text-start">Balance Amount</th>
+                                                <th class="text-start">Current Adjustment Amount</th>
+                                                <th class="text-start">Net Amount</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"> 1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start text-decoration-underline"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Tax Deduction:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start" style="width: 200px;">Tax / Charge Type</th>
+                                                <th class="text-start">Tax / Charges per UOM (INR)</th>
+                                                <th class="text-start">Inclusive / Exculsive</th>
+                                                <th class="text-start">Amount</th>
+                                                <th class="text-start">Action</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text-start">Taxable Amount</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Deduction Tax</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"> </td>
+                                                <td><a data-toggle="collapse" href="#collapse1" role="button"
+                                                        aria-expanded="false" aria-controls="collapse1"><svg
+                                                            xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                            fill="currentColor" class="bi bi-plus-circle"
+                                                            viewBox="0 0 16 16">
+                                                            <path
+                                                                d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                                            <path
+                                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4" />
+                                                        </svg></a></td>
+                                            </tr>
+                                            <tr id="collapse1" class="collapse">
+                                                <td colspan="2">
+                                                    <div class="d-flex">
+                                                        <input class="me-2" style="width: 61%" type="text">
+
+                                                       
+                                                        <input class="me-5 ms-5" style="width: 100%" type="text">
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <th class="text-start">Total Deduction</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Payble Amount</th>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Tax Details:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Tax / Charge Type</th>
+                                                <th class="text-start">Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">Base Cost</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">Handling Charges</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">CGST</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start">SGST</td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="text-start">Total</th>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Adjusted:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Tax</th>
+                                                <th class="text-start">Tax Amount</th>
+                                                <th class="text-start">Tax Adjusted</th>
+                                                <th class="text-start">Net Amount</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"> </td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Details:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Company Name</th>
+                                                <th class="text-start">Project Name</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Advance Amount</th>
+                                                <th class="text-start">Advance Paid Till Date</th>
+                                                <th class="text-start">Debit Note for Advance</th>
+                                                <th class="text-start">Advance Outstanding</th>
+                                                <th class="text-start">Current Advance Deduction</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start">Total</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Deductions:</h5>
+                                </div>
+                                
+
+                                <div class="details_page">
+                                    <div class="row px-3">
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Other Deduction</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Document</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Other Deduction Remark</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Done/pending</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Other Addition</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Demo Addition</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Other Addition Remark</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>work in progress</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Debit Note Adjustment</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Demo debit note</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Total Amount</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>10000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Retention Percentage</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span> 55%</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Retention Amount</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>5000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Amount Payable</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>7000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Round Off Amount</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>17000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Favouring / Payee</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>6000</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Payment Mode</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>UPI</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Payment Due Date</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>30/5/24</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Total Certified Till Date</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>5</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Remark</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>Pament pending</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Expected Payment Date</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>29/5/24</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-12 row px-3 ">
+                                            <div class="col-6 ">
+                                                <label>Processed Date</label>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="text"><span class="me-3"><span class="text-dark">:</span></span>25/4/24</label>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Advance Adjusted:</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">ID</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">Advance Amount (INR)</th>
+                                                <th class="text-start">Debit Note For Advance (INR)</th>
+                                                <th class="text-start">Advance Adjusted Till Date (INR)</th>
+                                                <th class="text-start">Advance Outstanding till Certificate Date (INR)
+                                                </th>
+                                                <th class="text-start">Advance Outstanding till current Date (INR)</th>
+                                                <th class="text-start">This Recovery (INR)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Payment Details</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Mode of Payment</th>
+                                                <th class="text-start">Instrument Date</th>
+                                                <th class="text-start">Instrument No.</th>
+                                                <th class="text-start">Bank / Cash Account</th>
+                                                <th class="text-start">Amount</th>
+                                                <th class="text-start">Created by</th>
+                                                <th class="text-start">Created On</th>
+                                                <th class="text-start">Status</th>
+                                                <th class="text-start">Reconsilation Date</th>
+                                                <th class="text-start">Cheque Print</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Debit Note</h5>
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Debit Note No.</th>
+                                                <th class="text-start">PO Display No.</th>
+                                                <th class="text-start">Project</th>
+                                                <th class="text-start">Debit Note Amount</th>
+                                                <th class="text-start">Debit Note Recovery Till Date</th>
+                                                <th class="text-start">Waive off Till Date</th>
+                                                <th class="text-start">Outstanding Amount (Certificate Date)</th>
+                                                <th class="text-start">Outstanding Amount (Current Date)</th>
+                                                <th class="text-start">Debit Note Reason Type</th>
+                                                <th class="text-start">This Recovery</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">1</td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="d-flex justify-content-between mt-3 me-2">
+                                    <h5 class=" ">Document Attachment</h5>
+
+                                     
+                                </div>
+                                <div class="tbl-container mx-3 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr. No.</th>
+                                                <th class="text-start">Document Name</th>
+                                                <th class="text-start">File Name</th>
+                                                <th class="text-start">File Type</th>
+                                                <th class="text-start">Upload Date</th>
+                                                <th class="text-start">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start"></td>
+                                                <td class="text-start">PO.pdf</td>
+                                                <td class="text-start">04-03-2024</td>
+                                                <td class="text-decoration-underline" data-bs-toggle="modal"
+                                                    data-bs-target="#viewDocumentModal">View</td>
+
+                                            </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Remark</label>
+                                        <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>Comments</label>
+                                        <textarea class="form-control" rows="2" placeholder="Enter ..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <p class="">Assigned To User</p>
+                                <div class="dropdown">
+                                    <button class="btn purple-btn2 btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="d2d1ue">
+                                        Shamshik
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else
+                                                here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-end align-items-center gap-3">
+                                <p class="">Status</p>
+                                <div class="dropdown">
+                                    <button class="btn purple-btn2 btn-secondary dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" fdprocessedid="d2d1ue">
+                                        Received for Verification
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else
+                                                here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row mt-2 justify-content-end">
+
+                                <div class="col-md-2">
+                                    <button class="purple-btn2 w-100">Submit</button>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="purple-btn1 w-100">Cancel</button>
+                                </div>
+
+                            </div>
+                            <h5 class=" mt-3">Audit Log</h5>
+                            <div class="px-3">
+                                <div class="tbl-container px-0">
+
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No.</th>
+                                                <th>User</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Remark</th>
+                                                <th>Comments</th>
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>1</th>
+                                                <td>Pratham Shastri</td>
+                                                <td>15-02-2024</td>
+                                                <td>Verified</td>
+                                                <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                        data-bs-target="#remark-modal" style="font-size: 18px;"></i>
+                                                </td>
+                                                <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                        data-bs-target="#comments-modal" style="font-size: 18px;"></i>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
+        </footer>
+        </div>
+        </div>
+    </main>
+    <!-- Navigation Top -->
+
+
+
+    <!-- Comments  modal start -->
+    <!-- Remark  modal start -->
+    <div class="modal fade" id="remark-modal" tabindex="-1" aria-labelledby="exampleModalLabel32" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5>
+                        Remark
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus sit nulla pariatur
+                        alias adipisci nesciunt. Ex molestiae itaque nihil doloremque incidunt? Est illum fugiat
+                        voluptates alias optio quae vel.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Remark  modal start end -->
+
+    <!-- Comments  modal start -->
+
+    <div class="modal fade" id="comments-modal" tabindex="-1" aria-labelledby="exampleModalLabel32" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header align-items-center">
+                    <h5>
+                        comments
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row p-3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto temporibus sit nulla pariatur
+                        alias adipisci nesciunt. Ex molestiae itaque nihil doloremque incidunt? Est illum fugiat
+                        voluptates alias optio quae vel.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Comments  modal start end -->
+
+    <!--Select PO Modal Start-->
+    <div class="modal fade" id="selectModal" tabindex="-1" aria-labelledby="selectModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Select PO</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div class="d-flex justify-content-between mt-3 me-2">
+                            <h5 class=" ">Category of PO</h5>
+                        </div>
+                        <div class="radio-buttons d-flex align-items-center gap-4">
+                            <div class="form-check">
+                                <button class="border-0 " data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <input class="form-check-input" type="radio" name="radio1">
+                                </button>
+                                <label class="form-check-label" for="yesRadio">Material</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="radio1" id="noRadio">
+                                <label class="form-check-label" for="noRadio">Asset</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Project</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Sub Project</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>PO Number</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Supplier</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>PO Start Date</label>
+                                    <input class="form-control" type="date" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor Name</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor Name</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor Name</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor Name</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label>Vendor Name</label>
+                                    <input class="form-control" type="text" placeholder="" fdprocessedid="qv9ju9">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between mt-3 me-2">
+                            <h5 class=" ">Document Attachment History</h5>
+
+                        </div>
+                        <div class="tbl-container mx-3 mt-3">
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start">Sr.No</th>
+                                        <th class="text-start">Document Name</th>
+                                        <th class="text-start">Attachment Name</th>
+                                        <th class="text-start">Upload Date</th>
+                                        <th class="text-start">Uploaded By</th>
+                                        <th class="text-start">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start">1</td>
+                                        <td class="text-start">MTC</td>
+                                        <td class="text-start">Material test Cert 1.pdf</td>
+                                        <td class="text-start">01-04-2024</td>
+                                        <td class="text-start">vendor user</td>
+                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal"
+                                                data-bs-target="#remark-modal" style="font-size: 18px;"></i></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-md-2">
+                            <button class="purple-btn2 w-100" fdprocessedid="u33pye">Close</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--Select PO Modal End-->
+
+    <!-- Revision Modal  start-->
+    <div class="modal fade" id="RevisionModal" tabindex="-1" aria-labelledby="RevisionModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Attach Other Document</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Name of the Document</label>
+                                <input class="form-control" type="" placeholder="" fdprocessedid="qv9ju9">
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-2">
+                            <div class="form-group">
+                                <form action="/upload" method="post" enctype="multipart/form-data">
+                                    <!-- <label for="fileInput">Choose File:</label> -->
+                                    <input type="file" id="fileInput" name="attachment">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-2 justify-content-center">
+                        <div class="col-md-4">
+                            <button class="purple-btn2 w-100" fdprocessedid="u33pye">Attach</button>
+                        </div>
+                        <div class="col-md-4">
+                            <button class="purple-btn1 w-100" fdprocessedid="af5l5g">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Revision Modal end-->
+
+    <!-- Attach other Modal start-->
+    <div class="modal fade" id="AttachModal" tabindex="-1" aria-labelledby="AttachModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Remark</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <textarea class="form-control" rows="3" placeholder="Enter ..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Attach other Modal end-->
+      <!-- View Document modal start -->
+      <div class="modal fade" id="viewDocumentModal" tabindex="-1" aria-labelledby="viewDocumentModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title fs-5" id="exampleModalLabel">Document Attachment</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div>
+                   
+
+                    <div class=" mt-3 me-2">
+                        <h5 class=" ">Document Attachment History</h5>
+                        </div>
+                        <div class="tbl-container px-0">
+
+                            <table class="w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Sr.No.</th>
+                                        <th>Document Name</th>
+                                        <th>Attachment Name</th>
+                                        <th>Upload Date</th>
+                                        <th>Uploaded By</th>
+                                        <th>Action</th>
+    
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>1</th>
+                                        <td>MTC</td>
+                                        <td>Material test Cert 1.pdf</td>
+                                        <td>01-03-2024</td>
+                                         <td>vendor user</td>
+                                        <td><i class="fa-regular fa-eye" data-bs-toggle="modal" data-bs-target="#comments-modal" style="font-size: 18px;"></i>
+                                        </td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                        </div>
+                </div>
+                <div class="row mt-2 justify-content-center">
+                   
+                    <div class="col-md-4">
+                        <button class="purple-btn1 w-100" fdprocessedid="af5l5g">Close</button>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- View Document modal start -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</html>
