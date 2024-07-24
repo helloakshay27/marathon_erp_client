@@ -56,7 +56,7 @@ function generateFileList(dir, baseUrl) {
 
 app.use(express.static(path.join(__dirname)));
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
-app.use('/erp_event_module', express.static(path.join(__dirname, 'assets')));
+app.use('/erp_event_module', express.static(path.join(__dirname, 'erp_event_module')));
 
 
 // Serve the directory listing
