@@ -1,3 +1,5 @@
 node_modules/
 .vscode/
-.vercel
+.vercel/
+erp_home_module/erp_purchase/erp_material_order_request_create.html
+erp_home_module/erp_purchase2/
