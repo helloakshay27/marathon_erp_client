@@ -204,7 +204,7 @@ app.get('/erp_home_module/masters', (req, res) => {
         res.status(500).send('Internal Server Error');
     }
 });
-app.get('/erp_home_module/masters', (req, res) => {
+app.get('/erp_home_module/erp_estimation', (req, res) => {
     try {
         const specificDir = path.join(__dirname, 'erp_home_module/erp_estimation');
         const fileList = generateFileList(specificDir, '');
