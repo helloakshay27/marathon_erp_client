@@ -25,6 +25,62 @@
            .row-2 {
         display: none;
     }
+     
+    .collapse-icon {
+  transition: transform 0.3s ease;
+}
+
+.collapse-icon.fa-minus {
+  transform: rotate(180deg);
+}
+
+    /* Add row css */
+    .row-2 {
+      display: none;
+    }
+
+    .legend-container .reference-label {
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  margin-right: 10px;
+}
+.reference-label {
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+  margin-right: 10px;
+}
+
+/* Define colors for each category */
+.main-category {
+  background-color: #ADD8E6; /* Light blue */
+}
+
+.category-lvl2 {
+  background-color: #FFE4B5; /* Moccasin */
+}
+
+.sub-category-lvl3 {
+  background-color: #FFD700; /* Gold */
+}
+
+.sub-category-lvl4 {
+  background-color: #FFB6C1; /* Light Pink */
+}
+
+.sub-category-lvl5 {
+  background-color: #FFFFE0; /* Light Yellow */
+}
+
+.labour {
+  background-color: #FFFF99; /* Pale Yellow */
+}
+td i{
+  color: var(--black);
+  border: 1px solid var(--black);
+  
+}
 </style>
 
 <body>
@@ -686,40 +742,52 @@
                             </div>
                             <div class="card-body mt-0 pt-0">
                                 <div class="row align-items-center">
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label>RERA Area</label>
                                             <input class="form-control" type="number" placeholder="Sq. Ft." fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Construction Area</label>
                                             <input class="form-control" type="number" placeholder="Sq. Ft." fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Saleable Area Sq.ft.</label>
                                             <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mt-2">
+                                    <div class="col-md-3 ">
+                                        <div class="form-group">
+                                            <label>Material Total</label>
+                                            <input class="form-control" type="number" placeholder="10,000,00" fdprocessedid="pi363i">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
                                         <div class="form-group">
                                             <label>Sub-Project Budget</label>
                                             <input class="form-control" type="number" placeholder="INR" fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mt-2">
+                                    <div class="col-md-3 mt-2">
                                         <div class="form-group">
                                             <label>M+L Budget Sq.ft</label>
                                             <input class="form-control" type="number" placeholder="INR" fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                    <div class="col-md-4 mt-2">
+                                    <div class="col-md-3 mt-2">
                                         <div class="form-group">
                                             <label>Budget Type</label>
                                             <input class="form-control" type="text" placeholder="" fdprocessedid="pi363i">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-3 ">
+                                        <div class="form-group">
+                                            <label>Labour Total</label>
+                                            <input class="form-control" type="number" placeholder="10,000,00" fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                 </div>
@@ -780,25 +848,21 @@
                         </div>
                      
                         <div class="d-flex justify-content-between">
-                            <div class="d-flex justify-content-start align-items-center px-4 my-3">
-                                <span class="reference-label me-4" style="color: black;">Legend</span>
-                                <span class="reference-label">Main Category</span>
-                               
-      
-                                <span class="reference-label">Sub-Category lvl2</span>
-                                <span class="reference-label">Sub-Category lvl3</span>
-                                <span class="reference-label">Sub-Category lvl4</span>
-                                <span class="reference-label">Sub-Category lvl5</span>
-                                <span class="reference-label">Material/Labour Sub
-                                </span>
-                                <span class="reference-label">Over Budget
-
-                                </span>
-      
-      
-                            
-                            
-                            </div>
+                            <div class="legend-container d-flex justify-content-start align-items-center px-4 my-3">
+                                <span class="reference-label me-4">Legend</span>
+                                
+                                <span class="reference-label main-category">Main Category</span>
+                                
+                                <span class="reference-label category-lvl2">Category lvl 2</span>
+                                
+                                <span class="reference-label sub-category-lvl3">Sub-category lvl 3</span>
+                                
+                                <span class="reference-label sub-category-lvl4">Sub-category lvl 4</span>
+                                
+                                <span class="reference-label sub-category-lvl5">Sub-category lvl 5</span>
+                                
+                                <span class="reference-label labour">Labour</span>
+                              </div>
                             <div>
                                 <button class="btn" >
                                     <i style="font-size: large; color: var(--red);" class="fa-solid fa-arrows-rotate"></i>
@@ -822,8 +886,12 @@
                                             <th class="text-center" colspan="7">
                                                 BUDGET
                                             </th>
-                                            <th class="text-center" colspan="5">
+                                            <th class="text-center" colspan="4">
                                                 Amount Contracted 
+
+                                            </th>
+                                            <th class="text-center" >
+                                                Misc Paid
 
                                             </th>
                                             <th class="text-center" colspan="2">
@@ -835,13 +903,13 @@
 
                                             </th>
                                             <th class="text-center" colspan="7">
-                                                BILL Certified
+                                               
+                                                Abstract & GRN
 
                                             </th>
 
                                             <th class="text-center" colspan="3">
-                                                Abstract & GRN
-
+                                                BILL Certified
                                             </th>
                                             <th class="text-center" colspan="3">
                                                 Advance Details
@@ -856,37 +924,37 @@
 
                                         </tr>
                                         <tr>
-                                            <th class="text-start" colspan="6" >
+                                            <th class="text-center" colspan="6" >
                                                 References 
 
                                             </th>
-                                            <th class="text-start" >
+                                            <th class="text-center" >
                                                 A
 
                                             </th>
-                                            <th class="text-start" >
+                                            <th class="text-center" >
                                                 B
 
                                             </th>
-                                            <th class="text-start" >
+                                            <th class="text-center" >
                                                 C
 
                                             </th>
-                                            <th class="text-start" >
+                                            <th class="text-center">
                                                 D
 
                                             </th>
 
-                                            <th class="text-start" >
+                                            <th class="text-center" >
                                                E
                                             </th>
-                                            <th class="text-start" >
-                                               V
+                                            <th class="text-center" >
+                                               F
 
 
                                             </th>
-                                            <th class="text-start">
-                                                F=(A-B-E)
+                                            <th class="text-center">
+                                                G = A-B-E
 
 
 
@@ -917,82 +985,34 @@
 
 
 
-                                            <th class="text-start" >
-                                                G=(A/F)
+                                            <th class="text-center" >
+                                                H
 
 
                                             </th>
-                                            <th class="text-start" >
-                                               H
-
-                                            </th>
-                                            <th class="text-start" >
+                                            <th class="text-center" >
                                                 I
 
                                             </th>
-                                            <th class="text-start" >
-                                               J
+                                            <th class="text-center" >
+                                                J
+
+                                            </th>
+                                            <th class="text-center" >
+                                                K
 
                                             </th>
 
-                                            <th class="text-start" >
-                                               K
+                                            <th class="text-center" >
+                                                L
                                             </th>
-                                            <th class="text-start" >
-                                               L
-
-
-                                            </th>
-                                            <th class="text-start">
-                                                M=(I-L)
-
-
+                                            <th class="text-center" >
+                                                M
 
 
                                             </th>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                            <th class="text-start" >
-                                                N=(I-J)
-
-
-
-                                            </th>
-                                            <th class="text-start" >
-                                                O(I-M)/A
-
-                                            </th>
-                                            <th class="text-start" >
-                                               P
-
-                                            </th>
-                                            <th class="text-start" >
-                                               Q
-
-                                            </th>
-
-                                            <th class="text-start" >
-                                                R=(P-Q)
-                                            </th>
-                                            <th class="text-start" >
-                                               S
-
-
-                                            </th>
-                                            <th class="text-start">
-                                               T
+                                            <th class="text-center">
+                                                N = J-M
 
 
 
@@ -1000,8 +1020,55 @@
                                             </th>
 
 
-                                            <th>U=S-T</th>
-                                            <th>W=A-Q-S-V</th>
+
+
+
+
+
+
+
+
+
+
+
+
+                                            <th class="text-center" >
+                                                O= J-K
+
+
+
+                                            </th>
+                                            <th class="text-center" >
+                                                P = (J-N)/A
+
+                                            </th>
+                                            <th class="text-center" >
+                                                Q
+
+                                            </th>
+                                            <th class="text-center" >
+                                                R
+
+                                            </th>
+
+                                            <th class="text-center" >
+                                                S=Q-R
+                                            </th>
+                                            <th class="text-center" >
+                                                T
+
+
+                                            </th>
+                                            <th class="text-center">
+                                                U   
+
+
+
+                                            </th>
+
+
+                                            <th class="text-center">V = T - U</th>
+                                            <th class="text-center">W= A-Q-T-F</th>
                                             
 
 
@@ -1039,7 +1106,7 @@
                                             <th class="text-start">Order Draft Value (WO/PO)</th>
                                             <th class="text-start">Order Submit Value (WO/PO)</th>
                                             <th class="text-start">Order Approved Value (WO/PO)</th>
-                                            <th class="text-start">Miscellaneous Expenses</th>
+                                            <th class="text-start">Miscellaneous Expenses Cerified</th>
                                             <th class="text-start">Miscelleaneuos Expenses Paid</th>
                                             <th class="text-start">Balance Budget</th>
                                             <th class="text-start">% Balance</th>
@@ -1049,7 +1116,7 @@
                                             <th class="text-start">Material Issued</th>
                                             <th class="text-start">Material Consumed</th>
                                             <th class="text-start">Stock at Site (Inventory)</th>
-                                            <th class="text-start">Abstract & GRN Pending</th>
+                                            <th class="text-start">Abstract & GRN - Pending</th>
                                             <th class="text-start">% Completion</th>
                                             <th class="text-start">Total Bills Value (WO/PO)</th>
                                             <th class="text-start">Total Bills Paid Value (WO/PO)</th>
@@ -1063,7 +1130,7 @@
                                         </tr>
                                     </thead>
                                     <tbody style="z-index: 11; ">
-                                        <tr>
+                                        <tr class="reference-label main-category">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -1109,7 +1176,7 @@
 
                                         </tr>
 
-                                        <tr class="collapse collapseRow1 ">
+                                        <tr class="collapse collapseRow1 reference-label category-lvl2">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -1151,7 +1218,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1 ">
+                                         <tr class="collapse collapseRow1  reference-label sub-category-lvl3">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -1198,7 +1265,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1 ">
+                                         <tr class="collapse collapseRow1 reference-label sub-category-lvl4">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -1256,7 +1323,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1 ">
+                                         <tr class="collapse collapseRow1 reference-label sub-category-lvl5">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -1967,7 +2034,7 @@
                                          </tr>
 
 
-                                         <tr class="collapse collapseRow1 ">
+                                         <tr class="collapse collapseRow1  reference-label sub-category-lvl5">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -2440,7 +2507,7 @@
 
 
 
-                                            <tr>
+                                            <tr class="reference-label main-category">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -2486,7 +2553,7 @@
 
                                         </tr>
 
-                                        <tr class="collapse collapseRow1_1 ">
+                                        <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -2529,7 +2596,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label sub-category-lvl3">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -2577,7 +2644,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label sub-category-lvl4">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -2636,7 +2703,7 @@
                                             <td></td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -3347,7 +3414,7 @@
                                          </tr>
 
 
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -3790,7 +3857,7 @@
 
 
 
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -3837,7 +3904,7 @@
                                             </td>
  
                                          </tr>
-                                         <tr class="collapse collapseRow1_1 ">
+                                         <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                             <td>
                                                 <i
                                                   class="fa-solid fa-plus me-2 collapse-icon"
@@ -3901,6 +3968,8 @@
                                 <button class="purple-btn2">Print</button>
                                 <button class="purple-btn2">Download </button>
                                 <button class="purple-btn2">Import </button>
+                                <button class="purple-btn2">Modify </button>
+
                             </div>
 
                             <div class="row mt-2 justify-content-center">
