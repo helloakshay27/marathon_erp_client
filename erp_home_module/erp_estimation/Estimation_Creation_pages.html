@@ -2595,20 +2595,19 @@ td i{
   <script>
     $(document).ready(function () {
       $(".collapse-icon").click(function () {
-  var icon = $(this);
-  var target = $(icon.data("target"));
+        var icon = $(this);
+        var target = $(icon.data("target"));
 
-  target.on("shown.bs.collapse", function () {
-    icon.removeClass("fas fa-plus").addClass("fas fa-minus");
-  });
+        target.on("shown.bs.collapse", function () {
+          icon.removeClass("fas fa-plus ").addClass("fas  fa-minus");
+        });
 
-  target.on("hidden.bs.collapse", function () {
-    icon.removeClass("fas fa-minus").addClass("fas fa-plus");
-  });
+        target.on("hidden.bs.collapse", function () {
+          icon.removeClass("fas  fa-minus ").addClass("fas fa-plus");
+        });
 
-  target.collapse("toggle");
-});
-
+        target.collapse("toggle");
+      });
       var selectedContent = $('input[name="contentSelector"]:checked').val();
       $("#" + selectedContent).show();
 
