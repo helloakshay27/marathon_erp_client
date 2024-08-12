@@ -4909,8 +4909,5 @@ left: 0 !important;
   color: #8B0000; /* Dark red color */
   margin-right: 15px;
   font-weight: bold;
-  text-decoration: none; /* Remove underline */
-  cursor: default; /* Change cursor to default arrow */
-  user-select: none; /* Prevent text selection */
-  pointer-events: none; /* Make the element non-clickable */
+ 
 }
