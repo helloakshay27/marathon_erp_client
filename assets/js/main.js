@@ -23,6 +23,31 @@ $(document).ready(function(){
 
     // Toggle card collapse state
     $card.toggleClass('collapsed-card');
+
+
+    $(".collapse-icon").click(function () {
+        var icon = $(this);
+        var target = $(icon.data("target"));
+    
+        target.on("shown.bs.collapse", function () {
+          icon.removeClass("fas fa-plus ").addClass("fas  fa-minus");
+        });
+    
+        target.on("hidden.bs.collapse", function () {
+          icon.removeClass("fas  fa-minus ").addClass("fas fa-plus");
+        });
+    
+        target.collapse("toggle");
+      });
+      var selectedContent = $('input[name="contentSelector"]:checked').val();
+      $("#" + selectedContent).show();
+    
+      $('input[name="contentSelector"]').on("click", function () {
+        var selectedContent = $('input[name="contentSelector"]:checked').val();
+        $(".contentpo").hide();
+        $("#" + selectedContent).show();
+      });
+    });
 });
 
 
@@ -31,29 +56,7 @@ $(document).ready(function(){
 
 
 
-$(".collapse-icon").click(function () {
-    var icon = $(this);
-    var target = $(icon.data("target"));
 
-    target.on("shown.bs.collapse", function () {
-      icon.removeClass("fas fa-plus ").addClass("fas  fa-minus");
-    });
-
-    target.on("hidden.bs.collapse", function () {
-      icon.removeClass("fas  fa-minus ").addClass("fas fa-plus");
-    });
-
-    target.collapse("toggle");
-  });
-  var selectedContent = $('input[name="contentSelector"]:checked').val();
-  $("#" + selectedContent).show();
-
-  $('input[name="contentSelector"]').on("click", function () {
-    var selectedContent = $('input[name="contentSelector"]:checked').val();
-    $(".contentpo").hide();
-    $("#" + selectedContent).show();
-  });
-});
 
 
 
