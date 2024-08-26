@@ -21,71 +21,81 @@
     <title>Estimation Creation page</title>
 </head>
 <style>
-           /* Add row css */
-           .row-2 {
+    /* Add row css */
+    .row-2 {
         display: none;
     }
-     
-    .collapse-icon {
-  transition: transform 0.3s ease;
-}
 
-.collapse-icon.fa-minus {
-  transform: rotate(180deg);
-}
+    .collapse-icon {
+        transition: transform 0.3s ease;
+    }
+
+    .collapse-icon.fa-minus {
+        transform: rotate(180deg);
+    }
 
     /* Add row css */
     .row-2 {
-      display: none;
+        display: none;
     }
 
     .legend-container .reference-label {
-  padding: 5px;
-  border-radius: 5px;
-  color: black;
-  margin-right: 10px;
-}
-.reference-label {
-  padding: 5px;
-  border-radius: 5px;
-  color: black;
-  margin-right: 10px;
-}
+        padding: 5px;
+        border-radius: 5px;
+        color: black;
+        margin-right: 10px;
+        font-size: 11px;
+    }
 
-/* Define colors for each category */
-.main-category {
-  background-color: #ADD8E6; /* Light blue */
-}
+    .reference-label {
+        padding: 5px;
+        border-radius: 5px;
+        color: black;
+        margin-right: 10px;
+    }
 
-.category-lvl2 {
-  background-color: #FFE4B5; /* Moccasin */
-}
+    /* Define colors for each category */
+    .main-category {
+        background-color: #ADD8E6;
+        /* Light blue */
+    }
 
-.sub-category-lvl3 {
-  background-color: #FFD700; /* Gold */
-}
+    .category-lvl2 {
+        background-color: #FFE4B5;
+        /* Moccasin */
+    }
 
-.sub-category-lvl4 {
-  background-color: #FFB6C1; /* Light Pink */
-}
+    .sub-category-lvl3 {
+        background-color: #FFD700;
+        /* Gold */
+    }
 
-.sub-category-lvl5 {
-  background-color: #FFFFE0; /* Light Yellow */
-}
+    .sub-category-lvl4 {
+        background-color: #FFB6C1;
+        /* Light Pink */
+    }
 
-.labour {
-  background-color: #FFFF99; /* Pale Yellow */
-}
-.Over-Budget{
-    background-color: red; /* Pale Yellow */
- 
-}
+    .sub-category-lvl5 {
+        background-color: #FFFFE0;
+        /* Light Yellow */
+    }
 
-td i{
-  color: var(--black);
-  border: 1px solid var(--black);
-  
-}
+    .labour {
+        background-color: #FFFF99;
+        /* Pale Yellow */
+    }
+
+    .Over-Budget {
+        background-color: red;
+        /* Pale Yellow */
+
+    }
+
+    td i {
+        color: var(--black);
+        border: 1px solid var(--black);
+
+    }
 </style>
 
 <body>
@@ -731,7 +741,7 @@ td i{
                     <!-- <h5 class="mt-4">Band Master</h5> -->
                     <div class="card p-3 mt-3" id="">
                         <!-- Total Content Here -->
-                     
+
                         <div class="card   mt-2">
                             <div class="card-header3">
                                 <h3 class="card-title">Project Details</h3>
@@ -750,53 +760,61 @@ td i{
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>RERA Area</label>
-                                            <input class="form-control" type="number" placeholder="Sq. Ft." fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="Sq. Ft."
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Construction Area</label>
-                                            <input class="form-control" type="number" placeholder="Sq. Ft." fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="Sq. Ft."
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label>Saleable Area Sq.ft.</label>
-                                            <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3 ">
                                         <div class="form-group">
                                             <label>Material Total</label>
-                                            <input class="form-control" type="number" placeholder="10,000,00" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="10,000,00"
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3 ">
                                         <div class="form-group">
                                             <label>Sub-Project Budget</label>
-                                            <input class="form-control" type="number" placeholder="INR" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="INR"
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3 mt-2">
                                         <div class="form-group">
                                             <label>M+L Budget Sq.ft</label>
-                                            <input class="form-control" type="number" placeholder="INR" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="INR"
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3 mt-2">
                                         <div class="form-group">
                                             <label>Budget Type</label>
-                                            <input class="form-control" type="text" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="text" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-3 ">
                                         <div class="form-group">
                                             <label>Labour Total</label>
-                                            <input class="form-control" type="number" placeholder="10,000,00" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder="10,000,00"
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                 </div>
-                            
+
                                 <div class="row mt-2">
                                     <div class="col-md-4 my-2">
                                         <h6 style="text-decoration: underline; color: var(--red);font-weight: 600; ">
@@ -804,87 +822,100 @@ td i{
                                         </h6>
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-           
+
                                     <div class="col-md-4 my-2">
                                         <h6 style="text-decoration: underline; color: var(--red);font-weight: 600; ">
                                             Current
                                         </h6>
                                     </div>
-      
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Sub-Project M+L Budget</label>
-                                            <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-    
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Sub-Project M+L Budget</label>
-                                            <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                           
-                              
+
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Sub-Project Budget Balance</label>
-                                            <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
-                                       
+
                                     </div>
-                            
+
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Sub-Project Budget Balance</label>
-                                            <input class="form-control" type="number" placeholder="" fdprocessedid="pi363i">
+                                            <input class="form-control" type="number" placeholder=""
+                                                fdprocessedid="pi363i">
                                         </div>
                                     </div>
-                                
+
                                 </div>
                             </div>
                         </div>
-                     
+
                         <div class="d-flex justify-content-between">
                             <div class="legend-container d-flex justify-content-start align-items-center px-4 my-3">
                                 <span class="reference-label me-4">Legend</span>
-                                
+
                                 <span class="reference-label main-category">Main Category</span>
-                                
+
                                 <span class="reference-label category-lvl2">Category lvl 2</span>
-                                
+
                                 <span class="reference-label sub-category-lvl3">Sub-category lvl 3</span>
-                                
+
                                 <span class="reference-label sub-category-lvl4">Sub-category lvl 4</span>
-                                
+
                                 <span class="reference-label sub-category-lvl5">Sub-category lvl 5</span>
-                                
+
                                 <span class="reference-label labour">Labour</span>
                                 <span class="reference-label Over-Budget">Over Budget</span>
 
-                              </div>
+                            </div>
                             <div>
-                                <button class="btn" >
-                                    <i style="font-size: large; color: var(--red);" class="fa-solid fa-arrows-rotate"></i>
+                                <button class="btn">
+                                    <i style="font-size: large; color: var(--red);"
+                                        class="fa-solid fa-arrows-rotate"></i>
                                 </button>
-                                <button type="submit" class="btn btn-md " data-bs-toggle="modal" data-bs-target="#settings">
-                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M10.9985 7.45532C8.64565 7.45532 6.73828 9.36269 6.73828 11.7155C6.73828 14.0684 8.64565 15.9757 10.9985 15.9757C13.3514 15.9757 15.2587 14.0684 15.2587 11.7155C15.2587 9.36269 13.3514 7.45532 10.9985 7.45532ZM8.86838 11.7155C8.86838 10.5391 9.82208 9.58544 10.9985 9.58544C12.1749 9.58544 13.1286 10.5391 13.1286 11.7155C13.1286 12.892 12.1749 13.8457 10.9985 13.8457C9.82208 13.8457 8.86838 12.892 8.86838 11.7155Z" fill="#8B0203"></path>
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3416 2.97635C13.8887 -0.992103 8.10872 -0.992127 7.65577 2.97635L7.56116 3.80528C7.46818 4.61997 6.60664 5.12268 5.84081 4.79072L5.07295 4.45788C1.43655 2.88166 -1.52087 7.83752 1.73283 10.2351L2.40609 10.7312C3.07122 11.2213 3.07122 12.2099 2.40609 12.7L1.73283 13.1961C-1.52085 15.5936 1.43653 20.5496 5.07295 18.9733L5.84081 18.6405C6.60664 18.3085 7.46818 18.8113 7.56116 19.6259L7.65577 20.4549C8.10872 24.4233 13.8887 24.4233 14.3416 20.4549L14.4362 19.6259C14.5292 18.8113 15.3908 18.3085 16.1565 18.6405L16.9244 18.9733C20.5609 20.5495 23.5183 15.5936 20.2645 13.1961L19.5913 12.7C18.9262 12.2099 18.9262 11.2213 19.5913 10.7312L20.2645 10.2351C23.5183 7.83753 20.5609 2.88164 16.9244 4.45788L16.1566 4.79072C15.3908 5.12268 14.5292 4.61997 14.4362 3.8053L14.3416 2.97635ZM9.77214 3.2179C9.93768 1.76752 12.0597 1.7675 12.2252 3.2179L12.3198 4.04684C12.5762 6.29253 14.9347 7.64199 17.0037 6.74512L17.7716 6.41228C19.1548 5.81273 20.1484 7.67469 19.001 8.52023L18.3278 9.01632C16.5072 10.3578 16.5072 13.0734 18.3278 14.4149L19.001 14.911C20.1484 15.7566 19.1548 17.6185 17.7716 17.019L17.0037 16.686C14.9347 15.7891 12.5762 17.1386 12.3198 19.3843L12.2252 20.2133C12.0597 21.6636 9.93768 21.6638 9.77214 20.2133L9.67753 19.3843C9.42121 17.1386 7.06273 15.7891 4.99366 16.686L4.22578 17.019C2.84258 17.6185 1.84896 15.7566 2.99644 14.911L3.66969 14.4149C5.49017 13.0734 5.49015 10.3578 3.66969 9.01632L2.99642 8.52021C1.84898 7.67471 2.84256 5.81271 4.2258 6.4123L4.99366 6.74512C7.06273 7.64199 9.42121 6.29253 9.67753 4.04684L9.77214 3.2179Z" fill="#8B0203"></path>
+                                <button type="submit" class="btn btn-md " data-bs-toggle="modal"
+                                    data-bs-target="#settings">
+                                    <svg width="22" height="24" viewBox="0 0 22 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M10.9985 7.45532C8.64565 7.45532 6.73828 9.36269 6.73828 11.7155C6.73828 14.0684 8.64565 15.9757 10.9985 15.9757C13.3514 15.9757 15.2587 14.0684 15.2587 11.7155C15.2587 9.36269 13.3514 7.45532 10.9985 7.45532ZM8.86838 11.7155C8.86838 10.5391 9.82208 9.58544 10.9985 9.58544C12.1749 9.58544 13.1286 10.5391 13.1286 11.7155C13.1286 12.892 12.1749 13.8457 10.9985 13.8457C9.82208 13.8457 8.86838 12.892 8.86838 11.7155Z"
+                                            fill="#8B0203"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M14.3416 2.97635C13.8887 -0.992103 8.10872 -0.992127 7.65577 2.97635L7.56116 3.80528C7.46818 4.61997 6.60664 5.12268 5.84081 4.79072L5.07295 4.45788C1.43655 2.88166 -1.52087 7.83752 1.73283 10.2351L2.40609 10.7312C3.07122 11.2213 3.07122 12.2099 2.40609 12.7L1.73283 13.1961C-1.52085 15.5936 1.43653 20.5496 5.07295 18.9733L5.84081 18.6405C6.60664 18.3085 7.46818 18.8113 7.56116 19.6259L7.65577 20.4549C8.10872 24.4233 13.8887 24.4233 14.3416 20.4549L14.4362 19.6259C14.5292 18.8113 15.3908 18.3085 16.1565 18.6405L16.9244 18.9733C20.5609 20.5495 23.5183 15.5936 20.2645 13.1961L19.5913 12.7C18.9262 12.2099 18.9262 11.2213 19.5913 10.7312L20.2645 10.2351C23.5183 7.83753 20.5609 2.88164 16.9244 4.45788L16.1566 4.79072C15.3908 5.12268 14.5292 4.61997 14.4362 3.8053L14.3416 2.97635ZM9.77214 3.2179C9.93768 1.76752 12.0597 1.7675 12.2252 3.2179L12.3198 4.04684C12.5762 6.29253 14.9347 7.64199 17.0037 6.74512L17.7716 6.41228C19.1548 5.81273 20.1484 7.67469 19.001 8.52023L18.3278 9.01632C16.5072 10.3578 16.5072 13.0734 18.3278 14.4149L19.001 14.911C20.1484 15.7566 19.1548 17.6185 17.7716 17.019L17.0037 16.686C14.9347 15.7891 12.5762 17.1386 12.3198 19.3843L12.2252 20.2133C12.0597 21.6636 9.93768 21.6638 9.77214 20.2133L9.67753 19.3843C9.42121 17.1386 7.06273 15.7891 4.99366 16.686L4.22578 17.019C2.84258 17.6185 1.84896 15.7566 2.99644 14.911L3.66969 14.4149C5.49017 13.0734 5.49015 10.3578 3.66969 9.01632L2.99642 8.52021C1.84898 7.67471 2.84256 5.81271 4.2258 6.4123L4.99366 6.74512C7.06273 7.64199 9.42121 6.29253 9.67753 4.04684L9.77214 3.2179Z"
+                                            fill="#8B0203"></path>
                                     </svg>
-                                  </button>
-                                <button class="purple-btn2" data-bs-toggle="modal" data-bs-target="#copyModal"> <i style="font-size: large; color: #ffff;" class="fa-solid fa-copy me-2"></i>Copy Budget</button>
+                                </button>
+                                <button class="purple-btn2" data-bs-toggle="modal" data-bs-target="#copyModal"> <i
+                                        style="font-size: large; color: #ffff;" class="fa-solid fa-copy me-2"></i>Copy
+                                    Budget</button>
                             </div>
                         </div>
-                           
-                            
+
+
 
                         <div class="tbl-container mx-3 mt-2" style="max-height: 700px;">
                             <table class="" style="width: max-content; max-height: max-content;height: auto;">
@@ -893,11 +924,15 @@ td i{
                                         <th class="text-center" colspan="7">
                                             BUDGET
                                         </th>
-                                        <th class="text-center" colspan="5">
-                                            Amount Contracted 
+                                        <th class="text-center" colspan="3">
+                                            Amount Contracted
 
                                         </th>
-                                       
+                                        <th class="text-center" colspan="2">
+                                            Miscellaneous Expenses
+
+                                        </th>
+
                                         <th class="text-center" colspan="2">
                                             Budget Balance
 
@@ -907,7 +942,7 @@ td i{
 
                                         </th>
                                         <th class="text-center" colspan="7">
-                                           
+
                                             Abstract & GRN
 
                                         </th>
@@ -928,19 +963,19 @@ td i{
 
                                     </tr>
                                     <tr>
-                                        <th class="text-center" colspan="6" >
-                                            References 
+                                        <th class="text-center" colspan="6">
+                                            References
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             A
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             B
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             C
 
                                         </th>
@@ -949,11 +984,11 @@ td i{
 
                                         </th>
 
-                                        <th class="text-center" >
-                                           E
+                                        <th class="text-center">
+                                            E
                                         </th>
-                                        <th class="text-center" >
-                                           F
+                                        <th class="text-center">
+                                            F
 
 
                                         </th>
@@ -989,28 +1024,28 @@ td i{
 
 
 
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             H
 
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             I
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             J
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             K
 
                                         </th>
 
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             L
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             M
 
 
@@ -1036,35 +1071,35 @@ td i{
 
 
 
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             O= J-K
 
 
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             P = (J-N)/A
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             Q
 
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             R
 
                                         </th>
 
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             S=Q-R
                                         </th>
-                                        <th class="text-center" >
+                                        <th class="text-center">
                                             T
 
 
                                         </th>
                                         <th class="text-center">
-                                            U   
+                                            U
 
 
 
@@ -1073,7 +1108,7 @@ td i{
 
                                         <th class="text-center">V = T - U</th>
                                         <th class="text-center">W= A-Q-T-F</th>
-                                        
+
 
 
 
@@ -1129,66 +1164,58 @@ td i{
                                         <th class="text-start">Total Advance Adjusted (WO/PO)</th>
                                         <th class="text-start">Total Outstanding Advance (WO/PO)</th>
                                         <th class="text-start">Balance yet to be Paid</th>
-                                        
+
 
                                     </tr>
                                 </thead>
                                 <tbody style="z-index: 11; ">
                                     <tr class="reference-label main-category">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
-                                       <td>1
-                                    </td>
-                                       <td>Main Category
-                                    </td>
-                                    <td>Civil Work
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
+                                        <td>1
+                                        </td>
+                                        <td>Main Category
+                                        </td>
+                                        <td>Civil Work
 
-                                    </td>
+                                        </td>
 
-                                       <td></td>
-                                       <td>Civil Work</td>
-                                       <td>4,500,000</td>
-                                       <td>13,00,000</td>
-                                       <td>9,00,000</td>
-                                       <td>1,100,000</td>
-                                       <td>1,00,000</td>
-                                       <td>40,000</td>
-                                       <td>30%</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>4000</td>
-                                       <td>40,000</td>
-                                       <td>40,00</td>
-                                       <td>40,00</td>
-                                       <td>40,00</td>
+                                        <td></td>
+                                        <td>Civil Work</td>
+                                        <td>4,500,000</td>
+                                        <td>13,00,000</td>
+                                        <td>9,00,000</td>
+                                        <td>1,100,000</td>
+                                        <td>1,00,000</td>
+                                        <td>40,000</td>
+                                        <td>30%</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>4000</td>
+                                        <td>40,000</td>
+                                        <td>40,00</td>
+                                        <td>40,00</td>
+                                        <td>40,00</td>
 
-                                       <td>4,390,000</td>
+                                        <td>4,390,000</td>
 
                                     </tr>
 
                                     <tr class="collapse collapseRow1 reference-label category-lvl2">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>1.1
                                         </td>
                                         <td>Sub-Category Lvl 2
@@ -1221,16 +1248,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1  reference-label sub-category-lvl3">
+                                    </tr>
+                                    <tr class="collapse collapseRow1  reference-label sub-category-lvl3">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>1.1.1
 
                                         </td>
@@ -1268,16 +1291,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1 reference-label sub-category-lvl4">
+                                    </tr>
+                                    <tr class="collapse collapseRow1 reference-label sub-category-lvl4">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>1.1.1.1
 
 
@@ -1326,16 +1345,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1 reference-label sub-category-lvl5">
+                                    </tr>
+                                    <tr class="collapse collapseRow1 reference-label sub-category-lvl5">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow2"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow2"></i>
+                                        </td>
                                         <td>1.1.1.1.1
 
 
@@ -1346,7 +1361,7 @@ td i{
 
 
                                         </td>
-                                        <td>RCC Construction 
+                                        <td>RCC Construction
 
                                         </td>
                                         <td>
@@ -1387,16 +1402,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow2 ">
+                                    </tr>
+                                    <tr class="collapse collapseRow2 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Cement"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Cement"></i>
+                                        </td>
                                         <td>
 
 
@@ -1407,7 +1418,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -1415,7 +1426,7 @@ td i{
                                         </td>
                                         <td>Material</td>
                                         <td>
-
+                                            700000
                                         </td>
                                         <td>
                                         </td>
@@ -1425,11 +1436,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -1449,12 +1460,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                     <tr class="collapse Cement ">
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1470,7 +1481,8 @@ td i{
                                             M
 
                                         </td>
-                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);" data-bs-toggle="modal" data-bs-target="#modifyModal">Tile</td>
+                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);"
+                                            data-bs-toggle="modal" data-bs-target="#modifyModal">Tile</td>
                                         <td>10,00,000
 
                                         </td>
@@ -1486,7 +1498,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1506,11 +1518,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement ">
+                                    </tr>
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1543,7 +1555,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1563,11 +1575,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement ">
+                                    </tr>
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1583,7 +1595,8 @@ td i{
                                             M
 
                                         </td>
-                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);" data-bs-toggle="modal" data-bs-target="#modifyModal">OPC Cement
+                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);"
+                                            data-bs-toggle="modal" data-bs-target="#modifyModal">OPC Cement
 
                                         </td>
                                         <td>10,00,000
@@ -1601,7 +1614,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1621,12 +1634,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                     <tr class="collapse Cement ">
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1660,7 +1673,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1680,11 +1693,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement ">
+                                    </tr>
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1717,7 +1730,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1737,11 +1750,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement ">
+                                    </tr>
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1775,7 +1788,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1795,11 +1808,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement ">
+                                    </tr>
+                                    <tr class="collapse Cement ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1833,7 +1846,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1853,18 +1866,14 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow2 ">
+                                    <tr class="collapse collapseRow2 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Labour"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Labour"></i>
+                                        </td>
                                         <td>
 
 
@@ -1875,7 +1884,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -1883,7 +1892,7 @@ td i{
                                         </td>
                                         <td>Labour</td>
                                         <td>
-
+                                            200000
                                         </td>
                                         <td>
                                         </td>
@@ -1893,11 +1902,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -1917,11 +1926,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour ">
+                                    </tr>
+                                    <tr class="collapse Labour ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -1937,7 +1946,8 @@ td i{
                                             L
 
                                         </td>
-                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);" data-bs-toggle="modal" data-bs-target="#labour_modal">Civil Work RCC
+                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);"
+                                            data-bs-toggle="modal" data-bs-target="#labour_modal">Civil Work RCC
 
 
                                         </td>
@@ -1956,7 +1966,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -1976,11 +1986,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour ">
+                                    </tr>
+                                    <tr class="collapse Labour ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2015,7 +2025,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2035,18 +2045,14 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow1  reference-label sub-category-lvl5">
+                                    <tr class="collapse collapseRow1  reference-label sub-category-lvl5">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow3"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow3"></i>
+                                        </td>
                                         <td>1.1.1.1.2
 
 
@@ -2100,21 +2106,17 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
 
 
 
-                                     <tr class="collapse collapseRow3 ">
+                                    <tr class="collapse collapseRow3 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Cement1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Cement1"></i>
+                                        </td>
                                         <td>
 
 
@@ -2125,7 +2127,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -2133,7 +2135,7 @@ td i{
                                         </td>
                                         <td>Material</td>
                                         <td>
-
+                                            700000
                                         </td>
                                         <td>
                                         </td>
@@ -2143,11 +2145,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -2167,13 +2169,13 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                  
-                                     <tr class="collapse Cement1 ">
+
+                                    <tr class="collapse Cement1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2207,7 +2209,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2227,11 +2229,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement1 ">
+                                    </tr>
+                                    <tr class="collapse Cement1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2247,7 +2249,8 @@ td i{
                                             M
 
                                         </td>
-                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);" data-bs-toggle="modal" data-bs-target="#modifyModal">Cement (PPC)
+                                        <td style="cursor: pointer; text-decoration: underline; color: var(--red);"
+                                            data-bs-toggle="modal" data-bs-target="#modifyModal">Cement (PPC)
 
 
                                         </td>
@@ -2266,7 +2269,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2286,13 +2289,13 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                    
-                                     <tr class="collapse Cement1 ">
+
+                                    <tr class="collapse Cement1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2326,7 +2329,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2346,19 +2349,15 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                 
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow3 ">
+
+                                    <tr class="collapse collapseRow3 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Labour1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Labour1"></i>
+                                        </td>
                                         <td>
 
 
@@ -2369,7 +2368,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -2377,7 +2376,7 @@ td i{
                                         </td>
                                         <td>Labour</td>
                                         <td>
-
+                                            200000
                                         </td>
                                         <td>
                                         </td>
@@ -2387,11 +2386,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -2411,11 +2410,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour1 ">
+                                    </tr>
+                                    <tr class="collapse Labour1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2451,7 +2450,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2471,7 +2470,7 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
 
@@ -2511,61 +2510,53 @@ td i{
 
 
 
-                                        <tr class="reference-label main-category">
+                                    <tr class="reference-label main-category">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1_1"
-                                            ></i>
-                                          </td>
-                                       <td>2
-                                    </td>
-                                       <td>Main Category
-                                    </td>
-                                    <td>FF
-                                    </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1_1"></i>
+                                        </td>
+                                        <td>2
+                                        </td>
+                                        <td>Main Category
+                                        </td>
+                                        <td>FF
+                                        </td>
 
-                                       <td></td>
-                                       <td>Flat Finishing
-                                    </td>
-                                       <td>4,500,000</td>
-                                       <td>13,00,000</td>
-                                       <td>9,00,000</td>
-                                       <td>1,100,000</td>
-                                       <td>1,00,000</td>
-                                       <td>40,000</td>
-                                       <td>30%</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>40,000</td>
-                                       <td>4000</td>
-                                       <td>40,000</td>
-                                       <td>40,00</td>
-                                       <td>40,00</td>
-                                       <td>40,00</td>
+                                        <td></td>
+                                        <td>Flat Finishing
+                                        </td>
+                                        <td>4,500,000</td>
+                                        <td>13,00,000</td>
+                                        <td>9,00,000</td>
+                                        <td>1,100,000</td>
+                                        <td>1,00,000</td>
+                                        <td>40,000</td>
+                                        <td>30%</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>40,000</td>
+                                        <td>4000</td>
+                                        <td>40,000</td>
+                                        <td>40,00</td>
+                                        <td>40,00</td>
+                                        <td>40,00</td>
 
-                                       <td>4,390,000</td>
+                                        <td>4,390,000</td>
 
                                     </tr>
 
                                     <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>2.1
                                         </td>
                                         <td>Sub-Category Lvl 2
@@ -2599,16 +2590,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1_1 reference-label sub-category-lvl3">
+                                    </tr>
+                                    <tr class="collapse collapseRow1_1 reference-label sub-category-lvl3">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>2.1.1
 
                                         </td>
@@ -2647,16 +2634,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1_1 reference-label sub-category-lvl4">
+                                    </tr>
+                                    <tr class="collapse collapseRow1_1 reference-label sub-category-lvl4">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>2.1.1.1
 
 
@@ -2706,16 +2689,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
+                                    </tr>
+                                    <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow2_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow2_1"></i>
+                                        </td>
                                         <td>2.1.1.1.1
 
 
@@ -2726,7 +2705,7 @@ td i{
 
 
                                         </td>
-                                        <td>FF-Tile-Flooring 
+                                        <td>FF-Tile-Flooring
 
 
                                         </td>
@@ -2768,16 +2747,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow2_1 ">
+                                    </tr>
+                                    <tr class="collapse collapseRow2_1 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Cement_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Cement_1"></i>
+                                        </td>
                                         <td>
 
 
@@ -2788,7 +2763,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -2796,7 +2771,7 @@ td i{
                                         </td>
                                         <td>Material</td>
                                         <td>
-
+700000
                                         </td>
                                         <td>
                                         </td>
@@ -2806,11 +2781,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -2830,12 +2805,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                     <tr class="collapse Cement_1">
+                                    <tr class="collapse Cement_1">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2851,7 +2826,9 @@ td i{
                                             M
 
                                         </td>
-                                        <td style="cursor: pointer;" data-bs-toggle="modal" data-bs-target="#modifyModal">Tile</td>                                            <td>10,00,000
+                                        <td style="cursor: pointer;" data-bs-toggle="modal"
+                                            data-bs-target="#modifyModal">Tile</td>
+                                        <td>10,00,000
 
                                         </td>
                                         <td>70,000
@@ -2866,7 +2843,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2886,11 +2863,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr> 
-                                     <tr class="collapse Cement_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2923,7 +2900,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -2943,11 +2920,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -2981,7 +2958,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3001,12 +2978,12 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                     <tr class="collapse Cement_1 ">
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3040,7 +3017,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3060,11 +3037,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3097,7 +3074,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3117,11 +3094,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3155,7 +3132,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3175,11 +3152,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3213,7 +3190,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3233,18 +3210,14 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow2_1 ">
+                                    <tr class="collapse collapseRow2_1 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Labour_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Labour_1"></i>
+                                        </td>
                                         <td>
 
 
@@ -3255,7 +3228,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -3263,7 +3236,7 @@ td i{
                                         </td>
                                         <td>Labour</td>
                                         <td>
-
+200000
                                         </td>
                                         <td>
                                         </td>
@@ -3273,11 +3246,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -3297,11 +3270,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour_1 ">
+                                    </tr>
+                                    <tr class="collapse Labour_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3336,7 +3309,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3356,11 +3329,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour_1 ">
+                                    </tr>
+                                    <tr class="collapse Labour_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3395,7 +3368,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3415,18 +3388,14 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
+                                    <tr class="collapse collapseRow1_1 reference-label sub-category-lvl5">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow3_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow3_1"></i>
+                                        </td>
                                         <td>2.1.1.1.2
 
 
@@ -3481,21 +3450,17 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
 
 
 
-                                     <tr class="collapse collapseRow3_1 ">
+                                    <tr class="collapse collapseRow3_1 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Cement_1_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Cement_1_1"></i>
+                                        </td>
                                         <td>
 
 
@@ -3506,7 +3471,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -3514,7 +3479,7 @@ td i{
                                         </td>
                                         <td>Material</td>
                                         <td>
-
+700000
                                         </td>
                                         <td>
                                         </td>
@@ -3524,11 +3489,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -3548,13 +3513,13 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                  
-                                     <tr class="collapse Cement_1_1 ">
+
+                                    <tr class="collapse Cement_1_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3589,7 +3554,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3609,11 +3574,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Cement_1_1 ">
+                                    </tr>
+                                    <tr class="collapse Cement_1_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3649,7 +3614,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3669,13 +3634,13 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
-                                    
-                                     <tr class="collapse Cement_1_1 ">
+
+                                    <tr class="collapse Cement_1_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3710,7 +3675,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3730,19 +3695,15 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                 
+                                    </tr>
 
 
-                                     <tr class="collapse collapseRow3_1 ">
+
+                                    <tr class="collapse collapseRow3_1 ">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".Labour_1_1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".Labour_1_1"></i>
+                                        </td>
                                         <td>
 
 
@@ -3753,7 +3714,7 @@ td i{
 
 
                                         </td>
-                                        <td> 
+                                        <td>
 
                                         </td>
                                         <td>
@@ -3761,7 +3722,7 @@ td i{
                                         </td>
                                         <td>Labour</td>
                                         <td>
-
+200000
                                         </td>
                                         <td>
                                         </td>
@@ -3771,11 +3732,11 @@ td i{
                                         <td>
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td>
-                                            
+
 
                                         </td>
                                         <td></td>
@@ -3795,11 +3756,11 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
-                                     <tr class="collapse Labour_1_1 ">
+                                    </tr>
+                                    <tr class="collapse Labour_1_1 ">
                                         <td>
-                                          
-                                          </td>
+
+                                        </td>
                                         <td>
 
 
@@ -3836,7 +3797,7 @@ td i{
 
                                         </td>
                                         <td>
-                                           0
+                                            0
 
                                         </td>
                                         <td>0%</td>
@@ -3856,20 +3817,16 @@ td i{
                                         <td></td>
                                         <td></td>
 
-                                     </tr>
+                                    </tr>
 
 
 
 
-                                     <tr class="collapse collapseRow1_1 reference-label category-lvl2">
+                                    <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>2.2
                                         </td>
                                         <td>Sub-Category Lvl 2
@@ -3907,16 +3864,12 @@ td i{
                                         <td>100,000
                                         </td>
 
-                                     </tr>
-                                     <tr class="collapse collapseRow1_1 reference-label category-lvl2">
+                                    </tr>
+                                    <tr class="collapse collapseRow1_1 reference-label category-lvl2">
                                         <td>
-                                            <i
-                                              class="fa-solid fa-plus me-2 collapse-icon"
-                                              id="collapseRow1-icon"
-                                              data-toggle="collapse"
-                                              data-target=".collapseRow1"
-                                            ></i>
-                                          </td>
+                                            <i class="fa-solid fa-plus me-2 collapse-icon" id="collapseRow1-icon"
+                                                data-toggle="collapse" data-target=".collapseRow1"></i>
+                                        </td>
                                         <td>2.3
                                         </td>
                                         <td>Sub-Category Lvl 2
@@ -3955,71 +3908,71 @@ td i{
                                         <td>100,000
                                         </td>
 
-                                     </tr>
+                                    </tr>
 
 
 
 
-                     
-                                    
+
+
                                 </tbody>
                             </table>
                         </div>
-                          
-                            <div class="d-flex justify-content-end">
-                                <button class="purple-btn2">Bulk Upload</button>
-                                <button class="purple-btn2">Download Template</button>
-                                <button class="purple-btn2">Print</button>
-                                <button class="purple-btn2">Download </button>
-                                <button class="purple-btn2">Import </button>
-                                <button class="purple-btn2">Modify </button>
 
-                            </div>
-                            <div class="row mt-4 px-2">
-                                <div class="col-md-12">
-                                    <div class="form-group">
-                                        <label>Remark</label>
-                                        <textarea class="form-control" rows="3" placeholder="- Added Material is needed on mentioned delivery
+                        <div class="d-flex justify-content-end">
+                            <button class="purple-btn2">Bulk Upload</button>
+                            <button class="purple-btn2">Download Template</button>
+                            <button class="purple-btn2">Print</button>
+                            <button class="purple-btn2">Download </button>
+                            <button class="purple-btn2">Import </button>
+                            <button class="purple-btn2">Modify </button>
+
+                        </div>
+                        <div class="row mt-4 px-2">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label>Remark</label>
+                                    <textarea class="form-control" rows="3" placeholder="
                           "></textarea>
-                                    </div>
                                 </div>
                             </div>
+                        </div>
 
-                            <div class="row mt-2 justify-content-center">
-                                <div class="col-md-2">
-                                    <button class="purple-btn2 w-100" fdprocessedid="u33pye">Submit</button>
-                                </div>
+                        <div class="row mt-2 justify-content-center">
+                            <div class="col-md-2">
+                                <button class="purple-btn2 w-100" fdprocessedid="u33pye">Submit</button>
                             </div>
-                            <div class="row mt-2">
-                                <div class="col-12 px-4">
-                                    <h5>Audit Log</h5>
-    
-                                    <div class="tbl-container me-2 mt-3">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th>Sr.No.</th>
-                                                    <th>User</th>
-                                                    <th>Date</th>
-                                                    <th>Status</th>
-                                                    <th>Remark</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>1</td>
-                                                    <td>Pratham Shastri</td>
-                                                    <td>15-02-2024</td>
-                                                    <td>Verified</td>
-    
-                                                    <td>Verified &amp; Processed</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-     
+                        </div>
+                        <div class="row mt-2">
+                            <div class="col-12 px-4">
+                                <h5>Audit Log</h5>
+
+                                <div class="tbl-container me-2 mt-3">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th>Sr.No.</th>
+                                                <th>User</th>
+                                                <th>Date</th>
+                                                <th>Status</th>
+                                                <th>Remark</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Pratham Shastri</td>
+                                                <td>15-02-2024</td>
+                                                <td>Verified</td>
+
+                                                <td>Verified &amp; Processed</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
+
                             </div>
+                        </div>
                     </div>
                 </div>
 
@@ -4027,660 +3980,585 @@ td i{
                     <p class="">Powered by <img src="./images/go-logo.JPG" /></p>
                 </footer>
                 <!-- Modify modal start -->
-                <div class="modal fade" id="modifyModal" tabindex="-1" aria-labelledby="modifyModalLabel" aria-hidden="true">
+                <div class="modal fade" id="modifyModal" tabindex="-1" aria-labelledby="modifyModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog modal-xl">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="tbl-container mx-3 mt-1">
-                                <table class="w-100">
-                                    <thead>
-                                        <tr>
-                                            <th class="text-start">Material Type</th>
-                                            <th class="text-start">Material</th>
-                                            <th class="text-start">Unit
-                                            </th>
-                                            <th class="text-start">Estimated BOQ QTY</th>
-                                            <th class="text-start">Indented QTY
-                                            </th>
-                                            <th class="text-start">GRN QTY</th>
-                                            <th class="text-start">AVG rate (Landed)
-                                            </th>
-                                            <th class="text-start">Purchase Value</th>
-                                            <th class="text-start">Issued QTY</th>
-                                            <th class="text-start">Consumed QTY</th>
-                                            <th class="text-start">Stock at Site</th>
-                                          
-
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                         
-                                           <td>Cement
-                                        </td>
-                                           <td style="cursor: pointer; text-decoration: underline; color: var(--red);" data-bs-toggle="modal" data-bs-target="#detail_page">OPC Cement </td>
-                                           <td>Bags
-                                            </td>
-                                           <td>1000</td>
-                                           <td>500</td>
-                                           <td>250</td>
-                                           <td>400
-                                        </td>
-                                           <td>87,500</td>
-                                           <td>125
-                                        </td>
-                                           <td>125
-                                        </td>
-                                          
-                                        </tr>
-                                        <tr>
-                                         
-                                            <td>Cement
-                                         </td>
-                                            <td>PPC Cement </td>
-                                            <td>Bags
-                                             </td>
-                                            <td>1000</td>
-                                            <td>500</td>
-                                            <td>250</td>
-                                            <td>400
-                                         </td>
-                                            <td>87,500</td>
-                                            <td>125
-                                         </td>
-                                            <td>125
-                                         </td>
-                                           
-                                         </tr>
-                                        <tr>
-                                         
-                                            <td>Cement
-                                         </td>
-                                            <td>Cement Bulkar
-                                            </td>
-                                            <td>Bags
-                                             </td>
-                                            <td>1000</td>
-                                            <td>500</td>
-                                            <td>250</td>
-                                            <td>400
-                                         </td>
-                                            <td>87,500</td>
-                                            <td>125
-                                         </td>
-                                            <td>125
-                                         </td>
-                                           
-                                         </tr>
-                                         <tr>
-                                         
-                                            <td>Cement
-                                         </td>
-                                            <td>White Cement</td>
-                                            <td>Bags
-                                             </td>
-                                            <td>1000</td>
-                                            <td>500</td>
-                                            <td>250</td>
-                                            <td>400
-                                         </td>
-                                            <td>87,500</td>
-                                            <td>125
-                                         </td>
-                                            <td>125
-                                         </td>
-                                           
-                                         </tr>   
-                                        
-
-                                   
-                                        
-                                    </tbody>
-                                </table>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                            <div class="row mt-2 justify-content-center">
-                                <div class="col-md-3">
-                                    <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                            <div class="modal-body">
+                                <div class="tbl-container mx-3 mt-1">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Material Type</th>
+                                                <th class="text-start">Material</th>
+                                                <th class="text-start">Unit
+                                                </th>
+                                                <th class="text-start">Estimated BOQ QTY</th>
+                                                <th class="text-start">Indented QTY
+                                                </th>
+                                                <th class="text-start">GRN QTY</th>
+                                                <th class="text-start">AVG rate (Landed)
+                                                </th>
+                                                <th class="text-start">Purchase Value</th>
+                                                <th class="text-start">Issued QTY</th>
+                                                <th class="text-start">Consumed QTY</th>
+                                                <th class="text-start">Stock at Site</th>
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td style="cursor: pointer; text-decoration: underline; color: var(--red);"
+                                                    data-bs-toggle="modal" data-bs-target="#detail_page">OPC Cement
+                                                </td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>PPC Cement </td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>Cement Bulkar
+                                                </td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>White Cement</td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-2 justify-content-center">
+                                    <div class="col-md-3">
+                                        <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-                       
-                      </div>
                     </div>
-                  </div>
+                </div>
                 <!-- Modify modal end -->
 
-              <!-- Modify modal start -->
-              <div class="modal fade" id="labour_modal" tabindex="-1" aria-labelledby="labour_modal" aria-hidden="true">
-                <div class="modal-dialog modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div class="tbl-container mx-3 mt-1">
-                            <table class="w-100">
-                                <thead>
-                                    <tr>
-                                        <th class="text-start">Sr.no
-                                        </th>
-                                        <th class="text-start">WO Number
-                                        </th>
-                                       
-                                        <th colspan="2" class="text-start">WBS
-
-</th>
-                                        <th class="text-start">WO Value
-
-
-                                        </th>
-                                        <th class="text-start">WO Date
-
-
-                                        </th>
-                                        <th class="text-start">Status
-
-                                        </th>
-                                        
-                                      
-
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                     
-                                       <td>1
-                                    </td>
-                                       <td>Project A/PO1
-                                    </td>
-                                       <td>RCC
-
-
-                                        </td>
-                                       <td>Civil Work
-
-                                    </td>
-                                       <td>100,00
-
-                                    </td>
-                                       <td>10/5/2024
-
-                                    </td>
-                                       <td>Draft
-                                    </td>
-                                      
-                                      
-                                    </tr>
-                                    <tr>
-                                     
-                                        <td>1
-                                     </td>
-                                        <td>Project A/PO1
-                                     </td>
-                                        <td>RCC
- 
- 
-                                         </td>
-                                        <td>Civil Work
- 
-                                     </td>
-                                        <td>100,00
- 
-                                     </td>
-                                        <td>10/5/2024
- 
-                                     </td>
-                                        <td>Draft
-                                     </td>
-                                       
-                                       
-                                     </tr>
-                                   
-                                    
-
-                               
-                                    
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="row mt-2 justify-content-center">
-                            <div class="col-md-3">
-                                <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                <!-- Modify modal start -->
+                <div class="modal fade" id="labour_modal" tabindex="-1" aria-labelledby="labour_modal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
+                            <div class="modal-body">
+                                <div class="tbl-container mx-3 mt-1">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr.no
+                                                </th>
+                                                <th class="text-start">WO Number
+                                                </th>
+
+                                                <th colspan="2" class="text-start">WBS
+
+                                                </th>
+                                                <th class="text-start">WO Value
+
+
+                                                </th>
+                                                <th class="text-start">WO Date
+
+
+                                                </th>
+                                                <th class="text-start">Status
+
+                                                </th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>1
+                                                </td>
+                                                <td>Project A/PO1
+                                                </td>
+                                                <td>RCC
+
+
+                                                </td>
+                                                <td>Civil Work
+
+                                                </td>
+                                                <td>100,00
+
+                                                </td>
+                                                <td>10/5/2024
+
+                                                </td>
+                                                <td>Draft
+                                                </td>
+
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>1
+                                                </td>
+                                                <td>Project A/PO1
+                                                </td>
+                                                <td>RCC
+
+
+                                                </td>
+                                                <td>Civil Work
+
+                                                </td>
+                                                <td>100,00
+
+                                                </td>
+                                                <td>10/5/2024
+
+                                                </td>
+                                                <td>Draft
+                                                </td>
+
+
+                                            </tr>
+
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-2 justify-content-center">
+                                    <div class="col-md-3">
+                                        <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
-                   
-                  </div>
                 </div>
-              </div>
-            <!-- Modify modal end -->
+                <!-- Modify modal end -->
 
-                          <!-- Modify modal start -->
-                          <div class="modal fade" id="detail_page" tabindex="-1" aria-labelledby="modifyModalLabel" aria-hidden="true">
-                            <div class="modal-dialog modal-xl">
-                              <div class="modal-content">
-                                <div class="modal-header">
-                                  <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
-                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="tbl-container mx-3 mt-1">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-start">Sr.no
-                                                    </th>
-                                                    <th class="text-start">PO Number</th>
-                                                    <th  class="text-start">Material Type
-
-                                                    </th>
-                                                    <th colspan="2" class="text-start">WBS
-</th>
-                                                    <th class="text-start">PO Value
-
-                                                    </th>
-                                                    <th class="text-start">PO Date
-                                                    </th>
-                                                    <th class="text-start">Status
-
-                                                    </th>
-                                                    
-                                                  
-        
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                 
-                                                   <td>1
-                                                </td>
-                                                   <td>Project A/PO1
-                                                </td>
-                                                   <td>Steel
-
-                                                    </td>
-                                                   <td>RCC
-                                                </td>
-                                                   <td>Civil Work
-                                                </td>
-                                                   <td>100,00
-                                                </td>
-                                                   <td>400
-                                                </td>
-                                                   <td>87,500</td>
-                                                   <td>125
-                                                </td>
-                                                   <td>125
-                                                </td>
-                                                  
-                                                </tr>
-                                                <tr>
-                                                 
-                                                    <td>Cement
-                                                 </td>
-                                                    <td>PPC Cement </td>
-                                                    <td>Bags
-                                                     </td>
-                                                    <td>1000</td>
-                                                    <td>500</td>
-                                                    <td>250</td>
-                                                    <td>400
-                                                 </td>
-                                                    <td>87,500</td>
-                                                    <td>125
-                                                 </td>
-                                                    <td>125
-                                                 </td>
-                                                   
-                                                 </tr>
-                                                <tr>
-                                                 
-                                                    <td>Cement
-                                                 </td>
-                                                    <td>Cement Bulkar
-                                                    </td>
-                                                    <td>Bags
-                                                     </td>
-                                                    <td>1000</td>
-                                                    <td>500</td>
-                                                    <td>250</td>
-                                                    <td>400
-                                                 </td>
-                                                    <td>87,500</td>
-                                                    <td>125
-                                                 </td>
-                                                    <td>125
-                                                 </td>
-                                                   
-                                                 </tr>
-                                                 <tr>
-                                                 
-                                                    <td>Cement
-                                                 </td>
-                                                    <td>White Cement</td>
-                                                    <td>Bags
-                                                     </td>
-                                                    <td>1000</td>
-                                                    <td>500</td>
-                                                    <td>250</td>
-                                                    <td>400
-                                                 </td>
-                                                    <td>87,500</td>
-                                                    <td>125
-                                                 </td>
-                                                    <td>125
-                                                 </td>
-                                                   
-                                                 </tr>   
-                                                
-        
-                                           
-                                                
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <div class="row mt-2 justify-content-center">
-                                        <div class="col-md-3">
-                                            <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
-                                        </div>
-                                    </div>
-                                </div>
-                               
-                              </div>
+                <!-- Modify modal start -->
+                <div class="modal fade" id="detail_page" tabindex="-1" aria-labelledby="modifyModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fs-5" id="exampleModalLabel"></h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
                             </div>
-                          </div>
-                        <!-- Modify modal end -->
+                            <div class="modal-body">
+                                <div class="tbl-container mx-3 mt-1">
+                                    <table class="w-100">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Sr.no
+                                                </th>
+                                                <th class="text-start">PO Number</th>
+                                                <th class="text-start">Material Type
+
+                                                </th>
+                                                <th colspan="2" class="text-start">WBS
+                                                </th>
+                                                <th class="text-start">PO Value
+
+                                                </th>
+                                                <th class="text-start">PO Date
+                                                </th>
+                                                <th class="text-start">Status
+
+                                                </th>
+
+
+
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                <td>1
+                                                </td>
+                                                <td>Project A/PO1
+                                                </td>
+                                                <td>Steel
+
+                                                </td>
+                                                <td>RCC
+                                                </td>
+                                                <td>Civil Work
+                                                </td>
+                                                <td>100,00
+                                                </td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>PPC Cement </td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>Cement Bulkar
+                                                </td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+                                            <tr>
+
+                                                <td>Cement
+                                                </td>
+                                                <td>White Cement</td>
+                                                <td>Bags
+                                                </td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>400
+                                                </td>
+                                                <td>87,500</td>
+                                                <td>125
+                                                </td>
+                                                <td>125
+                                                </td>
+
+                                            </tr>
+
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="row mt-2 justify-content-center">
+                                    <div class="col-md-3">
+                                        <button class="purple-btn1 w-100" fdprocessedid="u33pye">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Modify modal end -->
 
                 <!-- Copy budget start -->
-                <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
+                <div class="modal fade" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel"
+                    aria-hidden="true">
                     <div class="modal-dialog">
-                      <div class="modal-content">
-                        <div class="modal-header">
-                          <h5 class="modal-title fs-5" id="exampleModalLabel">Copy Budget</h5>
-                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                                    <div class="row mb-2">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>From</label>
-                                                <select class="form-control form-select" style="width: 100%" fdprocessedid="8dxxus">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label>To</label>
-                                                <select class="form-control form-select" style="width: 100%" fdprocessedid="8dxxus">
-                                                    <option selected="selected">Alabama</option>
-                                                    <option>Alaska</option>
-                                                    <option>California</option>
-                                                    <option>Delaware</option>
-                                                    <option>Tennessee</option>
-                                                    <option>Texas</option>
-                                                    <option>Washington</option>
-                                                </select>
-                                            </div>
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title fs-5" id="exampleModalLabel">Copy Budget</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row mb-2">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>From</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="8dxxus">
+                                                <option selected="selected">Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
                                         </div>
                                     </div>
-                
-                            <div class="row mt-2 justify-content-center">
-                                <div class="col-md-4">
-                                    <button class="purple-btn2 w-100" fdprocessedid="u33pye">Copy</button>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>To</label>
+                                            <select class="form-control form-select" style="width: 100%"
+                                                fdprocessedid="8dxxus">
+                                                <option selected="selected">Alabama</option>
+                                                <option>Alaska</option>
+                                                <option>California</option>
+                                                <option>Delaware</option>
+                                                <option>Tennessee</option>
+                                                <option>Texas</option>
+                                                <option>Washington</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-2 justify-content-center">
+                                    <div class="col-md-4">
+                                        <button class="purple-btn2 w-100" fdprocessedid="u33pye">Copy</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Copy budget end -->
+
+
+                <!-- Setting modal -->
+
+                <div class="modal fade" id="settings" tabindex="-1" aria-labelledby="exampleModal2Label"
+                    style="display: none" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm">
+                        <div class="modal-content">
+                            <div class="modal-header modal-header-k">
+                                <h4 class="modal-title text-center w-100" id="exampleModalLabel"
+                                    style="font-weight: 500">
+                                    Layout
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <div class="row justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-2 justify-content-between align-items-center">
+                                    <div class="col-md-6">
+                                        <button type="submit" class="btn btn-md">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
+                                                    fill="black" />
+                                            </svg>
+                                        </button>
+
+                                        <label for=""> Sr No.</label>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-check form-switch mt-1">
+                                            <input class="form-check-input" type="checkbox" role="switch"
+                                                id="flexSwitchCheckDefault" />
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
-                      </div>
                     </div>
-                  </div>
-                <!-- Copy budget end -->
-
-              
-          <!-- Setting modal -->
-
-    <div
-    class="modal fade"
-    id="settings"
-    tabindex="-1"
-    aria-labelledby="exampleModal2Label"
-    style="display: none"
-    aria-hidden="true"
-  >
-    <div
-      class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-sm"
-    >
-      <div class="modal-content">
-        <div class="modal-header modal-header-k">
-          <h4
-            class="modal-title text-center w-100"
-            id="exampleModalLabel"
-            style="font-weight: 500"
-          >
-            Layout
-          </h4>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-
-        <div class="modal-body">
-          <div class="row justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-2 justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-2 justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-2 justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-2 justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="row mt-2 justify-content-between align-items-center">
-            <div class="col-md-6">
-              <button type="submit" class="btn btn-md">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="22"
-                  height="22"
-                  viewBox="0 0 48 48"
-                  fill="none"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19 10C19 11.0609 18.5786 12.0783 17.8284 12.8284C17.0783 13.5786 16.0609 14 15 14C13.9391 14 12.9217 13.5786 12.1716 12.8284C11.4214 12.0783 11 11.0609 11 10C11 8.93913 11.4214 7.92172 12.1716 7.17157C12.9217 6.42143 13.9391 6 15 6C16.0609 6 17.0783 6.42143 17.8284 7.17157C18.5786 7.92172 19 8.93913 19 10ZM15 28C16.0609 28 17.0783 27.5786 17.8284 26.8284C18.5786 26.0783 19 25.0609 19 24C19 22.9391 18.5786 21.9217 17.8284 21.1716C17.0783 20.4214 16.0609 20 15 20C13.9391 20 12.9217 20.4214 12.1716 21.1716C11.4214 21.9217 11 22.9391 11 24C11 25.0609 11.4214 26.0783 12.1716 26.8284C12.9217 27.5786 13.9391 28 15 28ZM15 42C16.0609 42 17.0783 41.5786 17.8284 40.8284C18.5786 40.0783 19 39.0609 19 38C19 36.9391 18.5786 35.9217 17.8284 35.1716C17.0783 34.4214 16.0609 34 15 34C13.9391 34 12.9217 34.4214 12.1716 35.1716C11.4214 35.9217 11 36.9391 11 38C11 39.0609 11.4214 40.0783 12.1716 40.8284C12.9217 41.5786 13.9391 42 15 42ZM37 10C37 11.0609 36.5786 12.0783 35.8284 12.8284C35.0783 13.5786 34.0609 14 33 14C31.9391 14 30.9217 13.5786 30.1716 12.8284C29.4214 12.0783 29 11.0609 29 10C29 8.93913 29.4214 7.92172 30.1716 7.17157C30.9217 6.42143 31.9391 6 33 6C34.0609 6 35.0783 6.42143 35.8284 7.17157C36.5786 7.92172 37 8.93913 37 10ZM33 28C34.0609 28 35.0783 27.5786 35.8284 26.8284C36.5786 26.0783 37 25.0609 37 24C37 22.9391 36.5786 21.9217 35.8284 21.1716C35.0783 20.4214 34.0609 20 33 20C31.9391 20 30.9217 20.4214 30.1716 21.1716C29.4214 21.9217 29 22.9391 29 24C29 25.0609 29.4214 26.0783 30.1716 26.8284C30.9217 27.5786 31.9391 28 33 28ZM33 42C34.0609 42 35.0783 41.5786 35.8284 40.8284C36.5786 40.0783 37 39.0609 37 38C37 36.9391 36.5786 35.9217 35.8284 35.1716C35.0783 34.4214 34.0609 34 33 34C31.9391 34 30.9217 34.4214 30.1716 35.1716C29.4214 35.9217 29 36.9391 29 38C29 39.0609 29.4214 40.0783 30.1716 40.8284C30.9217 41.5786 31.9391 42 33 42Z"
-                    fill="black"
-                  />
-                </svg>
-              </button>
-
-              <label for=""> Sr No.</label>
-            </div>
-            <div class="col-md-4">
-              <div class="form-check form-switch mt-1">
-                <input
-                  class="form-check-input"
-                  type="checkbox"
-                  role="switch"
-                  id="flexSwitchCheckDefault"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- Setting modal End-->
+                </div>
+                <!-- Setting modal End-->
             </div>
         </div>
     </main>
-  
+
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -4694,29 +4572,29 @@ td i{
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script>
     $(document).ready(function () {
-      $(".collapse-icon").click(function () {
-        var icon = $(this);
-        var target = $(icon.data("target"));
+        $(".collapse-icon").click(function () {
+            var icon = $(this);
+            var target = $(icon.data("target"));
 
-        target.on("shown.bs.collapse", function () {
-          icon.removeClass("fas fa-plus ").addClass("fas  fa-minus");
+            target.on("shown.bs.collapse", function () {
+                icon.removeClass("fas fa-plus ").addClass("fas  fa-minus");
+            });
+
+            target.on("hidden.bs.collapse", function () {
+                icon.removeClass("fas  fa-minus ").addClass("fas fa-plus");
+            });
+
+            target.collapse("toggle");
         });
-
-        target.on("hidden.bs.collapse", function () {
-          icon.removeClass("fas  fa-minus ").addClass("fas fa-plus");
-        });
-
-        target.collapse("toggle");
-      });
-      var selectedContent = $('input[name="contentSelector"]:checked').val();
-      $("#" + selectedContent).show();
-
-      $('input[name="contentSelector"]').on("click", function () {
         var selectedContent = $('input[name="contentSelector"]:checked').val();
-        $(".contentpo").hide();
         $("#" + selectedContent).show();
-      });
+
+        $('input[name="contentSelector"]').on("click", function () {
+            var selectedContent = $('input[name="contentSelector"]:checked').val();
+            $(".contentpo").hide();
+            $("#" + selectedContent).show();
+        });
     });
-  </script>
+</script>
 
 </html>
