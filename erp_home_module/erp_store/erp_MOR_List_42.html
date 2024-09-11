@@ -232,16 +232,15 @@
                             <div class="tab-content mor-content" id="pills-tabContent">
                                 <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                                     aria-labelledby="pills-home-tab">
-                                    <section class="mor p-5">
+                                    <section class="mor p-3">
                                         <div class="container-fluid">
                                             <div class="row">
                                                 <!-- form-select EXAMPLE -->
-
                                                 <div class="card card-default" id="mor-material-details">
                                                     <div class="card-header">
                                                         <h3 class="card-title">MOR Details</h3>
 
-                                                        <div class="card-tools">
+                                                        <!-- <div class="card-tools">
                                                             <button type="button" class="btn btn-tool"
                                                                 data-card-widget="collapse">
                                                                 <i class="fas fa-minus"></i>
@@ -249,6 +248,18 @@
                                                             <button type="button" class="btn btn-tool"
                                                                 data-card-widget="remove">
                                                                 <i class="fas fa-times"></i>
+                                                            </button>
+                                                        </div> -->
+                                                        <div class="card-tools">
+                                                            <button type="button" class="btn btn-tool"
+                                                                data-card-widget="collapse">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="16" cy="16" r="16" fill="#8B0203">
+                                                                    </circle>
+                                                                    <path d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                                                                        fill="white"></path>
+                                                                </svg>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -315,27 +326,27 @@
                                                                         placeholder="MOR/MAR/MAX/101/02/2024" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3 mt-2">
                                                                 <div class="form-group">
                                                                     <label>Store</label>
                                                                     <input class="form-control" type="text"
                                                                         placeholder="STR 1" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3 mt-2">
                                                                 <div class="form-group">
                                                                     <label>MOR Date <span>*</span></label>
                                                                     <input class="form-control" type="date" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3 mt-2">
                                                                 <div class="form-group">
                                                                     <label>Created On</label>
                                                                     <input class="form-control" type="date"
                                                                         placeholder="01-02-2024" />
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-3 mt-2">
                                                                 <div class="form-group">
                                                                     <label>Request to Dept.<span>*</span></label>
                                                                     <select class="form-control form-select"
@@ -362,16 +373,17 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="row my-2">
+                                                <div class=" my-2">
                                                     <div class="row mt-4">
                                                         <div class="d-flex justify-content-between ">
                                                             <h5 class=" ">Material Summary Details</h5>
 
                                                             <div class="card-tools">
-                                                                <button class="PO-blue-btnPlus">Download</button>
+                                                                <button class="purple-btn2">Download</button>
                                                             </div>
                                                         </div>
-                                                        <div class="tbl-container me-2 mt-3">
+
+                                                        <div class="tbl-container p-0">
                                                             <table class="w-100">
                                                                 <thead>
                                                                     <th>Sr.No.</th>
@@ -428,11 +440,11 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="card card-default" id="create-material-details">
+                                                <div class="card card-default mt-2" id="create-material-details">
                                                     <div class="card-header">
                                                         <h3 class="card-title">Material Details</h3>
 
-                                                        <div class="card-tools">
+                                                        <!-- <div class="card-tools">
                                                             <button type="button" class="btn btn-tool"
                                                                 data-card-widget="collapse">
                                                                 <i class="fas fa-minus"></i>
@@ -441,11 +453,23 @@
                                                                 data-card-widget="remove">
                                                                 <i class="fas fa-times"></i>
                                                             </button>
+                                                        </div> -->
+                                                        <div class="card-tools">
+                                                            <button type="button" class="btn btn-tool"
+                                                                data-card-widget="collapse">
+                                                                <svg width="32" height="32" viewBox="0 0 32 32"
+                                                                    fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <circle cx="16" cy="16" r="16" fill="#8B0203">
+                                                                    </circle>
+                                                                    <path d="M16 24L9.0718 12L22.9282 12L16 24Z"
+                                                                        fill="white"></path>
+                                                                </svg>
+                                                            </button>
                                                         </div>
                                                     </div>
                                                     <!-- /.card-header -->
                                                     <div class="card-body">
-                                                        <div class="row mt-3">
+                                                        <div class="row">
                                                             <div class="col-sm-2">
                                                                 <div class="form-group">
                                                                     <div class="form-check">
@@ -466,7 +490,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row mt-4">
+                                                        <div class="row mt-2">
                                                             <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label>Select Activity <span>*</span></label>
@@ -536,7 +560,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="row mt-4">
+                                                        <div class="row mt-2">
                                                             <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label>Material Description</label>
@@ -577,18 +601,18 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="row mt-4">
+                                                        <div class="row mt-2">
                                                             <div class="col-md-2 d-flex">
                                                                 <div
                                                                     class="form-group  gap-2 d-flex align-items-center">
-                                                                    <input class="form-control w-25" type="radio"
-                                                                        placeholder="Default input">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="radio1">
                                                                     <label class="mb-0">Yes</label>
                                                                 </div>
                                                                 <div
-                                                                    class="form-group  gap-2 d-flex align-items-center">
-                                                                    <input class="form-control w-25" type="radio"
-                                                                        placeholder="Default input">
+                                                                    class="form-group ms-2 gap-2 d-flex align-items-center">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="radio1">
                                                                     <label class="mb-0">No</label>
 
                                                                 </div>
@@ -636,7 +660,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="row mt-4">
+                                                        <div class="row mt-2">
                                                             <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label>MOR Till Date</label>
@@ -677,8 +701,7 @@
                                                             </div>
                                                         </div>
 
-                                                        <div class="row mt-4">
-                                                            <!--  -->
+                                                        <div class="row mt-2">
                                                             <div class="col-md-2">
                                                                 <div class="form-group">
                                                                     <label>Quantity For Procurement</label>
@@ -686,24 +709,24 @@
                                                                         placeholder="50">
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-2">
+                                                            <div class="col-md-2 mt-2">
                                                                 <div
                                                                     class="form-group  gap-2 d-flex align-items-center">
-                                                                    <input class="form-control w-25" type="checkbox"
+                                                                    <input class=" w-25" type="checkbox"
                                                                         placeholder="Default input">
                                                                     <label class="mb-0">PO Short Close</label>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-md-6">
+                                                            <div class="col-md-7">
                                                                 <div class="form-group">
-                                                                    <label>Note <span></span></label>
-                                                                    <input class="form-control" type="text"
-                                                                        placeholder="Default input"
-                                                                        fdprocessedid="qki41">
+                                                                    <label>Note</label>
+                                                                    <textarea class="form-control" rows="4"
+                                                                        placeholder="Enter ..."
+                                                                        spellcheck="false"></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="d-flex mt-4">
+                                                        <div class=" mt-2">
                                                             <div>
                                                                 <p>Attchment</p>
                                                                 <form action="/upload" method="post"
@@ -737,11 +760,11 @@
                                                                     <h5 class=" ">Delivery Schedule</h5>
 
                                                                     <div class="card-tools">
-                                                                        <button class="PO-blue-btnPlus">+ Add Delivery
+                                                                        <button class="purple-btn2">+ Add Delivery
                                                                             Schedule</button>
                                                                     </div>
                                                                 </div>
-                                                                <div class="tbl-container me-2 mt-3">
+                                                                <div class="tbl-container mx-3 mt-3 p-0">
                                                                     <table class="w-100">
                                                                         <thead>
                                                                             <th>Batch No.</th>
@@ -812,7 +835,7 @@
                                                                     <div class="d-flex justify-content-between ">
                                                                         <h5 class=" ">MTO Summary</h5>
                                                                     </div>
-                                                                    <div class="tbl-container me-2 mt-3">
+                                                                    <div class="tbl-container mx-3 mt-3 p-0">
                                                                         <table class="w-100">
                                                                             <thead>
                                                                                 <th>Batch No.</th>
@@ -861,25 +884,24 @@
                                     <section class="ms-4 me-4 mb-3">
                                         <div class="mb-3">
                                             <label for="exampleFormControlTextarea1" class="form-label">Remark</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
                                         </div>
-                                        <div class="mb-3">
+                                        <div class="mb-3 mt-1">
                                             <label for="exampleFormControlTextarea1" class="form-label">Comments</label>
-                                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                                            <textarea class="form-control" id="exampleFormControlTextarea1"
+                                                rows="3"></textarea>
                                         </div>
-                                        <div class="d-flex justify-content-end">
-                                            <p class="pe-2 pt-1">Status</p>
-                                            <div class="dropdown">
-                                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                                    MOR for Approval
-                                                </button>
-                                                <ul class="dropdown-menu">
-                                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                                    <li><a class="dropdown-item" href="#">Another action</a>
-                                                    </li>
-                                                    <li><a class="dropdown-item" href="#">Something else
-                                                            here</a></li>
-                                                </ul>
+                                        <div class="row mt-4 justify-content-end align-items-center">
+                                            <div class="col-md-3">
+                                                <div class="form-group d-flex gap-3 align-items-center">
+                                                    <label class="mb-0" style="font-size: 1.1rem">status</label>
+                                                    <select class="form-control form-select" style="width: 100%">
+                                                        <option selected="selected">Pending</option>
+                                                        <option>Done</option>
+                                                        <option>Hold</option>
+                                                    </select>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="row mt-2 justify-content-end">
@@ -894,51 +916,35 @@
                                             </div>
 
                                         </div>
-                                        <div class=" ">
-                                            <h3 class=" ">Audit Log</h3>
-                                        </div>
-                                        <div class="tbl-container me-2 mt-3">
-                                            <table class="w-100">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Sr.No.</th>
-                                                        <th>User</th>
-                                                        <th>Date</th>
-                                                        <th>Status</th>
-                                                        <th>Remark</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <th>1</th>
-                                                        <td>Pratham Shastri</td>
-                                                        <td>15-02-2024</td>
-                                                        <td>Verified</td>
-                                                        <td>Verified &amp; Processed</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>2</th>
-                                                        <td>Pratham Shastri</td>
-                                                        <td>30-01-2024</td>
-                                                        <td>Approved</td>
-                                                        <td>Ok Approved</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>3</th>
-                                                        <td>Dinesh Gupta</td>
-                                                        <td>15-01-2024</td>
-                                                        <td>Submit</td>
-                                                        <td>Send for approval</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>4</th>
-                                                        <td>Dinesh Gupta</td>
-                                                        <td>01-01-2024</td>
-                                                        <td>Draft</td>
-                                                        <td>MOR created as material required at site.</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
+                                        <div class="row mt-2">
+                                            <div class="col-12 px-4">
+                                                <h5>Audit Log</h5>
+
+                                                <div class="tbl-container me-2 mt-3">
+                                                    <table class="w-100">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sr.No.</th>
+                                                                <th>User</th>
+                                                                <th>Date</th>
+                                                                <th>Status</th>
+
+                                                                <th>Remark</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Pratham Shastri</td>
+                                                                <td>15-02-2024</td>
+                                                                <td>Verified</td>
+
+                                                                <td>Verified &amp; Processed</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
                                         </div>
                                     </section>
                                 </div>
