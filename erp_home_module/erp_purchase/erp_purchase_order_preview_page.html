@@ -6,13 +6,17 @@
     <link rel="stylesheet" href="/erp_home_module/erp_purchase/mor.css">
     <title>MOR Details</title>
     <style>
-      body {
+       
+       body {
         font-size: 12px;
         font-family: Arial, sans-serif;
       }
+      iframe{
+overflow-x: hidden;      }
       .container {
+        max-width: 1600px;
 
-        max-width:1400px;
+        width: 100%;
         margin: 30px auto;
         padding: 20px;
         background-color: white;
@@ -22,6 +26,7 @@
 
       .material-table{
         font-size: 10px !important;
+        padding: 4px;
       }
       h1 {
         text-align: center;
@@ -261,19 +266,19 @@
       <p class="">Please register our Order and supply the following goods in accordance with the Specifications noted below. Kindly acknowledge the receipt of this order.</p>
     </div>
 
-    <table class="table-text material-table">
+    <table class="table-text material-table" style="width: 100% !important;">
 
       <tr>
-        <th rowspan="2">Sr.No.</th>
+        <th style="width: 4px;" rowspan="2">Sr.No.</th>
         <th rowspan="2">Material Description</th>
     
         <th rowspan="2">HSN CODE</th>
         <th rowspan="2">Qty.</th>
         <th rowspan="2">UOM</th>
         <th rowspan="2">Rate per Nos</th>
-        <th rowspan="2">(Basic Cost) Material Cost</th>
+        <th rowspan="2">(Basic Cost) <br> Material Cost</th>
         <th rowspan="1">Discount</th>
-        <th rowspan="2">After Discount Value</th>
+        <th rowspan="2">After <br> Discount Value</th>
         <th rowspan="2">Handling</th>
         <th rowspan="2">Other Chgs.</th>
         <th rowspan="1">SGST</th>
@@ -283,7 +288,8 @@
         <th rowspan="1">IGST</th>
         <th rowspan="1">IGST</th>
         <th rowspan="1">Total</th>
-        <th rowspan="2">Material Remarks</th>
+        <th rowspan="2">Material <br>
+             Remarks</th>
       </tr>
       <tr>
         <th colspan="1">%</th>
