@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/erp_home_module/erp_purchase/mor.css">
+    <title>MOR Details</title>
+    <style>
+      body {
+        font-size: 12px;
+        font-family: Arial, sans-serif;
+      }
+      .container {
+
+        max-width:1400px;
+        margin: 30px auto;
+        padding: 20px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .material-table{
+        font-size: 10px !important;
+      }
+      h1 {
+        text-align: center;
+        color: var(--red);
+      }
+      table {
+        width: 100% !important;
+        border-collapse: collapse;
+        margin: 20px 0;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: left;
+      }
+      .section-title {
+        width: max-content;
+        padding: 5px 1.5rem;
+  border: 1px solid var(--black) !important;
+  border-radius: 5px;
+  color: var(--black);
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .section-title-box {
+        padding: 2px 1rem;
+        font-weight: bold;
+        font-size: 12px;
+      }
+      p{
+        font-size: 12px;
+
+      }
+  
+      .section-title-head{
+        text-align: center;
+        font-weight: bold;
+        font-size: 12px;
+        padding: 5px 1rem;
+        border-bottom: 1px solid black;
+      }
+      .section-title-span {
+        font-weight: normal!important;
+        font-size: 12px;
+      }
+      .table-text {
+        font-size: 12px;
+        text-align: center;
+      }
+      .para-text {
+        font-size: 12px;
+        font-weight: 500;
+        margin: 0 0 20px 0;
+      }
+      .table-bottom {
+        margin: 0 5px 0 5px;
+      }
+      .main-box {
+        display: flex;
+         justify-content: space-between;
+      }
+      .child-box {
+        border: 1px solid black;
+         width: 308px;
+         margin-bottom: 20px;
+         border-radius: 4px;
+      }
+      .action-icons {
+        text-align: center;
+      }
+      .action-icons img {
+        cursor: pointer;
+      }
+      .audit-log {
+        margin-top: 20px;
+      }
+      svg {
+        text-align: center;
+        width: 20%;
+        height: auto;
+      }
+
+      .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        .info-table td, .info-table th {
+            padding: 8px;
+            border: 1px solid #ddd;
+        }
+     
+        .vendor-info {
+            padding: 15px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+
+        }
+        .remark-section {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+    </style>
+  </head>
+  <body>
+
+  
+    <div class="container ">
+        <div class="" style="text-align: end;">
+            <svg
+            class="main-logo ms-3"
+            viewBox="0 0 273 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <rect width="273" height="37" fill="url(#pattern0)" />
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image0_1_414"
+                  transform="matrix(0.00198059 0 0 0.0147059 -0.00693207 0)"
+                />
+              </pattern>
+              <image
+                id="image0_1_414"
+                width="500"
+                height="68"
+                xlink:href="data:image/png;base64,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"
+              />
+            </defs>
+          </svg>
+        </div>
+      
+      <h2 style="text-align: center;font-weight: 600;font-size: 1.5rem;" class="">PURCHASE ORDER
+      </h2>
+
+      <table class="info-table">
+        <tr>
+            <td style="width: 50%;">
+                <strong>Invoice To:</strong><br>
+                Marathon Realty Pvt. Ltd<br>
+                Billing Address: 702, Marathon Max, Junction of Mulund - Goregaon Link Road,<br>
+                Mulund (W), Mumbai-400080<br>
+                <strong>PAN No.</strong> AAACM3361R<br>
+                <strong>CIN No.</strong> MUMM24783D<br>
+                <strong>GST No.</strong> 27AAACM3361R1Z1
+            </td>
+            <td style="vertical-align: baseline;" >
+                <strong>PO No.:</strong> PO/MRP/MRL01/24289<br>
+                <strong>Date:</strong> Aug 03, 2021 <br>
+                [PO Amendment Number]<br>
+                <strong>Quotation Ref:-</strong> Po Ref: COMP NO 277 DT 26.07.2021
+            </td>
+        </tr>
+       
+    </table>
+
+    
+
+    <table class="info-table">
+     
+        <tr>
+           
+            <td style="width: 50%;">
+              <strong>Vendor Name:</strong> EAGLE SALES CORPORATION<br>
+              Address: 58, TAWALA BUILDING, LOHAR CHAWL, MUMBAI, Maharashtra-400002<br>
+              <strong>Email:</strong> eaglesalecorp@mail.com<br>
+              <strong> Mobile:</strong> 9320015554 , +91-22-40240000<br>
+              <strong>PAN No.</strong> AAAEF2557J<br>
+              <strong>GST No.</strong> 27AAAEF2557J1ZF<br>
+              <strong>MSME No.</strong> <br>
+              <strong>Contact Person:</strong> Mr. Tanmay Desai 
+            </td>
+            <td style="vertical-align: baseline;">
+              <strong>Site Contact Person & Address:</strong><br>
+              Ajay: 9892560311, Sanjay: 8433948295<br>
+              Marathon Future X, Shop and Offices,<br>
+              Mafatlal Mill, DIlO Road, Near Curry Road Station (W), Mumbai-400013<br>
+              Maharashtra, India
+          </td>
+        </tr>
+    </table>
+
+    
+
+    <table class="info-table ">
+
+      <td style="width: 50%; vertical-align: baseline;">
+        <strong>Remark:</strong> Mafatlal Future X - Future Phase III<br>
+        Common Expenses MOR No: 226 for Future Site<br>
+        for Lightning Arrester
+      </td>
+      <td>
+        <table class="" style="margin: 5px 0px;">
+          <strong style="margin-bottom: 5px;" class="">Payment Points:</strong>
+
+
+        <tr>
+          <th>Credit Period</th>
+          <td>0</td>
+        </tr>
+        <tr>
+          <th>Freight</th>
+          <td>Extra</td>
+        </tr>
+        <tr>
+          <th>All Taxes</th>
+          <td>Exclusive</td>
+        </tr>
+        <tr>
+          <th>Payment Terms</th>
+          <td>100% ADVANCE PAYMENT NOTE: SUBMIT TAX INVOICE ALONG WITH MATERIAL DELIVERY AT SITE.</td>
+        </tr>
+        <tr>
+          <th>Unloading scope 
+          </th>
+          <td></td>
+        </tr>
+      </table>
+
+      </td>
+
+      
+    </table>
+
+  
+
+    <div style="margin-top: 1rem;">
+      <p class="">Please register our Order and supply the following goods in accordance with the Specifications noted below. Kindly acknowledge the receipt of this order.</p>
+    </div>
+
+    <table class="table-text material-table">
+
+      <tr>
+        <th rowspan="2">Sr.No.</th>
+        <th rowspan="2">Material Description</th>
+    
+        <th rowspan="2">HSN CODE</th>
+        <th rowspan="2">Qty.</th>
+        <th rowspan="2">UOM</th>
+        <th rowspan="2">Rate per Nos</th>
+        <th rowspan="2">(Basic Cost) Material Cost</th>
+        <th rowspan="1">Discount</th>
+        <th rowspan="2">After Discount Value</th>
+        <th rowspan="2">Handling</th>
+        <th rowspan="2">Other Chgs.</th>
+        <th rowspan="1">SGST</th>
+        <th rowspan="1">SGST</th>
+        <th rowspan="1">CGST</th>
+        <th rowspan="1">CGST</th>
+        <th rowspan="1">IGST</th>
+        <th rowspan="1">IGST</th>
+        <th rowspan="1">Total</th>
+        <th rowspan="2">Material Remarks</th>
+      </tr>
+      <tr>
+        <th colspan="1">%</th>
+        <th rowspan="1">%</th>
+        <th rowspan="1">Amount</th>
+        <th rowspan="1">%</th>
+        <th rowspan="1">Amount</th>
+        <th rowspan="1">%</th>
+        <th rowspan="1">Amount</th>
+        <th rowspan="1">Amount</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>TILES-CERAMIC BIII-PLAIN-BRAND-MATERIAL GENERIC NAME-COLOR/CODE
+        </td>
+       
+        <td></td>
+        <td>20</td>
+        <td>NOS</td>
+        <td>115</td>
+        <td>2300</td>
+        <td>10</td>
+        <td>2070</td>
+        <td>500</td>
+        <td>1000</td>
+        <td>6</td>
+        <td>214</td>
+        <td>6</td>
+        <td>214</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3998</td>
+        <td>MAKE-PHILIPS</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>ELE CABLE COPPER FLEXIBLE 70 SQMM X 1 CORE
+        </td>
+       
+        <td></td>
+        <td>60</td>
+        <td>MTR</td>
+        <td>663</td>
+        <td>39780</td>
+        <td>0</td>
+        <td>0</td>
+        <td>9</td>
+        <td>3401</td>
+        <td>9</td>
+        <td>3410</td>
+        <td>6</td>
+        <td>214</td>
+        <td>0</td>
+        <td>0</td>
+        <td>44593</td>
+        <td>MAKE</td>
+      </tr>
+      <tr>
+        <td>
+
+        </td>
+        <th>TOTAL
+        </th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>42,080.00
+        </td>
+        <td></td>
+        <td>39,861.00
+        </td>
+        <td>500.00
+        </td>
+        <td>1,000.00
+        </td>
+        <td></td>
+        <td>3,615.39
+        </td>
+        <td></td>
+        <td>3,615.39
+        </td>
+        <td></td>
+        <td>0.00
+        </td>
+        <td>48,591.78
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="10" style="text-align: left;">Transporter Name: ABC TRANSPORTER</th>
+        <th colspan="7" style="text-align: end;">Freight</th>
+        <td>10,000.00
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="10" class="table-text" style="text-align: left;">Grant total (in words Fifty Eight Thousand Five Hundred Ninety One and Seventy Eight Paise Only )</th>
+        <th colspan="7" class="table-text" style="text-align: end;">GRAND TOTAL</th>
+        <th class="table-text">58,591.78
+        </th>
+        <td class="table-text"></td>
+      </tr>
+    </table>
+
+    <div class="section-title">TERMS & CONDITIONS</div>
+   
+    <table class="table-text">
+      <tr>
+        <th style="text-align: center;" colspan="2">Material Specification</th>
+      </tr>
+      <tr>
+        <th>Material Description</th>
+        <th>Material Specific Condition</th>
+      </tr>
+      <tr>
+        <th rowspan="4">ELE PLC TUBE 11 WATT</th>
+        <td>1 condition</td>
+      </tr>
+      <tr>
+       
+        <td>2 condition</td>
+      </tr>
+      <tr>
+       
+        <td>3 condition</td>
+      </tr>
+      <tr>
+       
+        <td>4 condition</td>
+      </tr>
+      <tr>
+        <th rowspan="3">ELE CABLE COPPER FLEXIBLE 70 SQMM X 1 CORE</th>
+        <td>1 condition</td>
+      </tr>
+      <tr>
+        <td>2 condition</td>
+      </tr>
+      <tr>
+        <td>3 condition</td>
+      </tr>
+     
+    </table>
+    
+    <div class="section-title">Delivery Schedule Materials</div>
+    <table class="table-text">
+      <tr>
+        <th>Material Description</th>
+        <th>UOM</th>
+        <th>Qty</th>
+        <th>Schedule Date</th>
+        <th>SUB PROJECT 
+        </th>
+        <th>WING
+        </th>
+      </tr>
+      <tr>
+        <td>ELE CABLE COPPER FLEXIBLE 70 SQMM X 1 CORE</td>
+        <td>MTR</td>
+        <td>60</td>
+        <td>Aug 17, 2021</td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>ELE PLC TUBE 11 WATT</td>
+        <td>NOS</td>
+        <td>20</td>
+        <td>Aug 17, 2021</td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+<div class="para-text">
+  <p>1. Materials should be delivered as per DELIVERY SCHEDULE mentioned in purchase order
+     but in co-ordination with our Stores & Site team. Delivery Schedule is provided as an
+     indicative timeline and is subject to pre-pone or post-pone as per site requirements.</p>
+  <p>2.  Please mention PO No in all challan and bills and attach the same at the time of delivery & submission of bills.  </p>
+  <p>3.  Penalty @10% will be charged for material delivered after the committed date.</p>
+  <p>4.  If nothing contrary is heard within a day after receipt of PO, it will be understood that the order is accepted as per our conditions.</p>
+  <p>5.   Bills should match with PO (i.e Rate,Transport,Other taxes etc) If not so, the bills will not be accepted.</p>
+  <p>6.  Submit bills within 10 days after delivery of material mentioning properly GST, Pan Number etc on every bill.</p>
+  <p>7.  Rejected good should be lifted within 7 days of intimation from us, failing which Marathon will not be responsible for any shortage, damager or
+     deterioration of the same</p>
+  <p>8. The bills will not be accepted if Purchase Order is not attached while submitting the bills.</p>
+  <p>9. Bill submission Time in Billing Dept - all working days between 4.00 p.m. to 5.30 p.m. and on Friday full day; strictly take the acknowledgement of the same.</p>
+  <p>10. The material will not be accepted at site without Original and Duplicate Challans.  </p>
+  <p>11. Invoice To and Billing address (refer top left corner of Page-1) should be mentioned correctly on invoice and delivery challan, or else documents will not be accepted  </p>
+  <p>12. All payment to Vendor against this P.O. / Bill against this P.O. will be appropriated by Marathon Realty Pvt. Ltd only on applicable GST credit received by Marathon Realty Pvt.
+     Ltd in electronic ledger maintained on the GST portal.</p>
+  <p>13. By accepting this P.O. the vendor confirms to Marathon Realty Pvt. Ltd that vendor will mention the applicable GST in appropriate forms uploaded by them and will 
+    also pay applicable GST and file the requisite returns, on or before due date as per GST Laws. The vendor agrees to indemnify Marathon Realty Pvt. Ltd against tax, interest,
+     penalty and/or any other sum incurred on account of lapse on Vendor’s part.</p>
+  <p>14. In case of deliveries against multiple purchase orders separate Invoices and delivery challans have to submit as per respective Purchase order only.</p>
+  <p>15.Invoices/Bills shall be uploaded on billing portal https://bs.marathonrealty.com and the hard copy of the same to be submitted in Billing Department both are mandatory.</p>
+  <p>16. The bills related to Purchase/Procurement Department to be submitted in billing department - Marathon Max, Marathon Office, 9th Floor, Junction of Mulund - Goregaon Link
+     road, Mulund (W), Mumbai - 400 080.</p>
+  <p>17. Vehicle Driver should Carry Valid driving license.</p>
+  <p>18. Use of appropriate PPE's as applicable while performing activities.</p>
+  <p>19. Follow up safety inspection while entering in the project / premises.</p>
+  <p>20. Adherence to the companies safety policy.</p>
+</div>
+
+    <div style="display: flex;">
+      <table class="table-text table-bottom">
+        <tr>
+          <td>BAPPASAHEB GAME</td>
+          <td>Asmita</td>
+        </tr>
+        <tr>
+          <th>Prepared By</th>
+          <th>Submited By</th>
+        </tr>
+      </table>
+      <table class="table-text table-bottom"> 
+        <tr>
+          <td>Ashwini</td>
+        </tr>
+        <tr>
+          <th>Approved By</th>
+           
+        </tr>
+      </table>
+      <table class="table-text table-bottom"> 
+        <tr>
+          <td>Urvesh Mehta</td>
+        </tr>
+        <tr>
+          <th>Amend & Approved</th>
+           
+        </tr>
+      </table>
+    </div>
+    <p style="text-align: center; margin-top: 2rem;">"This is an electronically generated document and does not require stamp and signature."  
+    </p>
+
+
+    </div>
+  
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
+    </body>
+  </html>
+  
