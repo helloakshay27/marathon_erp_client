@@ -849,7 +849,7 @@
                                 </div>
                             </div>
                             
-                            <div class="card mx-3 mt-2">
+                            <div class="card collapsed-card mx-3 mt-2">
                                 <div class="card-header3">
                                     <h3 class="card-title">Material</h3>
                                     <div class="card-tools">
@@ -933,7 +933,7 @@
                             </div>
                           
 
-                            <div class="card mx-3 mt-2">
+                            <div class="card collapsed-card mx-3 mt-2">
                                 <div class="card-header3">
                                     <h3 class="card-title">Labour</h3>
                                     <div class="card-tools">
@@ -991,7 +991,7 @@
                                 
                             </div>
 
-                            <div class="card mx-3 mt-2">
+                            <div class="card collapsed-card mx-3 mt-2">
                                 <div class="card-header3">
                                     <h3 class="card-title">Assests</h3>
                                     <div class="card-tools">
@@ -1049,62 +1049,253 @@
                                 
                             </div>
 
-                            <div class="card mx-3 mt-2">
+                            <div class="card collapsed-card mx-3 mt-2">
                                 <div class="card-header3">
                                     <h3 class="card-title">BOQ Sub-Item</h3>
                                     <div class="card-tools">
                                         <button type="button" class="btn btn-tool" data-card-widget="collapse">
                                             <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="16" cy="16" r="16" fill="#8B0203"></circle>
-                                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"></path>
+                                              <circle cx="16" cy="16" r="16" fill="#8B0203"></circle>
+                                              <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"></path>
                                             </svg>
-                                        </button>
+                                          </button>
                                     </div>
                                 </div>
                                 <div class="card-body mt-0 pt-0">
-                                    <div class="tbl-container mx-3 mt-1">
-                                        <table class="w-100">
-                                            <thead>
-                                                <tr>
-                                                    <th  rowspan="2">
-                                                        <div class="d-flex justify-content-center">
-                                                     
-                                                            <!-- <input class="" type="checkbox">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-trash3-fill ms-2" viewBox="0 0 16 16">
-                                                                <path d="M11 1.5v1h3.5a.5.5 0 0 1 0 1h-.538l-.853 10.66A2 2 0 0 1 11.115 16h-6.23a2 2 0 0 1-1.994-1.84L2.038 3.5H1.5a.5.5 0 0 1 0-1H5v-1A1.5 1.5 0 0 1 6.5 0h3A1.5 1.5 0 0 1 11 1.5m-5 0v1h4v-1a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5M4.5 5.029l.5 8.5a.5.5 0 1 0 .998-.06l-.5-8.5a.5.5 0 1 0-.998.06m6.53-.528a.5.5 0 0 0-.528.47l-.5 8.5a.5.5 0 0 0 .998.058l.5-8.5a.5.5 0 0 0-.47-.528M8 4.5a.5.5 0 0 0-.5.5v8.5a.5.5 0 0 0 1 0V5a.5.5 0 0 0-.5-.5"/>
-                                                              </svg> -->
-                                                        </div>
-                                                    </th>
-                                                   <th rowspan="2">Material Type</th>
-                                                   <th rowspan="2" >Material Sub-Type</th>
-                                                   <th rowspan="2" >Material </th>
-                                                   <th  rowspan="2">UOM</th>
-                                                   <th colspan="2">Cost</th>
-                                                </tr>
-                                                <tr>
-                                                    <th>Co-efficient Factor</th>
-                                                    <th rowspan="2">Estimated Qty</th>
-                                                </tr>
-                                          
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                 <td></td>
-                                                 <td></td>
-                                                 <td></td>
-                                                 <td></td>
-                                                 <td></td>
-                                                 <td><input class="form-control" type="email" placeholder="" fdprocessedid="qv9ju9"></td>
-                                                 <td><input class="form-control" type="email" placeholder="" fdprocessedid="qv9ju9"></td>
-                                                </tr>
-                                            </tbody>
-                                            </table>
+                                            <div class="mt-3">
+                                                <div class="tbl-container mx-3 mt-1">
+                                                    <table class="w-100" id="table5">
+                                                        <thead>
+                                                            <tr>
+                                                             <th rowspan="2"><input type="checkbox"></th>
+                                                             <th rowspan="2">Expand</th>
+                                                             <th rowspan="2">Sub Item Name </th>
+                                                             <th rowspan="2">Description</th>
+                                                             <th rowspan="2">Notes</th>
+                                                             <th rowspan="2">Remarks</th>
+                                                             <th rowspan="2">UOM</th>
+                                                             <th colspan="3">Cost</th>
+                                                             <th rowspan="2">Document</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th rowspan="2">Quantity</th>
+                                                                <th rowspan="2">Rate</th>
+                                                                <th rowspan="2">Amount</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                            <td><input type="checkbox"></td>
+                                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dash-circle " viewBox="0 0 16 16"  data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                                                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16"/>
+                                                                <path d="M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8"/>
+                                                              </svg></td>
+                                                            <td>MS Fabrication</td>
+                                                            <td><input type="text" placeholder="MS Fabrication_20010"></td>
+                                                            <td><input type="text" placeholder="MS Fabrication_20010"></td>
+                                                            <td><input type="text" placeholder=""></td>
+                                                            <td>KG</td>
+                                                            <td>621.00000</td>
+                                                            <td>130.00000</td>
+                                                            <td>80,730.00</td>
+                                                            <td><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16">
+                                                                <path d="M5.5 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5"/>
+                                                                <path d="M9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.5zm0 1v2A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z"/>
+                                                              </svg></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="row mt-3 mx-3">
+                                                    <p>
+                                                        <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                            onclick="myCreateFunction('table5')">Add Row</button> |
+                                                        <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                            onclick="myDeleteFunction('table5')">Delete Row</button>
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div>
-                                                <p class="pe-auto" data-bs-toggle="modal" data-bs-target="#addoutputModal">Add Output Material</p>
-                                            </div>
+                                         
+                                            <div class="collapse" id="collapseExample">
+                                                <div class="card card-body">
+            
+                                             <div class="card collapsed-card mx-3 mt-2">
+                                                <div class="card-header3">
+                                                    <h3 class="card-title">Material</h3>
+                                                    <div class="card-tools">
+                                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="16" cy="16" r="16" fill="#8B0203"></circle>
+                                                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body mt-0 pt-0">
+                                                    <div class="tbl-container mx-3 mt-1">
+                                                        <table class="w-100" id="table1">
+                                                         <thead>
+                                                            <tr>
+                                                                <th rowspan="2"><input type="checkbox"></th>
+                                                                <th rowspan="2">Material Type</th>
+                                                                <th rowspan="2">Material Sub-Type</th>
+                                                                <th rowspan="2">Material</th>
+                                                                <th rowspan="2">Generic Specification</th>
+                                                                <th rowspan="2">Colour </th>
+                                                                <th rowspan="2">Brand </th>
+                                                                <th rowspan="2">UOM</th>
+                                                                <th rowspan="2">Cost QTY</th>
+                                                                <th colspan="2">Cost</th>
+                                                                <th rowspan="2">Wastage</th>
+                                                                <th rowspan="2">Total Estimated Qty Wastage</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Co-Efficient Factor</th>
+                                                                <th rowspan="2">Estimated Qty</th>
+                                                            </tr>
+                                                         </thead>
+                                                         <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox"></td>
+                                                                <td>SAND</td>
+                                                                <td>SAND</td>
+                                                                <td>SAND River (Bag)</td>
+                                                                <td>River Sand GOLD</td>
+                                                                <td>Gold</td>
+                                                                <td></td>
+                                                                <td>Bags</td>
+                                                                <td></td>
+                                                                <td>1</td>
+                                                                <td>2</td>
+                                                                <td>4%</td>
+                                                                <td>2.08</td>
+                                                            </tr>
+                                                         </tbody>
+                                                            </table>
+                                                            </div>
+                                                            <div class="row mt-3 mx-3">
+                                                                <p>
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myCreateFunction('table1')">Add Material</button> |
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myDeleteFunction('table1')">Delete Material</button>
+                                                                </p>
+                                                            </div> 
+                                                </div>
+                                                
+                                            </div>  
+                                             <div class="card collapsed-card mx-3 mt-2">
+                                                <div class="card-header3">
+                                                    <h3 class="card-title">Labour</h3>
+                                                    <div class="card-tools">
+                                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="16" cy="16" r="16" fill="#8B0203"></circle>
+                                                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body mt-0 pt-0">
+                                                    <div class="tbl-container mx-3 mt-1">
+                                                        <table class="w-100" id="table2">
+                                                         <thead>
+                                                            <tr>
+                                                                <th rowspan="2"><input type="checkbox"></th>
+                                                                <th rowspan="2">Labour Type</th>
+                                                                <th rowspan="2">Labour Sub-Type</th>
+                                                                <th rowspan="2">Labour</th>
+                                                                <th rowspan="2">UOM</th>
+                                                                <th colspan="2">Cost</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Co-Efficient Factor</th>
+                                                                <th rowspan="2">Estimated Qty</th>
+                                                            </tr>
+                                                         </thead>
+                                                         <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox"></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                         </tbody>
+                                                            </table>
+                                                            </div>
+                                                            <div class="row mt-3 mx-3">
+                                                                <p>
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myCreateFunction('table2')">Add Labour</button> |
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myDeleteFunction('table2')">Delete Labour</button>
+                                                                </p>
+                                                            </div> 
+                                                </div>
+                                                
+                                            </div>  
+
+                                             <div class="card collapsed-card mx-3 mt-2">
+                                                <div class="card-header3">
+                                                    <h3 class="card-title">Assests</h3>
+                                                    <div class="card-tools">
+                                                        <button type="button" class="btn btn-tool" data-card-widget="collapse">
+                                                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <circle cx="16" cy="16" r="16" fill="#8B0203"></circle>
+                                                                <path d="M16 24L9.0718 12L22.9282 12L16 24Z" fill="white"></path>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body mt-0 pt-0">
+                                                    <div class="tbl-container mx-3 mt-1">
+                                                        <table class="w-100" id="table3">
+                                                         <thead>
+                                                            <tr>
+                                                                <th rowspan="2"><input type="checkbox"></th>
+                                                                <th rowspan="2">Assest Type</th>
+                                                                <th rowspan="2">Assest Sub-Type</th>
+                                                                <th rowspan="2">Assest</th>
+                                                                <th rowspan="2">UOM</th>
+                                                                <th colspan="2">Cost</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>Co-Efficient Factor</th>
+                                                                <th rowspan="2">Estimated Qty</th>
+                                                            </tr>
+                                                         </thead>
+                                                         <tbody>
+                                                            <tr>
+                                                                <td><input type="checkbox"></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                                <td></td>
+                                                            </tr>
+                                                         </tbody>
+                                                            </table>
+                                                            </div>
+                                                            <div class="row mt-3 mx-3">
+                                                                <p>
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myCreateFunction('table3')">Add Assests</button> |
+                                                                    <button style="color: var(--red);" class="fw-bold text-decoration-underline border-0 bg-white"
+                                                                        onclick="myDeleteFunction('table3')">Delete Assests</button>
+                                                                </p>
+                                                            </div> 
+                                                </div>
+                                                
+                                            </div>  
+
+                                              
                                 </div>
-                                
+                            </div>
+                        </div>
                             </div>
                         </div>
 
@@ -1535,6 +1726,36 @@
         });
         button.classList.add('active');
     }
+      // add row delete row
+      function myCreateFunction(tableId) {
+        var table = document.getElementById(tableId);
+        var lastRow = table.rows[table.rows.length - 1];
+        var newRow = table.insertRow(table.rows.length);
+
+
+        for (var i = 0; i < lastRow.cells.length; i++) {
+            var newCell = newRow.insertCell(i);
+            newCell.innerHTML = lastRow.cells[i].innerHTML;
+        }
+
+
+        var selects = newRow.querySelectorAll('select');
+        selects.forEach(function (select) {
+            select.selectedIndex = -1;
+        });
+    }
+
+    function myDeleteFunction(tableId) {
+        var table = document.getElementById(tableId);
+        var lastRowIndex = table.rows.length - 1;
+
+        if (lastRowIndex > 0) {
+            table.deleteRow(lastRowIndex);
+        } else {
+            alert("Cannot delete the last row. There must be at least one row in the table.");
+        }
+    }
+    // add row delete row end
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
